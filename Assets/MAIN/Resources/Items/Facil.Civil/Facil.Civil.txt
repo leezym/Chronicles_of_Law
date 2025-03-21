@@ -1,0 +1,56 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Sabrina Petro en 0,5:1 [Seria] "Buenos días doc, ¿cómo me le va? yo me llamo Sabrina Petro Uribe, tengo 32 años, vine por aquí porque tengo una duda sobre un asunto de una compraventa."
+ocultar("Sabrina Petro")
+
+item "Promesa de compraventa"
+
+Entra Sabrina Petro [Ilusionada] " Entonces, nosotros firmamos eso y le consignamos $15.000.000 COP {EC 1} de ahí entonces nos pusimos a organizar lo de la herencia de mi esposo para tener el resto de la plata lista para dársela a Don Jimmy el 7 de marzo en la notaría. {EC 1} Hasta que por fin llegó el día, nosotros nos presentamos contentos allá en la notaría para firmar las escrituras y que nos entregarán la casa, incluso le consignamos el resto del dinero de la emoción que sentíamos, mire:"
+ocultar("Sabrina Petro")
+
+item "Comprobante de transacción bancaria al señor Jimmy Gutierrez"
+
+Entra Sabrina Petro [Preocupada] "Pero él nunca llegó, lo llamamos y lo llamamos, pero el señor nada que aparecía. {C} Pasaron días insistiéndole, hasta fuimos a su casa y nadie nos contestaba, yo le tomé fotos y todo, vea:"
+ocultar("Sabrina Petro")
+
+item "Registro telefónico de llamadas al señor Jimmy"
+
+item "Fotografías de la casa del señor Jimmy"
+
+Entra Avatar en 0,5:0 [Pensativo] "¿Desde ese momento no han tenido ninguna noticia del señor Gutierrez o tienen algún tipo de información?" ocultar(Avatar)
+
+Entra Sabrina Petro [Preocupada] "Pues imagínese que a nosotros nos llegó la semana pasada una carta que venía del abogado de él, aquí la tengo:" 
+ocultar("Sabrina Petro")
+
+item "Copia de la carta enviada por correo electrónico a la usuaria"
+
+Entra Sabrina Petro [Preocupada] "A mí eso me parece muy descarado por parte del señor, nos anda cobrando y amenazando viendo que nosotros sí pagamos. Yo no sé qué va a pasar ahora con la casa y con la plata. {EB 1} Entonces, yo quería preguntarle qué podemos hacer en este caso para resolver esta situación, la verdad estoy muy preocupada."
+
+Sabrina Petro [Seria] "Yo sólo quiero tener mi casita para formar una familia, pero pues ya no tenemos más dinero y no nos alcanza para pagar esa plata que el señor Jimmy nos está cobrando de más.{C} Entonces pues yo quería pedirle que me ayude si es tan amable."
+ocultar("Sabrina Petro")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué procedimiento legal debe adelantarse en este momento para dar respuesta a las pretensiones de la usuaria?"
+{
+- Adelantar un proceso de resolución de compraventa según el art. 374 del Código General del Proceso para así dejar sin efectos el contrato y pedir que se restituya el dinero ya pagado por la usuaria. [0]
+- Iniciar un proceso ejecutivo de suscripción de documento de acuerdo al art. 434 del Código General del Proceso. [0,5]
+- Iniciar un proceso ejecutivo de suscripción de documento de acuerdo al art. 434 del Código General del Proceso en contra del señor Gutiérrez, para así materializar la escrituración del bien inmueble y la transferencia de dominio del mismo a los promitentes compradores. [1]
+}
+pregunta "¿Qué documento o documentos se consolidarían como el título ejecutivo del proceso correspondiente?"
+{
+- La promesa de compraventa autenticada y debidamente firmada por las partes. [0,5]
+- La carta recibida por la usuaria junto con los comprobantes de pago por el Inmueble. [0]
+- La promesa de compraventa suscrita y los comprobantes de pago efectuados por los promitentes compradores. [1]
+}
+
+pregunta "¿Qué debe adelantarse para resolver la situación de la cláusula penal exigida a la usuaria? "
+{
+- La mera notificación extrajudicial no constituye pleno requerimiento para el pago de la clausula penal, por lo que la usuaria no tiene por qué pagar ningún monto. [0,5]
+- nterponer un derecho de petición dirigido al señor Gutiérrez, exigiendo el pago de la clausula penal ya que la usuaria si cumplió con todas sus cargas obligacionales a diferencia del promitente vendedor. [0]
+- La mera notificación extrajudicial no constituye pleno requerimiento para el pago de la cláusula penal, además de que al cumplir todas sus obligaciones y haber perfeccionado ya la escritura pública por vía judicial la usuaria no tiene que pagar ningún valor por concepto de clausula penal. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

@@ -51,7 +51,7 @@ namespace HISTORY
                 AudioChannel channel = AudioManager.Instance.TryGetChannel(channelData.channel, createIfDoesNotExist: true);
                 if(channel.activeTrack == null || channel.activeTrack.name != channelData.trackName)
                 {
-                    AudioClip clip = HistoryCache.LoadAudio(channelData.trackName);
+                    AudioClip clip = HistoryCache.LoadAudio(channelData.trackPath);
                     if(clip != null)
                     {
                         channel.StopTrack(immediate: true);

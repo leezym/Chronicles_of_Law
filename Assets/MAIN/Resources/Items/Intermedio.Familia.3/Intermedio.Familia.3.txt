@@ -1,0 +1,63 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra María Flores en 0,5:0 [Seria] "Buenas joven, mire yo vengo acá por un problema y la verdad es que necesito con urgencia su ayuda."
+ocultar("María Flores")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señora, ¿puede decirme su nombre? {C} Tengo plena disposición para ayudarla, le pido que por favor me comparta más información sobre su caso."
+ocultar(Avatar)
+
+Entra María Flores [Molesta] "Ay, qué pena con usted, como uno anda así todo estresado hasta se le olvida presentarse. Mi nombre es Maria Flores {EB 1} Y vengo porque el papá de mi hijo no quiere responder por el niño, no le envía nada de plata y realmente he intentado, pero a mí no me da para cubrir los gastos sola."
+
+María Flores [Seria] "Yo vivía con Juan Pérez, el padre de mis hijos, pero nosotros nunca nos casamos. Siempre fue una convivencia como informal. {EB 1} Pero, de esa relación nació Juli, mi hijo que ahora tiene 4 años."
+ocultar("María Flores")
+
+Entra Avatar [Serio] "¿El señor Pérez ya no convive con ustedes?"
+ocultar(Avatar)
+
+Entra María Flores [Preocupada] "No, ya no. Yo me aburrí de vivir con Juan y me fui de la casa con el niño {EC 1} Juan se puso furioso, no me quería hablar, me amenazó con que iba a dejar de ayudarme con nuestro hijo, y así fue."
+
+María Flores [Molesta] "Y el muy descarado, dizque "ayudarme", el niño es de los dos y ambos somos responsables."
+ocultar("María Flores")
+
+Entra Avatar [Serio] "Lamento escuchar eso señora Flores, ¿usted se ha comunicado con Juan desde esa vez?"
+ocultar(Avatar)
+
+Entra María Flores [Seria] "Como tal no hemos hablado, pero yo lo denuncié en la Fiscalía por el incumplimiento de los pagos. {EC 1} Pero, en la Fiscalía me dijeron que como no había una cuota fijada legalmente debíamos conciliar, yo fui y todo, pero él nunca se apareció. Lo único que me dieron fue esto:"
+ocultar("María Flores")
+
+item "Constancia de inasistencia a la audiencia de conciliación"
+
+Entra María Flores [Preocupada] "A mí en la Fiscalía no me pudieron resolver, y es por eso que vengo aquí. De verdad que ya no puedo sostener económicamente al niño sin el aporte de Juan."
+ocultar("María Flores")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué conforman los alimentos?"
+{
+- Los alimentos están conformados por el conjunto de elementos que están obligados los padres a darle a sus hijos para su sustento. Para fijar estos alimentos no es obligatorio analizar la capacidad económica del alimentante, ya que al ser el padre del menor está en la obligación de pagar la cuota razonada que se fije sin importar el monto. [0]
+- Según el artículo 24 del Código de Infancia y Adolescencia, los alimentos son aquellos bienes y/o servicios que contribuyen al desarrollo físico, psicológico, moral y cultural. Además, los alimentos son todo lo indispensable para el sustento, asistencia médica, recreación y educación del menor. [0,5]
+- Según el artículo 24 del Código de Infancia y Adolescencia, los alimentos son aquellos bienes y/o servicios que contribuyen al desarrollo físico, psicológico, espiritual, moral, cultural y social. Además, los alimentos son todo lo indispensable para el sustento, asistencia médica, recreación y educación del menor, analizando siempre la capacidad económica del alimentante. [1]
+}
+pregunta "¿Qué acciones legales se pueden adelantar en este caso?"
+{
+- Se debe convocar a una nueva audiencia de conciliación la cual puede ser adelantada en el Consultorio Jurídico de la universidad. Si el resultado de la audiencia es una constancia de inasistencia, se puede adelantar un proceso de fijación de cuota alimentaria ante la jurisdicción. [0,5]
+- Teniendo en cuenta la constancia de inasistencia, se puede iniciar un proceso de fijación de cuota de alimentos ya que la Ley 2220 de 2022 permite que la Fiscalía adelante audiencias de conciliación de cualquier tema sobre Derecho de Familia. [0]
+- Se debe convocar a una nueva audiencia de conciliación la cual puede ser adelantada en el Consultorio Jurídico de la universidad. Si el resultado de la audiencia es una constancia de no acuerdo o una constancia de inasistencia, se puede adelantar un proceso de fijación de cuota alimentaria ante la jurisdicción. [1]
+}
+
+pregunta "¿Qué efectos tiene la conciliación en materia de alimentos?"
+{
+- El acuerdo total presta mérito ejecutivo y su incumplimiento permitiría adelantar un proceso ejecutivo de alimentos. El acuerdo parcial habilitaría a las partes a acudir a la jurisdicción respecto de los puntos que no conciliaron. Por último, la constancia de no acuerdo o la constancia de inasistencia permitiría acceder a la jurisdicción [0,5]
+- El acuerdo total presta mérito ejecutivo y hace tránsito a cosa juzgada material ya que la cuota puede ser modificada en el futuro, además de permitir adelantar un proceso ejecutivo de alimentos en un eventual caso de incumplimiento. El acuerdo parcial habilitaría a las partes a acudir a la jurisdicción respecto de los puntos que no conciliaron. Por último, la constancia de no acuerdo o la constancia de inasistencia permitiría acceder a la jurisdicción. [0]
+- El acuerdo total presta mérito ejecutivo y hace tránsito a cosa juzgada formal ya que la cuota puede ser modificada en el futuro, además de permitir adelantar un proceso ejecutivo de alimentos en un eventual caso de incumplimiento. El acuerdo parcial habilitaría a las partes a acudir a la jurisdicción respecto de los puntos que no conciliaron. Por último, la constancia de no acuerdo o la constancia de inasistencia permitiría acceder a la jurisdicción. [1]
+}
+pregunta "¿Qué requisitos o pruebas se necesitan para fijar los alimentos ante la jurisdicción en el caso planteado?"
+{
+- Una vez se cumpla el requisito de procedibilidad de la conciliación, se necesitarán la mayor cantidad de facturas y/o comprobantes de los gastos que conlleva la manutención del menor, ya que con estos elementos el Juez podrá fijar la cuota necesaria para el menor. Por último, se debe aportar material probatorio que permita al juez conocer la capacidad económica del demandado, como puede ser el certificado de ADRES y/o RUAF para probar que el alimentante tiene trabajo y tiene capacidad de pago. [0,5]
+- En virtud del principio iura novit curia, el Juez de familia ya conoce los elementos jurídicos para la fijación de la cuota alimentaria, por lo que aportar las facturas de lo que consume el menor es un elemento opcional en el proceso. Además, por la conciliación previa en la Fiscalía ya se suplió el requisito de procedibilidad. [0]
+- Una vez se cumpla el requisito de procedibilidad de la conciliación, se necesitarán la mayor cantidad de facturas y/o comprobantes de los gastos que conlleva la manutención del menor, ya que con estos elementos el Juez podrá fijar la cuota necesaria para el menor. Por último, se debe aportar material probatorio que permita al juez conocer la capacidad económica de ambos padres, como puede ser el certificado de ADRES y/o RUAF para probar que el alimentante tiene trabajo y tiene capacidad de pago y, de la misma manera, probar que el padre demandante no tiene la capacidad económica de cubrir todos los gastos. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

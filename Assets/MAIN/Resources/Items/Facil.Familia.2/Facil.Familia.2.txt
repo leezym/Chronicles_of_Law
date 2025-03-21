@@ -1,0 +1,59 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Alexandra Motato en 0,5:0 [Seria] "Buen día, mi nombre es Alexandra Motato."
+ocultar("Alexandra Motato")
+
+Entra Avatar en 0,5:0 [Serio] "Buenos días señora Alexandra, ¿Cómo se encuentra el día de hoy?" ocultar(Avatar)
+
+Entra Alexandra Motato [Irritada] "Pues, qué le puedo decir, ando como emproblemada, ahí confudida con unos asuntos jurídicos. Vengo justamente para que me ayuden {EB 1} Sucede que el 11 de diciembre de 2015 contraje matrimonio civil con Fernando Caicedo con quien después de convivir unos años decidimos por mutuo acuerdo dar por terminada la relación, exactamente el 23 de abril de 2022. Nosotros decidimos no estar más tiempo juntos por múltiples desacuerdos económicos."
+ocultar("Alexandra Motato")
+
+Entra Avatar [Serio] "Comprendo la situación, una pregunta ¿ustedes tienen hijos?" 
+ocultar(Avatar)
+
+Entra Alexandra Motato [Seria] "Sí, el 15 de febrero es el cumpleaños de las gemelas, Luisa e Isabella. Ellas nacieron en el 2017."
+
+Alexandra Motato [Triste] "Las niñas siempre han sido muy apegadas a su padre, sin embargo, desde que no vivimos juntos ellas han tenido cuadros de depresión y a Isabella después de hacerle algunos estudios médicos le diagnosticaron también Trastorno de Déficit de Atención e Hiperactividad. {C} Por lo que requiere de mayor acompañamiento de nosotros como padres, por ejemplo, ahora debemos asistir a terapia ocupacional y psicológica."
+
+Alexandra Motato [Preocupada] "A pesar de que Fernando es un padre responsable económicamente con las gemelas, desde que el se fue a Medellín, aproximadamente hace un año, ha incumplido con sus obligaciones. {C} Yo entiendo que él tiene una nueva familia, pero eso no lo excusa."
+ocultar("Alexandra Motato")
+
+Entra Avatar [Serio] "Supongo que esto ha representado dificultades para su familia, ¿Cómo han vivido esto?"
+ocultar(Avatar)
+
+Entra Alexandra Motato [Triste] "Pues, como yo trabajo a tiempo completo y estoy sosteniendo sola el hogar, debo ausentarme gran parte del día. {C} Eso hace que en muchas ocasiones las niñas no tengan el acompañamiento suficiente... En especial Isabella, que necesita acudir a sus terapias."
+ocultar("Alexandra Motato")
+
+Entra Avatar [Serio] "¿Ha logrado comunicarse con el señor Fernando?"
+ocultar(Avatar)
+
+Entra Alexandra Motato [Irritada] "No. Yo he intentado comunicarme con él en diferentes momentos, para encontrar una forma de solucionar y llegar a un acuerdo, pero ha sido imposible. {EC 1} No sé, pactar que las visite los fines de semana, o que las acompañe a terapia cuando no puedo. Él lo único que responde es que tiene una agenda de trabajo muy demandante, cómo si yo no trabajara también."
+
+Alexandra Motato [Seria] "Entonces, yo vengo aquí a pedirles ayuda. A mí me gustaría poder tener la custodia de mis hijas, y que Fernando visite a Isa y a Lu cada quince días y si le queda muy difícil que cubra los gastos para que las niñas puedan ir a Medellín."
+ocultar("Alexandra Motato")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué mecanismos jurídicos tiene a su disposición la usuaria para dar solución a su situación?"
+{
+- Iniciar un proceso verbal sumario contra el señor Fernando para que sea un juez (del domicilio de las menores) quien determine a quien le corresponde legalmente la custodia de las menores y así mismo fije un régimen de visitas teniendo en cuenta que Fernando vive actualmente en otra ciudad. [0]
+- Solicitar que se cite a una audiencia de conciliación en el Consultorio Jurídico con el fin de que pueda llegar a un acuerdo con el señor Fernando para determinar los días que deberá visitar a las menores o ellas se desplazarán a visitarlo a la ciudad donde vive actualmente. [0,5]
+- Solicitar que se cite a una audiencia de conciliación con el fin de agotar en un inicio dicha instancia, de manera que se intente llegar a un acuerdo pacífico con el señor Fernando para determinar el régimen de visitas y lograr que la usuaria tenga la custodia de sus hijas Isabella y Luisa, de no lograrlo iniciar un proceso verbal sumario para que sea el juez de familia del domicilio de las menores quien defina la custodia y régimen de visitas. [1]
+}
+pregunta "¿Cuál sería la ruta en caso de que no se logre un acuerdo con el señor Fernando?"
+{
+- Indicar a la usuaria que puede acudir ante un juez del domicilio de las menores para iniciar un proceso y se determine quien se deberá encargar de la custodia de las menores teniendo en cuenta que el padre se encuentra en otra ciudad. [0,5]
+- Indicar a la usuaria que inicie una denuncia ante el Instituto Colombiano de Bienestar Familiar con el fin de que se protejan los derechos de las menores a conservar los vínculos familiares con su padre fijando un régimen de visitas y por su parte estableciendo la responsabilidad de la custodia en cabeza de uno de los padres. [0]
+- Indicar a la usuaria que inicie un proceso verbal sumario ante un juez del domicilio de las menores, de conformidad con el artículo 392 del Código General del Proceso, solicitando que se fije un régimen de visitas y así mismo el juez disponga quien deberá encargarse de la custodia de las menores. [1]
+}
+
+pregunta "¿Si los hermanos del usuario comparecen en el proceso y alegan que ellos también tienen derecho sobre el bien inmueble cuál sería la defensa ideal que podría proponer el usuario?"
+{
+- Original y copia del documento de identidad de las partes, fotocopia del registro civil de nacimiento de las menores. [0,5]
+- Original y copia de los documentos de identidad de las partes, fotocopia del registro civil de nacimiento de las menores, pruebas de maltrato físico, verbal o psicológico o en su defecto de abandono de una de las partes. [0]
+- Original y copia del documento de identidad de las partes, fotocopia del registro civil de nacimiento de las menores, afiliación a salud EPS o SISBEN vigente, carnet de vacunas y control de crecimiento y desarrollo, certificado médico expedido por la EPS o el SISBEN, Constancia de No Acuerdo o de inasistencia del Centro de Conciliación. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

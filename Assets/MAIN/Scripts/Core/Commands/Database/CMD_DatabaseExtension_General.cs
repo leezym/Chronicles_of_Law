@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using COMMANDS;
 using DIALOGUE;
+using GAME;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,8 +12,8 @@ namespace COMMANDS
     public class CMD_DatabaseExtension_General : CMD_DatabaseExtension
     {
 
-        private static readonly string PARAM_FILEPATH = "archivo";
-        private static readonly string PARAM_ENQUEUE = "cola";
+        //private static readonly string PARAM_FILEPATH = "archivo";
+        //private static readonly string PARAM_ENQUEUE = "cola";
         private static readonly string PARAM_ITEM = "-nombre";
 
         new public static void Extend(CommandDatabase database)
@@ -23,19 +24,20 @@ namespace COMMANDS
             database.AddCommand("mostrarinterfaz", new Func<IEnumerator>(ShowDialogueSystem));
             database.AddCommand("ocultarinterfaz", new Func<IEnumerator>(HideDialogueSystem));
 
-            database.AddCommand("cargarArchivo", new Action<string[]>(LoadNewDialogueFile)); //Cuando se hagan las interacciones sociales se integra si es necesario cambiar de escenas en las interacciones sociales (EP21 PART1)
+            database.AddCommand("cargararchivo", new Action<string/*string[]*/>(LoadNewDialogueFile)); //Cuando se hagan las interacciones sociales se integra si es necesario cambiar de escenas en las interacciones sociales (EP21 PART1)
+
+            database.AddCommand("subirnivel", new Action(SetCurrentLevel));
         }
 
-        private static void LoadNewDialogueFile(string[] data) //pdte cambio de escena
+        private static void LoadNewDialogueFile(string data)
         {
-            string fileName = string.Empty;
-            bool enqueue = false;
+            string fileName = data;
+            //bool enqueue = false;
 
-            var parameters = ConvertDataToParameters(data);
+            //parameters.TryGetValue(PARAM_FILEPATH, out fileName);
+            //parameters.TryGetValue(PARAM_ENQUEUE, out enqueue, defaultValue: false);
 
-            parameters.TryGetValue(PARAM_FILEPATH, out fileName);
-            parameters.TryGetValue(PARAM_ENQUEUE, out enqueue, defaultValue: false);
-
+            Debug.Log(FilePaths.resources_dialogueFiles+fileName);
             string filePath = FilePaths.GetPathToResource(FilePaths.resources_dialogueFiles, fileName);
             TextAsset file = Resources.Load<TextAsset>(filePath);
 
@@ -48,9 +50,9 @@ namespace COMMANDS
             List<string> lines = FileManager.ReadTextAsset(file, includeBlankLines: true);
             Conversation newConversation = new Conversation(lines);
 
-            if(enqueue)
+            /*if(enqueue)
                 DialogueSystem.Instance.conversationManager.Enqueue(newConversation);
-            else
+            else*/
                 DialogueSystem.Instance.conversationManager.StartConversation(newConversation);
         }
 
@@ -72,6 +74,11 @@ namespace COMMANDS
         private static IEnumerator HideDialogueSystem()
         {
             yield return DialogueSystem.Instance.Hide();
+        }
+
+        private static void SetCurrentLevel()
+        {
+            CasesManager.Instance.LevelChanged();            
         }
     }
 }

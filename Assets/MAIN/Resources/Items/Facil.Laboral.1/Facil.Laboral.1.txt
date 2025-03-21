@@ -1,0 +1,65 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Evelia Moreno en 0,5:0 [Seria] "Muy buenas tardes, mi nombre es Evelia Moreno, la verdad vengo aquí por una consulta importante."
+ocultar("Evelia Moreno")
+
+Entra Avatar en 0,5:0 [Serio] "Buenos días señora Evelia, cuénteme cómo puedo ayudarle."
+ocultar(Avatar)
+
+Entra Evelia Moreno [Seria] "Ay, es que yo vengo con una situación compleja. Vea, yo tengo un hijo, él tiene 10 años, pero él se enfermó mucho porque le dio Influenza y ha estado mal, {EC 1} y pue eso ha sido muy pesado porque mi esposo falleció el pasado agosto por un paro cardio respiratorio, él tenía 50 años y en ese momento estaba trabajando para CLÍNICA DE ROPA SUCIEDAD S.A.S. {EC 1} Él trabajó ahí durante 20 años y le pagaban todo normal, la pensión, la salud, los riesgos laborales y así. En ese tiempo el pago lo realizaban directamente al seguro social. {EB 1} Y eso ha sido un drama muy complejo, no es que... Ni decirle. Aquí traje algunos documentos, no sé si sirvan."
+ocultar("Evelia Moreno")
+
+item "Certificado de Defuncion de su esposo"
+
+item "Certificado laboral por parte de CLINICA DE ROPA SUCIEDAD S.A.S"
+
+Entra Avatar [Triste] "Lamento su perdida señora Moreno {EC 1} ¿usted podría contarme cuánto tiempo estuvieron casados?"
+ocultar(Avatar) 
+
+Entra Evelia Moreno [Molesta] "Pues, es que mire, casados casados no estábamos. Pero estábamos juntos desde hace más de 10 años, convivimos, nos cuidamos, nos quisimos, a pesar de todo por más de una década {EC 1} Yo le planchaba la ropa, él me acompañaba los fines de semana, preparábamos la comida... Hasta me tocó perdonarle unos desencuentros con unas vecinas {EC 1} Pero el punto es que nos quisimos mucho y así estuvimos mucho tiempo."
+ocultar("Evelia Moreno")
+
+Entra Avatar [Serio] "Comprendo señora Elvira, sin embargo, tengo una pregunta importante ¿ustedes vivieron juntos hasta el momento del fallecimiento?"
+ocultar(Avatar)
+
+Entra Evelia Moreno [Indignada] "No... Él tres años antes de su muerte se había ido a vivir con una muchacha llamada Laura, nosotros nos separamos y él tuvo un bebé con ella, el nombre del niño es Luis Mosquera."
+
+Evelia Moreno [Seria] "Realmente, mi pregunta es si él tenía derecho a la pensión y en caso de que sí, quiénes pueden reclamarla."
+ocultar("Evelia Moreno")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué requisito debía cumplir el señor Mosquera previo a su muerte para poder causar una pensión de sobreviviente?"
+{
+- Haber cotizado 20 semanas en los 3 años anteriores a la muerte. [0]
+- Haber cotizado al menos 50 semanas en toda su vida laboral. [0,5]
+- Haber cotizado 50 semanas en los 3 años anteriores a la muerte. [1]
+- Haber cotizado 20 semanas en toda su vida laboral. [0]
+}
+pregunta "De acuerdo con lo narrado por la señora Evelia Moreno ¿Quién tendría derecho a la pensión de sobreviviente del señor Mosquera?"
+{
+- Sólo su hijo Ruben Mosquera. [0,5]
+- Sólo la señora Laura y su hijo Luis. [0]
+- Sólo la señora Evelia y la señora Laura. [0]
+- Sólo los hijos. [1]
+}
+
+pregunta "En el caso hipotético de que los beneficiarios sean los hijos del señor Mosquera y la señora Evelia cumpla con los requisitos legales ¿cómo se dividiría la pensión? "
+{
+- 50% para la señora Evelia y 50% para Rubén y Luis. [0,5]
+- 25% para la señora Evelia, 25% para Rubén y 50% para Luis. [0]
+- 50% para la señora Evelia, 25% para Rubén y 25% para Luis. [1]
+- 25% para la señora Evelia, 50% para Rubén y 25% para Luis. [0]
+}
+
+pregunta "En el caso hipotético que el causante NO cumpla con los requisitos establecidos en el marco legal colombiano para que sus beneficiarios puedan tener la pensión de sobreviviente ¿Qué sucede con el tiempo aportado en el Sistema de Seguridad Social, teniendo en cuenta que el señor se encontraba afiliado a un fondo de pensiones privado llamado SKANDIA?"
+{
+- La familia puede solicitar un pago por el tiempo de aportes del causante, pues no cumplió con los requisitos de la pensión de sobreviviente. [0,5]
+- La familia no puede realizar ninguna acción, pues no cumplió con los requisitos de la pensión de sobreviviente. [0]
+- La familia puede solicitar la devolución de saldos, pues no cumplió con los requisitos de la pensión de sobreviviente. [1]
+- La familia puede acudir al Ministerio de Trabajo para que ellos accionen a Colpensiones para que les devuelvan el dinero de la cuenta de ahorro individual. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

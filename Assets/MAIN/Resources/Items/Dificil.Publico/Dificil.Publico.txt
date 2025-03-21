@@ -1,0 +1,59 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señora, espero se encuentre bien. ¿Podría indicarme su nombre?"
+ocultar(Avatar) 
+
+Entra Martha Enolia Correa en 0,5:0 [Seria] "Buenos días, claro. Mi nombre es Martha Enolia Correa Lasso. Actualmente resido en una casa, está registrada a nombre de mi madre: María de Jesús Lasso de Correa."
+
+Martha Enolia Correa [Estresada] "Lamentablemente, mi madre murió el 22 de diciembre de 2009, desde esa fecha yo me he encargado de la casa. Es completamente mi responsabilidad y estoy bien con eso. {EC 1} Mis ingresos mensuales ascienden a ($700.000), los cuales provienen de una pensión compartida de sobrevivientes, me la dieron por el fallecimiento de mi esposo."
+ocultar("Martha Enolia Correa")
+
+Entra Avatar [Serio] "Comprendo, ¿usted se ha encargado de los pagos provenientes del hogar?"
+ocultar(Avatar)
+
+Entra Martha Enolia Correa [Preocupada] "Pues, desde el 2007 sólo he realizado el pago del predial correspondiente a las vigencias de 2009 y 2014. {EC 1} Actualmente mi deuda acumulada es de ONCE MILLONES OCHOCIENTOS CINCUENTA Y DOS MIL PESOS MCT  ($11.852.000), según el  documento del impuesto predial unificado para el año 2024."
+
+Martha Enolia Correa [Dubitativa]"En ese mismo documento, se establece que el avalúo de la casa es de OCHENTA Y CUATRO MILLONES QUINIENTOS SETENTA Y OCHO MIL PESOS MCTE ($84.568.000)."
+
+Martha Enolia Correa [Estresada]"A pesar de mis esfuerzos por mantener al día los pagos y responsabilidades fiscales, la situación económica actual me ha generado esta deuda, la cual estoy gestionando con la esperanza de encontrar una solución viable."
+ocultar("Martha Enolia Correa")
+
+item "Documento impuesto predial"
+
+Entra Avatar [Serio] "¿Hasta el momento ha recibido alguna notificación por esta deuda?"
+ocultar(Avatar)
+
+Entra Martha Enolia Correa [Seria] "Sí, el 13 de junio de 2023 fui citada para una notificación personal en el Centro de Atención al Contribuyente, decía que era la oficina técnica de operación de cobro coactivo. {EC 1} En esa cita se me notificó personalmente y salió la resolución 4131.1.21, de la cual se derivaba un mandamiento de pago por las vigencias fiscales comprendidas entre el año 2009 y 2023."
+
+Martha Enolia Correa [Dubitativa] "Y pues, esa es la razón por la que vine aquí el día de hoy."
+ocultar("Martha Enolia Correa")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué acciones legales se deberían adelantar en este momento?" 
+{
+- Recomendar la realización de un derecho de petición solicitando la prescripción de la acción de cobro de lo adeudado por concepto del impuesto predial unificado de las vigencias 2009 a 2018. [0.5]
+- Recomendar la radicación de un documento para declararse en insolvencia de persona natural no comerciante. [0]
+- Solicitar mediante un derecho de petición la prescripción de la acción de cobro de lo adeudado por concepto del impuesto predial unificado de las vigencias 2009 a 2018 y llegar a un acuerdo de pago de la vigencia 2008 por lo que ya entro a cobro coactivo. [1]
+- Recomendar a la usuaria hacer caso omiso a dichos comunicados ya que esas deudas eran de su madre y ella es su hija, por lo cual no tiene que pagar. [0]
+}
+
+pregunta "¿Cuál será la prueba fundamental en el proceso y sin la que no podría iniciarse el trámite correspondiente?"
+{
+- La escritura pública y los recibos de servicios públicos pagados hasta el momento. [0]
+- La escritura publica del inmueble, los documentos del impuesto predial, anexando los recibos de pago ya cancelados. [1]
+- La escritura publica es el único documento requerido para iniciar el proceso. [0]
+- La escritura publica es el único documento requerido para iniciar el proceso y los extractos bancarios de la pensión, así como otros documentos que prueben sus ingresos totales. [0,5]
+}
+
+pregunta "¿Ante qué entidad se debe radicar el derecho de petición para darle inicio al proceso de prescripción?"
+{ 
+- Secretaria de Hacienda. [0,5]
+- Subsecretaria de Ingresos. [1]
+- Subsecretaria de Recaudo. [0]
+- Secretaria de Turismo. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

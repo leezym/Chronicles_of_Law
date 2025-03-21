@@ -11,19 +11,20 @@ namespace HISTORY
     [System.Serializable]
     public class GameData
     {
-        public float points = 0;
-        //[field: SerializeField] public Dictionary<string, Sprite> items = new Dictionary<string, Sprite>();
-        [SerializedDictionary("Name", "Sprite")]
-        public SerializedDictionary<string, Sprite> items = new SerializedDictionary<string, Sprite>();
+        public float points = 0f;
+        public int currentLevel = 0;
+
+        [SerializeField]
+        public List<Items> items = new List<Items>();
 
         public static GameData Capture()
         {
             GameData data = new GameData();
             var gm = GameManager.Instance;
 
-            data.points = gm.points;
-            //data.items = gm.items.ToDictionary(entry => entry.Key, entry => entry.Value);
-            data.items = new SerializedDictionary<string, Sprite>(gm.items);
+            data.points = gm.GetPoints();
+            data.currentLevel = gm.GetCurrentLevel();
+            data.items = new List<Items>(gm.items);
 
             return data;
         }
@@ -34,13 +35,13 @@ namespace HISTORY
             var fp = FolderPanel.Instance;
 
             gm.SetPoints(data.points);
-            //gm.items = data.items.ToDictionary(entry => entry.Key, entry => entry.Value);
-            gm.items = new SerializedDictionary<string, Sprite>(data.items);
+            gm.SetCurrentLevel(data.currentLevel);
+            gm.items = new List<Items>(data.items);
 
             fp.ResetFolder();
 
             foreach(var item in gm.items)
-                fp.CreateItemPrefab(item.Value, item.Key);
+                fp.CreateItemPrefab(item.sprite, item.nameItem);
         }
     }
 }

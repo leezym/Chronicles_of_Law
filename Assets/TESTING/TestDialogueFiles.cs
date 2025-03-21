@@ -3,11 +3,11 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using VISUALNOVEL;
+using GAME;
 
 public class TestDialogueFiles : MonoBehaviour
 {
     public static TestDialogueFiles Instance { get; private set; }
-    public TextAsset fileToRead = null;
 
     void Awake()
     {
@@ -17,18 +17,12 @@ public class TestDialogueFiles : MonoBehaviour
             DestroyImmediate(gameObject);
     }
 
-    void Start()
+    public void StartLevel()
     {
-        StartConversation();
-    }
-
-    void StartConversation()
-    {
-        string fullPath = AssetDatabase.GetAssetPath(fileToRead);
+        string fullPath = AssetDatabase.GetAssetPath(CasesManager.Instance.casesInGame[GameManager.Instance.GetCurrentLevel()].cases.fileToRead);
 
         int resourcesIndex = fullPath.IndexOf("Resources/");
         string relativePath = fullPath.Substring(resourcesIndex + 10); // "Resources/" tiene tamaño 10
-        Debug.Log(relativePath);
 
         string filePath = Path.ChangeExtension(relativePath, null);
 

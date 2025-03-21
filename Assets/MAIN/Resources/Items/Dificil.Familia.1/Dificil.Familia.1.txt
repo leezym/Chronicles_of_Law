@@ -1,0 +1,60 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Juanita Alimaña en 0,5:0 [Enojada] "Buenas tardes, yo vengo porque me quiero divorciar de mi esposo."
+ocultar("Juanita Alimaña")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señora, ¿puede decirme su nombre? {C} También quisiera saber hace cuánto se casaron."
+ocultar(Avatar)
+
+Entra Juanita Alimaña [Seria] "Mi nombre es Juanita Alimaña {EC 1} Me casé con él hace un par de años, específicamente el 20 de agosto de 2018 en la notaría 8 de Cali." 
+
+Juanita Alimaña [Decepcionada] "Pero nosotros dejamos de vivir juntos hace varios años, en agosto de 2020... {EC 1} Lo que sucede es que ese tipo no hacía sino golpearme cuando quería, yo tengo incluso una copia de una incapacidad que me dio medicina legal de lo mal que me dejó en una de esas ocasiones."
+ocultar("Juanita Alimaña")
+
+Entra Avatar [Serio] "Lamento mucho escuchar eso señora Alimaña, ¿podría mostrarme el informe?" ocultar(Avatar)
+
+item "Informe de medicina legal"
+
+Entra Juanita Alimaña [Seria] "Yo no me había divorciado porque no había sentido la necesidad de hacerlo, pues es que nosotros ya estábamos separados. {EB 1} Pero, ahora estoy con una nueva pareja y me quiero casar con él, por eso quiero saber cómo divorciarme y cerrar ese capítulo de mi vida de una vez por todas."
+ocultar("Juanita Alimaña")
+
+Entra Avatar [Serio] "Comprendo, nosotros podemos ayudarle con las dudas que tenga sobre el proceso. Sin embargo, quisiera saber si ustedes tienen hijos porque eso podría influir en el proceso."
+ocultar(Avatar)
+
+Entra Juanita Alimaña [Enojada] "Nosotros no tuvimos hijos, yo sí pensé que con ese hombre no tenía hijos. {EC 1} Pero, hace poco me di cuenta que ese tipo se endeudó el año pasado para comprarse una moto, y esa moto nueva vale como 10 millones de pesos." 
+
+Juanita Alimaña [Picara] "Y yo sé que por derecho yo tengo la mitad de esa moto, yo le escribí a preguntarle qué moto había comprado y me mandó TODO. {EC 1} Con decirle que me mandó foto de la tarjeta de propiedad y del préstamo que sacó."
+ocultar("Juanita Alimaña")
+
+item "Tarjeta de propiedad de la moto"
+
+item "Préstamo bancario"
+
+Entra Juanita Alimaña [Decepcionada] "Entonces, la verdad yo tengo varias dudas y me gustaría que usted me ayude a resolverlas."
+ocultar("Juanita Alimaña")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué acciones legales se pueden adelantar en este caso?"
+{
+- Se puede adelantar un divorcio. Dicho divorcio puede ser adelantado por mutuo acuerdo, ya sea en notaría o por jurisdicción voluntaria, al igual que puede ser adelantado como un divorcio contencioso. [0,5]
+- Puede adelantarse el divorcio y, por las particularidades del caso, será un divorcio contencioso. No obstante, debido al término de prescripción de un año de la causal 3, consagrado en el artículo 156 del Código Civil, dicha causal ya prescribió y sólo podrá alegar la causal 8. [0]
+- Por las particularidades del caso, se debe adelantar una demanda de divorcio contencioso ante el Juez de Familia por las causales 3 y 8 del artículo 154 del Código Civil, en donde se solicitará el divorcio y la liquidación de la sociedad conyugal. [1]
+}
+
+pregunta "¿Qué formaría parte de la sociedad conyugal?"
+{
+- Solamente la motocicleta entra a la sociedad conyugal, ya que es el único activo adquirido en vigencia de la sociedad. [0,5]
+- Debido a que el crédito para comprar la moto es a nombre del señor Pedro, solamente hace parte de la sociedad conyugal la motocicleta, ya que las deudas adquiridas por sólo uno de los cónyuges no hacen parte de la sociedad conyugal por disposición legal. [0]
+- La motocicleta haría parte de los activos de la sociedad conyugal, mientras que el pagaré adquirido para la compra de la moto haría parte del pasivo, por lo que ambos negocios jurídicos hacen parte de la sociedad conyugal. [1]
+}
+pregunta "¿Qué formaría parte de la sociedad conyugal?"
+{
+- La moto tiene un avalúo comercial de diez millones de pesos ($10.000.000), lo cual equivale a la totalidad de activos de la sociedad. Por su parte, el pagaré constituye un pasivo de cinco millones de pesos ($5.000.000), por lo que los gananciales de la señora Juanita serían ($2.500.000). [0,5]
+- La moto tiene un avalúo comercial de diez millones de pesos ($10.000.000), lo cual equivale a la totalidad de activos de la sociedad. Por su parte, el pagaré constituye un pasivo bruto de cinco millones de pesos ($5.000.000) y, sumando los intereses, el pasivo neto constituiría siete millones quinientos mil pesos colombianos ($7.500.000), por lo tanto, los gananciales de la señora Juanita serían dos millones quinientos mil pesos ($2.500.000). [0]
+- La moto tiene un avalúo comercial de diez millones de pesos ($10.000.000), lo cual equivale a la totalidad de activos de la sociedad. Por su parte, el pagaré constituye un pasivo bruto de cinco millones de pesos ($5.000.000) y, sumando los intereses, el pasivo neto constituiría siete millones quinientos mil pesos colombianos ($7.500.000), por lo tanto, los gananciales de la señora Juanita serían un millón doscientos cincuenta mil pesos ($1.250.000). [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

@@ -1,0 +1,60 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señor, espero se encuentre bien. ¿Podría indicarme su nombre?"
+ocultar(Avatar) 
+
+Entra Michael Jovany Aranjuez en 0,5:0 [Serio] "Buenos días, joven, mi nombre es Michael Aranjuez, vine porque andaba en el centro y se me ocurrió que ustedes me podrían ayudar."
+ocultar("Michael Jovany Aranjuez")
+
+Entra Avatar [Serio] "Claro que sí, ¿Cuál es su situación?."
+ocultar(Avatar)
+
+Entra Michael Jovany Aranjuez [Triste] "Bueno, todo comenzó cuando me desplazaron, las FARC me sacó de mi vereda Chipiripan en el lindo departamento de Antioquia. {EC 1} Para mí fue muy triste dejar esa tierra, pero ya las amenazas eran muy seguidas y la inseguridad había aumentado mucho. En ese momento decidí venir para Cali."
+
+Michael Jovany Aranjuez [Preocupado]"Exactamente el 10 de febrero de 2005 llegamos a la ciudad y nos ubicamos en el barrio Alfonso López, ¿usted lo conoce, no? Ése que queda por allá al fondo. {EC 1} Mi esposa y yo nos esforzamos mucho para comprar una casa allá y desde ese año hemos ido adecuando poco a poco la residencia, pensando en mis hijos, Hilary, Oscar y David. Todo lo hemos hecho para ellos."
+ocultar("Michael Jovany Aranjuez")
+
+item "Escritura pública de la compraventa"
+
+Entra Michael Jovany Aranjuez [Contento] "Cada año con mi mujer, le metemos cositas a la casa, que los pisos, que las esquineras, usted sabe, ponerla linda para que los muchachos quieran vivir ahí. {EC 1} En el 2022 decidimos realizar el segundo piso, llevábamos un tiempo ahorrando para hacerlo, nosotros hicimos eso porque todas las casas de la cuadra estaban igual."
+ocultar("Michael Jovany Aranjuez")
+
+item "Foto de la casa"
+
+Entra Avatar [Serio] "Le felicito por su esfuerzo señor Michael, ¿usted tuvo algún problema relacionado con la construcción o modificación de la vivienda?"
+ocultar(Avatar)
+
+Entra Michael Jovany Aranjuez [Preocupado] "No como tal, sino que en el mes de julio de este año, recibimos una notificación proveniente de la Alcaldía de Cali, dónde nos decía que estábamos utilizando espacio público y que de no modificar la vivienda nos colocarían una multa."
+
+Michael Jovany Aranjuez [Triste] "Incluso mencionaron la posible destrucción de la residencia. Joven, usted no entiende lo devastador que para nosotros fue escuchar eso. Realmente estamos desesperados."
+ocultar("Michael Jovany Aranjuez")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué acciones legales se deberían adelantar en este momento?" 
+{
+- Recomendar la realización de una tutela porque se le está violando el derecho a la vida digna, según él articulo 12 de la constitución política colombiana ya que nadie será sometido a tratos degradantes. [0]
+- Solicitar mediante un derecho de petición de acuerdo con el artículo 23 de la Constitución Política y a la ley 1755 de 2015, que se midan las demás casas para ver si todas se están adueñando de terrenos públicos. [0,5]
+- Recomendar la radicación de un derecho de petición a la Alcaldía de Cali en virtud del artículo 13 de la ley 1755 de 2015 y del articulo 23 de la Constitución Política solicitando la rectificación de las medidas del espacio público y del predio del señor Michael Jovany, para así actualizar en el sistema que no se están adueñando de espacio público. [1]
+- Recomendar al usuario hacer caso omiso a dichos comunicados ya que con el pasar del tiempo la autoridad pública determina que no es necesario dar continuidad con la multa. [0] 
+}
+
+pregunta "¿Cuál será la prueba fundamental en el proceso y sin la que no podría iniciarse el trámite correspondiente?"
+{
+- La escritura pública del inmueble anexando el certificado catastral del inmueble. [0,5]
+- Simplemente se debe presentar la escritura de compra del inmueble, con las respectivas fotos evidenciando que no se apropiaron del espacio público. [0]
+- La escritura pública del inmueble, junto con el certificado catastral del inmueble y su respectivo certificado de tradición. [1]
+- El certificado de tradición del inmueble, con las fotos que demuestran el rango de construcción y las fotos comparativas de otros inmuebles. [0]
+}
+
+pregunta "¿Ante qué entidad se debe allegar los documentos?"
+{ 
+- A la Alcaldía de Cali. [0]
+- A la Dirección Regional de Ordenamiento Urbanístico. [0,5] 
+- A la Secretaria de Medio Ambiente. [0]
+- A la Subdirección de Espacio Público y Ordenamiento Urbanístico. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

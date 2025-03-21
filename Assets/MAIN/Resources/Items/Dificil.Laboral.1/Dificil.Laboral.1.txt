@@ -1,0 +1,59 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señor, ¿cómo se encuentra el día de hoy?"
+ocultar(Avatar)
+
+Entra Alfonso García en 0,5:0 [Serio] "Buen día joven, muy bien, ¿y usted? {EC 1} Me presento, mi nombre es Alfonso García, y vine el día de hoy porque tengo una consulta de orden laboral."
+ocultar("Alfonso García")
+
+Entra Avatar [Serio] "Muy bien, gracias. Claro, cuénteme su situación."
+ocultar(Avatar)
+
+Entra Alfonso García [Serio] "Bueno, lo que sucede es que yo en junio del 2003 tuve un accidente de origen común. En ese momento recibí una pensión de invalidez debido a que tuve una afectación grave en mi pierna izquierda que me incapacitó para trabajar. {EC 1} Mi primera calificación por parte de la junta regional fue en mayo de 2004 donde me dieron un PCL de 50.8% y como consecuencia me concedieron la pensión por invalidez."
+ocultar("Alfonso García")
+
+item "Resolución 4343 del 22 de abril"
+
+Entra Alfonso García [Confundido] "Así fue muchos años, y para mí esa pensión es esencial porque yo soy el sustento de mi madre. {EC 1} Sin embargo, en 2022 recibí una notificación del fondo de pensiones, que para que me calificaran nuevamente y conocer mi evolución durante estos años."
+
+Alfonso García [Estresado] "Yo fui en Julio de ese año al fondo, llevé mi historia clínica y todos los documentos que me pidieron {EC 1} Pero, luego, me llamaron por teléfono y me dijeron que me habían calificado con un PCL del 27.8%."
+ocultar(Alfonso García)
+
+Entra Avatar [Serio] "Comprendo, ¿esa evaluación fue por teléfono o fue una evaluación médica?"
+ocultar(Avatar)
+
+Entra Alfonso García [Confundido] "Eso es lo más raro, es que fue por teléfono. Yo interpuse dos solicitudes para que me volvieran a calificar, ahí la junta regional en el mismo año ratificó su decisión inicial del 50.8% {EC 1} Pero, el fondo apeló y la junta para noviembre de ese año me redujo la calificación al 29.8%."
+ocultar("Alfonso García")
+
+Entra Avatar [Serio] "Comprendo, ¿usted ha seguido recibiendo la pensión?"
+ocultar(Avatar)
+
+Entra Alfonso García [Estresado] "Sí, a mí me han seguido pagando, pero estoy preocupado de que en cualquier momento la suspendan. Quisiera saber qué puedo hacer ante esta injusticia."
+ocultar("Alfonso García")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Está legalmente justificado que Colpensiones declare la extinción del reconocimiento y pago de la pensión de invalidez del señor Alfonso José García? " 
+{
+- No, porque ya se le había calificado una vez en el momento en que ocurrió el accidente, y después de ser reconocida la pensión de invalidez no es posible la extinción de este derecho en el futuro. [0]
+- No, porque si bien el artículo 44 de la Ley 100 de 1993 establece esta posibilidad, solo procede cuando se realiza periódicamente, cada 3 años. [0,5]
+- Sí, porque en virtud del artículo 44 de la Ley 100 de 1993 se contempla la revisión del estado de invalidez del pensionado con el fin de ratificar, modificar o dejar sin efectos el dictamen de pérdida de capacidad laboral o de la pérdida de capacidad ocupacional que sirvió de base para el otorgamiento de la pensión. [1]
+}
+
+pregunta "De acuerdo con lo expuesto por el usuario, ¿el procedimiento fue llevado a cabo por las entidades competentes?"
+{
+- Sí, pues en virtud del artículo 41 de la Ley 100 de 1993 y tratándose de un accidente de trabajo, quien debía determinar en una primera oportunidad la PCL y calificar el grado de invalidez era la ARL. En primera instancia, serán competentes las Juntas Regionales de Calificación de Invalidez del orden regional quienes decidan sobre el asunto. En última instancia será competente la Junta Nacional de Calificación de Invalidez. [0,5]
+- No, pues quien debía determinar en una primera oportunidad la pérdida de capacidad laboral y calificar el grado de invalidez y el origen de estas contingencias era el empleador. [0]
+- Sí, pues en virtud del artículo 41 de la Ley 100 de 1993 y tratándose de un accidente de origen común, quien debía determinar en una primera oportunidad la PCL y calificar el grado de invalidez era el fondo de pensiones. En primera instancia, serán competentes las Juntas Regionales de Calificación de Invalidez del orden regional quienes decidan sobre el asunto. En última instancia será competente la Junta Nacional de Calificación de Invalidez. [1]
+}
+
+pregunta "Respecto a la consulta, y teniendo en cuenta que efectivamente sea procedente la extinción del reconocimiento y pago de la pensión, ¿Qué acciones judiciales puede iniciar el usuario contra el último dictamen emitido por la Junta Nacional? "
+{
+- No puede iniciar ninguna acción judicial, pues los dictámenes que se profieren en la Junta Nacional de Calificación de Invalidez son decisiones de segunda y última instancia, y una vez proferidos adquieren firmeza, lo que implica que contra los mismos no procede recurso ni modificación de fondo. (Decreto 1352, 2013, art. 45). [0,5]
+- En virtud del artículo 41 de la ley 100 de 1993, proceden las acciones legales pertinentes. Es decir, iniciar un proceso ante la justicia laboral, en la que se demanda el dictamen definitivo emitido por la Junta Nacional de Calificación de Invalidez. [1]
+- Puede iniciar una demanda arbitral contra la junta regional o nacional de invalidez. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

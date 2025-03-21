@@ -9,7 +9,7 @@ namespace TESTING
     {
         public HistoryState state = new HistoryState();
 
-        void Update()
+        /*void Update()
         {
             if(Input.GetKeyDown(KeyCode.H))
             {
@@ -20,6 +20,6 @@ namespace TESTING
             {
                 state.Load();
             }
-        }
+        }*/
     }
 }

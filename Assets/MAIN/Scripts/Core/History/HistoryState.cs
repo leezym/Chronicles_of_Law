@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GAME;
 using UnityEngine;
 
 namespace HISTORY
@@ -12,6 +13,8 @@ namespace HISTORY
         public List<AudioData> audio;
         public List<GraphicData> graphics;
         public GameData game;
+        public List<CasesData> casesData;
+        public List<CasesInGame> casesInGame;
 
         public static HistoryState Capture()
         {
@@ -21,6 +24,8 @@ namespace HISTORY
             state.audio = AudioData.Capture();
             state.graphics = GraphicData.Capture();
             state.game = GameData.Capture();
+            state.casesData = CasesData.Capture();
+            state.casesInGame = CasesInGame.Capture();
 
             return state;
         }
@@ -32,6 +37,8 @@ namespace HISTORY
             AudioData.Apply(audio);
             GraphicData.Apply(graphics);
             GameData.Apply(game);
+            CasesData.Apply(casesData);
+            CasesInGame.Apply(casesInGame);
         }
     }
 }

@@ -1,0 +1,66 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Edinson Osorio en 0,5:0 [Serio1] "Buen día, mi nombre es Edinson Osorio y necesito que me ayuden a solucionar una situación que involucra a mi hijo y a mi ex pareja."
+ocultar("Edinson Osorio")
+
+Entra Avatar en 0,5:0 [Serio] "Buenos días señor Edinson, espero se encuentre bien ¿podría comentarme más sobre la situación?"
+ocultar(Avatar)
+
+Entra Edinson Osorio [Serio2] "La relación que sostuve con la madre de mi hijo -Paola- no resultó duradera, porque usted sabe... a veces uno tiene sus incompatibilidades. Eso sí, ambos decidimos mantener un trato amigable por el bienestar del niño, {EB 1} Nosotros definimos que él debía vivir con ella, pero yo tendría derecho a visitarlo cuando quisiera, {EC 1} también dijimos que cada 15 días yo podría llevarlo a un lugar de recreación. Y claramente, acordamos que íbamos a cumplir con nuestras obligaciones de padres y a participar en la crianza de Felipe."
+ocultar("Edinson Osorio")
+
+Entra Avatar [Serio] "¿Se han incumplido algunos de los acuerdos que ustedes pactaron?"
+ocultar(Avatar)
+
+Entra Edinson Osorio [Serio1] "Pues... Es que ella en abril del 2022 se fue a Brasil, en búsqueda de oportunidades económicas. Ella quedó desempleada y quería iniciar una nueva vida, y como ella sabe tanto de estética, se fue y por allá le ha ido bien. {EB 1} Sino que ella desde el principio me dijo que no se iba a llevar a Felipe, que para no perturbarlo, {C} entonces nosotros decidimos que él se quedara aquí por sus amigos y familia. Lo que yo le dije es que tenía que continuar aportando su parte del sostenimiento del niño y que tenía que estarse contactando con él."
+
+Edinson Osorio [Enojado] "El primer mes que ella estuvo allá, estaba muy atenta del niño, lo llamaba, enviaba dinero y todo."
+
+Edinson Osorio [Triste] "Sin embargo, como a los 3 meses empezó a distanciarse del niño, ya no lo llamaba de forma recurrente, y pues el dinero que enviaba era insuficiente para las necesidades de Felipe {EB 1} Siendo honesto, yo lo del dinero se lo puedo pasar. Pero es que mi hijo desde que la mamá no le responde ha empezado a tener ataques de ansiedad y siempre me pregunta por ella."
+ocultar("Edinson Osorio")
+
+Entra Avatar [Serio] "¿Ha tenido algún tipo de acompañamiento por parte de psicólogos o algún otro tipo de manejo?"
+ocultar(Avatar)
+
+Entra Edinson Osorio [Triste] "Sí. Yo llevé a Felipe con un psicólogo, a hoy sigue en terapia. Lo que él me dice es que todo eso es derivado de un sentimiento de abandono... {EB 1} Y pues también ha incidido en su desempeño escolar, él antes le gustaba mucho el colegio y ahora no quiere ni asistir a los entrenos de baloncesto que eran su actividad favorita."
+ocultar("Edinson Osorio")
+
+Entra Avatar [Serio] "Lamento mucho esa situación, quiero preguntarle un poco sobre la postura de Paola ¿usted ha logrado contactarse con ella por algún medio?, ¿Qué respuestas ha obtenido?"
+ocultar(Avatar)
+
+Entra Edinson Osorio [Enojado] "Ha sido imposible, al parecer ella cambió de número de celular y el que tenía ya no funciona. Y tampoco se ha intentado comunicar con nosotros, ella tiene todos los contactos de mis familiares, fácilmente podría hacerlo."
+
+Edinson Osorio [Triste] "El punto es que a la fecha desconozco el paradero de la madre de mi hijo. Y yo vengo aquí a preguntar cómo suspender lo de la patria potestad, teniendo en cuenta que ella ya no cumple con ninguna de sus obligaciones parentales, y le ha ocasionado daños emocionales a Felipe."
+ocultar("Edinson Osorio")
+
+Entra Avatar [Serio] "Comprendo señor Edinson. ¿Existe algún motivo por el cual esté intentando realizar ese proceso en este momento particular?"
+ocultar(Avatar)
+
+Entra Edinson Osorio [Serio2] "Sí. Es que con toda esta situación, yo quiero alegrar a Felipe y estoy planeando un viaje sorpresa por fuera del país. Y he visto que tengo que tramitar un permiso de salida con Paola, pero es imposible, por todo lo que le he comentado. Así que pensé en esta opción."
+ocultar("Edinson Osorio")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué mecanismos jurídicos tiene a su disposición el usuario para dar solución a su situación respecto a la patria potestad?"
+{
+- El usuario podrá solicitar que se fije una audiencia de conciliación con la señora Paola Murillo, con el fin de que se establezca un acuerdo entre las partes en el que la solicitada se comprometa a hacerse responsable de sus obligaciones como madre y atienda a las necesidades de su hijo. [0]
+- Indicar al usuario que acuda al Instituto Colombiano de Bienestar Familiar del lugar donde viva el menor (Cali) para que el defensor de familia que se le asigne inicie el proceso correspondiente. [0,5]
+- Indicar al usuario que debe acudir ante la autoridad competente (ICBF, Defensor de Familia, Juez civil o de Familia) con una demanda donde se demuestre algunas de las causales para suspender o privar la patria potestad. [1]
+}
+pregunta "¿Cuáles son los efectos de la suspensión de la patria potestad?"
+{
+- El padre que sea suspendido de la patria potestad, en este caso Paola, perderá ciertos beneficios y /o derechos que tiene como madre frente a su hijo de manera temporal. [0,5]
+- Privación definitiva de la patria potestad de Paola sobre su hijo, sin posibilidad de recuperarla, lo anterior conlleva la pérdida de los deberes y derechos derivados de ello. [0]
+- Teniendo en cuenta que la suspensión de la patria potestad es una medida temporal, y podrá ser retomada en cuanto se corrija la conducta que dio lugar a esta, en el caso en que a Paola le sea suspendida la patria potestad de su hijo Felipe, se le suspenderán los derechos frente a él, no obstante, continuará con sus deberes como madre. [1]
+}
+
+pregunta "¿Qué exige la ley para entender que se ha suspendido la patria potestad de uno o ambos padres?"
+{
+- Se exige que el Juez mediante sentencia determine a su arbitrio que se suspenda la patria potestad de uno o ambos padres. [0,5]
+- Se exige únicamente la prueba de que uno o ambos padres hubiesen incurrido en las causales taxativas de los artículos 310 y 315 del Código Civil Colombiano para entenderse suspendida la patria potestad de los padres hacia su hijo por parte de una Juez o Defensor de Familia. [0]
+- La suspensión de la patria potestad por ser una institución jurídica constitucional y legalmente irrenunciable, intransferible, imprescriptible y temporal, debe ser decretada mediante sentencia por el Juez de Familia, sólo cuando se configure una de las causales taxativas contempladas en la ley. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

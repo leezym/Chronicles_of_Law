@@ -1,0 +1,51 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Avatar en 0,5:0 [Serio] "Buenos días señor, bienvenido al Consultorio Jurídico, ¿podría darme su nombre?"
+ocultar(Avatar)
+
+Entra Enser Marin en 0,5:0 [Serio] "Buen día joven. Mi nombre es Enser Marin, vengo aquí porque tengo una duda laboral. {EC 1} Yo trabajé en la empresa VIGILANTES EXPERTOS 1A SAS desde el 2017 y tenía un contrato a termino indefinido."
+
+Enser Marin [Cansado] "Pero, a finales de julio de este año renuncié porque me cansé de los cambios de horario, siempre eran sin consultar y nunca me daban permisos para hacer mis trámites personales."
+ocultar("Enser Marin")
+
+item "Carta cambio de horario"
+
+Entra Avatar [Serio] "Comprendo señor, ¿su consulta está relacionada con el proceso de liquidación?"
+ocultar(Avatar)
+
+Entra Enser Marin [Preocupado] "Sí, exacto. Yo trabajé la primera quincena de julio y después de ahí renuncié; sin embargo aún no me ha llegado nada de dinero por parte de la empresa."
+ocultar("Enser Marin")
+
+item "Carta cambio de renuncia"
+
+Entra Enser Marin [Serio] "Yo he ido a la empresa pero no me dicen nada. Yo creo que se están haciendo los locos {EC 1} Entonces, mi duda es ¿Qué se supone que deberían pagarme? y ¿Qué debo hacer para que me paguen?"
+ocultar("Enser Marin")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿A qué corresponde el monto de dinero que recibe el empleado que renuncia voluntariamente y qué incluye el monto? "
+{
+- Liquidación laboral e Indemnización por renuncia voluntaria que incluye salarios adeudados, vacaciones, prestaciones sociales, aportes parafiscales. [0]
+- Indemnización por despido con justa causa que incluye prestaciones sociales, vacaciones. [0,5]
+- Liquidación laboral que incluye salarios adeudados, prestaciones sociales y vacaciones. [1]
+- Liquidación laboral semanal que incluye Salario integral, prestaciones sociales, vacaciones, aportes parafiscales y aportes a seguridad social. [0]
+}
+pregunta "¿Cómo podría el señor Enser solicitar el dinero que le adeuda la empresa?"
+{
+- Realizar un Derecho de Petición donde se solicite el pago de la liquidación del contrato laboral y la indemnización por despido injusto. [0,5]
+- Realizar un Derecho de Petición donde se solicite el pago de la indemnización por renuncia voluntaria y la indemnización por falta de pago. [0]
+- Realizar un Derecho de Petición donde se solicite el pago de la indemnización por daños ocasionados y la indemnización por falta de pago. [0]
+- Realizar un Derecho de Petición donde se solicite el pago de la liquidación del contrato laboral y la indemnización moratoria o por falta de pago. [1]
+}
+
+pregunta "¿En caso de respuesta negativa en el pago por parte de la empresa VIGILANTES EXPERTOS 1A SAS, qué alternativas le propondría al usuario? "
+{
+- Intentar nuevamente un derecho de petición en donde se solicite el pago de la liquidación y la indemnización moratoria. [0,5]
+- Realizar una conciliación extrajudicial ante el centro de conciliación del consultorio jurídico, de acuerdo con el artículo 13 de la ley 2220 de 2022. [0]
+- Realizar una conciliación extrajudicial ante el inspector de trabajo, de acuerdo con el artículo 13 de la ley 2220 de 2022. [1]
+- Instaurar una acción de tutela protegiendo el derecho fundamental a no ser discriminado y a la libertad de conciencia, teniendo en cuenta que el trabajador considera que su cambio de horario se debía a que analfabeta. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

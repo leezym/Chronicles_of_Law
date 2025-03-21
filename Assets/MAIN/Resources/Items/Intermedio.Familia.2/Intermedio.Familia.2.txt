@@ -1,0 +1,58 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Alberto Murcia y Marcela Marín en 0,5:0 [1] "Buen día, mi nombre es Alberto Murcia y vengo junto con Marcela Marín, quien es mi esposa."
+
+Alberto Murcia y Marcela Marín [2] "Nosotros vinimos el día de hoy para que nos asesoren, puesto que hemos tomado la decisión de terminar nuestro matrimonio."
+ocultar("Alberto Murcia y Marcela Marín")
+
+Entra Avatar en 0,5:0 [Serio] "Buenos días, espero poder ayudarlos con su consulta ¿me pueden comentar más sobre la situación?"
+ocultar(Avatar)
+
+Entra Alberto Murcia y Marcela Marín [1] "Nosotros el día 15 de diciembre de 1999 nos casamos, eso fue en la notaría 19."
+ocultar("Alberto Murcia y Marcela Marín")
+
+Entra Avatar [Serio] "¿En la ciudad de Cali?"
+ocultar(Avatar)
+
+Entra Alberto Murcia y Marcela Marín [2] "Así es. {EB 1} De esa relación nacieron nuestros hijos Esteban y Valentina, quienes ya son mayores de edad y se encuentran estudiando por fuera del país, hace unos dos años ya. {EC 1} Y desde esa fecha, Marcela y yo nos separamos, ya no compartimos la misma casa porque consideramos que no había motivos para seguir viviendo juntos"
+ocultar("Alberto Murcia y Marcela Marín")
+
+Entra Avatar [Serio] "¿Existe algún acuerdo o condición que haya modificado su vínculo matrimonial?"
+ocultar(Avatar)
+
+Entra Alberto Murcia y Marcela Marín [1] "Pues, cuando nos casamos registramos unas capitulaciones de los bienes adquiridos por cada uno {EC 1} nos habían dicho que eso dividía nuestro patrimonio, y pues a hoy nosotros no tenemos nada que sea de los dos, no tenemos bienes en común... En algún momento nos dijeron que eso significaba que no teníamos patrimonio conjunto."
+
+Alberto Murcia y Marcela Marín [2] "Durante nuestra vida de casados convivimos con nuestros hijos en una casa arrendada en el barrio El Guabal, y el dinero que ganaba Alberto y el que ganaba yo era para nuestras necesidades individuales, y siempre dividimos equitativamente los gastos de nuestros hijos."
+ocultar("Alberto Murcia y Marcela Marín")
+
+Entra Avatar [Serio] "En esa medida, ustedes podrían confirmar que no existe ningún tipo de bien que pueda considerarse común, ¿cierto?"
+ocultar(Avatar)
+
+Entra Alberto Murcia y Marcela Marín [1] "Sí, nada. Y estamos de acuerdo en terminar nuestro vínculo matrimonial. Es por ello que necesitamos una opción que nos permita realizar el trámite de manera ágil y sin mayor complicación."
+ocultar("Alberto Murcia y Marcela Marín")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué mecanismos jurídicos tiene a su disposición los usuarios para dar solución a su situación?"
+{
+- Se indicará al usuario que puede solicitar una conciliación extrajudicial a través de la cuál logre llegar a un acuerdo de divorcio con la señora Marcela Marín y de esta manera el trámite sea rápido y sin complicaciones tal como ambas partes quieren. [0]
+- Se indicará al usuario que puede asistir a la Defensoría del Pueblo para que le sea asignado un abogado a cada parte y este permita mediar un acuerdo entre las partes que finalmente se lleve al trámite notarial que da por hecho el divorcio de mutuo acuerdo. [0,5]
+- El usuario podrá acudir ante un notario o ante un juez para llevar a cabo el respectivo trámite frente a la disolución del vínculo matrimonial que tiene con la señora Marín, teniendo en cuenta que ambos se encuentran decididos a hacerlo. Adicionalmente se le tendrá que advertir que es importante la presencia de un abogado para que cada parte logre un acuerdo legal a través de ellos. [1]
+}
+pregunta "¿En el presente caso qué documentos deberán presentar ante el notario para oficializar el divorcio?"
+{
+- Copia del registro civil de matrimonio, el acuerdo de las partes que contenga la decisión conjunta de llevar a cabo el trámite de divorcio de manera independiente. [0,5]
+- Se deberá presentar únicamente un documento formal en el cual las partes expresen la voluntad y las razones por las cuales desean divorciarse, del mismo modo, deberán indicar ante el defensor de familia como seguirán adelantando sus obligaciones respecto a sus hijos, lo cual deberá ser aceptado por este. [0]
+- Copia del registro civil de matrimonio, poder que faculte a los abogados de las partes a llevar el trámite ante el notario, documento o acta de petición de divorcio, el acuerdo de divorcio que debe contener: la decisión conjunta de llevar a cabo el trámite de divorcio de matrimonio civil ante notario, la situación respecto a la sociedad conyugal. [1]
+}
+
+pregunta "Si en medio del trámite de divorcio ante notaría, el señor Alberto decide no continuar con el divorcio pues desea que no sea disuelto el vínculo matrimonial y considera que la relación puede recuperarse. Sin embargo, este no es el deseo de su esposa. Dado que ya no se cuenta con un mutuo acuerdo, ¿Qué podría hacer la señora Marcela para adelantar el divorcio?"
+{
+- La señora Marcela deberá acudir al Juez de Familia con la solicitud expresa de divorcio sustentada en que ya no es de su interés continuar con dicho vínculo matrimonial, esto con el fin de que el juez pueda valorar el caso en concreto para determinar si logra el divorcio por medio de sentencia judicial. [0,5]
+- Si no se cuenta con un mutuo acuerdo y el señor Alberto no ha incumplido ninguno de los deberes conyugales dentro de su matrimonio, pues se ha caracterizado por ser una persona fiel y entregada al matrimonio, la señora Marcela no tendrá de otra que citarlo a una audiencia de conciliación que logre acercarlos y lograr un acuerdo en común. [0]
+- Según lo manifestado en la entrevista, la pareja ya lleva más de dos años separados de cuerpos, encontrándose esta dentro de una de las causales de divorcio en el ordenamiento jurídico colombiano, por ende, la señora Marcela podría adelantar el divorcio contencioso ante el juez de familia probando dicha causal. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

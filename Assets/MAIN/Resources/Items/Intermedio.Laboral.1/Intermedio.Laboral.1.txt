@@ -1,0 +1,58 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra José López en 0,5:0 [Serio] "Buen día joven. Mi nombre es José López, vengo porque tengo un problema en mi trabajo. {EC 1} Verá, hace rato me encuentro incapacitado porque tuve un accidente de tránsito y desde ese momento he tenido varios dificultades para moverme, sufro de dolores de espalda y tengo que tomar medicamentos y usar bastón para poder movilizarme."
+ocultar("José López")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señor López, ¿podría comentarme sobre su contexto laboral?."
+ocultar(Avatar)
+
+Entra José López [Preocupado] "Sí, claro. Yo he trabajado por más de 10 años en la misma empresa ellos me han pagado adecuadamente las prestaciones, mi salario, que es el mínimo y todo. {EC 1} Pero, el asunto viene con la EPS, a mí el año pasado me pasaron este documento, para ese momento el doctor me seguía dando incapacidades."
+ocultar("José López")
+
+item "Formato de rehabilitación EPS"
+
+Entra José López [Adolorido] "Pero, ahora no sé qué está pasando con los pagos de las incapacidades. Joven, yo sigo muy mal de salud, estoy en una situación compleja."
+ocultar("José López")
+
+Entra Avatar [Serio] "¿Le han dejado de pagar las incapacidades?"
+ocultar(Avatar)
+
+José López [Preocupado] "Pues, desde que cumplí el día 180 de incapacidad, yo he ido al fondo de pensiones para radicarlas, eso fue como a inicios de abril de 2022, y nada que me pagan. {EC 1} El fondo de pensiones me ha dicho algunas cosas, yo las anoté, me dijeron: 'no cumplen con los requisitos mínimos establecidos en la normatividad vigente', eso me pareció muy raro porque nunca me habían dicho algo así."
+
+José López [Serio] "Entonces, yo fui directamente a consultarle a mi EPS y ellos me respondieron esto."
+ocultar("José López")
+
+item "Correo electrónico"
+
+Entra Avatar [Serio] "Lamento escuchar su situación señor López, tenga la certeza de que estamos aquí para ayudarle."
+ocultar(Avatar)
+
+José López [Serio] "Gracias joven, entonces pues yo quisiera saber qué hacer. Llevo más de dos años en esta pelea."
+ocultar("José López")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Quién es la entidad responsable de reconocer el pago de las incapacidades médicas por accidente de origen común posterior a 180 días de incapacidad médica continua?" 
+{
+- La Aseguradora de Riesgos Laborales (ARL). [0]
+- La Entidad Prestadora de Salud (EPS). [0,5]
+- El fondo de pensiones correspondiente. [1]
+}
+
+pregunta "¿En caso de que al usuario José López le emitiera la EPS un nuevo concepto de rehabilitación desfavorable, qué pasos debería seguir?"
+{
+- Debe continuar cobrando las incapacidades sin que se realice una calificación por pérdida de la capacidad laboral. [0,5]
+- Debe reintegrarse a laborar normalmente sin ninguna observación médica. [0]
+- Debe proceder con solicitar la calificación por pérdida de la capacidad laboral ante la entidad correspondiente de acuerdo con el artículo 41 de la ley 100 de 1993. [1]
+}
+
+pregunta "En este caso, ¿Cuál sería la mejor opción para el señor López teniendo en cuenta su situación actual?"
+{
+- c. Iniciar un proceso ordinario laboral con el fin de solicitar las incapacidades adeudadas por el fondo de pensiones. [0,5]
+- Presentar una Acción de Tutela con el fin de prevenir un perjuicio irremediable. [1]
+- Acudir al Ministerio del Trabajo con el fin de solicitar una audiencia de conciliación con el fondo de pensiones. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

@@ -1,0 +1,71 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Fausto Tejeiro en 0,5:0 [Fastidiado] "Muy buenas tardes, mi nombre es Fausto Tejeiro"
+ocultar("Fausto Tejeiro")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señor Fausto, en el Consultorio Jurídico tenemos la disposición para ayudarlo, {C} cuénteme sobre su situación"
+ocultar(Avatar)
+
+Entra Fausto Tejeiro [Fastidiado] "Es que necesito que me ayude o me asesore porque yo no sé qué hacer en este momento, estoy bastante jodido."
+
+Fausto Tejeiro [Feliz] "A ver le cuento, desde hace unos 30 años mis tres amigos de la infancia y yo hemos vivido en la misma casa, una residencia en la zona de Meléndez bastante modesta, pero linda, que ha logrado acomodarnos a nosotros y a nuestras familias por todo este tiempo."
+
+Fausto Tejeiro [Serio] "La casa la compramos entre los 4, cada uno aportó una parte igual del capital que nos costó en su momento, que no fue barato, mi persona, el señor Víctor Carranza, el caballero Julio Mario Santodomingo, y el ilustre Rodolfo Sierra. {EC 1} De hecho, tengo aquí el registro del inmueble."
+ocultar("Fausto Tejeiro")
+
+item "Certificado de tradición"
+
+Entra Avatar [Serio] "Entiendo. ¿Ustedes han vivido en ese predio desde que compraron la vivienda?"
+ocultar(Avatar)
+
+Entra Fausto Tejeiro [Feliz] "Sí, durante todo ese tiempo nosotros hicimos nuestra vida allí, es una vivienda de 4 pisos, en la cuál cada uno tiene un piso para él solo, {EC 1}el cual es perfectamente habitable y cómodo, yo mismo vivo con mi esposa allí tenemos todo lo que necesitamos."
+
+Fausto Tejeiro [Serio] "Sin embargo, últimamente han ocurrido ciertas cosas que me han llevado a tomar una drástica decisión."
+
+Fausto Tejeiro [Molesto] "La convivencia se ha vuelto un problema, Victor hace muchísima bulla. Él está arriba de mi piso, yo vivo reclamándole, pero él no me pone atención. Julio Mario está aprendiendo dizque cocina hindú y deja la casa oliendo a especias y curry toda la semana.  {EB 1} Y además de eso, la zona se ha vuelto muy peligrosa, ya no es como solía ser el barrio, por todo eso mi esposa y yo hemos tomado la decisión de irnos del lugar y buscar una casa para los dos, el problema es que no tenemos el dinero suficiente."
+ocultar("Fausto Tejeiro")
+
+Entra Avatar [Pensativo] "¿Usted invirtió en el inmueble de alguna forma?, ¿se efectuaron mejoras en la residencia?"
+ocultar(Avatar)
+
+Entra Fausto Tejeiro [Serio] "Claro, pues yo le he invertido mucho a esa casa. {EC 1} Yo mandé a construir una azotea, encima del cuarto piso, para hacer asados y fiestas con todos. Incluso le puse una piscina."
+
+Fausto Tejeiro [Decepcionado] "Nosotros solíamos hacer muchas fiestas y venían amigos de todos a la casa. Sin embargo, eso sólo pasó durante los primeros años. Ahora todo es diferente. {EB 1} Ya ni el saludo le dan a uno, es muy compleja esa situación, me entristece mucho"
+ocultar("Fausto Tejeiro")
+
+Entra Avatar [Pensativo] "Lamento mucho la situación señor Fausto, comprendo que una situación así puede afectarlo mucho."
+ocultar(Avatar)
+
+Entra Fausto Tejeiro [Serio] "Es muy duro joven. {EB 1} Yo traje un montón de papeles, no sé si esto le pueda servir."
+ocultar("Fausto Tejeiro")
+
+item "Recibos y facturas de obras"
+
+Entra Fausto Tejeiro [Decepcionado] "Usted me dirá joven, cómo se puede resolver esa situación. Yo entiendo que sólo una parte es mía, pero quiero poder recuperar algo de lo que invertí con sudor y esfuerzo. {C} Quiero reclamar lo mío para iniciar mi vida en otra parte, ayúdeme con eso, le agradezco."
+ocultar("Fausto Tejeiro")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué procedimiento legal se debe surtir para que el usuario pueda vender el bien inmueble?"
+{
+- Celebrar un contrato de compraventa con algún interesado ya que él, al igual que sus amigos, es pleno propietario del bien inmueble. [0]
+- Iniciar un proceso divisorio ante la jurisdicción ordinaria, específicamente un juez competente de Cali, en el que solicite con la demanda la venta de la cosa común. [0,5]
+- Iniciar un proceso divisorio ante la jurisdicción ordinaria en el que solicite con la demanda la venta de la cosa común y el reconocimiento de las mejoras realizadas por el usuario en el inmueble. [1]
+}
+pregunta "¿Frente al reconocimiento de mejoras, bastará con anexar los recibos de pago para probar así el valor de estas?"
+{
+- No, además de anexar esas pruebas documentales deberá realizar un juramento estimatorio en la demanda sobre el valor representativo de las mejoras. [0,5]
+- Sí, ya que estas constituyen plena prueba representativa del dinero invertido por el usuario en el bien, sin embargo, dichos documentos deberán ser reconocidos por los demás copropietarios. [0]
+- No, debe también realizar un juramento estimatorio en la demanda sobre el valor de las mejoras y acompañarlo con un dictamen pericial que refuerce su solicitud. [1]
+}
+
+pregunta "En el evento de que la cosa común sea vendida ¿qué porcentaje de dicha venta se le concederá al usuario?"
+{
+- A cada copropietario le corresponde lo mismo en partes iguales. [0,5]
+- Se entenderá divido el valor de acuerdo con lo que cada copropietario haya invertido en el inmueble, por lo que le corresponderá una fracción mayor al usuario. [0]
+- Le corresponderá un 25% del fruto de la venta, al tener cuotas sociales fraccionadas en partes iguales para todos los copropietarios del bien. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

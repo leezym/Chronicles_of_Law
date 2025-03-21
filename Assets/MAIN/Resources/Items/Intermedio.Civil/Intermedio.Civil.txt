@@ -1,0 +1,67 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Julio Ulpiano en 0,5:0 [Serio] "Muy buenas tardes joven, mi nombre es Julio Cesar Ulpiano, tengo 45 años."
+ocultar("Julio Ulpiano")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día señor Julio, en el Consultorio Jurídico tenemos la disposición para ayudarlo, {C} cuénteme sobre su situación."
+ocultar(Avatar)
+
+Entra Julio Ulpiano [Serio] "Gracias. En este momento, me encuentro viviendo en una casa ahí por la 53 con primera. Esa casa era de mi mamá, pero ella falleció por allá en el 2002, {EC 1} y pues mis otros dos hermanos y yo nunca nos repartimos nada porque ya no hablamos y ellos viven por allá en España incluso desde antes de que mi mamá se muriera."
+ocultar("Julio Ulpiano").
+
+item "Certificado de Defuncion de su madre"
+
+Julio Ulpiano [Serio] "El caso es que yo siempre viví en esa casa con mi señora madre, y cuando murió seguí viviendo allí {EC 1} y yo siempre pagaba pues el agua, la luz y esas cosas, hasta le mandé a ampliar el antejardin para que mi esposa pudiera salir a ver los pajaritos y regar las matas."
+
+Julio Ulpiano [Contento] "Eso me costó una plata, pero quedó bien bonito, venga y verá le muestro."
+ocultar("Julio Ulpiano")
+
+item "Recibos de pago de servicios publicos del bien del ultimo año"
+
+item "Foto de la casa"
+
+Entra Avatar [Contento] "Quedó muy bien, gracias por mostrarme. {EB 1} ¿Podría seguirme contando sobre los gastos del inmueble?"
+ocultar(Avatar)
+
+Entra Julio Ulpiano [Intrigado] "Yo también he pagado los impuestos en regla porque usted sabe que lo único seguro en la vida son los impuestos y la muerte, {EC 1} para que tampoco lo molesten a uno de la DIAN y esas cosas si me entiende."
+
+Julio Ulpiano [Dubitativo] "Le cuento todo esto porque hace unos días el tío de un amigo mío que es abogado me dijo que porque yo no me quedaba con esa casa que había una cosa que se llama Prescripción y que el caso mío aplicaba para eso."
+
+Julio Ulpiano [Intrigado] "Entonces yo quería saber como hacía para prescribir y quedarme definitivamente con la casa {C} porque mire que yo fui a sacar las escrituras y sigue saliendo el nombre de mi mamá, en paz descanse, y ya es hora de que salga es el mío:"
+ocultar("Julio Ulpiano")
+
+item "Certificado de Tradicion"
+
+Entra Avatar [Serio] "Entiendo. Usted me había mencionado que vive en este domicilio desde hace varios años, ¿existen vecinos o personas que lo reconozcan como residente?"
+ocultar(Avatar)
+
+Entra Julio Ulpiano [Contento] "Hay varias personas que pueden atestiguar que yo he vivido ahí todo este tiempo, {EC 1} mi vecina la Señora Gricelda Blanca y el celador del barrio el Señor Víctor Carranza."
+
+Julio Ulpiano [Dubitativo] "Le consulto joven, entonces ¿qué puedo hacer para quedarme con esa casa?"
+ocultar("Julio Ulpiano")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué procedimiento legal se debe surtir para que el usuario pueda adquirir el bien inmueble?"
+{
+- Debe adelantarse el respectivo proceso sucesoral, a través de la petición de herencia contemplada en el art. 1321 del Código civil, ya que existen otros herederos con derechos herenciales sobre el bien inmueble. [0]
+- Adelantar un proceso declarativo de pertenencia según el art. 375 del Código General del Proceso ante la jurisdicción ordinaria, para que se declare la Prescripción Adquisitiva de Dominio a favor del usuario. [0,5]
+- Debe iniciarse un proceso declarativo de pertenencia según el art. 375 del Código General del Proceso ante la jurisdicción ordinaria, para que se declare la Prescripción Adquisitiva de Dominio a favor del usuario, inscribiendo la sentencia en el registro de instrumentos públicos y asegurando su dominio pleno sobre el bien. [1]
+}
+pregunta "¿Cuál será la prueba fundamental en el proceso y sin la que no podría iniciarse el trámite correspondiente?"
+{
+- Los recibos de pago de servicios públicos, el de los impuestos prediales sobre el bien inmueble y la evidencia de las mejoras realizadas en el bien por el usuario. [0,5]
+- El registro civil de nacimiento para probar el parentesco entre el usuario y su madre, la actual propietaria del bien inmueble. [0]
+- El certificado de tradición del bien inmueble, así como todas las pruebas que permitan acreditar el dominio absoluto, exclusivo, continuo e ininterrumpido del usuario. [1]
+}
+
+pregunta "¿Si los hermanos del usuario comparecen en el proceso y alegan que ellos también tienen derecho sobre el bien inmueble cuál sería la defensa ideal que podría proponer el usuario?"
+{
+- Alegar la prescripción del derecho de petición de herencia de acuerdo al artículo 1326 del Código Civil, al haber pasado más de 10 años desde el fallecimiento del causante. [0,5]
+- Demostrar que ellos no cumplieron con los deberes de auxilio contemplados en el art. 251 del Código Civil y se enmarcan dentro de las causales de Desheredamiento del art. 1266, por lo que no tienen derecho alguno sobre el bien. [0]
+- Alegar la prescripción del derecho de petición de herencia de acuerdo al artículo 1326 del Código Civil, al haber pasado más de 10 años desde el fallecimiento del causante, y demostrar que la posesión del bien ha sido exclusiva por parte del usuario, desconociendo completamente cualquier derecho en cabeza de sus hermanos. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

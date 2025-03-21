@@ -35,6 +35,15 @@ public class ItemsPanel : MonoBehaviour
         cg.SetInteractableState(active: true);
 
         itemImage.sprite = item;
+
+        RectTransform parentRect = itemImage.transform.parent.GetComponent<RectTransform>();
+        float parentWidth = parentRect.rect.width;
+
+        float aspectRatio = item.rect.height / item.rect.width;
+        float newHeight = parentWidth * aspectRatio;
+
+        RectTransform imageRect = itemImage.GetComponent<RectTransform>();
+        imageRect.sizeDelta = new Vector2(parentWidth, newHeight);
     }
 
     public void Hide()

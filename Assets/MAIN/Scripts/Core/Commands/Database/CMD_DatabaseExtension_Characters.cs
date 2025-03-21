@@ -76,7 +76,6 @@ namespace COMMANDS
             foreach(string s in data)
             {
                 Character character = CharacterManager.Instance.GetCharacter(s, createIfDoesNotExist: false);
-                Debug.Log("adasd: "+character);
                 if(character != null)
                     characters.Add(character);
             }

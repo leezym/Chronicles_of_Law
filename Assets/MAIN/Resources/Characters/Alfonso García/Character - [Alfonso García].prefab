@@ -165,8 +165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5, y: 50}
-  m_SizeDelta: {x: 270.0875, y: -500}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 400, y: -500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7538195111291438768
 CanvasRenderer:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1888348552, guid: 71e5ff5dc8c82bb4495a600d29601efd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84bc1d8ef81b7004d83532e6f6985999, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -266,7 +266,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &2541041073708574726
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -280,6 +280,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

@@ -1,0 +1,95 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Juan Quiñones en 0,5:0 [Concentrado] "Buen día joven. Mi nombre es Juan Quiñones Ruiz. Antes de empezar quisiera informarle que yo tuve un accidente y eso hizo que perdiera un poco de mi capacidad de concentración {EC 1} Entonces puede que algunas veces no me exprese del todo bien, por lo que le pido paciencia. No es intencional y a veces la gente se ofende porque piensan que estoy bromeando con ellos."
+ocultar("Juan Quiñones")
+
+Entra Avatar en 0,5:0 [Serio] "Comprendo señor Quiñones. Por favor indíqueme si hay algo que pueda hacer para facilitar este proceso."
+ocultar(Avatar)
+
+Entra Juan Quiñones [Confundido] "No se preocupe, sólo le quería informar bien antes. {EC} Bueno, pues la situación va así. Le cuento que desde 2016 yo sostuve una relación laboral con la empresa de seguridad MORTEX. Yo era parte del equipo de guardas de seguridad."
+
+Juan Quiñones [Concentrado] "La vinculación fue mediante un contrato a término fijo, que cada año, dependiendo de la evaluación que nos realizaban, se podía o no renovar. El contrato era este:"
+ocultar("Juan Quiñones")
+
+item "Contrato laboral"
+
+Entra Juan Quiñones [Molesto] "Para el mes de noviembre de 2019 yo me encontraba trabajando en un sector cerca a los cañaduzales de Juanchito, cuidando una maquinaria de construcción. En ese tiempo a nosotros no nos daban nada de dotación, pero como eso por allá era tan feo yo me llevaba un machete que tenía.{EC 1} Claramente, mi idea no era utilizarlo, sino que era para que la gente viera que uno no andaba indefenso."
+
+Juan Quiñones [Triste] "El día 2 de noviembre de 2019 me encontraba en la zona de la retroexcavadora, cando aparecen tres sujetos armados con pistolas, se me acercan, me roban todo, me golpean y me decían que les tenía que entregar que "mi arma de fuego". {EC 1} Yo les repetía que no tenía, que nunca me habían dado nada. Ellos me seguían golpeando, me decían que era un mentiroso. Yo nunca había sentido tanto miedo".
+ocultar("Juan Quiñones")
+
+Entra Avatar [Serio] "Qué situación tan horrible señor Quiñones, realmente lamento que haya tenido que vivir algo así. Usted menciona que esta zona era muy peligrosa ¿ya había sucedido algún incidente de este tipo?"
+ocultar(Avatar)
+
+Entra Juan Quiñones [Triste] "Sí, yo no fui el único. A un compañero en la misma zona de vigilancia le pasó lo mismo, incluso fue peor porque lo apuñalaron. Él quedó muy mal."
+ocultar("Juan Quiñones")
+
+Entra Avatar [Serio] "¿Qué cambios efectuó la empresa después de ese antecedente?, ¿incrementaron las medidas de seguridad?"
+ocultar(Avatar)
+
+Entra Juan Quiñones [Molesto] "No, pues realmente no hicieron nada. Después de eso todo siguió igual..."
+
+Juan Quiñones [Confundido] "¿En qué iba? {EB 2} ..."
+
+Juan Quiñones [Concentrado] "Ya. Luego de ese accidente, estuve incapacitado aproximadamente un (1) mes, pero para diciembre de 2019 salud ocupacional determinó que ya estaba apto para reingresar, {EC 1} pero determinaron que no podría realizar actividades que demandaran gestionar situaciones estresantes y que no podría estar solo en ningún momento."
+ocultar("Juan Quiñones")
+
+Entra Avatar [Serio] "¿En ese momento le realizaron algún tipo de diagnóstico médico o psicológico?"
+ocultar(Avatar)
+
+Entra Juan Quiñones [Concentrado] "Sí, es que la ARL me remitió a medicina laboral, ahí me hicieron la evaluación psicológica y psiquiátrica, y al final me diagnosticaron con Trastorno Postraumático como consecuencia del accidente. {EC 1} También me dijeron que estaba presentando un cuadro ansioso y depresivo."
+ocultar("Juan Quiñones")
+
+Entra Avatar [Serio] "Comprendo, ¿usted se reintegró después de este accidente?" 
+ocultar(Avatar)
+
+Entra Juan Quiñones [Concentrado] "Comencé a trabajar nuevamente en el barrio Bochalema en la ciudad de Cali, ahí estaba cuidando una estación de bomberos. {EC 1} Sin embargo, era solo yo, no tuvieron en cuenta las restricciones médicas, ni las recomendaciones de la ARL."
+
+Juan Quiñones [Triste] "Lo malo es que más o menos en marzo de 2020 mi cuadro ansioso-depresivo empeoró sustancialmente y me tocó empezar a ir a urgencias, se volvieron regulares mis asistencias al psiquiátrico. {EB 1} Para mí la empresa no actuó bien, no quiere reconocer lo que hizo y tampoco me quisieron indemnizar, ni reconocer mis derechos como trabajador."
+ocultar("Juan Quiñones")
+
+Entra Avatar [Serio] "Lamento escuchar su situación señor Quiñones, ¿en algún momento usted ha asistido a una calificación de Pérdida de Capacidad Laboral o algo similar en una junta médica?."
+ocultar(Avatar)
+
+Entra Juan Quiñones [Concentrado] "Ay, de hecho sí. Yo fui calificado con un PCL del 22.4%; luego la Junta Regional de Calificación de Invalidez (JNCI) del Valle del Cauca me calificó con un 34.9%y. {EC 1} Sin embargó, la ARL presentó un recuro de reposición y en subsidio apelación, diciendo cosas que no eran, ellos decían que hubo una indebida calificación por parte del médico psiquiatra de la ARL, y basándose en eso, la JNCI vuelve a emitir un dictamen donde me asignan una PCL de 24.9%."
+ocultar("Juan Quiñones")
+
+Entra Avatar [Serio] "¿Existe algún otro dictamen médico que deberíamos tener en cuenta en su proceso señor Quiñones?."
+ocultar(Avatar).
+
+Entra Juan Quiñones [Concentrado] "Algo adicional es que hace algunos años fui diagnosticado con VIH y desde ese momento estoy medicado con antirretrovirales. {EC 1} Como podrá ver, me encuentro en una situación muy vulnerable y me gustaría saber si existe alguna posibilidad de que me pensione por mi estado de salud."
+ocultar("Juan Quiñones")
+
+anuncio "A continuación las preguntas"
+
+pregunta "De acuerdo con lo estipulado en el contrato, ¿es viable legalmente que el empleador obligue únicamente al trabajador a lo mencionado en el contrato de trabajo a término fijo?" 
+{
+- Sí, pues mientras el empleador cumpla con el pago del salario y demás prestaciones, el trabajador deberá correr con todos los otros gastos en que incurra por el desarrollo de sus labores. [0]
+- No, pues en virtud del artículo 65 del CST, el empleador tiene ciertas obligaciones especiales, como lo son poner a disposición de los trabajadores instrumentos adecuados y las materias primas necesarias para la realización de las labores, así como procurar elementos adecuados de protección contra los accidentes y enfermedades profesionales en forma que se garanticen razonablemente la seguridad y la salud. Especialmente, la obligación de pagar la indemnización moratoria. [0,5]
+- No, pues en virtud del artículo 57 del CST, el empleador tiene ciertas obligaciones especiales, como lo son poner a disposición de los trabajadores instrumentos adecuados y las materias primas necesarias para la realización de las labores, así como procurar elementos adecuados de protección contra los accidentes y enfermedades profesionales en forma que se garanticen razonablemente la seguridad y la salud. [1]
+}
+
+pregunta "¿Sería posible el reconocimiento de la pensión de invalidez al usuario?"
+{
+- No, pues ya se ha emitido dictamen por parte de la Junta Nacional que califica al usuario con una Pérdida de Capacidad Laboral menor al 50%. [0,5]
+- Sí, pues el accidente que tuvo el trabajador fue de suma gravedad y ha afectado sustancialmente su capacidad laboral. [0]
+- No, teniendo en cuenta la última calificación, pues ya se ha emitido dictamen por parte de la Junta Nacional que califica al usuario con una Pérdida de Capacidad Laboral menor al 50%, pero existe la posibilidad para el interesado de demandar el dictamen ante la jurisdicción laboral. [1]
+}
+
+pregunta "Bajo el supuesto de que no se le reconozca la pensión de invalidez al usuario, ¿Qué otra opción existe para este?"
+{
+- El usuario tendría derecho a solicitar el reconocimiento de la incapacidad temporal, debido a que cuenta con una calificación suficiente, ya que lo que le sucedió le ha impedido desempeñar su capacidad laboral por un tiempo determinado. [0,5]
+- Podría solicitar ante la ARL el reconocimiento de la indemnización por la incapacidad permanente parcial, en virtud del artículo 5 de la Ley 776 de 2002, que es una prestación económica a la que tienen derecho el afiliado que presenta una disminución definitiva, igual o superior al cinco por ciento 5%, pero inferior al cincuenta por ciento 50% de su capacidad laboral, para lo cual ha sido contratado o capacitado. [1]
+- Ninguna, porque en aquellos casos cuando nos encontramos frente a un accidente de trabajo, la única prestación a la que tendría derecho el trabajador es a la pensión de invalidez. [0]
+}
+
+pregunta "Teniendo en cuenta la condición de salud que presenta el usuario debido al diagnóstico de VIH, ¿Tiene este algún derecho en especial? "
+{
+- Si, pues el señor Juan Quiñones goza de la estabilidad laboral reforzada, por tener vigente un contrato de trabajo. [0,5]
+- Si, pues el señor Juan Quiñones goza de la estabilidad laboral reforzada, por ser un trabajador portador del VIH. [1]
+- Si, porque el empleador debe correr con todos los gastos derivados de esta situación de salud del trabajador. También, el empleador se encuentra obligado a subsidiar los medicamentos y tratamientos del trabajador. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

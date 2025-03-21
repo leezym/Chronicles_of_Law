@@ -1,0 +1,55 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día caballero, {C} ¿podría decirme su nombre?"
+ocultar(Avatar)
+
+Entra Lionel Messi en 0,5:0 [Resignado] "Buenas tardes, mi nombre es Lionel Messi. Sí, así como oye, L-I-O-N-E-L M-E-S-S-I."
+
+Lionel Messi [Serio] "Vengo porque tengo un problema, verá saqué un crédito de libre consumo para comprar una vivienda y vivir con mi pareja de ese momento, {C} pero terminamos antes de comprar la vivienda y yo ya había sacado el crédito a mi nombre."
+ocultar("Lionel Messi")
+
+Entra Avatar [Serio] "Comprendo señor Messi."
+ocultar(Avatar)
+
+Entra Lionel Messi [Ilusionado] "Ella y yo vivíamos juntos desde hace 4 años en una casa que teníamos arrendada, {EC 1} pero ya queríamos tener nuestra propia casita y por eso decidimos sacar el crédito. {C} Sacamos un crédito por 40 millones de pesos. {EB 1} Sin embargo, como yo quería tener hijos y ella no quería tener decidimos terminar la relación."
+
+Lionel Messi [Resignado] "El problema es que yo saqué el crédito a mi nombre y no me parece justo que yo pagué eso solo sabiendo que era para el bienestar de ambos."
+
+Lionel Messi [Serio] "Como ya no voy a utilizar esos 40 millones, yo aboné toda esa plata de una vez para pagar la deuda, {C} ahora solo queda pagar los intereses que suman 3 millones."
+ocultar("Lionel Messi")
+
+Entra Avatar [Serio] "Entiendo que su consulta es sobre este crédito, ¿ustedes acordaron algo con su ex pareja al respecto?"
+ocultar(Avatar)
+
+Entra Lionel Messi [Enojado] "Nosotros no terminamos en malos términos, sin embargo, ella me dice que la deuda es sólo mía y que ella no me tiene que pagar nada, {C} por eso yo quería venir al consultorio a ver qué podía hacer para no pagar eso solo. {EB 1} Además, una vecina me dijo que mi caso aplicaba para una unión matrimonial o algo así fue que ella me dijo y que con eso mi ex mujer también tenía que responder por la deuda."
+ocultar("Lionel Messi")
+
+Entra Avatar [Tranquilo] "Comprendo la situación, en el Consultorio podemos ayudarle con sus dudas legales."
+ocultar(Avatar)
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Cuáles son los requisitos para presumir una UMH?"
+{
+    -Cuando exista una unión marital de hecho por un lapso no inferior a dos años e impedimento legal para contraer matrimonio por parte de uno o de ambos compañeros permanentes, siempre y cuando la sociedad o sociedades conyugales anteriores hayan sido disueltas y liquidadas por lo menos un año antes de la fecha en que se inició la unión marital de hecho. [0]
+    -Cuando exista unión marital de hecho durante un lapso no inferior a dos años, entre un hombre y una mujer sin impedimento legal para contraer matrimonio. [0,5]
+    -Cuando exista unión marital de hecho durante un lapso no inferior a dos años, entre un hombre y una mujer sin impedimento legal para contraer matrimonio o; Cuando exista una unión marital de hecho por un lapso no inferior a dos años e impedimento legal para contraer matrimonio por parte de uno o de ambos compañeros permanentes, siempre y cuando la sociedad o sociedades conyugales anteriores hayan sido disueltas antes de la fecha en que se inició la unión marital de hecho. [1]
+}
+
+pregunta "¿Ante qué institución se puede adelantar el trámite?"
+{
+    -La declaración de la UMH se puede realizar a través de sentencia judicial, por común acuerdo ante notaría a través de escritura pública y ante un centro de conciliación a través de una audiencia de conciliación. [1]
+    -Solamente se requiere el transcurso del tiempo, ya que solo basta la convivencia durante dos años para que se presuma la UMH sin necesidad de ser declarada ante ninguna institución. [0]
+    -La declaración de la UMH se puede realizar a través de sentencia judicial y por común acuerdo ante notaría a través de escritura pública. [0,5]
+}
+
+pregunta "¿Qué figura jurídica se puede aplicar en el presente caso?"
+{
+    -Se puede declarar una sociedad patrimonial de hecho y posteriormente liquidarla, en donde cada compañero permanente tendría que pagar un millón y medio de pesos colombianos ($1.500.000) por el crédito. [0,5]
+    -Se puede declarar una Unión Marital de Hecho, para posteriormente disolver y liquidar la sociedad patrimonial, en donde cada compañero permanente tendría que pagar un millón y medio de pesos colombianos ($1.500.000) por el crédito. [1]
+    -El crédito fue solicitado por el señor Lionel, por lo que sería una deuda personal de él y no habría lugar a declarar una sociedad patrimonial de hecho. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

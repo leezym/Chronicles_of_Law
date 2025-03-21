@@ -15,6 +15,7 @@ namespace DIALOGUE.LogicalLines
 
         public IEnumerator Execute(DIALOGUE_LINE line)
         {
+            var gm = GameManager.Instance;
             var currentConversation = DialogueSystem.Instance.conversationManager.conversation;
             var progress = DialogueSystem.Instance.conversationManager.conversationProgress;
             EncapsulatedData data = RipEncapsulationData(currentConversation, progress, ripHeaderAndEncapsulators: true);
@@ -31,9 +32,10 @@ namespace DIALOGUE.LogicalLines
             
             Question selectedChoice = questions[panel.lastDecision.answerIndex];
 
-            float points = GameManager.Instance.GetPoints();
+            float points = gm.GetPoints();
             points += selectedChoice.points;
-            GameManager.Instance.SetPoints(points);
+            gm.SetPoints(points);
+            Debug.Log("current points: "+gm.GetPoints());
 
             DialogueSystem.Instance.conversationManager.conversation.SetProgress(data.endingIndex);
         }

@@ -10,25 +10,6 @@ public class TestGameSave : MonoBehaviour
         VNGameSave.activeFile = new VNGameSave();
     }
 
-    void Update()
-    {
-        /*if(Input.GetKeyDown(KeyCode.S))
-        {
-            VNGameSave.activeFile.Save();
-        }
-        else if(Input.GetKeyDown(KeyCode.L))
-        {            
-            try
-            {
-                save = VNGameSave.Load($"{FilePaths.gameSaves}Caso1.Facil.DerechoFamilia{VNGameSave.FILE_TYPE}", activateOnLoad: true);
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError($"Do something because we found an error. {e.ToString()}");
-            }
-        }*/
-    }
-
     public void Save()
     {
         VNGameSave.activeFile.Save();
@@ -36,9 +17,9 @@ public class TestGameSave : MonoBehaviour
 
     public void Load()
     {
-        try
+       try
         {
-            save = VNGameSave.Load($"{FilePaths.gameSaves}Caso1.Facil.DerechoFamilia{VNGameSave.FILE_TYPE}", activateOnLoad: true);
+            save = VNGameSave.Load($"{FilePaths.gameSaves}{VNGameSave.TEMP_NAME}{VNGameSave.FILE_TYPE}", activateOnLoad: true);
         }
         catch (System.Exception e)
         {

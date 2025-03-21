@@ -74,7 +74,7 @@ namespace CHARACTERS
         {
             if(config.sprites.Count > 0)
             {
-                if(config.sprites.TryGetValue(spriteName.ToLower(), out Sprite sprite))
+                if(config.sprites.TryGetValue(spriteName, out Sprite sprite))
                     return sprite;
             }
 

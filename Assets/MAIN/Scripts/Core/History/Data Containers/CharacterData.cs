@@ -56,8 +56,8 @@ namespace HISTORY
                 entry.position = character.targetPosition;
                 entry.characterConfig = new CharacterConfigCache(character.config);
 
-                 switch(character.config.characterType)
-                 {
+                switch(character.config.characterType)
+                {
                     case Character.CharacterType.Sprite:
                     case Character.CharacterType.SpriteSheet:
                         SpriteData sData = new SpriteData();
@@ -74,7 +74,7 @@ namespace HISTORY
 
                         entry.dataJSON = JsonUtility.ToJson(sData);
                         break;
-                 }
+                }
 
                  characters.Add(entry);
             }

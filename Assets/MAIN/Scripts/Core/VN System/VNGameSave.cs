@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using DIALOGUE;
 using HISTORY;
-using JetBrains.Annotations;
-using UnityEditor;
-using UnityEngine;
+using GAME;
 
 [System.Serializable]
 public class VNGameSave
@@ -19,10 +18,8 @@ public class VNGameSave
     public string filePath = $"{FilePaths.gameSaves}{TEMP_NAME}{FILE_TYPE}";
 
     public string[] activeConversations;
-    public HistoryState activeState;
 
-    //public string GetFilePath() { return filePath;}
-    //public void SetFilePath(string filePath) { this.filePath = filePath;}
+    public HistoryState activeState;
     public string PathReplace (string name) {return filePath.Replace(TEMP_NAME, name);}
 
     public static VNGameSave Load(string filePath, bool activateOnLoad = false)
@@ -50,6 +47,7 @@ public class VNGameSave
         if(activeState != null)
             activeState.Load();
         
+        HistoryManager.Instance.history = activeState;
         SetConversationData();
 
         DialogueSystem.Instance.prompt.Hide();
@@ -69,7 +67,7 @@ public class VNGameSave
             {
                 var compressedData = new VN_ConversationDataCompressed();
 
-                filePath = PathReplace(conversation.file);
+                //filePath = PathReplace(conversation.file); // Se comenta porque solo se necesita el ultimo nivel guardado, por ahora
 
                 compressedData.fileName = conversation.file;
                 compressedData.progress = conversation.GetProgress();

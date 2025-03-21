@@ -6,19 +6,14 @@ using UnityEngine;
 
 namespace HISTORY
 {
-    //[RequireComponent(typeof(HistoryNavigation))] //Pdte falta History Navigation
     public class HistoryManager : MonoBehaviour
     {
-        public const int HISTORY_CACHE_LIMIT = 20;
         public static HistoryManager Instance { get; private set; }
-        public List<HistoryState> history = new List<HistoryState>();
-        //private HistoryNavigation navigation;
-        public HistoryState state;
+        public HistoryState history = new HistoryState();
 
         void Awake()
         {
-            Instance = this;
-            //navigation = GetComponent<HistoryNavigation>();    
+            Instance = this;  
         }
 
         void Start()
@@ -28,19 +23,7 @@ namespace HISTORY
 
         public void LogCurrentState()
         {
-            HistoryState state = HistoryState.Capture();
-            history.Add(state);
-
-            if(history.Count > HISTORY_CACHE_LIMIT)
-                history.RemoveAt(0);
+            history = HistoryState.Capture();
         }
-
-        public void LoadState(HistoryState state)
-        {
-            state.Load();
-        }
-
-        //public void GoForward() => navigation.GoFoward();
-        //public void GoBack() => navigation.GoBack();
     }
 }

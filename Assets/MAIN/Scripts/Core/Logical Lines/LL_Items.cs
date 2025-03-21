@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using static DIALOGUE.LogicalLines.LogicalLineUtils.Encapsulation;
 using GAME;
+using System;
 
 namespace DIALOGUE.LogicalLines
 {
@@ -13,16 +14,25 @@ namespace DIALOGUE.LogicalLines
 
         public IEnumerator Execute(DIALOGUE_LINE line)
         { 
-            string name = line.dialogueData.rawData;
+            var gm = GameManager.Instance;
+            string spriteName = line.dialogueData.rawData;
+            string folderName = CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.fileToRead.name;
+            string caseName = CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.name;
+
+           if(CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.fileToRead == null || string.IsNullOrWhiteSpace(CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.fileToRead.text))
+            {
+                Debug.LogError("Could not load case from. Please ensure it exists within Cases Data!");
+                yield return null;
+            }
 
             //Try to get the name or path to the sprite
-            string filePath = FilePaths.GetPathToResource(FilePaths.resources_itemsFiles, "Caso2.Intermedio.DerechoFamilia/"+name); // se debe crear un Level Manager para configurar cada caso en su respectiva variable, crear un banco de casos aleatorio
+            string filePath = FilePaths.GetPathToResource(FilePaths.resources_itemsFiles, folderName+"/"+spriteName);
 
             Sprite sprite = Resources.Load<Sprite>(filePath);
 
             if(sprite == null)
             {
-                Debug.LogError($"Could not load sprite from path '{filePath}.' Please ensure it exists within Resources!");
+                Debug.LogError($"Could not load sprite from path '{filePath}'. Please ensure it exists within Resources!");
                 yield return null;
             }
             
@@ -31,14 +41,14 @@ namespace DIALOGUE.LogicalLines
             
             itemsPanel.Show(sprite);
 
-            if (!GameManager.Instance.items.TryGetValue(name, out _))
+            if (!gm.items.Any(item => item.nameItem == spriteName))
             {
-                folderPanel.CreateItemPrefab(sprite, name);
-                folderPanel.AddItemPrefab(sprite, name);
+                folderPanel.CreateItemPrefab(sprite, spriteName);
+                folderPanel.AddItemPrefab(sprite, spriteName, caseName); 
             }
             else
             {
-                Debug.LogWarning($"A item called '{name}' already exists. Did not create the item");
+                Debug.LogWarning($"A item called '{spriteName}' already exists. Did not create the item");
             }            
 
             while(itemsPanel.isWaitingOnUserChoice)

@@ -1,0 +1,65 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Patricia Motoa en 0,5:0 [Seria] "Buenas tardes, mi nombre es Patricia Motoa y vengo porque necesito una asesoría jurídica. {EC 1} Mi hermano Elías nació con Meningitis y eso afectó su bienestar, sin embargo, eso no ha impedido que lleve una vida normal. {EB 1} Él a veces requiere cierta ayuda, pero siempre ha sido una persona autónoma, trabajadora e independiente en su toma de decisiones."
+ocultar("Patricia Motoa")
+
+Entra Avatar en 0,5:0 [Serio] "Buen día, entiendo el contexto. ¿Ha habido alguna problemática con su hermano?"
+ocultar(Avatar)
+
+Entra Patricia Motoa [Triste] "Ay... Es que mi hermano se casó. La esposa se llama María González, ella siempre fue muy abusiva con él, lo maltrataba física, psicológica y económicamente. {EB 1} Nuestra familia estaba feliz de que hubiese encontrado el amor, pero parece que encontró una pesadilla."
+
+Patricia Motoa [Enojada] "Ella le pedía las tarjetas para comprar cosas, le sacaba dinero de su salario sin pedirle permiso e incluso lo golpeaba cuando no aceptaba que se gastara el dinero de esa forma."
+ocultar("Patricia Motoa")
+
+Entra Avatar [Serio] "Lamento mucho que haya tenido que pasar por eso, ¿se realizó alguna denuncia de este abuso?"
+ocultar(Avatar)
+
+Entra Patricia Motoa [Enojada] "Sí, yo misma la denuncié por violencia intrafamiliar, y se demostró que ella abusaba de la mala memoria y de las dificultades que tenía mi hermano para expresarse."
+
+Patricia Motoa [Seria] "Yo incluso le dije que se fuera de la vida de mi hermano, pero no se pudo, yo le advertí."
+ocultar("Patricia Motoa")
+
+item "Chats de Whatsapp"
+
+Entra Patricia Motoa [Preocupada] "Yo no entendía cómo es que lo hacía, pero con el tiempo me di cuenta de que mi hermano tiene una dificultad significativa para retener información, sobre todo, la crediticia {EB 1} Y claro, ella bajo esa excusa le decía que necesitaba manejar las cuentas, porque él no recordaba las claves."
+ocultar("Patricia Motoa")
+
+Entra Avatar [Serio] "¿El señor Elías ha sido examinado por un médico debido a este problema?"
+ocultar(Avatar)
+
+Entra Patricia Motoa [Enojada] "Sí. De acuerdo con los estudios médicos, Elías no tiene la capacidad necesaria para manejar sus finanzas de forma independiente {EC 1} Eso ha provocado algunos inconvenientes al momento de realizar trámites financieros, es que a veces no puede ni siquiera retirar dinero del cajero solo. Vea lo que dice el médico." 
+ocultar("Patricia Motoa")
+
+item "Recomendaciones médicas"
+
+Entra Avatar [Serio] "Señora Motoa ¿usted desea que la asesoría esté enfocada en las figuras legales que permiten apoyar a su hermano en los trámites financieros?"
+ocultar(Avatar)
+
+Entra Patricia Motoa [Seria] "Exactamente."
+ocultar("Patricia Motoa")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Qué mecanismos jurídicos tiene a su disposición la familia para dar solución a su situación?"
+{
+- Indicar a la usuaria que debido a su situación tiene únicamente la posibilidad de solicitar ante un Centro de Conciliación para realizar una directiva anticipada con su hermano, conforme a lo que establece la Ley. [0,5]
+- La hermana del señor Elías deberá acudir directamente ante un juez de familia para iniciar el proceso de adjudicación judicial de apoyos. [0]
+- Teniendo en cuenta la situación y las alternativas que ofrece la Ley 1996 de 2019, la hermana del señor Elías tiene la posibilidad de acudir a un Centro de Conciliación con el fin de solicitar sea designada legalmente como un apoyo para su hermano, permitiéndole así brindarle un soporte que le permita a él llevar a cabo trámites de tipo financiero, con el fin de que pueda tener una correcta administración de sus recursos. [1]
+}
+
+pregunta "¿Cuáles son los requisitos que debe cumplir una persona para que sea designada como un apoyo?"
+{
+- Ser una persona natural mayor de edad o una persona jurídica; que la persona a designar haya asumido dicho rol y esté dispuesta a hacerlo de la mejor manera y quede así manifestado por medio de documento privado. [0,5]
+- Ser una persona natural mayor de edad o una persona jurídica; no tener antecedentes judiciales, no contar con más de 70 años; ser una persona de confianza de quien va a servir como apoyo; cuando la designación se haga a través de un juez, sus funciones queden expresamente en la sentencia. [0]
+- Ser una persona natural mayor de edad o una persona jurídica; cuando la designación derive de un acuerdo de apoyos o una directiva anticipada, la simple suscripción y el agotamiento de las formalidades del mismo, cuando sean del caso, implicará que el cargo de persona de apoyo ha sido asumido; cuando la designación derive de un proceso de adjudicación de apoyos, la posesión se hará ante el juez que hace la designación. [1]
+}
+pregunta "¿Cuáles son las facultades que podrían otorgarse a la usuaria como apoyo de su hermano Elías?"
+{
+- La usuaria contará con la facultad de apoyar a su hermano en determinados trámites, así como también en la toma de decisiones frente a la administración de su dinero, durante el tiempo que así lo estimen conveniente. [0,5]
+- La usuaria quedaría facultada para tomar todo tipo de decisiones en la vida de su hermano, y se ese modo poder garantizar que toma las decisiones correctas que no vayan a vulnerar los derechos de su hermano. No obstante, la figura que tiene como apoyo no podrá exceder el tiempo de 5 años. [0]
+- La usuaria quedaría facultada para apoyar a su hermano frente a trámites que sean específicamente de origen financiero, con el fin de que pueda guiarlo en el acceso a información de carácter crediticio, a obtener tarjetas o desistir de ellas en el momento en que considere pertinente, así como también le ayudará a retener los datos de sus cuentas bancarias y entregará siempre un reporte de la administración que esté ejecutando del dinero de su hermano. No obstante, lo anterior será una medida que operará en un término máximo de 5 años. [1]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)

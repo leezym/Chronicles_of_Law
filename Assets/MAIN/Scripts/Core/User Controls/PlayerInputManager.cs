@@ -33,13 +33,7 @@ namespace DIALOGUE
             
             // Next
             if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
-                PromptAdvance();            
-            
-            /*if(Input.GetKeyDown(KeyCode.RightArrow))
-                GoForward();
-
-            if(Input.GetKeyDown(KeyCode.LeftArrow))
-                GoBack();*/
+                PromptAdvance();         
         }
 
         public void PromptAdvance()

@@ -1,0 +1,72 @@
+ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+
+Entra Olga Valencia en 0,5:0 [Seria] "Buen día joven. Mi nombre es Olga Valencia, hoy vengo a contarle una historia bien confusa. Así que si estoy enredándole me dice."
+ocultar("Olga Valencia")
+
+Entra Avatar en 0,5:0 [Serio] "No se preocupe señora Olga, yo la escucharé detenidamente. Nuestro objetivo es poder ayudarle."
+ocultar(Avatar)
+
+Entra Olga Valencia [Seria] "Gracias, mi historia comienza un 16 de julio de 2021, fecha en la que yo comencé a trabajar como empleada doméstica para la señora Martha Suárez. {C} Nosotras firmamos un contrato laboral a término fijo y este estaba pactado por un lapso de seis meses, pero como todo se dio bien hasta ese momento, ese contrato se prorrogó dos veces."
+
+Olga Valencia [Preocupada] "El día 24 de octubre de 2021 tuve una gripa, por lo que estuve incapacitada dos días. {C} Pero, yo me reintegré a mi trabajo cumpliendo con el horario establecido."
+ocultar("Olga Valencia")
+
+Entra Avatar [Serio] "¿Cuál era el horario?"
+ocultar(Avatar)
+
+Entra Olga Valencia [Seria] "De 8:00 am a 12:00 m. {EC 1} Bueno, eso parecía que todo normal cuando llega diciembre, yo el 15 de diciembre de 2022 pedí mis vacaciones porque quería pasar un tiempo con mi familia, descansar para festividades, como todos. {EC 1} Pero doña Martha me pidió que esperáramos hasta el 31, que porque ella necesitaba ayuda para las reuniones familiares y que la primera semana de enero me daba las vacaciones. {EC 1} Y pues, yo por hacerle el favor accedí."
+
+Olga Valencia [Triste] "Pues, imagínese mi sorpresa el día 31 de diciembre, cuando doña Martha me llama y me dice que me tengo que ir de la casa que saque mis cosas, que ya no me quiere ver. {EC 1} Vea, si yo le digo la verdad, a mí me dolió más que ella me tratara de esa forma tan grosera, que el propio despido injustificado."
+ocultar("Olga Valencia")
+
+Entra Avatar [Serio] "¿Desde ese momento usted se ha vuelto a contactar con la señora Martha Suárez?"
+ocultar(Avatar)
+
+Entra Olga Valencia [Seria] "Con ella directamente no. Yo intenté hablar con ella, la llamaba, le escribía, pero nada. {EC 1} Entonces, por ahí me recomendaron presentar un derecho de petición, yo lo hice, y ahí le solicitaba el reintegro y también que me explicara las razones del despido. {EC 1} Ella eso sí me lo respondió, decía que había finalizado la relación laboral porque su situación económica había cambiado y ya no requería mis servicios."
+ocultar("Olga Valencia")
+
+item "Derecho de petición"
+
+item "Respuesta al derecho de petición"
+
+Entra Avatar [Serio] "¿La señora Martha le pagó oportunamente su salario y las prestaciones sociales?"
+ocultar(Avatar)
+
+Entra Olga Valencia [Preocupada] "Sí, ella me pagó el salario cumplidamente, también me liquidó, me pagó las cesantías, la prima de servicios, el interés a la cesantía, las vacaciones, todo eso. Eso me lo ayudaron a revisar. {EC 1} Y yo sé que ella siempre me cotizó lo de la seguridad social, fue muy cumplida con todo eso de las prestaciones sociales."
+
+Olga Valencia [Seria] "Yo quisiera saber cuál es el paso a seguir, yo soy madre cabeza de hogar y pues estoy desempleada. Eso me tiene preocupada."
+ocultar("Olga Valencia")
+
+anuncio "A continuación las preguntas"
+
+pregunta "¿Cuál es el procedimiento que contempla la ley para la adecuada terminación del contrato a término fijo en este casos?" 
+{
+- Ninguno, el despido fue con justa causa ya que se contempla como una causal en el Código Sustantivo del Trabajo la difícil situación económica del empleador. [0]
+- Lo que debió hacer la empleadora es intentar una terminación por mutuo acuerdo, teniendo en cuenta el artículo 61 del Código Sustantivo del Trabajo. [0,5]
+- Lo que debió hacer la empleadora fue avisar por escrito a la usuaria su determinación de no prorrogar el contrato, con una antelación no inferior a treinta (30) días. [1]
+}
+
+pregunta "Si no se cumplió con el procedimiento establecido, ¿Cuál sería el efecto que tiene el despido? "
+{
+- El despido es sin justa causa, pero no hay lugar a la renovación del contrato debido a que se terminó el vínculo laboral oportunamente. [0,5]
+- El despido es eficaz siempre que se pague la liquidación por la terminación unilateral del contrato. [0]
+- El despido es sin justa causa debido a que el contrato se renovó automáticamente por no notificarse el preaviso con 30 días de anticipación. [1]
+}
+
+pregunta "En este caso, ¿A qué tiene derecho la usuaria respecto al despido sin justa causa?"
+{
+- La trabajadora debe solicitar certificación laboral a la empleadora del tiempo laborado, junto con los comprobantes de pago a la seguridad social. [0,5]
+- Ante un despido injustificado la consecuencia es el pago de la indemnización por despido injustificado contemplada en el artículo 64 del CST. [1]
+- La empleadora debe indemnizar a la trabajadora por concepto de indemnización moratoria prevista en el artículo 65 del CST. [0]
+}
+
+pregunta "¿Qué le recomendaría usted a la usuaria de acuerdo a todo lo descrito anteriormente?"
+{
+- Enviar un derecho de petición a la empleadora, pidiéndole copia del pago de las prestaciones sociales y las cotizaciones al sistema de seguridad social, en donde le remita comprobante de pagos. [0,5]
+- Revisar la posibilidad de conciliar con el empleador sobre la situación presentada en lo que respecta al pago de lo que le pueda corresponder por concepto de indemnización por despido sin justa causa ante inspector de trabajo de conformidad con el artículo 13 de la ley 2220 de 2022. [1]
+- Presentar una acción de tutela, ya que por el accidente que sufrió, esta goza de estabilidad laboral reforzada y debe ser reintegrada a sus labores. [0]
+}
+
+subirNivel()
+
+CargarArchivo(consultorio)
