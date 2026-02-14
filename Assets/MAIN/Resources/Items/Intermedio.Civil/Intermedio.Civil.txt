@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra Julio Ulpiano en 0,5:0 [Serio] "Muy buenas tardes joven, mi nombre es Julio Cesar Ulpiano, tengo 45 años."
 ocultar("Julio Ulpiano")
@@ -62,6 +62,6 @@ pregunta "¿Si los hermanos del usuario comparecen en el proceso y alegan que el
 - Alegar la prescripción del derecho de petición de herencia de acuerdo al artículo 1326 del Código Civil, al haber pasado más de 10 años desde el fallecimiento del causante, y demostrar que la posesión del bien ha sido exclusiva por parte del usuario, desconociendo completamente cualquier derecho en cabeza de sus hermanos. [1]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

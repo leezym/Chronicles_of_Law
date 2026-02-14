@@ -12,7 +12,7 @@ namespace HISTORY
     public class GameData
     {
         public float points = 0f;
-        public int currentLevel = 0;
+        public int currentCaseLevel = 0;
 
         [SerializeField]
         public List<Items> items = new List<Items>();
@@ -23,7 +23,7 @@ namespace HISTORY
             var gm = GameManager.Instance;
 
             data.points = gm.GetPoints();
-            data.currentLevel = gm.GetCurrentLevel();
+            data.currentCaseLevel = gm.GetCurrentCaseLevel();
             data.items = new List<Items>(gm.items);
 
             return data;
@@ -35,7 +35,7 @@ namespace HISTORY
             var fp = FolderPanel.Instance;
 
             gm.SetPoints(data.points);
-            gm.SetCurrentLevel(data.currentLevel);
+            gm.SetCurrentCaseLevel(data.currentCaseLevel);
             gm.items = new List<Items>(data.items);
 
             fp.ResetFolder();

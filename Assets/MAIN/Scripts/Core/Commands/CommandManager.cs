@@ -42,10 +42,10 @@ namespace COMMANDS
             if(command == null)
                 return null;
             
-            return StartProcess(commandName, command, args);
+            return StartProcess(command, args);
         }
 
-        private Coroutine StartProcess(string commandName, Delegate command, string[] args)
+        private Coroutine StartProcess(Delegate command, string[] args)
         {
             StopCurentProcess();
 

@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_AMB_LOOP")
 
 Entra Alexandra Motato en 0,5:0 [Seria] "Buen día, mi nombre es Alexandra Motato."
 ocultar("Alexandra Motato")
@@ -54,6 +54,6 @@ pregunta "¿Si los hermanos del usuario comparecen en el proceso y alegan que el
 - Original y copia del documento de identidad de las partes, fotocopia del registro civil de nacimiento de las menores, afiliación a salud EPS o SISBEN vigente, carnet de vacunas y control de crecimiento y desarrollo, certificado médico expedido por la EPS o el SISBEN, Constancia de No Acuerdo o de inasistencia del Centro de Conciliación. [1]
 }
 
-subirNivel()
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
 
-CargarArchivo(consultorio)
+subirNivelCaso()

@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra Patricia Motoa en 0,5:0 [Seria] "Buenas tardes, mi nombre es Patricia Motoa y vengo porque necesito una asesoría jurídica. {EC 1} Mi hermano Elías nació con Meningitis y eso afectó su bienestar, sin embargo, eso no ha impedido que lleve una vida normal. {EB 1} Él a veces requiere cierta ayuda, pero siempre ha sido una persona autónoma, trabajadora e independiente en su toma de decisiones."
 ocultar("Patricia Motoa")
@@ -60,6 +60,6 @@ pregunta "¿Cuáles son las facultades que podrían otorgarse a la usuaria como 
 - La usuaria quedaría facultada para apoyar a su hermano frente a trámites que sean específicamente de origen financiero, con el fin de que pueda guiarlo en el acceso a información de carácter crediticio, a obtener tarjetas o desistir de ellas en el momento en que considere pertinente, así como también le ayudará a retener los datos de sus cuentas bancarias y entregará siempre un reporte de la administración que esté ejecutando del dinero de su hermano. No obstante, lo anterior será una medida que operará en un término máximo de 5 años. [1]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_AMB_LOOP")
 
 Entra Avatar en 0,5:0 [Serio] "Buenos días señor, bienvenido al Consultorio Jurídico, ¿podría darme su nombre?"
 ocultar(Avatar)
@@ -46,6 +46,6 @@ pregunta "¿En caso de respuesta negativa en el pago por parte de la empresa VIG
 - Instaurar una acción de tutela protegiendo el derecho fundamental a no ser discriminado y a la libertad de conciencia, teniendo en cuenta que el trabajador considera que su cambio de horario se debía a que analfabeta. [0]
 }
 
-subirNivel()
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
 
-CargarArchivo(consultorio)
+subirNivelCaso()

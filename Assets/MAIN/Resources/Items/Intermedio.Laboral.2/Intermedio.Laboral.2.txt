@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra Olga Valencia en 0,5:0 [Seria] "Buen día joven. Mi nombre es Olga Valencia, hoy vengo a contarle una historia bien confusa. Así que si estoy enredándole me dice."
 ocultar("Olga Valencia")
@@ -67,6 +67,6 @@ pregunta "¿Qué le recomendaría usted a la usuaria de acuerdo a todo lo descri
 - Presentar una acción de tutela, ya que por el accidente que sufrió, esta goza de estabilidad laboral reforzada y debe ser reintegrada a sus labores. [0]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

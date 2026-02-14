@@ -26,7 +26,7 @@ public class CasesManager : MonoBehaviour
         SetCases();
         SelectRandomCases();
         AssignCasesToButtons();
-        TestDialogueFiles.Instance.StartLevel();
+        //TestDialogueFiles.Instance.StartLevel();
     }
 
     public void ContinueCases()
@@ -40,12 +40,12 @@ public class CasesManager : MonoBehaviour
     public void LevelChanged()
     {
         var gm = GameManager.Instance;
-        int level = gm.GetCurrentLevel() + 1;
+        int level = gm.GetCurrentCaseLevel() + 1;
 
         casesInGame[level].active = true;
         EnabledCase(casesInGame[level], casesLayoutGroup[level]);
 
-        gm.SetCurrentLevel(level);
+        gm.SetCurrentCaseLevel(level);
     }
 
     void SetCases()
@@ -151,7 +151,7 @@ public class CasesManager : MonoBehaviour
                 btn.onClick.RemoveAllListeners();
                 btn.onClick.AddListener(buttonScript.OnClick);
 
-                if(i <= GameManager.Instance.GetCurrentLevel())
+                if(i <= GameManager.Instance.GetCurrentCaseLevel())
                     casesInGame[i].active = true;
 
                 EnabledCase(casesInGame[i], casesLayoutGroup[i]);

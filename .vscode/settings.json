@@ -52,5 +52,5 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "Chronicles_of_Law.sln"
+    "dotnet.defaultSolution": "Chronicles_of_Law.slnx"
 }

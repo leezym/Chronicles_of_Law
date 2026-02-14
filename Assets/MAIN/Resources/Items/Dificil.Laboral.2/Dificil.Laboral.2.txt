@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra Juan Quiñones en 0,5:0 [Concentrado] "Buen día joven. Mi nombre es Juan Quiñones Ruiz. Antes de empezar quisiera informarle que yo tuve un accidente y eso hizo que perdiera un poco de mi capacidad de concentración {EC 1} Entonces puede que algunas veces no me exprese del todo bien, por lo que le pido paciencia. No es intencional y a veces la gente se ofende porque piensan que estoy bromeando con ellos."
 ocultar("Juan Quiñones")
@@ -90,6 +90,6 @@ pregunta "Teniendo en cuenta la condición de salud que presenta el usuario debi
 - Si, porque el empleador debe correr con todos los gastos derivados de esta situación de salud del trabajador. También, el empleador se encuentra obligado a subsidiar los medicamentos y tratamientos del trabajador. [0]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

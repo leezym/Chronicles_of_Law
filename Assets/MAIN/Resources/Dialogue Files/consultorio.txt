@@ -1,3 +1,0 @@
-configCapasMultimedia(-panel fondo -media "consultorio")
-
-Entra Avatar [Serio] "Regresé al consultorio..."

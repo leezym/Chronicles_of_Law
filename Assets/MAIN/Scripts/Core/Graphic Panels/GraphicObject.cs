@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,7 +16,9 @@ public class GraphicObject
     private GraphicLayer layer;
 
     public bool isVideo => video != null;
+    public bool hasEnded { get; private set; }
     public bool useAudio => (audio != null ? !audio.mute : false);
+    public System.Action Finished;
     public VideoPlayer video = null;
     public AudioSource audio = null;
 
@@ -44,8 +45,9 @@ public class GraphicObject
         renderer.material.SetTexture(MATERIAL_FIELD_MAINTEX, tex);
     }
 
-    public GraphicObject(GraphicLayer layer, string graphicPath, VideoClip clip, bool useAudio)
+    public GraphicObject(GraphicLayer layer, string graphicPath, VideoClip clip, bool useAudio, bool loop, AudioBus bus)
     {
+        hasEnded = false;
         this.graphicPath = graphicPath;
         this.layer = layer;
 
@@ -67,16 +69,19 @@ public class GraphicObject
         video.clip = clip;
         video.renderMode = VideoRenderMode.RenderTexture;
         video.targetTexture = tex;
-        video.isLooping = true;
+        video.isLooping = loop;
 
         video.audioOutputMode = VideoAudioOutputMode.AudioSource;
         audio = video.AddComponent<AudioSource>(); 
 
+        audio.outputAudioMixerGroup = AudioManager.Instance.GetMixerGroup(bus);
         audio.volume = 0;
+
         if(!useAudio)
             audio.mute = true;
         
         video.SetTargetAudioSource(0, audio);
+        video.loopPointReached += OnVideoEnded;
 
         video.frame = 0;
         video.Prepare();
@@ -84,6 +89,22 @@ public class GraphicObject
 
         video.enabled = false;
         video.enabled = true;
+    }
+
+    private void OnVideoEnded(VideoPlayer vp)
+    {
+        if (vp.isLooping) return;
+        
+        hasEnded = true;
+
+        // Congelar en el último frame (1)
+        long lastFrame = (vp.frameCount > 0) ? (long)vp.frameCount - 1 : vp.frame;
+        vp.frame = lastFrame;
+        vp.Pause();
+
+        if (audio != null) audio.Pause();
+        
+        Finished?.Invoke();
     }
 
     private void InitGraphic()

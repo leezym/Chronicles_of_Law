@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra Juanita Alimaña en 0,5:0 [Enojada] "Buenas tardes, yo vengo porque me quiero divorciar de mi esposo."
 ocultar("Juanita Alimaña")
@@ -48,6 +48,7 @@ pregunta "¿Qué formaría parte de la sociedad conyugal?"
 - Debido a que el crédito para comprar la moto es a nombre del señor Pedro, solamente hace parte de la sociedad conyugal la motocicleta, ya que las deudas adquiridas por sólo uno de los cónyuges no hacen parte de la sociedad conyugal por disposición legal. [0]
 - La motocicleta haría parte de los activos de la sociedad conyugal, mientras que el pagaré adquirido para la compra de la moto haría parte del pasivo, por lo que ambos negocios jurídicos hacen parte de la sociedad conyugal. [1]
 }
+
 pregunta "¿Qué formaría parte de la sociedad conyugal?"
 {
 - La moto tiene un avalúo comercial de diez millones de pesos ($10.000.000), lo cual equivale a la totalidad de activos de la sociedad. Por su parte, el pagaré constituye un pasivo de cinco millones de pesos ($5.000.000), por lo que los gananciales de la señora Juanita serían ($2.500.000). [0,5]
@@ -55,6 +56,6 @@ pregunta "¿Qué formaría parte de la sociedad conyugal?"
 - La moto tiene un avalúo comercial de diez millones de pesos ($10.000.000), lo cual equivale a la totalidad de activos de la sociedad. Por su parte, el pagaré constituye un pasivo bruto de cinco millones de pesos ($5.000.000) y, sumando los intereses, el pasivo neto constituiría siete millones quinientos mil pesos colombianos ($7.500.000), por lo tanto, los gananciales de la señora Juanita serían un millón doscientos cincuenta mil pesos ($1.250.000). [1]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

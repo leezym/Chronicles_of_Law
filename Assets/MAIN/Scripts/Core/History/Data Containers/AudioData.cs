@@ -12,10 +12,12 @@ namespace HISTORY
         public string trackName;
         public string trackPath;
         public float trackVolume;
+        public AudioBus bus; // nuevo
         
         public AudioData(AudioChannel channel)
         {
             this.channel = channel.channelIndex;
+            this.bus = channel.bus; //nuevo
 
             if(channel.activeTrack == null)
                 return;
@@ -28,7 +30,28 @@ namespace HISTORY
 
         public static List<AudioData> Capture()
         {
-            List<AudioData> audioChannels = new List<AudioData>();
+            var audioChannels = new List<AudioData>();
+
+            foreach (var channel in AudioManager.Instance.channels)
+            {
+                if(channel.Value.activeTrack == null)
+                    continue;
+
+                AudioData data = new AudioData(channel.Value);
+                audioChannels.Add(data);
+            }
+
+            foreach (var channel in AudioManager.Instance.ambienceChannels)
+            {
+                if(channel.Value.activeTrack == null)
+                    continue;
+
+                AudioData data = new AudioData(channel.Value);
+                audioChannels.Add(data);
+            }            
+
+            return audioChannels;
+            /*List<AudioData> audioChannels = new List<AudioData>();
 
             foreach(var channel in AudioManager.Instance.channels)
             {
@@ -39,7 +62,7 @@ namespace HISTORY
                 audioChannels.Add(data);
             }
 
-            return audioChannels;
+            return audioChannels;*/
         }
 
         public static void Apply(List<AudioData> data)
@@ -48,14 +71,14 @@ namespace HISTORY
 
             foreach(var channelData in data)
             {
-                AudioChannel channel = AudioManager.Instance.TryGetChannel(channelData.channel, createIfDoesNotExist: true);
+                AudioChannel channel = AudioManager.Instance.TryGetChannel(channelData.channel, channelData.bus, createIfDoesNotExist: true); //nuevo
                 if(channel.activeTrack == null || channel.activeTrack.name != channelData.trackName)
                 {
                     AudioClip clip = HistoryCache.LoadAudio(channelData.trackPath);
                     if(clip != null)
                     {
                         channel.StopTrack(immediate: true);
-                        channel.PlayTrack(clip, channelData.trackVolume, channelData.trackPath);
+                        channel.PlayTrack(clip, true, channelData.trackVolume, channelData.trackPath); //pdte
                     }
                     else
                         Debug.LogWarning($"History State: Could not load audio track '{channelData.trackPath}'");

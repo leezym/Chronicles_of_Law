@@ -2,30 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioChannel
 {
-    private const string TRACK_CONTAINER_NAME_FORMAT = "Channel -[{0}]";
+    private const string TRACK_CONTAINER_NAME_FORMAT = "Channel - [{0}]";
+
+    public AudioBus bus { get; private set; } //nuevo
     public int channelIndex { get; private set; }
 
     public Transform trackContainer { get; private set; } = null;
-
     public AudioTrack activeTrack { get ; private set; } = null;
     private List<AudioTrack> tracks = new List<AudioTrack>();
 
     Coroutine co_volumeLeveling = null;
-
     bool isLevelingVolume => co_volumeLeveling != null;
 
-    public AudioChannel(int channel)
+    public AudioChannel(int channel, AudioBus bus)
     {
         channelIndex = channel;
+        this.bus = bus; //nuevo
 
-        trackContainer = new GameObject(string.Format(TRACK_CONTAINER_NAME_FORMAT, channel)).transform;
+        //trackContainer = new GameObject(string.Format(TRACK_CONTAINER_NAME_FORMAT, channel)).transform;
+        trackContainer = new GameObject($"Channel - {bus} - [{channel}]").transform; //nuevo
         trackContainer.SetParent(AudioManager.Instance.transform);
     }
 
-    public AudioTrack PlayTrack(AudioClip clip, float volumeCap, string filePath)
+    public AudioTrack PlayTrack(AudioClip clip, bool loop, float volumeCap, string filePath)
     {
         if(TryGetTrack(clip.name, out AudioTrack existingTrack))
         {
@@ -37,7 +40,9 @@ public class AudioChannel
             return existingTrack;
         }
 
-        AudioTrack track = new AudioTrack(clip, volumeCap, this, filePath);
+        AudioMixerGroup mixer = (bus == AudioBus.Ambience) ? AudioManager.Instance.ambienceMixer : AudioManager.Instance.musicMixer;
+
+        AudioTrack track = new AudioTrack(clip, loop, volumeCap, this, mixer, filePath);
 
         track.Play();
 

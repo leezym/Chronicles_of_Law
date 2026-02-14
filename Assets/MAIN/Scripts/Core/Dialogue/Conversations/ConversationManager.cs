@@ -102,9 +102,15 @@ namespace DIALOGUE
 
                     //Run any commands
                     if(line.hasCommands)
-                        yield return Line_RunCommands(line);
+                    {
+                        GraphicLayer layer = GraphicPanelManager.Instance.GetPanel(PanelType.cinematica).GetLayer(0);
+                        if (layer != null)
+                            yield return layer.WaitForCurrentVideoIfAny();
 
-                    //Wait for user input if dialogue wasa in this line
+                        yield return Line_RunCommands(line);
+                    }   
+
+                    //Wait for user input if dialogue was in this line
                     if(line.hasDialogue)
                     {
                         //Wait for user input

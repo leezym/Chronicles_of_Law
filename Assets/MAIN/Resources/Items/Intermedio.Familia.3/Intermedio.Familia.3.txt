@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra María Flores en 0,5:0 [Seria] "Buenas joven, mire yo vengo acá por un problema y la verdad es que necesito con urgencia su ayuda."
 ocultar("María Flores")
@@ -58,6 +58,6 @@ pregunta "¿Qué requisitos o pruebas se necesitan para fijar los alimentos ante
 - Una vez se cumpla el requisito de procedibilidad de la conciliación, se necesitarán la mayor cantidad de facturas y/o comprobantes de los gastos que conlleva la manutención del menor, ya que con estos elementos el Juez podrá fijar la cuota necesaria para el menor. Por último, se debe aportar material probatorio que permita al juez conocer la capacidad económica de ambos padres, como puede ser el certificado de ADRES y/o RUAF para probar que el alimentante tiene trabajo y tiene capacidad de pago y, de la misma manera, probar que el padre demandante no tiene la capacidad económica de cubrir todos los gastos. [1]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

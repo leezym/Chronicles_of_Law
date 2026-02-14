@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using HISTORY;
@@ -14,7 +15,11 @@ namespace GAME
 
         public TMP_Text pointsText;
         float points { get; set; } = 0f;
-        int currentLevel { get; set; } = 0;
+        int currentCaseLevel { get; set; } = 0;
+        int currentGameLevel { get; set; } = 1;
+        
+        public enum Gender {F, M}
+        [field: SerializeField] public Gender currentGameGender { get; private set; }
 
         public Image caseImage;
         public TMP_Text caseName;
@@ -37,12 +42,24 @@ namespace GAME
             pointsText.text = points.ToString();
         }
 
-        public int GetCurrentLevel(){ return currentLevel; }
+        public int GetCurrentCaseLevel(){ return currentCaseLevel; }
 
-        public void SetCurrentLevel(int currentLevel)
+        public void SetCurrentCaseLevel(int currentCaseLevel)
         {
-            this.currentLevel = currentLevel;
+            this.currentCaseLevel = currentCaseLevel;
         }
+
+        public int GetCurrentGameLevel(){ return currentGameLevel; }
+
+        public void SetCurrentGameLevel(int currentGameLevel)
+        {
+            this.currentGameLevel = currentGameLevel;
+        }
+
+        public Gender GetCurrentGameGender(){ return currentGameGender; }
+
+        public void SetGenderF() => currentGameGender = Gender.F;
+        public void SetGenderM() => currentGameGender = Gender.M;
 
         public void OpenCasePage(int index)
         {

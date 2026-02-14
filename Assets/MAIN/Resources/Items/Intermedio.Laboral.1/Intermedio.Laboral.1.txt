@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra José López en 0,5:0 [Serio] "Buen día joven. Mi nombre es José López, vengo porque tengo un problema en mi trabajo. {EC 1} Verá, hace rato me encuentro incapacitado porque tuve un accidente de tránsito y desde ese momento he tenido varios dificultades para moverme, sufro de dolores de espalda y tengo que tomar medicamentos y usar bastón para poder movilizarme."
 ocultar("José López")
@@ -53,6 +53,6 @@ pregunta "En este caso, ¿Cuál sería la mejor opción para el señor López te
 - Acudir al Ministerio del Trabajo con el fin de solicitar una audiencia de conciliación con el fondo de pensiones. [0]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

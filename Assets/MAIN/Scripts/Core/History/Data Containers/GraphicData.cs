@@ -8,7 +8,7 @@ namespace HISTORY
     [System.Serializable]
     public class GraphicData
     { 
-        public string panelName;
+        public PanelType panelName;
         public List<LayerData> layers;
 
         [System.Serializable]
@@ -94,12 +94,12 @@ namespace HISTORY
                     }
                 }
 
-                cache.Add(panel.panelName);
+                cache.Add(panel.panelName.ToString());
             }
 
             foreach(var panel in GraphicPanelManager.Instance.allPanels)
             {
-                if(!cache.Contains(panel.panelName))
+                if(!cache.Contains(panel.panelName.ToString()))
                     panel.Clear();
             }
         }

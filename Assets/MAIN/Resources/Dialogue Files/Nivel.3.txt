@@ -1,0 +1,58 @@
+ocultarDialogo()
+mostrarCinematica(-media "escena 21" -audio true)
+mostrarCinematica(-media "escena 22" -audio true)
+
+cargarCaso()
+
+mostrarCinematica(-media "escena 23" -audio true)
+
+social "Dime el nombre del consultante"
+{
+    - Se acuerda del nombre
+        mostrarCinematica(-media "escena 24" -audio true)
+    - No se acuerda del nombre
+        mostrarCinematica(-media "escena 25" -audio true)
+}
+
+cargarMinijuego()
+
+mostrarCinematica(-media "escena 26" -audio true)
+
+cargarCaso()
+
+mostrarCinematica(-media "escena 27" -audio true)
+
+cargarCaso()
+
+mostrarCinematica(-media "escena 28" -audio true)
+
+social "¿Dios... qué hago?"
+{
+    - Decide ayudar
+        mostrarCinematica(-media "escena 29" -audio true)
+    - Decide no ayudar
+        mostrarCinematica(-media "escena 30" -audio true)
+}
+
+cargarMinijuego()
+
+mostrarCinematica(-media "escena 31" -audio true)
+
+cargarCaso()
+
+mostrarCinematica(-media "escena 32" -audio true)
+
+social "¿Tú qué dices? ¿Vamos a relajarnos un rato o te vas a quedar en la charla?"
+{
+    - Decide ir con sus compañeros
+        mostrarCinematica(-media "escena 33" -audio true)
+
+    - Se queda en la charla
+        mostrarCinematica(-media "escena 34" -audio true)
+}
+
+cargarCaso()
+
+mostrarCinematica(-media "escena 35" -audio true)
+
+subirNivelJuego()

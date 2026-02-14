@@ -1,0 +1,43 @@
+ocultarDialogo()
+mostrarCinematica(-media "escena 36" -audio true)
+mostrarCinematica(-media "escena 37" -audio true)
+
+social "Se abre otro dilema"
+{
+    - Busca en físico
+        mostrarCinematica(-media "escena 38" -audio true)
+    - Busca en digital
+        mostrarCinematica(-media "escena 39" -audio true)
+}
+
+mostrarCinematica(-media "escena 40" -audio true)
+
+cargarMinijuego()
+
+mostrarCinematica(-media "escena 41" -audio true)
+
+cargarCaso()
+
+mostrarCinematica(-media "escena 42" -audio true)
+
+social "Su cuerpo pide descanso, pero su conciencia analiza lo que debía hacer"
+{
+    - Decide ayudar en caso
+        mostrarCinematica(-media "escena 43" -audio true)
+    - Decide no ayudar en caso
+        mostrarCinematica(-media "escena 44" -audio true)
+}
+
+cargarMinijuego()
+
+mostrarCinematica(-media "escena 45" -audio true)
+
+social "¿Me esperas para que volvamos juntos a casa?"
+{
+    - Decide esperar a Andrea
+        mostrarCinematica(-media "escena 46" -audio true)
+    - Decide no esperar a Andrea
+        mostrarCinematica(-media "escena 47" -audio true)
+}
+
+mostrarCinematica(-media "escena 48" -audio true)

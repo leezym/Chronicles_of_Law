@@ -10,7 +10,7 @@ namespace DIALOGUE
 {
     public class PlayerInputManager : MonoBehaviour
     {
-        private const string CLIC_SOUND_PATH = "Audio/SFX/interface-click";
+        //private const string CLIC_SOUND_PATH = "Audio/SFX/interface-click";
         public GameObject MENU;
         public GameObject LAYERS;
 
@@ -22,7 +22,7 @@ namespace DIALOGUE
             //LOAD.interactable = HistoryManager.Instance.isSaved ? true : false;
         }
 
-        void Update()
+        /*void Update()
         {
             //Clic sound
             if (Keyboard.current.anyKey.wasPressedThisFrame ||
@@ -34,7 +34,7 @@ namespace DIALOGUE
             // Next
             if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
                 PromptAdvance();         
-        }
+        }*/
 
         public void PromptAdvance()
         {

@@ -45,7 +45,7 @@ C) Las siguientes acciones son opcionales para los personajes y se colocan antes
             Chica [Triste] "Hola" 
 
 
-D) Las siguientes acciones son opcionales para los personajes y van en un renglo nuevo (antes o despues del dialogo) o despues del dialogo en el mismo renglon. Depende de lo que se quiera mostrar en la escena (Ver item A):
+D) Las siguientes acciones son opcionales para los personajes y van en un renglon nuevo (antes o despues del dialogo) o despues del dialogo en el mismo renglon. Depende de lo que se quiera mostrar en la escena (Ver item A):
 
     - [esperar] -> se usa con las acciones mostrar(), ocultar() o mover(). Indica que la accion que lo acompaña debe finalizar antes de comenzar con otra.
         * En este ejemplo, la chica se mueve y cuando llega a la posición indicada, se oculta
@@ -104,7 +104,7 @@ E) Las siguientes acciones son opcionales para la escena y van en un renglon nue
 
         vel -> es opcional. Indica la velocidad con la que aparece, que toma valores decimales >= 0. Sino se especifica la velocidad por defecto será 1.
 
-        audio -> solo para videos y es opcional. indica si se reproduce o no el sonido del video (background) en caso de tener. Se coloca true o false. Sino se especifica por defecto será true.
+        audio -> solo para videos y es opcional. indica si se reproduce o no el sonido del video (background) en caso de tener. Se coloca true o false. Sino se especifica por defecto será false.
 
     - borrarCapasMultimedia(-panel fondo -capa 0 -vel 0,5) -> Borra el background de la escena (imagen o video). La función pide lo sgtes parametros:
         panel -> indica de donde se va a borrar el background, se puede escoger entre fondo (detrás de toda la escena), cinematica (encima de personajes) y primerPlano (encima de personajes y cuadro de dialogo).
@@ -113,9 +113,21 @@ E) Las siguientes acciones son opcionales para la escena y van en un renglon nue
         
         vel -> es opcional. indica la velocidad con la que desaparece, que toma valores decimales >= 0. Sino se especifica la velocidad por defecto será 1.
 
-    - reproducir(-musica "Musica de fondo" -vol 0,5) -> Reproduce música de fondo. Se indica el nombre de la canción y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+    - reproducirSonido(-sonido "Musica de fondo" -vol 0,5) -> Reproduce efectos de sonido. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
     
-    - detener() -> Detiene la música de fondo.
+    - detenerSonido() -> Detiene los efectos de sonido.
+
+    - reproducirMusica(-sonido "Musica de fondo" -vol 0,5) -> Reproduce música de fondo. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+
+    - detenerMusica() -> Detiene la música de fondo.
+
+    - reproducirAmbiente(-sonido "Musica de fondo" -vol 0,5) -> Reproduce sonidos de ambiente. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+    
+    - detenerAmbiente() -> Detiene los sonidos de ambiente.
+
+    - reproducirVoz(-sonido "Musica de fondo" -vol 0,5) -> Reproduce voces. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+
+    - detenerVoz() -> Detiene las voces.
 
     - mostrarDialogo() -> Muestra el cuadro de dialogo.
       

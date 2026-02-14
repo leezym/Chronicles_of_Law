@@ -16,10 +16,10 @@ namespace DIALOGUE.LogicalLines
         { 
             var gm = GameManager.Instance;
             string spriteName = line.dialogueData.rawData;
-            string folderName = CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.fileToRead.name;
-            string caseName = CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.name;
+            string folderName = CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.fileToRead.name;
+            string caseName = CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.name;
 
-           if(CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.fileToRead == null || string.IsNullOrWhiteSpace(CasesManager.Instance.casesInGame[gm.GetCurrentLevel()].cases.fileToRead.text))
+           if(CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.fileToRead == null || string.IsNullOrWhiteSpace(CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.fileToRead.text))
             {
                 Debug.LogError("Could not load case from. Please ensure it exists within Cases Data!");
                 yield return null;

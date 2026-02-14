@@ -29,7 +29,7 @@ namespace VISUALNOVEL
                 return; 
             }
 
-            DialogueSystem.Instance.Say(lines, filePath); 
+            DialogueSystem.Instance.Say(lines, filePath);
         }
     }
 }

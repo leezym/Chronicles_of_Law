@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum PanelType {fondo, cinematica, primerPlano}
 [System.Serializable]
-
 public class GraphicPanel
 {
-    public string panelName;
+    public PanelType panelName;
     public GameObject rootPanel;
     public List<GraphicLayer> layers {get; private set; } = new List<GraphicLayer>();
 
@@ -32,6 +32,7 @@ public class GraphicPanel
     private GraphicLayer CreateLayer(int layerDepth)
     {
         GraphicLayer layer = new GraphicLayer();
+        layer.ownerPanelId = panelName;
         GameObject panel = new GameObject(string.Format(GraphicLayer.LAYER_OBJECT_NAME_FORMAT, layerDepth));
         RectTransform rect = panel.AddComponent<RectTransform>();
         panel.AddComponent<CanvasGroup>();

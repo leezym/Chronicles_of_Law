@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioTrack
 {
@@ -12,26 +13,26 @@ public class AudioTrack
 
     private AudioChannel channel;
     private AudioSource source;
+    public bool loop => source.loop;
     public float volumeCap { get; private set; }
 
     public bool isPlaying => source.isPlaying;
 
     public float volume { get { return source.volume; } set { source.volume = value; } } 
 
-    public AudioTrack(AudioClip clip, float volumeCap, AudioChannel channel, string filePath)
+    public AudioTrack(AudioClip clip, bool loop, float volumeCap, AudioChannel channel, AudioMixerGroup mixer, string filePath)
     {
         name = clip.name;
-        path = filePath;
-        
+        path = filePath;        
         this.channel = channel;
         this.volumeCap = volumeCap;
 
         source = CreateSource();
         source.clip = clip;
-        source.loop = true;
+        source.loop = loop;
         source.volume = 0f;
 
-        source.outputAudioMixerGroup = AudioManager.Instance.musicMixer;
+        source.outputAudioMixerGroup = mixer; //nuevo
     }
 
     private AudioSource CreateSource()

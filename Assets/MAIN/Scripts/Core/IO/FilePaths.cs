@@ -18,10 +18,15 @@ public class FilePaths
     public static readonly string resources_graphics = "Graphics/";
     public static readonly string resources_backgroundImages = $"{resources_graphics}BG Images/";
     public static readonly string resources_backgroundVideos = $"{resources_graphics}BG Videos/";
+    public static readonly string resources_backgroundCinematics = $"{resources_graphics}BG Cinematics/";
 
     //Resources Audio Paths
     public static readonly string resources_audio = "Audio/";
     public static readonly string resources_music = $"{resources_audio}Music/";
+    public static readonly string resources_ambience = $"{resources_audio}Ambience/";
+    public static readonly string resources_sfx = $"{resources_audio}SFX/";
+    public static readonly string resources_ui = $"{resources_audio}UI/";
+    public static readonly string resources_voices = $"{resources_audio}Voices/";
 
     //Resources Dialogue Paths
     public static readonly string resources_dialogueFiles = $"Dialogue Files/";

@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra Edinson Osorio en 0,5:0 [Serio1] "Buen día, mi nombre es Edinson Osorio y necesito que me ayuden a solucionar una situación que involucra a mi hijo y a mi ex pareja."
 ocultar("Edinson Osorio")
@@ -61,6 +61,6 @@ pregunta "¿Qué exige la ley para entender que se ha suspendido la patria potes
 - La suspensión de la patria potestad por ser una institución jurídica constitucional y legalmente irrenunciable, intransferible, imprescriptible y temporal, debe ser decretada mediante sentencia por el Juez de Familia, sólo cuando se configure una de las causales taxativas contempladas en la ley. [1]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)

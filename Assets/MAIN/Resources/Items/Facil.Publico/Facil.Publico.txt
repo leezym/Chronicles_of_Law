@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_AMB_LOOP")
 
 Entra Andrés Fernández en 0,5:0 [Serio] "Buen día, espero esté bien. Yo soy Andrés Fernández, vine aquí porque tengo una inquietud. Yo llevo quince años trabajando como taxista independiente, pero, en junio de 2023, decidí unirme a una empresa llamada Taxis Libres."
 
@@ -50,6 +50,6 @@ pregunta "¿Ante qué entidad debe dirigirse para que pueda iniciar el proceso? 
 - Secretaría de Movilidad. [1]
 }
 
-subirNivel()
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
 
-CargarArchivo(consultorio)
+subirNivelCaso()

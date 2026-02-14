@@ -16,13 +16,11 @@ public class GraphicPanelManager : MonoBehaviour
         Instance = this;
     }
 
-    public GraphicPanel GetPanel(string name)
+    public GraphicPanel GetPanel(PanelType name)
     {
-        name = name.ToLower();
-
         foreach(var panel in allPanels)
         {
-            if(panel.panelName.ToLower() == name)
+            if(panel.panelName == name)
                 return panel;
         }
         return null;

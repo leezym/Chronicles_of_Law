@@ -35,7 +35,7 @@ namespace DIALOGUE.LogicalLines
             float points = gm.GetPoints();
             points += selectedChoice.points;
             gm.SetPoints(points);
-            Debug.Log("current points: "+gm.GetPoints());
+            //Debug.Log("current points: "+gm.GetPoints());
 
             DialogueSystem.Instance.conversationManager.conversation.SetProgress(data.endingIndex);
         }

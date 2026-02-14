@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using GAME;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -13,18 +12,21 @@ namespace COMMANDS
         private static string PARAM_LAYER = "-capa";
         private static string PARAM_MEDIA = "-media";
         private static string PARAM_SPEED = "-vel";
-        private static string PARAM_USEVIDEOAUDIO = "-audio";        
+        private static string PARAM_USEVIDEOAUDIO = "-audio";
+        //private static string PARAM_GENDER = "-genero";
+        //private static string PARAM_LEVEL = "-nivel";
 
         new public static void Extend(CommandDatabase database)
         {
             database.AddCommand("configcapasmultimedia", new Func<string[], IEnumerator>(SetLayerMedia));
             database.AddCommand("borrarcapasmultimedia", new Func<string[], IEnumerator>(ClearLayerMedia));
+            database.AddCommand("mostrarcinematica", new Func<string[], IEnumerator>(SetCinematic));
         }
 
         private static IEnumerator SetLayerMedia(string[] data)
         {
             //Parameters available to function
-            string panelName = "";
+            PanelType panelName;
             int layer = 0;
             string mediaName = "";
             float transitionSpeed = 0;
@@ -69,7 +71,7 @@ namespace COMMANDS
             if(graphic == null)
             {
                 Debug.LogError($"Could not find media file called '{mediaName}' in the Resources directories. Please specify the field path within resources and make sure it exists!");
-                yield break;
+                yield break;                
             }
 
             //Lets try to get the layer to apply the media to
@@ -81,14 +83,14 @@ namespace COMMANDS
             }
             else 
             {
-                yield return graphicLayer.SetVideo(graphic as VideoClip, transitionSpeed, useAudio, pathToGraphic);
+                yield return graphicLayer.SetVideo(graphic as VideoClip, transitionSpeed, useAudio, true, pathToGraphic, AudioBus.Ambience);
             }
         }
 
         private static IEnumerator ClearLayerMedia(string[] data)
         {
             //Parameters available to function
-            string panelName = "";
+            PanelType panelName;
             int layer = 0;
             float transitionSpeed = 0;
 
@@ -123,6 +125,59 @@ namespace COMMANDS
 
                 graphicLayer.Clear(transitionSpeed);
             } 
-        }        
+        }
+
+        private static IEnumerator SetCinematic(string[] data)
+        {
+            //Parameters available to function
+            PanelType panelName = PanelType.cinematica;
+            int layer = 0;
+            string mediaName = "";
+            float transitionSpeed = 0;
+            bool useAudio = true;
+            //string gender = "";
+            //int level = 0;
+            string pathToGraphic = "";
+            UnityEngine.Object graphic = null;
+
+            //Now get the parameters
+            var parameters = ConvertDataToParameters(data);
+
+            //Try to get the panel that this media is applied to
+            GraphicPanel panel = GraphicPanelManager.Instance.GetPanel(panelName);
+            if(panel == null)
+            {
+                Debug.LogError($"Unable to grab panel '{panelName}' because it is not a valid panel. Please check the panel name and adjust the command.");
+                yield break;
+            }
+
+            //Try to get the layer to apply this graphic to
+            parameters.TryGetValue(PARAM_LAYER, out layer, defaultValue: 0);
+
+            //Try to get the graphic
+            parameters.TryGetValue(PARAM_MEDIA, out mediaName);
+
+            //Try to get the speed of the transition if it is not an inmmediate effect
+            parameters.TryGetValue(PARAM_SPEED, out transitionSpeed, defaultValue: 1);
+
+            //If this is a video, try to get whether we use audio from the video or not
+            parameters.TryGetValue(PARAM_USEVIDEOAUDIO, out useAudio, defaultValue: true);
+
+            //Now run the logic
+            GameManager gm = GameManager.Instance;
+            pathToGraphic = FilePaths.GetPathToResource(FilePaths.resources_backgroundCinematics, $"Nivel.{gm.GetCurrentGameLevel()}/{gm.GetCurrentGameGender()}/{mediaName}");
+            graphic = Resources.Load<VideoClip>(pathToGraphic);
+
+            if(graphic == null)
+            {
+                Debug.LogError($"Could not find media file called '{mediaName}' in the Resources directories. Please specify the field path within resources and make sure it exists!");
+                yield break;                
+            }
+
+            //Lets try to get the layer to apply the media to
+            GraphicLayer graphicLayer  = panel.GetLayer(layer, createIfDoesNotExist: true);
+
+            yield return graphicLayer.SetVideo(graphic as VideoClip, transitionSpeed, useAudio, false, pathToGraphic, AudioBus.Cinematic);
+        }
     }
 }

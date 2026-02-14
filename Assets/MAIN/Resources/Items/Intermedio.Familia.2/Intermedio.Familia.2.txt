@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducir(-musica "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
 
 Entra Alberto Murcia y Marcela Marín en 0,5:0 [1] "Buen día, mi nombre es Alberto Murcia y vengo junto con Marcela Marín, quien es mi esposa."
 
@@ -53,6 +53,6 @@ pregunta "Si en medio del trámite de divorcio ante notaría, el señor Alberto 
 - Según lo manifestado en la entrevista, la pareja ya lleva más de dos años separados de cuerpos, encontrándose esta dentro de una de las causales de divorcio en el ordenamiento jurídico colombiano, por ende, la señora Marcela podría adelantar el divorcio contencioso ante el juez de familia probando dicha causal. [1]
 }
 
-subirNivel()
+subirNivelCaso()
 
-CargarArchivo(consultorio)
+ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
