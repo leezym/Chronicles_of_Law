@@ -16,37 +16,37 @@ public class UIAudioHook : MonoBehaviour,
     public string downId = "";           // ej: "ui.down"
     public string beginDragLoopId = "";  // ej: "sfx.drag.loop" (AudioEvent loop=true)
     public string endDragId = "";        // ej: "sfx.drag.drop" (one-shot)
-    
+
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (!string.IsNullOrWhiteSpace(id))
-            AudioManager.Instance.PlayEvent(id);
+        if (!string.IsNullOrWhiteSpace(hoverId))
+            AudioManager.Instance.PlayEvent(hoverId);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!string.IsNullOrWhiteSpace(id))
-            AudioManager.Instance.PlayEvent(id);
+        if (!string.IsNullOrWhiteSpace(clickId))
+            AudioManager.Instance.PlayEvent(clickId);
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (!string.IsNullOrWhiteSpace(id))
-            AudioManager.Instance.PlayEvent(id);
+        if (!string.IsNullOrWhiteSpace(downId))
+            AudioManager.Instance.PlayEvent(downId);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (!string.IsNullOrWhiteSpace(id))
-            AudioManager.Instance.PlayEvent(id);
+        if (!string.IsNullOrWhiteSpace(beginDragLoopId))
+            AudioManager.Instance.PlayEvent(beginDragLoopId); // tu AudioManager evita duplicados por id
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (!string.IsNullOrWhiteSpace(loopId))
-            AudioManager.Instance.StopLoop(loopId);
+        if (!string.IsNullOrWhiteSpace(beginDragLoopId))
+            AudioManager.Instance.StopLoop(beginDragLoopId);
 
-        if (!string.IsNullOrWhiteSpace(endId))
-            AudioManager.Instance.PlayEvent(endId);
+        if (!string.IsNullOrWhiteSpace(endDragId))
+            AudioManager.Instance.PlayEvent(endDragId);
     }
 }
