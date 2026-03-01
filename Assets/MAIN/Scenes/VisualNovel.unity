@@ -7497,6 +7497,7 @@ GameObject:
   - component: {fileID: 1059545562}
   - component: {fileID: 1059545561}
   - component: {fileID: 1059545560}
+  - component: {fileID: 1059545563}
   m_Layer: 5
   m_Name: StartButton (1)
   m_TagString: Untagged
@@ -7654,6 +7655,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059545558}
   m_CullTransparentMesh: 1
+--- !u!114 &1059545563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059545558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: 
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: 
+  endDragId: 
 --- !u!1 &1065997255
 GameObject:
   m_ObjectHideFlags: 0
@@ -11011,7 +11029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
-  theme: {fileID: 0}
   hoverId: ui.hover
   clickId: ui.click.button
   downId: 
