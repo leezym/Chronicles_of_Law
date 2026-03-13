@@ -1,0 +1,210 @@
+{
+  "exerciseId": "DOC",
+  "title": "Contrato laboral 2",
+  "type": "legal_document",
+  "paragraphs": [
+    {
+      "pid": "P0",
+      "align": "center",
+      "runs": [
+        {
+          "text": "CONTRATO A TÉRMINO INDEFINIDO",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "CONTRATO A TÉRMINO INDEFINIDO"
+    },
+    {
+      "pid": "P1",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Entre las partes, por un lado MARIANA RODRÍGUEZ, domiciliada en la ciudad de Cali, ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "representante legal de EMPRESA DE ROPA IMPORTADA S.A",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ", con NIT 103891038, quien en adelante y para los efectos del presente contrato se denomina como EL EMPLEADOR, y ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "por el otro, ANDREA GIRALDO, domiciliada en la ciudad de Cali, con quince (15) años de edad,",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "  quien en adelante y para los efectos del presente contrato se denomina como EL TRABAJADOR, identificados como aparece al pie de las firmas, hemos acordado suscribir este contrato de trabajo, el cual se regirá por las siguientes cláusulas:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Entre las partes, por un lado MARIANA RODRÍGUEZ, domiciliada en la ciudad de Cali, representante legal de EMPRESA DE ROPA IMPORTADA S.A., con NIT 103891038, quien en adelante y para los efectos del presente contrato se denomina como EL EMPLEADOR, y por el otro, ANDREA GIRALDO, domiciliada en la ciudad de Cali, con quince (15) años de edad,  quien en adelante y para los efectos del presente contrato se denomina como EL TRABAJADOR, identificados como aparece al pie de las firmas, hemos acordado suscribir este contrato de trabajo, el cual se regirá por las siguientes cláusulas:"
+    },
+    {
+      "pid": "P2",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Primero. Naturaleza y Objeto. Se trata de un contrato de trabajo a término indefinido, en vigencia del cual el EMPLEADOR contrata al ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "TRABAJADOR para que este, de forma personal, dirija su capacidad de trabajo en aras de la prestación de servicios y desempeño de las actividades propias del cargo de mensajer",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": "i",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": "a,",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " y como contraprestación el EMPLEADOR pagará una remuneración.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Primero. Naturaleza y Objeto. Se trata de un contrato de trabajo a término indefinido, en vigencia del cual el EMPLEADOR contrata al TRABAJADOR para que este, de forma personal, dirija su capacidad de trabajo en aras de la prestación de servicios y desempeño de las actividades propias del cargo de mensajeria, y como contraprestación el EMPLEADOR pagará una remuneración."
+    },
+    {
+      "pid": "P3",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Segundo. Horario. El TRABAJADOR deberá cumplir los siguientes horarios: de lunes a viernes ingresar a las 8:00 am y salir a las 4:00 pm",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ", teniendo en cuenta que el TRABAJADOR deberá desplazarse en su bicicleta para realizar el trabajo que se le asigne.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Segundo. Horario. El TRABAJADOR deberá cumplir los siguientes horarios: de lunes a viernes ingresar a las 8:00 am y salir a las 4:00 pm, teniendo en cuenta que el TRABAJADOR deberá desplazarse en su bicicleta para realizar el trabajo que se le asigne."
+    },
+    {
+      "pid": "P4",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Tercero. Al TRABAJADOR se le pagarán únicamente honorarios por cada servicio que preste.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "Tercero. Al TRABAJADOR se le pagarán únicamente honorarios por cada servicio que preste."
+    },
+    {
+      "pid": "P5",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Cuarto. Obligaciones del trabajador. El TRABAJADOR se obliga a obedecer y a serle fiel a la compañía. Por ende, ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "no podrá conformar ni hacer parte de ninguna asociación, mucho menos si se busca afectar los intereses de la empresa.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "Cuarto. Obligaciones del trabajador. El TRABAJADOR se obliga a obedecer y a serle fiel a la compañía. Por ende, no podrá conformar ni hacer parte de ninguna asociación, mucho menos si se busca afectar los intereses de la empresa."
+    },
+    {
+      "pid": "P6",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Sexto. Terminación del contrato. El EMPLEADOR podrá terminar unilateralmente el contrato por cualquier razón que considere suficiente para hacerlo.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "Sexto. Terminación del contrato. El EMPLEADOR podrá terminar unilateralmente el contrato por cualquier razón que considere suficiente para hacerlo."
+    },
+    {
+      "pid": "P7",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Séptimo. Responsabilidad del empleador.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " En caso de responsabilidad del EMPLEADOR, la compañía se obliga únicamente al ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "pago de la indemnización de daño emergente.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "Séptimo. Responsabilidad del empleador. En caso de responsabilidad del EMPLEADOR, la compañía se obliga únicamente al pago de la indemnización de daño emergente."
+    }
+  ]
+}

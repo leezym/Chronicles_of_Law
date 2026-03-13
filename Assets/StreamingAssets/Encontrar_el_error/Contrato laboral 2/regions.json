@@ -1,0 +1,122 @@
+{
+  "pointsPerCorrect": 1,
+  "regions": [
+    {
+      "id": "R:DOC:001",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P1",
+          "start": 83,
+          "end": 136
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:002",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P1",
+          "start": 249,
+          "end": 341
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:003",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P2",
+          "start": 133,
+          "end": 310
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:004",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P3",
+          "start": 0,
+          "end": 135
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:005",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P4",
+          "start": 0,
+          "end": 88
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:006",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P5",
+          "start": 112,
+          "end": 229
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:007",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P6",
+          "start": 0,
+          "end": 147
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:008",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P7",
+          "start": 0,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:009",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P7",
+          "start": 118,
+          "end": 161
+        }
+      ]
+    }
+  ]
+}

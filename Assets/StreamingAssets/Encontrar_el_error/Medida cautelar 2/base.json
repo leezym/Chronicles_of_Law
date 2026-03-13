@@ -1,0 +1,344 @@
+{
+  "exerciseId": "DOC",
+  "title": "Medida cautelar 2",
+  "type": "legal_document",
+  "paragraphs": [
+    {
+      "pid": "P0",
+      "align": "center",
+      "runs": [
+        {
+          "text": "SOLICITUD MEDIDA CAUTELAR",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "SOLICITUD MEDIDA CAUTELAR"
+    },
+    {
+      "pid": "P1",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P2",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Señor(a)",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Señor(a)"
+    },
+    {
+      "pid": "P3",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Juez Civil",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        }
+      ],
+      "plain": "Juez Civil"
+    },
+    {
+      "pid": "P4",
+      "align": "left",
+      "runs": [
+        {
+          "text": "Ciudad",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Ciudad"
+    },
+    {
+      "pid": "P5",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "E.S.D",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "E.S.D"
+    },
+    {
+      "pid": "P6",
+      "align": "justify",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P7",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "REF: ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        },
+        {
+          "text": "Solicitud de medidas cautelares en el ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        },
+        {
+          "text": "proceso declarativo de servidumbre",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "con radicado No. 119304576823",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        }
+      ],
+      "plain": "REF: Solicitud de medidas cautelares en el proceso declarativo de servidumbre con radicado No. 119304576823"
+    },
+    {
+      "pid": "P8",
+      "align": "justify",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P9",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "MARIA DEL MAR MEDINA OSORIO,",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " mayor de edad, identificada con cédula de ciudadanía No. 1.193.040.058, expedida en Neiva, Huila con domicilio en",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " Cali, Valle",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        },
+        {
+          "text": ", solicitó mediante este escrito, que se decreten las ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "siguientes medidas cautelares con carácter de previas dentro del proceso declarativo de servidumbre",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " con radicado No. ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "119304576823",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        },
+        {
+          "text": ", para que sea efectiva la presente acción,",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " así:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        }
+      ],
+      "plain": "MARIA DEL MAR MEDINA OSORIO, mayor de edad, identificada con cédula de ciudadanía No. 1.193.040.058, expedida en Neiva, Huila con domicilio en Cali, Valle, solicitó mediante este escrito, que se decreten las siguientes medidas cautelares con carácter de previas dentro del proceso declarativo de servidumbre con radicado No. 119304576823, para que sea efectiva la presente acción, así:"
+    },
+    {
+      "pid": "P10",
+      "align": "justify",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P11",
+      "align": "left",
+      "runs": [
+        {
+          "text": "El embargo y posterior secuestro de 10 anillos de oro de 18k",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " de eslabones engastados de 1.9 centímetros, los cuales se encuentran en la caja fuerte de la residencia del demandado ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "JOSE GARCIA PEREZ,",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ubicada en la ciudad de Palmira, barrio Zamorano, en la dirección carrera 69 #13-e 15. ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "Dicho bien se identifica con el folio de matrícula inmobiliaria 77668945, de la oficina de registro de instrumentos públicos de la ciudad de Palmira",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        }
+      ],
+      "plain": "El embargo y posterior secuestro de 10 anillos de oro de 18k de eslabones engastados de 1.9 centímetros, los cuales se encuentran en la caja fuerte de la residencia del demandado JOSE GARCIA PEREZ, ubicada en la ciudad de Palmira, barrio Zamorano, en la dirección carrera 69 #13-e 15. Dicho bien se identifica con el folio de matrícula inmobiliaria 77668945, de la oficina de registro de instrumentos públicos de la ciudad de Palmira."
+    },
+    {
+      "pid": "P12",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P13",
+      "align": "left",
+      "runs": [
+        {
+          "text": "El embargo y posterior secuestro del vehículo",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " automotor propiedad del demandado ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "JOSE GARCIA PEREZ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " de marca CHEVROLET, placas GJQ-688, modelo 2020, color gris estrella.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "El embargo y posterior secuestro del vehículo automotor propiedad del demandado JOSE GARCIA PEREZ de marca CHEVROLET, placas GJQ-688, modelo 2020, color gris estrella."
+    },
+    {
+      "pid": "P14",
+      "align": "left",
+      "runs": [
+        {
+          "text": "\n",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "\n"
+    },
+    {
+      "pid": "P15",
+      "align": "left",
+      "runs": [
+        {
+          "text": "Retroalimentación: ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "En el proceso de servidumbre, no se puede declarar el embargo y secuestro porque es un proceso declarativo y hay una incertidumbre frente a la titularidad del derecho, por lo que el objeto de este tipo de procesos es perseguir un derecho personal y no un derecho real.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Retroalimentación: En el proceso de servidumbre, no se puede declarar el embargo y secuestro porque es un proceso declarativo y hay una incertidumbre frente a la titularidad del derecho, por lo que el objeto de este tipo de procesos es perseguir un derecho personal y no un derecho real."
+    },
+    {
+      "pid": "P16",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    }
+  ]
+}

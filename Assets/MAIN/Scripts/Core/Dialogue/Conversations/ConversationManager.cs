@@ -13,6 +13,7 @@ namespace DIALOGUE
         private DialogueSystem dialogueSystem => DialogueSystem.Instance;
         private Coroutine process = null;
         public bool isRunning => process != null;
+        private bool isPaused = false;
         
         public TextArchitect architect = null;
         private bool userPrompt = false;
@@ -67,10 +68,23 @@ namespace DIALOGUE
             process = null;
         }
 
+        public void PauseConversation()
+        {
+            isPaused = true;
+        }
+
+        public void ResumeConversation()
+        {
+            isPaused = false;
+        }
+
         IEnumerator RunningConversation()
         {
             while(!conversationQueue.IsEmpty())
             {
+                while (isPaused)
+                    yield return null;
+                    
                 Conversation currentConversation = conversation;
 
                 if(currentConversation.HasReachedEnd())

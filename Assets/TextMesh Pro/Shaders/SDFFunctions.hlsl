@@ -117,7 +117,7 @@ void ScreenSpaceRatio_float(float2 UV, float TextureSize, bool Filter, out float
 // SD  : Signed Distance (encoded : Distance / SDR + .5)
 // SDR : Signed Distance Ratio
 //
-// IsoPerimeter : Dilate / Contract the shape
+// IsoPerimeter : Dilate / Document the shape
 void ComputeSDF_float(float SSR, float SD, float SDR, float isoPerimeter, float softness, out float outAlpha)
 {
 	softness *= SSR * SDR;

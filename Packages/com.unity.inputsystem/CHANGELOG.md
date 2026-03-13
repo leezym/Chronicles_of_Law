@@ -433,7 +433,7 @@ however, it has to be formatted properly to pass verification tests.
 - Fixed an issue in the Input Action Editor window where entries being cut would be deleted instantly and not after being pasted.
 - Fixed an issue in the Input Action Editor window where deleting items unfolded other actions or the selection switched unintended.
 - Fixed an issue where InputActionAsset validation where not triggered for Project-wide input actions when the project-wide asset was edited in a regular windowed Input Action Asset editor window.
-- Fixed incorrect documentation in InputSystem.actions and InputSystem.onActionsChanged property API contract.
+- Fixed incorrect documentation in InputSystem.actions and InputSystem.onActionsChanged property API document.
 - Fixed an issue where `InputSystem.actions` could be incorrectly evaluated if the associated asset was deleted.
 
 ## [1.8.0-pre.2] - 2023-11-09

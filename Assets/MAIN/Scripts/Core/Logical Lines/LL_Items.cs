@@ -17,7 +17,7 @@ namespace DIALOGUE.LogicalLines
             var gm = GameManager.Instance;
             string spriteName = line.dialogueData.rawData;
             string folderName = CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.fileToRead.name;
-            string caseName = CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.name;
+            string caseName = CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.character;
 
            if(CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.fileToRead == null || string.IsNullOrWhiteSpace(CasesManager.Instance.casesInGame[gm.GetCurrentCaseLevel()].cases.fileToRead.text))
             {
@@ -26,7 +26,7 @@ namespace DIALOGUE.LogicalLines
             }
 
             //Try to get the name or path to the sprite
-            string filePath = FilePaths.GetPathToResource(FilePaths.resources_itemsFiles, folderName+"/"+spriteName);
+            string filePath = FilePaths.GetPathToResource(FilePaths.resources_casesFiles, folderName+"/"+spriteName);
 
             Sprite sprite = Resources.Load<Sprite>(filePath);
 

@@ -2,48 +2,109 @@ using System.Collections.Generic;
 using UnityEditor.UIElements;
 using UnityEngine;
 
-namespace GAME
+[CreateAssetMenu(menuName = "Game/Case Definition")]
+public class CasesData : ScriptableObject
 {
-    [System.Serializable]
-    public class CasesData
+    public enum CaseLevel {facil, intermedio, dificil}
+    public CaseLevel level;
+    public TextAsset fileToRead;
+    public Sprite photo;
+    public string character;
+    public int age;
+    public enum CaseArea {civil, familia, laboral, publico}
+    public CaseArea area;
+    public string description;
+    public string abstracts;
+
+    public CasesData(){}
+
+    public CasesData(CaseLevel level, TextAsset fileToRead, Sprite photo, string character, int age, CaseArea area, string description, string abstracts)
     {
-        public enum CaseLevel {facil, intermedio, dificil}
-        public CaseLevel level;
-        public TextAsset fileToRead;
-        public Sprite photo;
-        public string name;
-        public int age;
-        public enum CaseArea {civil, familia, laboral, publico}
-        public CaseArea area;
-        public string description;
-        public string abstracts;
+        this.level = level;
+        this.fileToRead = fileToRead;
+        this.photo = photo;
+        this.character = character;
+        this.age = age;
+        this.area = area;
+        this.description = description;
+        this.abstracts = abstracts;
+    }
 
-        public CasesData(){}
+    public static List<CasesData> Capture()
+    {
+        List<CasesData> list = new List<CasesData>();
+        var cm = CasesManager.Instance;
+        list = cm.casesData;
+        
+        return list;
+    }
 
-        public CasesData(CaseLevel level, TextAsset fileToRead, Sprite photo, string name, int age, CaseArea area, string description, string abstracts)
+    public static void Apply(List<CasesData> data)
+    {
+        var cm = CasesManager.Instance;
+        cm.casesData = data;
+    }
+
+    public void FillFromResources(string assetName)
+    {
+        string[] folderParts = assetName.Split('.');
+        string levelString = folderParts[0].ToLower();
+        string areaString = folderParts[1].ToLower();
+
+        if (System.Enum.TryParse(levelString, out CaseLevel parsedLevel))
         {
-            this.level = level;
-            this.photo = photo;
-            this.name = name;
-            this.age = age;
-            this.area = area;
-            this.description = description;
-            this.abstracts = abstracts;
+            level = parsedLevel;
+        }
+        else
+        {
+            Debug.LogWarning("Nivel desconocido: " + levelString);
         }
 
-        public static List<CasesData> Capture()
+        if (System.Enum.TryParse(areaString, out CaseArea parsedArea))
         {
-            List<CasesData> list = new List<CasesData>();
-            var cm = CasesManager.Instance;
-            list = cm.casesData;
-            
-            return list;
+            area = parsedArea;
+        }
+        else
+        {
+            Debug.LogWarning("Área desconocida: " + areaString);
         }
 
-        public static void Apply(List<CasesData> data)
+        Object[] assets = Resources.LoadAll(FilePaths.resources_casesFiles + assetName);
+
+        foreach (Object obj in assets)
         {
-            var cm = CasesManager.Instance;
-            cm.casesData = data;
+            if (obj is TextAsset text)
+            {
+                if (text.name.Contains(assetName))
+                    fileToRead = text;
+
+                if (text.name.ToLower().Contains("abstract"))
+                    abstracts = text.text;
+
+                if (text.name.ToLower().Contains("info"))
+                {
+                    string[] infoLines = text.text.Split('\n');
+                    if (infoLines.Length >= 3)
+                    {
+                        character = infoLines[0].Trim();
+                        if (int.TryParse(infoLines[1].Trim(), out int parsedAge))
+                        {
+                            age = parsedAge;
+                        }
+                        description = infoLines[2].Trim();
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"El archivo {text.name} no tiene el formato esperado.");
+                    }
+                }
+            }
+
+            if (obj is Sprite sprite)
+            {
+                if (sprite.name.ToLower().Contains("photo"))
+                    photo = sprite;
+            }
         }
     }
 }

@@ -1,0 +1,83 @@
+{
+  "pointsPerCorrect": 1,
+  "regions": [
+    {
+      "id": "R:DOC:001",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P0",
+          "start": 0,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:002",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P4",
+          "start": 0,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:003",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P8",
+          "start": 0,
+          "end": 89
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:004",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P10",
+          "start": 272,
+          "end": 291
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:005",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P12",
+          "start": 0,
+          "end": 96
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:006",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P13",
+          "start": 0,
+          "end": 64
+        }
+      ]
+    }
+  ]
+}

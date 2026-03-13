@@ -1,0 +1,135 @@
+{
+  "pointsPerCorrect": 1,
+  "regions": [
+    {
+      "id": "R:DOC:001",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P0",
+          "start": 0,
+          "end": 63
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:002",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P2",
+          "start": 322,
+          "end": 335
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:003",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P2",
+          "start": 364,
+          "end": 388
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:004",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P2",
+          "start": 675,
+          "end": 692
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:005",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P4",
+          "start": 57,
+          "end": 103
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:006",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P4",
+          "start": 172,
+          "end": 215
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:007",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P6",
+          "start": 58,
+          "end": 72
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:008",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P7",
+          "start": 41,
+          "end": 165
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:009",
+      "enabled": true,
+      "correct": true,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P8",
+          "start": 97,
+          "end": 141
+        }
+      ]
+    },
+    {
+      "id": "R:DOC:010",
+      "enabled": true,
+      "correct": false,
+      "points": 1,
+      "spans": [
+        {
+          "pid": "P8",
+          "start": 257,
+          "end": 334
+        }
+      ]
+    }
+  ]
+}

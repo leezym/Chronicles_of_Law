@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GAME.MinigamesData;
 
 public class FilePaths
 {
@@ -10,6 +11,12 @@ public class FilePaths
 
     //Runtime Paths
     public static readonly string gameSaves = $"{runtimePath}Save Files/";
+
+    //Sstreaming Assets Path
+    public static readonly string streamingAssets = $"{Application.streamingAssetsPath}/";
+
+    //Sstreaming Assets Path
+    public static readonly string streamingAssets_findError = $"{streamingAssets}{MinigameType.encontrar_el_error}/";
 
     //Resources Font Paths
     public static readonly string resources_font = "Font/";
@@ -31,8 +38,11 @@ public class FilePaths
     //Resources Dialogue Paths
     public static readonly string resources_dialogueFiles = $"Dialogue Files/";
 
-    //Resources Items Paths
-    public static readonly string resources_itemsFiles = $"Items/";
+    //Resources Cases Paths
+    public static readonly string resources_casesFiles = $"Cases/";
+
+    //Resources Minigames Paths
+    public static readonly string resources_minigamesFiles = $"Minigames/";
 
     ///<summary>
     ///Returns the path to the resource using the default path or the root of the resources folder if

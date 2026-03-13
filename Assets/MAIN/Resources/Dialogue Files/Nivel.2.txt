@@ -30,4 +30,4 @@ social "¿Cómo me recibirán hoy?"
 
 mostrarCinematica(-media "escena 20" -audio true)
 
-subirNivelJuego()
+subirNivel()

@@ -32,10 +32,7 @@ namespace DIALOGUE.LogicalLines
             
             Question selectedChoice = questions[panel.lastDecision.answerIndex];
 
-            float points = gm.GetPoints();
-            points += selectedChoice.points;
-            gm.SetPoints(points);
-            //Debug.Log("current points: "+gm.GetPoints());
+            gm.SetPoints(selectedChoice.points);
 
             DialogueSystem.Instance.conversationManager.conversation.SetProgress(data.endingIndex);
         }

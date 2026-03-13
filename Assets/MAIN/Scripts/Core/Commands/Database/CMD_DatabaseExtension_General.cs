@@ -6,7 +6,6 @@ using UnityEditor;
 using System.IO;
 using DIALOGUE;
 using GAME;
-using VISUALNOVEL;
 
 namespace COMMANDS
 {
@@ -24,13 +23,12 @@ namespace COMMANDS
             database.AddCommand("mostrarinterfaz", new Func<IEnumerator>(ShowDialogueSystem));
             database.AddCommand("ocultarinterfaz", new Func<IEnumerator>(HideDialogueSystem));
 
-            //database.AddCommand("cargararchivo", new Action<string[]>(LoadNewDialogueFile)); //Cuando se hagan las interacciones sociales se integra si es necesario cambiar de escenas en las interacciones sociales (EP21 PART1)
-            database.AddCommand("cargarcaso", new Action<string[]>(LoadNewCaseFile)); //Cuando se hagan las interacciones sociales se integra si es necesario cambiar de escenas en las interacciones sociales (EP21 PART1)
-            database.AddCommand("cargarminijuego", new Action(LoadNewGame));
-            //database.AddCommand("cargarnivel", new Action<string[]>(LoadCurrentGameLevel));
+            database.AddCommand("cargarcaso", new Action<string[]>(LoadNewCaseFile));
+            database.AddCommand("cargarminijuego", new Func<IEnumerator>(LoadNewGame));
 
             database.AddCommand("subirnivelcaso", new Action(SetCurrentCaseLevel));
-            database.AddCommand("subirniveljuego", new Action(SetCurrentGameLevel));
+            database.AddCommand("subirnivel", new Action(SetCurrentLevel));
+            //database.AddCommand("subirniveljuego", new Action(SetCurrentGameLevel));
         }
 
         private static IEnumerator ShowDialogueBox()
@@ -52,34 +50,6 @@ namespace COMMANDS
         {
             yield return DialogueSystem.Instance.Hide();
         }
-
-        /*private static void LoadNewDialogueFile(string[] data)
-        {
-            string fileName = string.Empty;
-            bool enqueue = false;
-
-            var parameters = ConvertDataToParameters(data);
-
-            parameters.TryGetValue(PARAM_FILEPATH, out fileName);
-            parameters.TryGetValue(PARAM_ENQUEUE, out enqueue, defaultValue: false);
-
-            string filePath = FilePaths.GetPathToResource(FilePaths.resources_dialogueFiles, fileName);
-            TextAsset file = Resources.Load<TextAsset>(filePath);
-
-            if(file == null)
-            {
-                Debug.LogWarning($"File '{filePath}' could not be loaded from dialogue files. Please ensure it exists within Resources!");
-                return;
-            }
-
-            List<string> lines = FileManager.ReadTextAsset(file, includeBlankLines: true);
-            Conversation newConversation = new Conversation(lines);
-
-            if(enqueue)
-                DialogueSystem.Instance.conversationManager.Enqueue(newConversation);
-            else
-                DialogueSystem.Instance.conversationManager.StartConversation(newConversation);
-        }*/
 
         private static void LoadNewCaseFile(string[] data)
         {
@@ -104,7 +74,7 @@ namespace COMMANDS
             }
 
             List<string> lines = FileManager.ReadTextAsset(file, includeBlankLines: true);
-            Conversation newConversation = new Conversation(lines);          
+            Conversation newConversation = new Conversation(lines);       
 
             if(enqueue)
                 DialogueSystem.Instance.conversationManager.Enqueue(newConversation);
@@ -114,48 +84,46 @@ namespace COMMANDS
                 DialogueSystem.Instance.conversationManager.StartConversation(newConversation);
         }
 
-        private static void LoadNewGame()
+        private static IEnumerator LoadNewGame()
         {
-            Debug.Log("minijuego");
-        }
+            DialogueSystem.Instance.conversationManager.PauseConversation();
 
-        /*private static void LoadCurrentGameLevel(string[] data)
-        {
-            bool enqueue = false;
-            
-            var parameters = ConvertDataToParameters(data);
+            string fullPath = AssetDatabase.GetAssetPath(MinigamesManager.Instance.minigamesInGame[GameManager.Instance.GetCurrentGameLevel()].game);
 
-            parameters.TryGetValue(PARAM_ENQUEUE, out enqueue, defaultValue: false);
+            int resourcesIndex = fullPath.IndexOf("Resources/");
+            string relativePath = fullPath.Substring(resourcesIndex + 10); // "Resources/" tiene tamaño 10
 
-            string filePath = FilePaths.GetPathToResource(FilePaths.resources_dialogueFiles, Nivel.{GameManager.Instance.GetCurrentGameLevel()}");
-            TextAsset file = Resources.Load<TextAsset>(filePath);
+            string filePath = Path.ChangeExtension(relativePath, null);        
+            GameObject prefab = Resources.Load<GameObject>(filePath);
 
-            if(file == null)
+            if(prefab == null)
             {
-                Debug.LogWarning($"File '{filePath}' could not be loaded from dialogue files. Please ensure it exists within Resources!");
-                return;
+                Debug.LogWarning($"Prefab '{filePath}' could not be loaded from game files. Please ensure it exists within Resources!");
+                yield return null;
             }
 
-            List<string> lines = FileManager.ReadTextAsset(file, includeBlankLines: true);
-            Conversation newConversation = new Conversation(lines);
+            yield return new WaitForSeconds(1f);
 
-            if(enqueue)
-                DialogueSystem.Instance.conversationManager.Enqueue(newConversation);
-            else
-                DialogueSystem.Instance.conversationManager.StartConversation(newConversation);
-        }*/
+            GameObject obj = UnityEngine.Object.Instantiate(prefab, MinigamesManager.Instance.layoutGroup.transform);
+            obj.transform.SetAsFirstSibling();
+            obj.name = prefab.name;
+        }
 
         private static void SetCurrentCaseLevel()
         {
-            CasesManager.Instance.LevelChanged();            
+            CasesManager.Instance.LevelChanged();          
         }
 
-        private static void SetCurrentGameLevel()
+        private static void SetCurrentLevel()
         {
-            GameManager gm = GameManager.Instance;
-            int level = gm.GetCurrentGameLevel() + 1;
-            
-            gm.SetCurrentGameLevel(level);
+            int level = GameManager.Instance.GetCurrentLevel() + 1;
+            GameManager.Instance.SetCurrentLevel(level);
+            TestDialogueFiles.Instance.StartCinematic();
         }
+
+        /*private static void SetCurrentGameLevel()
+        {
+            MinigamesManager.Instance.LevelChanged();
+        }*/
     }
 }

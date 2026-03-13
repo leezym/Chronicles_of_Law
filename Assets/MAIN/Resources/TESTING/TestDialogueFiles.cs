@@ -44,10 +44,8 @@ public class TestDialogueFiles : MonoBehaviour
         StartCinematic();
     }
     public void StartCinematic()
-    {
-        GameManager.Instance.SetCurrentGameLevel(1);
-        
-        string filePath = FilePaths.GetPathToResource(FilePaths.resources_dialogueFiles, $"Nivel.{GameManager.Instance.GetCurrentGameLevel()}");
+    {        
+        string filePath = FilePaths.GetPathToResource(FilePaths.resources_dialogueFiles, $"Nivel.{GameManager.Instance.GetCurrentLevel()}");
         VNManager.Instance.LoadFile(filePath);
     }
 }

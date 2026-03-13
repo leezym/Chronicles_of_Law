@@ -43,85 +43,18 @@ public class CasesManager : MonoBehaviour
         int level = gm.GetCurrentCaseLevel() + 1;
 
         casesInGame[level].active = true;
-        EnabledCase(casesInGame[level], casesLayoutGroup[level]);
+        EnabledCase(level);
 
         gm.SetCurrentCaseLevel(level);
     }
 
     void SetCases()
     {
-        string basePath = "Items";
-        string fullPath = Application.dataPath + "/MAIN/Resources/" + basePath;
-        string[] directories = Directory.GetDirectories(fullPath);
+        casesData.Clear();        
+        casesData = Resources.LoadAll<CasesData>(FilePaths.resources_casesFiles).ToList();
 
-        foreach (string directory in directories)
-        {
-            string folderName = Path.GetFileName(directory);
-            string[] folderParts = folderName.Split('.');
-            string levelString = folderParts[0].ToLower();
-            string areaString = folderParts[1].ToLower();
-
-            CasesData newCase = new CasesData();
-
-            if (System.Enum.TryParse(levelString, out CasesData.CaseLevel parsedLevel))
-            {
-                newCase.level = parsedLevel;
-            }
-            else
-            {
-                Debug.LogWarning("Nivel desconocido: " + levelString);
-                continue;
-            }
-
-            if (System.Enum.TryParse(areaString, out CasesData.CaseArea parsedArea))
-            {
-                newCase.area = parsedArea;
-            }
-            else
-            {
-                Debug.LogWarning("Área desconocida: " + areaString);
-                continue;
-            }
-
-            Object[] folderContents = Resources.LoadAll(basePath + "/" + folderName);
-            foreach (Object obj in folderContents)
-            {
-                if (obj is TextAsset textAsset)
-                {
-                    if (textAsset.name == "abstract")
-                    {
-                        newCase.abstracts = textAsset.text;
-                    }
-                    else if (textAsset.name == folderName)
-                    {
-                        newCase.fileToRead = textAsset;
-                    }
-                    else if (textAsset.name == "info")
-                    {
-                        string[] infoLines = textAsset.text.Split('\n');
-                        if (infoLines.Length >= 3)
-                        {
-                            newCase.name = infoLines[0].Trim();
-                            if (int.TryParse(infoLines[1].Trim(), out int parsedAge))
-                            {
-                                newCase.age = parsedAge;
-                            }
-                            newCase.description = infoLines[2].Trim();
-                        }
-                        else
-                        {
-                            Debug.LogWarning("El archivo 'info' no tiene el formato esperado: " + textAsset.name);
-                        }
-                    }
-                }
-                else if (obj is Texture2D texture && obj.name == "photo")
-                {
-                    newCase.photo = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
-                }
-            }
-
-            casesData.Add(newCase);
-        }
+        foreach (var caseData in casesData)
+            caseData.FillFromResources(caseData.name);
     }
 
     private void SelectRandomCases()
@@ -129,7 +62,6 @@ public class CasesManager : MonoBehaviour
         casesInGame.AddRange(GetRandomCasesByLevel(CasesData.CaseLevel.facil, 3));
         casesInGame.AddRange(GetRandomCasesByLevel(CasesData.CaseLevel.intermedio, 3));
         casesInGame.AddRange(GetRandomCasesByLevel(CasesData.CaseLevel.dificil, 3));
-        
     }
 
     private List<CasesInGame> GetRandomCasesByLevel(CasesData.CaseLevel level, int count)
@@ -154,22 +86,14 @@ public class CasesManager : MonoBehaviour
                 if(i <= GameManager.Instance.GetCurrentCaseLevel())
                     casesInGame[i].active = true;
 
-                EnabledCase(casesInGame[i], casesLayoutGroup[i]);
+                EnabledCase(i);
             }
         }
     }
 
-    private void EnabledCase(CasesInGame casesInGame, GameObject casesLayoutGroup)
+    private void EnabledCase(int level)
     {
-        if(casesInGame.active)
-        {
-            casesLayoutGroup.GetComponent<Image>().sprite = enbaledCase;
-            casesLayoutGroup.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            casesLayoutGroup.GetComponent<Image>().sprite = disabledCase;
-            casesLayoutGroup.GetComponent<Button>().interactable = false;
-        }
+        casesLayoutGroup[level].GetComponent<Image>().sprite = casesInGame[level].active ? enbaledCase : disabledCase;
+        casesLayoutGroup[level].GetComponent<Button>().interactable = casesInGame[level].active;
     }
 }

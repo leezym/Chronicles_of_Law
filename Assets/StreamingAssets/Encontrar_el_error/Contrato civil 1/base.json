@@ -1,0 +1,489 @@
+{
+  "exerciseId": "DOC",
+  "title": "Contrato civil 1",
+  "type": "legal_document",
+  "paragraphs": [
+    {
+      "pid": "P0",
+      "align": "center",
+      "runs": [
+        {
+          "text": "CONTRATO DE COMPRAVENTA DE VEHÍCULO AUTOMOTOR",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "CONTRATO DE COMPRAVENTA DE VEHÍCULO AUTOMOTOR"
+    },
+    {
+      "pid": "P1",
+      "align": "center",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P2",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Entre los suscritos a saber: ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " SANTIAGO BEJARANO",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " quien actualmente es propietario mayor de edad y vecino de la ciudad de Medellín, identificado  con cédula de ciudadanía ______________ quien en adelante ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "se denominará EL VENDEDOR,",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " y nombre de ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "ANA MARÍA VERA,",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " quien va a adquirir el vehículo, mayor de edad y vecino de ciudad de domicilio, quien se identifica con cédula de ciudadanía _____________ y en adelante se denominará EL COMPRADOR, han acordado celebra",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "r contrato de  arrendamiento ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "que ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "se regirá por las normas civiles y comerciales que regulan la materia,",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " según las siguientes cláusulas:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Entre los suscritos a saber:  SANTIAGO BEJARANO quien actualmente es propietario mayor de edad y vecino de la ciudad de Medellín, identificado  con cédula de ciudadanía ______________ quien en adelante se denominará EL VENDEDOR, y nombre de ANA MARÍA VERA, quien va a adquirir el vehículo, mayor de edad y vecino de ciudad de domicilio, quien se identifica con cédula de ciudadanía _____________ y en adelante se denominará EL COMPRADOR, han acordado celebrar contrato de  arrendamiento que se regirá por las normas civiles y comerciales que regulan la materia, según las siguientes cláusulas:"
+    },
+    {
+      "pid": "P3",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "PRIMERA OBJETO:",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "EL COMPRADOR",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " transferir a ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "EL VENDEDOR",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " la propiedad de la motocicleta que a continuación se identifica:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "PRIMERA OBJETO: EL COMPRADOR transferir a EL VENDEDOR la propiedad de la motocicleta que a continuación se identifica:"
+    },
+    {
+      "pid": "P4",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Marca:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "__________ Modelo:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "_________ Línea:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "_______________",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Marca: __________ Modelo: _________ Línea: _______________"
+    },
+    {
+      "pid": "P5",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Placa:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "____________ Motor:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "__________ Serie:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "_______________ ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Placa: ____________ Motor: __________ Serie: _______________ "
+    },
+    {
+      "pid": "P6",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Chasis:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "__________ Color: __________ Matriculado en:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "_______",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Chasis: __________ Color: __________ Matriculado en: _______"
+    },
+    {
+      "pid": "P7",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "SEGUNDA. ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "REMUNERACIÓN",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": ":",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " Las partes pactan pagar la suma de ___ pesos Mcte. ($________).",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "SEGUNDA. REMUNERACIÓN: Las partes pactan pagar la suma de ___ pesos Mcte. ($________)."
+    },
+    {
+      "pid": "P8",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "TERCERA. FORMA DE PAGO:",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "EL COMPRADOR",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " paga la remuneración",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " a que se refiere la cláusula anterior en la siguiente forma: ________ (",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "Se determina si es a la firma de este contrato de venta, a plazos o al momento de registrar la venta ante la Oficina de Tránsito de la ciudad donde está matriculado. ",
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "No se debe olvidar que la Compraventa es un acuerdo de voluntades",
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ").",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        }
+      ],
+      "plain": "TERCERA. FORMA DE PAGO: EL COMPRADOR paga la remuneración a que se refiere la cláusula anterior en la siguiente forma: ________ (Se determina si es a la firma de este contrato de venta, a plazos o al momento de registrar la venta ante la Oficina de Tránsito de la ciudad donde está matriculado. No se debe olvidar que la Compraventa es un acuerdo de voluntades)."
+    },
+    {
+      "pid": "P9",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "CUARTA. OBLIGACIONES EL VENDEDOR:",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": "EL VENDEDOR",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " se obliga a hacer entrega del (",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "carro o moto",
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": ") en el estado en que se encuentre, ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "con los respectivos gravámenes, embargos, multas, impuestos, pactos de reserva de dominio y cualquiera otra circunstancia que afecte el libre comercio del bien objeto del presente contrato.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "CUARTA. OBLIGACIONES EL VENDEDOR: EL VENDEDOR se obliga a hacer entrega del (carro o moto) en el estado en que se encuentre, con los respectivos gravámenes, embargos, multas, impuestos, pactos de reserva de dominio y cualquiera otra circunstancia que afecte el libre comercio del bien objeto del presente contrato."
+    },
+    {
+      "pid": "P10",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "QUINTA. CLÁUSULA COMPROMISORIA: ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "Toda controversia o diferencia relativa a este contrato, su ejecución y liquidación se resolverá ante los jueces civiles municipales de la Justicia Ordinaria.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "QUINTA. CLÁUSULA COMPROMISORIA: Toda controversia o diferencia relativa a este contrato, su ejecución y liquidación se resolverá ante los jueces civiles municipales de la Justicia Ordinaria."
+    }
+  ]
+}

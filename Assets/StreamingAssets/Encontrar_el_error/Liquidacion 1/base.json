@@ -1,0 +1,1881 @@
+{
+  "exerciseId": "Liquidacion_1",
+  "title": "Liquidacion 1",
+  "type": "table",
+  "sheet": "2016",
+  "dimension": {
+    "minRow": 0,
+    "minCol": 0,
+    "maxRow": 50,
+    "maxCol": 9
+  },
+  "tokens": [
+    {
+      "id": "T:Liquidacion_1:2016:R0C0-R5C6",
+      "text": "",
+      "r0": 0,
+      "c0": 0,
+      "r1": 5,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R0C7-R34C7",
+      "text": "",
+      "r0": 0,
+      "c0": 7,
+      "r1": 34,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R0C8-R0C8",
+      "text": "",
+      "r0": 0,
+      "c0": 8,
+      "r1": 0,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R0C9-R0C9",
+      "text": "",
+      "r0": 0,
+      "c0": 9,
+      "r1": 0,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R1C8-R1C8",
+      "text": "",
+      "r0": 1,
+      "c0": 8,
+      "r1": 1,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R1C9-R1C9",
+      "text": "",
+      "r0": 1,
+      "c0": 9,
+      "r1": 1,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R2C8-R2C8",
+      "text": "",
+      "r0": 2,
+      "c0": 8,
+      "r1": 2,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R2C9-R2C9",
+      "text": "",
+      "r0": 2,
+      "c0": 9,
+      "r1": 2,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R3C8-R3C8",
+      "text": "",
+      "r0": 3,
+      "c0": 8,
+      "r1": 3,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R3C9-R3C9",
+      "text": "",
+      "r0": 3,
+      "c0": 9,
+      "r1": 3,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R4C8-R4C8",
+      "text": "",
+      "r0": 4,
+      "c0": 8,
+      "r1": 4,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R4C9-R4C9",
+      "text": "",
+      "r0": 4,
+      "c0": 9,
+      "r1": 4,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R5C8-R5C8",
+      "text": "",
+      "r0": 5,
+      "c0": 8,
+      "r1": 5,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R5C9-R5C9",
+      "text": "",
+      "r0": 5,
+      "c0": 9,
+      "r1": 5,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R6C0-R6C6",
+      "text": "CONSULTORIO JURÍDICO\nFORMATO PARA LIQUIDACIÓN DE PRESTACIONES SOCIALES",
+      "r0": 6,
+      "c0": 0,
+      "r1": 6,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R6C8-R6C8",
+      "text": "",
+      "r0": 6,
+      "c0": 8,
+      "r1": 6,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R6C9-R6C9",
+      "text": "",
+      "r0": 6,
+      "c0": 9,
+      "r1": 6,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R7C0-R7C6",
+      "text": "FORMATO PARA LIQUIDACIÓN DE PRESTACIONES SOCIALES",
+      "r0": 7,
+      "c0": 0,
+      "r1": 7,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R7C8-R7C8",
+      "text": "",
+      "r0": 7,
+      "c0": 8,
+      "r1": 7,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R7C9-R7C9",
+      "text": "",
+      "r0": 7,
+      "c0": 9,
+      "r1": 7,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R8C0-R8C6",
+      "text": "",
+      "r0": 8,
+      "c0": 0,
+      "r1": 8,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R8C8-R8C8",
+      "text": "",
+      "r0": 8,
+      "c0": 8,
+      "r1": 8,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R8C9-R8C9",
+      "text": "",
+      "r0": 8,
+      "c0": 9,
+      "r1": 8,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R9C0-R9C6",
+      "text": "INFORMACIÓN GENERAL",
+      "r0": 9,
+      "c0": 0,
+      "r1": 9,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R9C8-R9C8",
+      "text": "",
+      "r0": 9,
+      "c0": 8,
+      "r1": 9,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R9C9-R9C9",
+      "text": "",
+      "r0": 9,
+      "c0": 9,
+      "r1": 9,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R10C0-R10C2",
+      "text": "Empleador: FERRETERÍA FIVALLE",
+      "r0": 10,
+      "c0": 0,
+      "r1": 10,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R10C3-R10C6",
+      "text": "Fecha de Liquidación: ",
+      "r0": 10,
+      "c0": 3,
+      "r1": 10,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R10C8-R10C8",
+      "text": "",
+      "r0": 10,
+      "c0": 8,
+      "r1": 10,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R10C9-R10C9",
+      "text": "",
+      "r0": 10,
+      "c0": 9,
+      "r1": 10,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R11C0-R11C2",
+      "text": "Trabajador: ANDRÉS OCAMPO",
+      "r0": 11,
+      "c0": 0,
+      "r1": 11,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R11C3-R11C6",
+      "text": "Duración del Contrato: Fijo (X) Indefinido (_)",
+      "r0": 11,
+      "c0": 3,
+      "r1": 11,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R11C8-R11C8",
+      "text": "",
+      "r0": 11,
+      "c0": 8,
+      "r1": 11,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R11C9-R11C9",
+      "text": "",
+      "r0": 11,
+      "c0": 9,
+      "r1": 11,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R12C0-R12C2",
+      "text": "Teléfono: 3176800894",
+      "r0": 12,
+      "c0": 0,
+      "r1": 12,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R12C3-R12C6",
+      "text": "Contrato: Verbal () Escrito (X)",
+      "r0": 12,
+      "c0": 3,
+      "r1": 12,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R12C8-R12C8",
+      "text": "",
+      "r0": 12,
+      "c0": 8,
+      "r1": 12,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R12C9-R12C9",
+      "text": "",
+      "r0": 12,
+      "c0": 9,
+      "r1": 12,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R13C0-R13C2",
+      "text": "Último cargo: Secretaria",
+      "r0": 13,
+      "c0": 0,
+      "r1": 13,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R13C3-R13C6",
+      "text": "Modo de Terminación: Despido sin justa causa",
+      "r0": 13,
+      "c0": 3,
+      "r1": 13,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R13C8-R13C8",
+      "text": "",
+      "r0": 13,
+      "c0": 8,
+      "r1": 13,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R13C9-R13C9",
+      "text": "",
+      "r0": 13,
+      "c0": 9,
+      "r1": 13,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R14C0-R14C2",
+      "text": "Fecha de Ingreso: 27 DE AGOSTO DE 2019",
+      "r0": 14,
+      "c0": 0,
+      "r1": 14,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R14C3-R14C6",
+      "text": "Fecha de Retiro: 03 DE OCTUBRE DE 2023",
+      "r0": 14,
+      "c0": 3,
+      "r1": 14,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R14C8-R14C8",
+      "text": "",
+      "r0": 14,
+      "c0": 8,
+      "r1": 14,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R14C9-R14C9",
+      "text": "",
+      "r0": 14,
+      "c0": 9,
+      "r1": 14,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R15C0-R15C6",
+      "text": "",
+      "r0": 15,
+      "c0": 0,
+      "r1": 15,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R15C8-R15C8",
+      "text": "",
+      "r0": 15,
+      "c0": 8,
+      "r1": 15,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R15C9-R15C9",
+      "text": "",
+      "r0": 15,
+      "c0": 9,
+      "r1": 15,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R16C0-R16C6",
+      "text": "INFORMACIÓN PRESTACIONAL",
+      "r0": 16,
+      "c0": 0,
+      "r1": 16,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R16C8-R16C8",
+      "text": "",
+      "r0": 16,
+      "c0": 8,
+      "r1": 16,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R16C9-R16C9",
+      "text": "",
+      "r0": 16,
+      "c0": 9,
+      "r1": 16,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R17C0-R17C6",
+      "text": "Tiempo Trabajado",
+      "r0": 17,
+      "c0": 0,
+      "r1": 17,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R17C8-R17C8",
+      "text": "",
+      "r0": 17,
+      "c0": 8,
+      "r1": 17,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R17C9-R17C9",
+      "text": "",
+      "r0": 17,
+      "c0": 9,
+      "r1": 17,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R18C0-R18C1",
+      "text": "",
+      "r0": 18,
+      "c0": 0,
+      "r1": 18,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R18C2-R18C3",
+      "text": "Año",
+      "r0": 18,
+      "c0": 2,
+      "r1": 18,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R18C4-R18C5",
+      "text": "Mes",
+      "r0": 18,
+      "c0": 4,
+      "r1": 18,
+      "c1": 5
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R18C6-R18C6",
+      "text": "Día",
+      "r0": 18,
+      "c0": 6,
+      "r1": 18,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R18C8-R18C8",
+      "text": "",
+      "r0": 18,
+      "c0": 8,
+      "r1": 18,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R18C9-R18C9",
+      "text": "",
+      "r0": 18,
+      "c0": 9,
+      "r1": 18,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R19C0-R19C1",
+      "text": "Fecha de Retiro:",
+      "r0": 19,
+      "c0": 0,
+      "r1": 19,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R19C2-R19C3",
+      "text": "2023",
+      "r0": 19,
+      "c0": 2,
+      "r1": 19,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R19C4-R19C5",
+      "text": "10",
+      "r0": 19,
+      "c0": 4,
+      "r1": 19,
+      "c1": 5
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R19C6-R19C6",
+      "text": "3",
+      "r0": 19,
+      "c0": 6,
+      "r1": 19,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R19C8-R19C8",
+      "text": "",
+      "r0": 19,
+      "c0": 8,
+      "r1": 19,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R19C9-R19C9",
+      "text": "",
+      "r0": 19,
+      "c0": 9,
+      "r1": 19,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R20C0-R20C1",
+      "text": "Fecha de Ingreso:",
+      "r0": 20,
+      "c0": 0,
+      "r1": 20,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R20C2-R20C3",
+      "text": "2019",
+      "r0": 20,
+      "c0": 2,
+      "r1": 20,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R20C4-R20C5",
+      "text": "8",
+      "r0": 20,
+      "c0": 4,
+      "r1": 20,
+      "c1": 5
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R20C6-R20C6",
+      "text": "27",
+      "r0": 20,
+      "c0": 6,
+      "r1": 20,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R20C8-R20C8",
+      "text": "",
+      "r0": 20,
+      "c0": 8,
+      "r1": 20,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R20C9-R20C9",
+      "text": "",
+      "r0": 20,
+      "c0": 9,
+      "r1": 20,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R21C0-R21C1",
+      "text": "Menos Suspensiones:",
+      "r0": 21,
+      "c0": 0,
+      "r1": 21,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R21C2-R21C3",
+      "text": "",
+      "r0": 21,
+      "c0": 2,
+      "r1": 21,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R21C4-R21C5",
+      "text": "0",
+      "r0": 21,
+      "c0": 4,
+      "r1": 21,
+      "c1": 5
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R21C6-R21C6",
+      "text": "0",
+      "r0": 21,
+      "c0": 6,
+      "r1": 21,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R21C8-R21C8",
+      "text": "",
+      "r0": 21,
+      "c0": 8,
+      "r1": 21,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R21C9-R21C9",
+      "text": "",
+      "r0": 21,
+      "c0": 9,
+      "r1": 21,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R22C0-R22C1",
+      "text": "Tiempo Neto:",
+      "r0": 22,
+      "c0": 0,
+      "r1": 22,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R22C2-R22C6",
+      "text": "1476",
+      "r0": 22,
+      "c0": 2,
+      "r1": 22,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R22C8-R22C8",
+      "text": "",
+      "r0": 22,
+      "c0": 8,
+      "r1": 22,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R22C9-R22C9",
+      "text": "",
+      "r0": 22,
+      "c0": 9,
+      "r1": 22,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R23C0-R23C1",
+      "text": "Total Días Trabajados:",
+      "r0": 23,
+      "c0": 0,
+      "r1": 23,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R23C2-R23C6",
+      "text": "1476",
+      "r0": 23,
+      "c0": 2,
+      "r1": 23,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R23C8-R23C8",
+      "text": "",
+      "r0": 23,
+      "c0": 8,
+      "r1": 23,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R23C9-R23C9",
+      "text": "",
+      "r0": 23,
+      "c0": 9,
+      "r1": 23,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R24C0-R24C6",
+      "text": "",
+      "r0": 24,
+      "c0": 0,
+      "r1": 24,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R24C8-R24C8",
+      "text": "",
+      "r0": 24,
+      "c0": 8,
+      "r1": 24,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R24C9-R24C9",
+      "text": "",
+      "r0": 24,
+      "c0": 9,
+      "r1": 24,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R25C0-R25C2",
+      "text": "Base Salarial para liquidar Cesantía y/o Prima",
+      "r0": 25,
+      "c0": 0,
+      "r1": 25,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R25C3-R25C6",
+      "text": "Base Salarial para liquidar Vacaciones e Indemnizaciones",
+      "r0": 25,
+      "c0": 3,
+      "r1": 25,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R25C8-R25C8",
+      "text": "",
+      "r0": 25,
+      "c0": 8,
+      "r1": 25,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R25C9-R25C9",
+      "text": "",
+      "r0": 25,
+      "c0": 9,
+      "r1": 25,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C0-R26C0",
+      "text": "Período Promediado",
+      "r0": 26,
+      "c0": 0,
+      "r1": 26,
+      "c1": 0
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C1-R26C1",
+      "text": "Desde: ",
+      "r0": 26,
+      "c0": 1,
+      "r1": 26,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C2-R26C2",
+      "text": "Hasta: ",
+      "r0": 26,
+      "c0": 2,
+      "r1": 26,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C3-R26C3",
+      "text": "Período Promediado",
+      "r0": 26,
+      "c0": 3,
+      "r1": 26,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C4-R26C4",
+      "text": "Desde: ",
+      "r0": 26,
+      "c0": 4,
+      "r1": 26,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C5-R26C6",
+      "text": "Hasta: ",
+      "r0": 26,
+      "c0": 5,
+      "r1": 26,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C8-R26C8",
+      "text": "",
+      "r0": 26,
+      "c0": 8,
+      "r1": 26,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R26C9-R26C9",
+      "text": "",
+      "r0": 26,
+      "c0": 9,
+      "r1": 26,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R27C0-R27C1",
+      "text": "Salario o Promedio:",
+      "r0": 27,
+      "c0": 0,
+      "r1": 27,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R27C2-R27C2",
+      "text": "1400000",
+      "r0": 27,
+      "c0": 2,
+      "r1": 27,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R27C3-R27C4",
+      "text": "Salario o Promedio:",
+      "r0": 27,
+      "c0": 3,
+      "r1": 27,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R27C5-R27C6",
+      "text": "1400000",
+      "r0": 27,
+      "c0": 5,
+      "r1": 27,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R27C8-R27C8",
+      "text": "",
+      "r0": 27,
+      "c0": 8,
+      "r1": 27,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R27C9-R27C9",
+      "text": "",
+      "r0": 27,
+      "c0": 9,
+      "r1": 27,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R28C0-R28C1",
+      "text": "Promedio Recargo Nocturno:",
+      "r0": 28,
+      "c0": 0,
+      "r1": 28,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R28C2-R28C2",
+      "text": "0",
+      "r0": 28,
+      "c0": 2,
+      "r1": 28,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R28C3-R29C4",
+      "text": "Promedio Recargo Nocturno:",
+      "r0": 28,
+      "c0": 3,
+      "r1": 29,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R28C5-R29C6",
+      "text": "0",
+      "r0": 28,
+      "c0": 5,
+      "r1": 29,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R28C8-R28C8",
+      "text": "",
+      "r0": 28,
+      "c0": 8,
+      "r1": 28,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R28C9-R28C9",
+      "text": "",
+      "r0": 28,
+      "c0": 9,
+      "r1": 28,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R29C0-R29C1",
+      "text": "Promedio Horas Extras:",
+      "r0": 29,
+      "c0": 0,
+      "r1": 29,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R29C2-R29C2",
+      "text": "",
+      "r0": 29,
+      "c0": 2,
+      "r1": 29,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R29C8-R29C8",
+      "text": "",
+      "r0": 29,
+      "c0": 8,
+      "r1": 29,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R29C9-R29C9",
+      "text": "",
+      "r0": 29,
+      "c0": 9,
+      "r1": 29,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R30C0-R30C1",
+      "text": "Promedio Dominicales y/o Festivos:",
+      "r0": 30,
+      "c0": 0,
+      "r1": 30,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R30C2-R30C2",
+      "text": "0",
+      "r0": 30,
+      "c0": 2,
+      "r1": 30,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R30C3-R31C4",
+      "text": "Promedio otros Factores Salariales (salario en especie, comisiones, etc):",
+      "r0": 30,
+      "c0": 3,
+      "r1": 31,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R30C5-R31C6",
+      "text": "0",
+      "r0": 30,
+      "c0": 5,
+      "r1": 31,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R30C8-R30C8",
+      "text": "",
+      "r0": 30,
+      "c0": 8,
+      "r1": 30,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R30C9-R30C9",
+      "text": "",
+      "r0": 30,
+      "c0": 9,
+      "r1": 30,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R31C0-R31C1",
+      "text": "Auxilio de Transporte:",
+      "r0": 31,
+      "c0": 0,
+      "r1": 31,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R31C2-R31C2",
+      "text": "140606",
+      "r0": 31,
+      "c0": 2,
+      "r1": 31,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R31C8-R31C8",
+      "text": "",
+      "r0": 31,
+      "c0": 8,
+      "r1": 31,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R31C9-R31C9",
+      "text": "",
+      "r0": 31,
+      "c0": 9,
+      "r1": 31,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R32C0-R32C1",
+      "text": "Promedio otros Factores Salariales:",
+      "r0": 32,
+      "c0": 0,
+      "r1": 32,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R32C2-R32C2",
+      "text": "0",
+      "r0": 32,
+      "c0": 2,
+      "r1": 32,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R32C3-R33C4",
+      "text": "Base de Liquidación:",
+      "r0": 32,
+      "c0": 3,
+      "r1": 33,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R32C5-R33C6",
+      "text": "1400000",
+      "r0": 32,
+      "c0": 5,
+      "r1": 33,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R32C8-R32C8",
+      "text": "",
+      "r0": 32,
+      "c0": 8,
+      "r1": 32,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R32C9-R32C9",
+      "text": "",
+      "r0": 32,
+      "c0": 9,
+      "r1": 32,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R33C0-R33C1",
+      "text": "Base de Liquidación:",
+      "r0": 33,
+      "c0": 0,
+      "r1": 33,
+      "c1": 1
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R33C2-R33C2",
+      "text": "1540606",
+      "r0": 33,
+      "c0": 2,
+      "r1": 33,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R33C8-R33C8",
+      "text": "",
+      "r0": 33,
+      "c0": 8,
+      "r1": 33,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R33C9-R33C9",
+      "text": "",
+      "r0": 33,
+      "c0": 9,
+      "r1": 33,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R34C0-R34C6",
+      "text": "",
+      "r0": 34,
+      "c0": 0,
+      "r1": 34,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R34C8-R34C8",
+      "text": "",
+      "r0": 34,
+      "c0": 8,
+      "r1": 34,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R34C9-R34C9",
+      "text": "",
+      "r0": 34,
+      "c0": 9,
+      "r1": 34,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R35C0-R35C6",
+      "text": "LIQUIDACIÓN AÑO  2023",
+      "r0": 35,
+      "c0": 0,
+      "r1": 35,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R35C7-R35C7",
+      "text": "",
+      "r0": 35,
+      "c0": 7,
+      "r1": 35,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R35C8-R35C8",
+      "text": "",
+      "r0": 35,
+      "c0": 8,
+      "r1": 35,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R35C9-R35C9",
+      "text": "",
+      "r0": 35,
+      "c0": 9,
+      "r1": 35,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R36C0-R36C2",
+      "text": "",
+      "r0": 36,
+      "c0": 0,
+      "r1": 36,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R36C3-R36C3",
+      "text": "Desde",
+      "r0": 36,
+      "c0": 3,
+      "r1": 36,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R36C4-R36C4",
+      "text": "Hasta",
+      "r0": 36,
+      "c0": 4,
+      "r1": 36,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R36C5-R36C6",
+      "text": "VALORES",
+      "r0": 36,
+      "c0": 5,
+      "r1": 36,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R36C7-R36C7",
+      "text": "",
+      "r0": 36,
+      "c0": 7,
+      "r1": 36,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R36C8-R36C8",
+      "text": "",
+      "r0": 36,
+      "c0": 8,
+      "r1": 36,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R36C9-R36C9",
+      "text": "",
+      "r0": 36,
+      "c0": 9,
+      "r1": 36,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R37C0-R37C2",
+      "text": "Cesantía",
+      "r0": 37,
+      "c0": 0,
+      "r1": 37,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R37C3-R37C3",
+      "text": "2019-08-27 00:00:00",
+      "r0": 37,
+      "c0": 3,
+      "r1": 37,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R37C4-R37C4",
+      "text": "3/10/23",
+      "r0": 37,
+      "c0": 4,
+      "r1": 37,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R37C5-R37C6",
+      "text": "6316484.6",
+      "r0": 37,
+      "c0": 5,
+      "r1": 37,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R37C7-R37C7",
+      "text": "Se deben  consignar en el fondo de cesantías escogido por el trabajador",
+      "r0": 37,
+      "c0": 7,
+      "r1": 37,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R37C8-R37C8",
+      "text": "",
+      "r0": 37,
+      "c0": 8,
+      "r1": 37,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R37C9-R37C9",
+      "text": "",
+      "r0": 37,
+      "c0": 9,
+      "r1": 37,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R38C0-R38C2",
+      "text": "Prima de Servicios",
+      "r0": 38,
+      "c0": 0,
+      "r1": 38,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R38C3-R38C3",
+      "text": "2019-08-28 00:00:00",
+      "r0": 38,
+      "c0": 3,
+      "r1": 38,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R38C4-R38C4",
+      "text": "3/10/23",
+      "r0": 38,
+      "c0": 4,
+      "r1": 38,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R38C5-R38C6",
+      "text": "6316484.6",
+      "r0": 38,
+      "c0": 5,
+      "r1": 38,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R38C7-R38C7",
+      "text": "",
+      "r0": 38,
+      "c0": 7,
+      "r1": 38,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R38C8-R38C8",
+      "text": "",
+      "r0": 38,
+      "c0": 8,
+      "r1": 38,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R38C9-R38C9",
+      "text": "",
+      "r0": 38,
+      "c0": 9,
+      "r1": 38,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R39C0-R39C2",
+      "text": "Vacaciones",
+      "r0": 39,
+      "c0": 0,
+      "r1": 39,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R39C3-R39C3",
+      "text": "",
+      "r0": 39,
+      "c0": 3,
+      "r1": 39,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R39C4-R39C4",
+      "text": "",
+      "r0": 39,
+      "c0": 4,
+      "r1": 39,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R39C5-R39C6",
+      "text": "0",
+      "r0": 39,
+      "c0": 5,
+      "r1": 39,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R39C7-R39C7",
+      "text": "No se le pagan al trabajador tal y como se consignó en el contrato.",
+      "r0": 39,
+      "c0": 7,
+      "r1": 39,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R39C8-R39C8",
+      "text": "",
+      "r0": 39,
+      "c0": 8,
+      "r1": 39,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R39C9-R39C9",
+      "text": "",
+      "r0": 39,
+      "c0": 9,
+      "r1": 39,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R40C0-R40C2",
+      "text": "Salario Adeudado",
+      "r0": 40,
+      "c0": 0,
+      "r1": 40,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R40C3-R40C3",
+      "text": "",
+      "r0": 40,
+      "c0": 3,
+      "r1": 40,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R40C4-R40C4",
+      "text": "",
+      "r0": 40,
+      "c0": 4,
+      "r1": 40,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R40C5-R40C6",
+      "text": "",
+      "r0": 40,
+      "c0": 5,
+      "r1": 40,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R40C7-R40C7",
+      "text": "",
+      "r0": 40,
+      "c0": 7,
+      "r1": 40,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R40C8-R40C8",
+      "text": "",
+      "r0": 40,
+      "c0": 8,
+      "r1": 40,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R40C9-R40C9",
+      "text": "",
+      "r0": 40,
+      "c0": 9,
+      "r1": 40,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R41C0-R41C2",
+      "text": "Auxilio de Transporte",
+      "r0": 41,
+      "c0": 0,
+      "r1": 41,
+      "c1": 2
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R41C3-R41C3",
+      "text": "",
+      "r0": 41,
+      "c0": 3,
+      "r1": 41,
+      "c1": 3
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R41C4-R41C4",
+      "text": "",
+      "r0": 41,
+      "c0": 4,
+      "r1": 41,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R41C5-R41C6",
+      "text": "140606",
+      "r0": 41,
+      "c0": 5,
+      "r1": 41,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R41C7-R41C7",
+      "text": "",
+      "r0": 41,
+      "c0": 7,
+      "r1": 41,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R41C8-R41C8",
+      "text": "",
+      "r0": 41,
+      "c0": 8,
+      "r1": 41,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R41C9-R41C9",
+      "text": "",
+      "r0": 41,
+      "c0": 9,
+      "r1": 41,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R42C0-R42C4",
+      "text": "Interés de Cesantía",
+      "r0": 42,
+      "c0": 0,
+      "r1": 42,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R42C5-R42C6",
+      "text": "3107710.423199999",
+      "r0": 42,
+      "c0": 5,
+      "r1": 42,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R42C7-R42C7",
+      "text": "",
+      "r0": 42,
+      "c0": 7,
+      "r1": 42,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R42C8-R42C8",
+      "text": "",
+      "r0": 42,
+      "c0": 8,
+      "r1": 42,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R42C9-R42C9",
+      "text": "",
+      "r0": 42,
+      "c0": 9,
+      "r1": 42,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R43C0-R43C4",
+      "text": "Indemnización por No Pago de Cesantías",
+      "r0": 43,
+      "c0": 0,
+      "r1": 43,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R43C5-R43C6",
+      "text": "0",
+      "r0": 43,
+      "c0": 5,
+      "r1": 43,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R43C7-R43C7",
+      "text": "",
+      "r0": 43,
+      "c0": 7,
+      "r1": 43,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R43C8-R43C8",
+      "text": "",
+      "r0": 43,
+      "c0": 8,
+      "r1": 43,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R43C9-R43C9",
+      "text": "",
+      "r0": 43,
+      "c0": 9,
+      "r1": 43,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R44C0-R44C4",
+      "text": "Indemnización por Despido Sin Justa Causa",
+      "r0": 44,
+      "c0": 0,
+      "r1": 44,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R44C5-R44C6",
+      "text": "0",
+      "r0": 44,
+      "c0": 5,
+      "r1": 44,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R44C7-R44C7",
+      "text": "",
+      "r0": 44,
+      "c0": 7,
+      "r1": 44,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R44C8-R44C8",
+      "text": "",
+      "r0": 44,
+      "c0": 8,
+      "r1": 44,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R44C9-R44C9",
+      "text": "",
+      "r0": 44,
+      "c0": 9,
+      "r1": 44,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R45C0-R45C4",
+      "text": "Indemnización Moratoria",
+      "r0": 45,
+      "c0": 0,
+      "r1": 45,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R45C5-R45C6",
+      "text": "No se paga",
+      "r0": 45,
+      "c0": 5,
+      "r1": 45,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R45C7-R45C7",
+      "text": "",
+      "r0": 45,
+      "c0": 7,
+      "r1": 45,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R45C8-R45C8",
+      "text": "",
+      "r0": 45,
+      "c0": 8,
+      "r1": 45,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R45C9-R45C9",
+      "text": "",
+      "r0": 45,
+      "c0": 9,
+      "r1": 45,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R46C0-R46C4",
+      "text": "Otras Indemnizaciones",
+      "r0": 46,
+      "c0": 0,
+      "r1": 46,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R46C5-R46C6",
+      "text": "0",
+      "r0": 46,
+      "c0": 5,
+      "r1": 46,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R46C7-R46C7",
+      "text": "",
+      "r0": 46,
+      "c0": 7,
+      "r1": 46,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R46C8-R46C8",
+      "text": "",
+      "r0": 46,
+      "c0": 8,
+      "r1": 46,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R46C9-R46C9",
+      "text": "",
+      "r0": 46,
+      "c0": 9,
+      "r1": 46,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R47C0-R47C4",
+      "text": "Otro(s)",
+      "r0": 47,
+      "c0": 0,
+      "r1": 47,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R47C5-R47C6",
+      "text": "0",
+      "r0": 47,
+      "c0": 5,
+      "r1": 47,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R47C7-R47C7",
+      "text": "",
+      "r0": 47,
+      "c0": 7,
+      "r1": 47,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R47C8-R47C8",
+      "text": "",
+      "r0": 47,
+      "c0": 8,
+      "r1": 47,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R47C9-R47C9",
+      "text": "",
+      "r0": 47,
+      "c0": 9,
+      "r1": 47,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R48C0-R48C4",
+      "text": "Total Liquidado Año 2023",
+      "r0": 48,
+      "c0": 0,
+      "r1": 48,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R48C5-R48C6",
+      "text": "15881285.6232",
+      "r0": 48,
+      "c0": 5,
+      "r1": 48,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R48C7-R48C7",
+      "text": "",
+      "r0": 48,
+      "c0": 7,
+      "r1": 48,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R48C8-R48C8",
+      "text": "",
+      "r0": 48,
+      "c0": 8,
+      "r1": 48,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R48C9-R48C9",
+      "text": "",
+      "r0": 48,
+      "c0": 9,
+      "r1": 48,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R49C0-R49C4",
+      "text": "Menos Deducciones o Adelantos",
+      "r0": 49,
+      "c0": 0,
+      "r1": 49,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R49C5-R49C6",
+      "text": "0",
+      "r0": 49,
+      "c0": 5,
+      "r1": 49,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R49C7-R49C7",
+      "text": "",
+      "r0": 49,
+      "c0": 7,
+      "r1": 49,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R49C8-R49C8",
+      "text": "",
+      "r0": 49,
+      "c0": 8,
+      "r1": 49,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R49C9-R49C9",
+      "text": "",
+      "r0": 49,
+      "c0": 9,
+      "r1": 49,
+      "c1": 9
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R50C0-R50C4",
+      "text": "Total Neto Liquidado",
+      "r0": 50,
+      "c0": 0,
+      "r1": 50,
+      "c1": 4
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R50C5-R50C6",
+      "text": "15881285.6232",
+      "r0": 50,
+      "c0": 5,
+      "r1": 50,
+      "c1": 6
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R50C7-R50C7",
+      "text": "",
+      "r0": 50,
+      "c0": 7,
+      "r1": 50,
+      "c1": 7
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R50C8-R50C8",
+      "text": "",
+      "r0": 50,
+      "c0": 8,
+      "r1": 50,
+      "c1": 8
+    },
+    {
+      "id": "T:Liquidacion_1:2016:R50C9-R50C9",
+      "text": "",
+      "r0": 50,
+      "c0": 9,
+      "r1": 50,
+      "c1": 9
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG:Liquidacion_1:2016:0",
+      "file": "images/IMG_0.png",
+      "r0": 0,
+      "c0": 1,
+      "r1": 5,
+      "c1": 5,
+      "z": 0
+    }
+  ]
+}

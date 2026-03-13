@@ -55,4 +55,4 @@ cargarCaso()
 
 mostrarCinematica(-media "escena 35" -audio true)
 
-subirNivelJuego()
+subirNivel()

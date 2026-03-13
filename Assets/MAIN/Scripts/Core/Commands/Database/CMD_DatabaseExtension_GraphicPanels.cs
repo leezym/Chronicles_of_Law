@@ -165,7 +165,7 @@ namespace COMMANDS
 
             //Now run the logic
             GameManager gm = GameManager.Instance;
-            pathToGraphic = FilePaths.GetPathToResource(FilePaths.resources_backgroundCinematics, $"Nivel.{gm.GetCurrentGameLevel()}/{gm.GetCurrentGameGender()}/{mediaName}");
+            pathToGraphic = FilePaths.GetPathToResource(FilePaths.resources_backgroundCinematics, $"Nivel.{gm.GetCurrentLevel()}/{gm.GetCurrentGender()}/{mediaName}");
             graphic = Resources.Load<VideoClip>(pathToGraphic);
 
             if(graphic == null)

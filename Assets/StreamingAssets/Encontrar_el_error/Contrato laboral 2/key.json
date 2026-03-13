@@ -1,0 +1,21 @@
+{
+  "pointsPerCorrect": 1,
+  "enabled": [
+    "R:DOC:001",
+    "R:DOC:002",
+    "R:DOC:003",
+    "R:DOC:004",
+    "R:DOC:005",
+    "R:DOC:006",
+    "R:DOC:007",
+    "R:DOC:008",
+    "R:DOC:009"
+  ],
+  "correct": [
+    "R:DOC:002",
+    "R:DOC:005",
+    "R:DOC:006",
+    "R:DOC:007",
+    "R:DOC:009"
+  ]
+}

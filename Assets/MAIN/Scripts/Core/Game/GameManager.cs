@@ -16,7 +16,8 @@ namespace GAME
         public TMP_Text pointsText;
         float points { get; set; } = 0f;
         int currentCaseLevel { get; set; } = 0;
-        int currentGameLevel { get; set; } = 1;
+        int currentGameLevel { get; set; } = 0;
+        int currentLevel { get; set; } = 1;
         
         public enum Gender {F, M}
         [field: SerializeField] public Gender currentGameGender { get; private set; }
@@ -38,8 +39,8 @@ namespace GAME
 
         public void SetPoints(float points)
         {
-            this.points = points;
-            pointsText.text = points.ToString();
+            this.points += points;
+            pointsText.text = this.points.ToString();
         }
 
         public int GetCurrentCaseLevel(){ return currentCaseLevel; }
@@ -56,7 +57,14 @@ namespace GAME
             this.currentGameLevel = currentGameLevel;
         }
 
-        public Gender GetCurrentGameGender(){ return currentGameGender; }
+        public int GetCurrentLevel(){ return currentLevel; }
+
+        public void SetCurrentLevel(int currentLevel)
+        {
+            this.currentLevel = currentLevel;
+        }
+
+        public Gender GetCurrentGender(){ return currentGameGender; }
 
         public void SetGenderF() => currentGameGender = Gender.F;
         public void SetGenderM() => currentGameGender = Gender.M;
@@ -66,7 +74,7 @@ namespace GAME
             CasesData data = CasesManager.Instance.casesInGame[index].cases;
 
             caseImage.sprite = data.photo;
-            caseName.text = data.name.FirstCharacterToUpper();
+            caseName.text = data.character.FirstCharacterToUpper();
             caseAge.text = data.age.ToString();
             caseArea.text = data.area.ToString().FirstCharacterToUpper();
             caseDescription.text = data.description.FirstCharacterToUpper();

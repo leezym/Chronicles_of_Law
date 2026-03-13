@@ -1,0 +1,424 @@
+{
+  "exerciseId": "DOC",
+  "title": "Contrato de Trabajo",
+  "type": "legal_document",
+  "paragraphs": [
+    {
+      "pid": "P0",
+      "align": "center",
+      "runs": [
+        {
+          "text": "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO INFERIOR A UN AÑO",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        }
+      ],
+      "plain": "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO INFERIOR A UN AÑO"
+    },
+    {
+      "pid": "P1",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P2",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Entre los suscritos, por una parte, ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "(NOMBRE DEL EMPLEADOR)",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": null
+        },
+        {
+          "text": ", mayor de edad, ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "(INDIQUE PROFESIÓN DEL EMPLEADOR)",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": null
+        },
+        {
+          "text": ", de nacionalidad ___________, identificado con _____________ y con domicilio en ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "(INDIQUE LA DIRECCIÓN)",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "quien en lo sucesivo y para los efectos del presente contrato se denominará EMPLEADOR y ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "(NOMBRE DEL EMPLEADO)",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "persona menor",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " de edad identificada con la ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "cédula de identificación",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "____________, con domicilio en la ciudad ____________, de nacionalidad ____________, quien en lo sucesivo y para los efectos del presente contrato se denominará el TRABAJADOR; hemos convenido celebrar como en efecto celebramos, el presente ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": null
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": null
+        },
+        {
+          "text": "SUPERIOR A UN AÑO",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": "yellow"
+        },
+        {
+          "text": ", que se regirá por las cláusulas y estipulaciones siguientes:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Entre los suscritos, por una parte, (NOMBRE DEL EMPLEADOR), mayor de edad, (INDIQUE PROFESIÓN DEL EMPLEADOR), de nacionalidad ___________, identificado con _____________ y con domicilio en (INDIQUE LA DIRECCIÓN) quien en lo sucesivo y para los efectos del presente contrato se denominará EMPLEADOR y (NOMBRE DEL EMPLEADO) persona menor de edad identificada con la cédula de identificación ____________, con domicilio en la ciudad ____________, de nacionalidad ____________, quien en lo sucesivo y para los efectos del presente contrato se denominará el TRABAJADOR; hemos convenido celebrar como en efecto celebramos, el presente CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO SUPERIOR A UN AÑO, que se regirá por las cláusulas y estipulaciones siguientes:"
+    },
+    {
+      "pid": "P3",
+      "align": "justify",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P4",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "CLÁUSULA PRIMERA:",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " En el presente contrato, EL TRABAJADOR ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "se obliga a prestar sus servicios al EMPLEADOR",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ", desempeñando el cargo de ___________, para el cual deberá realizar ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "las actividades de prestación de servicios.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        }
+      ],
+      "plain": "CLÁUSULA PRIMERA: En el presente contrato, EL TRABAJADOR se obliga a prestar sus servicios al EMPLEADOR, desempeñando el cargo de ___________, para el cual deberá realizar las actividades de prestación de servicios."
+    },
+    {
+      "pid": "P5",
+      "align": "justify",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P6",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "CLÁUSULA SEGUNDA:",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " El presente contrato es _______________ ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "a término FIJO",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ". ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "CLÁUSULA SEGUNDA: El presente contrato es _______________ a término FIJO. "
+    },
+    {
+      "pid": "P7",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "CLÁUSULA TERCERA:",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " El contrato tendrá una ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "duración de 1 año y medio dando inicio la relación laboral el día ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "03",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": "yellow"
+        },
+        {
+          "text": " mes ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "01",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": "yellow"
+        },
+        {
+          "text": " del ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "2024",
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " y terminado el día ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "03",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": "yellow"
+        },
+        {
+          "text": ", mes ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "06",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": "yellow"
+        },
+        {
+          "text": " del ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "2025",
+          "bold": false,
+          "italic": false,
+          "underline": true,
+          "highlight": "yellow"
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "  ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "CLÁUSULA TERCERA: El contrato tendrá una duración de 1 año y medio dando inicio la relación laboral el día 03 mes 01 del 2024 y terminado el día 03, mes 06 del 2025.  "
+    },
+    {
+      "pid": "P8",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "CLÁUSULA CUARTA:",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " El EMPLEADOR pagará al TRABAJADOR por la prestación de sus servicios la suma de ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "HONORARIOS MÍNIMOS LEGALES MENSUALES VIGENTE",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": ", es decir la suma de UN MILLÓN TRESCIENTOS MIL PESOS MTCE ($1.300.000) pagaderos mensualmente. Dentro de este pago ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "se encuentra incluida la remuneración de los descansos dominicales y festivos",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": " de qué tratan los capítulos I y II del título VII del Código Sustantivo del Trabajo. Se aclara y se conviene que en los casos en los que el trabajador devengue comisiones o cualquier otra modalidad de salario variable, el 82.5% de dichos ingresos, constituye remuneración ordinaria y el 17.5% restante está designado a remunerar el descanso en los días dominicales y festivos que tratan los capítulos I y II del título VII del Código Sustantivo de Trabajo.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "CLÁUSULA CUARTA: El EMPLEADOR pagará al TRABAJADOR por la prestación de sus servicios la suma de HONORARIOS MÍNIMOS LEGALES MENSUALES VIGENTE, es decir la suma de UN MILLÓN TRESCIENTOS MIL PESOS MTCE ($1.300.000) pagaderos mensualmente. Dentro de este pago se encuentra incluida la remuneración de los descansos dominicales y festivos de qué tratan los capítulos I y II del título VII del Código Sustantivo del Trabajo. Se aclara y se conviene que en los casos en los que el trabajador devengue comisiones o cualquier otra modalidad de salario variable, el 82.5% de dichos ingresos, constituye remuneración ordinaria y el 17.5% restante está designado a remunerar el descanso en los días dominicales y festivos que tratan los capítulos I y II del título VII del Código Sustantivo de Trabajo."
+    }
+  ]
+}

@@ -10,7 +10,7 @@ using UnityEngine.InputSystem.Utilities;
 
 ////TODO: control schemes, like actions and maps, should have stable IDs so that they can be renamed
 
-////REVIEW: have some way of expressing 'contracts' on action maps? I.e. something like
+////REVIEW: have some way of expressing 'documents' on action maps? I.e. something like
 ////        "I expect a 'look' and a 'move' action in here"
 
 ////REVIEW: rename this from "InputActionAsset" to something else that emphasizes the asset aspect less

@@ -62,7 +62,7 @@ public class GraphicLayer
             newGraphic = new GraphicObject(this, filePath, graphicData as VideoClip, useAudioForVideo, loop, bus);
             newGraphic.Finished += () =>
             {
-                // Siempre visar que el video terminó (aunque ya no sea el currentGraphic)
+                // Siempre avisar que el video terminó (aunque ya no sea el currentGraphic)
                 OnCurrentVideoFinished?.Invoke();
 
                 // Solo limpiar si ese video sigue siendo el actual

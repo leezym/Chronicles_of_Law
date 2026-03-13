@@ -1,0 +1,301 @@
+{
+  "exerciseId": "DOC",
+  "title": "Medida cautelar 1",
+  "type": "legal_document",
+  "paragraphs": [
+    {
+      "pid": "P0",
+      "align": "center",
+      "runs": [
+        {
+          "text": "SOLICITUD DE MEDIDA CAUTELAR",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        }
+      ],
+      "plain": "SOLICITUD DE MEDIDA CAUTELAR"
+    },
+    {
+      "pid": "P1",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P2",
+      "align": "center",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P3",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Señor(a)",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Señor(a)"
+    },
+    {
+      "pid": "P4",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "Juez Civil",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        }
+      ],
+      "plain": "Juez Civil"
+    },
+    {
+      "pid": "P5",
+      "align": "left",
+      "runs": [
+        {
+          "text": "Ciudad",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Ciudad"
+    },
+    {
+      "pid": "P6",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "E.S.D",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "E.S.D"
+    },
+    {
+      "pid": "P7",
+      "align": "justify",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P8",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "REF: ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": "Solicitud de medidas cautelares en el proceso ejecutivo con radicado No. 3366768654",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "cyan"
+        }
+      ],
+      "plain": "REF: Solicitud de medidas cautelares en el proceso ejecutivo con radicado No. 3366768654."
+    },
+    {
+      "pid": "P9",
+      "align": "justify",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P10",
+      "align": "justify",
+      "runs": [
+        {
+          "text": "GABRIELA ROMERO VESGA,",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": " mayor de edad, identificada con cédula de ciudadanía No. 1.193.458.058, expedida en Manizales, Caldas con domicilio en ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "Cali, Valle",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        },
+        {
+          "text": ", solicitó mediante este escrito, que se decreten las siguientes medidas cautelares con carácter de previas dentro del ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "proceso declarativo",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " con radicado No.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "3366768654",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        },
+        {
+          "text": ", para que sea efectiva la presente acción, ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "así:",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "white"
+        }
+      ],
+      "plain": "GABRIELA ROMERO VESGA, mayor de edad, identificada con cédula de ciudadanía No. 1.193.458.058, expedida en Manizales, Caldas con domicilio en Cali, Valle, solicitó mediante este escrito, que se decreten las siguientes medidas cautelares con carácter de previas dentro del proceso declarativo con radicado No.3366768654, para que sea efectiva la presente acción, así:"
+    },
+    {
+      "pid": "P11",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P12",
+      "align": "left",
+      "runs": [
+        {
+          "text": "El embargo y posterior secuestro de todos los bienes muebles e inmuebles propiedad del demandado",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": " ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "MIGUEL ARISTIZABAL PELÁEZ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": ".",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "El embargo y posterior secuestro de todos los bienes muebles e inmuebles propiedad del demandado MIGUEL ARISTIZABAL PELÁEZ."
+    },
+    {
+      "pid": "P13",
+      "align": "left",
+      "runs": [
+        {
+          "text": "El embargo y posterior secuestro de todas las cuentas bancarias ",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": "yellow"
+        },
+        {
+          "text": "a su nombre para garantizar el pago de la deuda.",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "El embargo y posterior secuestro de todas las cuentas bancarias a su nombre para garantizar el pago de la deuda."
+    },
+    {
+      "pid": "P14",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P15",
+      "align": "left",
+      "runs": [],
+      "plain": ""
+    },
+    {
+      "pid": "P16",
+      "align": "left",
+      "runs": [
+        {
+          "text": "Retroalimentación: ",
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": "La medida cautelar, tiene errores porque en los procesos ejecutivos no se puede embargar ni secuestrar bienes del demandado, el embargo y secuestro han de ser proporcionado y limitado a lo necesario, pues de no ser así constituyen un abuso",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        },
+        {
+          "text": ".",
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "highlight": null
+        }
+      ],
+      "plain": "Retroalimentación: La medida cautelar, tiene errores porque en los procesos ejecutivos no se puede embargar ni secuestrar bienes del demandado, el embargo y secuestro han de ser proporcionado y limitado a lo necesario, pues de no ser así constituyen un abuso."
+    }
+  ]
+}
