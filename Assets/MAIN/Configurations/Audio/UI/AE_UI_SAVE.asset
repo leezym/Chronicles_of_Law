@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b2d21aa76aa241a7bbf49937ccd51, type: 3}
+  m_Name: AE_UI_SAVE
+  m_EditorClassIdentifier: Assembly-CSharp::AudioEventSO
+  id: ui.save
+  bus: 2
+  clips:
+  - {fileID: 8300000, guid: 06c3c89c5a7634c11883378b9002c8fe, type: 3}
+  volume: 0.825
+  randomizePitch: 0
+  pitchMin: 1
+  pitchMax: 1
+  cooldownSeconds: 0
+  maxSimultaneous: 0
+  loop: 0

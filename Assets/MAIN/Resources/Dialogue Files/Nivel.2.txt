@@ -1,11 +1,20 @@
 ocultarDialogo()
 mostrarCinematica(-media "escena 12" -audio true)
 
+reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
+
 social "¿Qué debo mejorar? ¿Mi interacción social o mi desempeño profesional?"
 {
     - Decide mejorar su interacción
+
+	detenerMusica()
+
         mostrarCinematica(-media "escena 13" -audio true)
+
     - Solo le importa lo profesional
+
+	detenerMusica()
+
         mostrarCinematica(-media "escena 14" -audio true)
 }
 
@@ -13,17 +22,34 @@ cargarMinijuego()
 
 mostrarCinematica(-media "escena 15" -audio true)
 
+reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
+
 social "¿Cómo me recibirán hoy?"
 {
     - Sala grupal amigable
+
+	detenerMusica()
+
         mostrarCinematica(-media "escena 16" -audio true)
+
     - Sala grupal agresiva
+
+	detenerMusica()
+
         mostrarCinematica(-media "escena 17" -audio true)
+
         social "En ese momento, dos caminos se abren en su mente"
         {
             - Lo deja pasar
+
+		detenerMusica()
+
                 mostrarCinematica(-media "escena 18" -audio true)
+
             - Responde la agresión
+
+		detenerMusica()
+
                 mostrarCinematica(-media "escena 19" -audio true)
         }
 }

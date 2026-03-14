@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "acustico" -vol 0,5); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_AMB_LOOP")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP"); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Avatar en 0,5:0 [Serio] "Buen día caballero, {C} ¿podría decirme su nombre?"
 ocultar(Avatar)
@@ -50,6 +50,6 @@ pregunta "¿Qué figura jurídica se puede aplicar en el presente caso?"
     -El crédito fue solicitado por el señor Lionel, por lo que sería una deuda personal de él y no habría lugar a declarar una sociedad patrimonial de hecho. [0]
 }
 
-ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
+ocultarDialogo(); detenerAmbiente(); detenerMusica(); borrarCapasMultimedia(-panel fondo)
 
 subirNivelCaso()

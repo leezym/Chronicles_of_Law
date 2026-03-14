@@ -15,7 +15,7 @@ MonoBehaviour:
   id: ui.click.button
   bus: 2
   clips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a48b47b1bc42d47c48d2695a06a12679, type: 3}
   volume: 1
   randomizePitch: 0
   pitchMin: 1

@@ -1,4 +1,4 @@
-ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "acustico" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_AMB_LOOP")
+ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP"); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
 Entra Evelia Moreno en 0,5:0 [Seria] "Muy buenas tardes, mi nombre es Evelia Moreno, la verdad vengo aquí por una consulta importante."
 ocultar("Evelia Moreno")
@@ -60,6 +60,6 @@ pregunta "En el caso hipotético que el causante NO cumpla con los requisitos es
 - La familia puede acudir al Ministerio de Trabajo para que ellos accionen a Colpensiones para que les devuelvan el dinero de la cuenta de ahorro individual. [0]
 }
 
-ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
+ocultarDialogo(); detenerAmbiente(); detenerMusica(); borrarCapasMultimedia(-panel fondo)
 
 subirNivelCaso()

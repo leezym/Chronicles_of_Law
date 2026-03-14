@@ -1923,6 +1923,7 @@ GameObject:
   - component: {fileID: 339429995}
   - component: {fileID: 339429994}
   - component: {fileID: 339429993}
+  - component: {fileID: 339429996}
   m_Layer: 5
   m_Name: FolderButton
   m_TagString: Untagged
@@ -2044,6 +2045,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339429991}
   m_CullTransparentMesh: 1
+--- !u!114 &339429996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339429991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: 
+  clickId: ui.folder
+  downId: 
+  beginDragLoopId: 
+  endDragId: 
 --- !u!1 &340822931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +2800,7 @@ GameObject:
   - component: {fileID: 444389211}
   - component: {fileID: 444389210}
   - component: {fileID: 444389209}
+  - component: {fileID: 444389212}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -2902,6 +2921,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444389207}
   m_CullTransparentMesh: 1
+--- !u!114 &444389212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444389207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: 
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: 
+  endDragId: 
 --- !u!1 &460118017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4491,8 +4527,9 @@ GameObject:
   - component: {fileID: 586284444}
   - component: {fileID: 586284443}
   - component: {fileID: 586284442}
+  - component: {fileID: 586284445}
   m_Layer: 5
-  m_Name: Cerrar
+  m_Name: Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4611,6 +4648,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586284440}
   m_CullTransparentMesh: 1
+--- !u!114 &586284445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586284440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: 
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: 
+  endDragId: 
 --- !u!1 &594215107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7754,8 +7808,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 478125719}
   m_HandleRect: {fileID: 478125718}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9027,6 +9081,7 @@ GameObject:
   - component: {fileID: 1252082624}
   - component: {fileID: 1252082623}
   - component: {fileID: 1252082622}
+  - component: {fileID: 1252082625}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -9147,6 +9202,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252082620}
   m_CullTransparentMesh: 1
+--- !u!114 &1252082625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252082620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: 
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: 
+  endDragId: 
 --- !u!1 &1271223332
 GameObject:
   m_ObjectHideFlags: 0
@@ -10584,6 +10656,7 @@ GameObject:
   - component: {fileID: 1474800840}
   - component: {fileID: 1474800839}
   - component: {fileID: 1474800838}
+  - component: {fileID: 1474800841}
   m_Layer: 5
   m_Name: SaveButton
   m_TagString: Untagged
@@ -10705,6 +10778,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474800836}
   m_CullTransparentMesh: 1
+--- !u!114 &1474800841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474800836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: 
+  clickId: ui.save
+  downId: 
+  beginDragLoopId: 
+  endDragId: 
 --- !u!1 &1511943664
 GameObject:
   m_ObjectHideFlags: 0
@@ -10718,6 +10808,7 @@ GameObject:
   - component: {fileID: 1511943668}
   - component: {fileID: 1511943667}
   - component: {fileID: 1511943666}
+  - component: {fileID: 1511943670}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -10847,6 +10938,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511943664}
   m_CullTransparentMesh: 1
+--- !u!114 &1511943670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511943664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: 
+  clickId: ui.click.decision
+  downId: 
+  beginDragLoopId: 
+  endDragId: 
 --- !u!1 &1524801248
 GameObject:
   m_ObjectHideFlags: 0
@@ -11029,7 +11137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
-  hoverId: ui.hover
+  hoverId: 
   clickId: ui.click.button
   downId: 
   beginDragLoopId: 
@@ -14155,7 +14263,7 @@ GameObject:
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2138875868
 RectTransform:
   m_ObjectHideFlags: 0

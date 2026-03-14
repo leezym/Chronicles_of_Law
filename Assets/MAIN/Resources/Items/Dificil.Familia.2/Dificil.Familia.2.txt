@@ -19,6 +19,8 @@ Entra Patricia Motoa [Enojada] "Sí, yo misma la denuncié por violencia intrafa
 Patricia Motoa [Seria] "Yo incluso le dije que se fuera de la vida de mi hermano, pero no se pudo, yo le advertí."
 ocultar("Patricia Motoa")
 
+item "Chats de Whatsapp"
+
 Entra Patricia Motoa [Preocupada] "Yo no entendía cómo es que lo hacía, pero con el tiempo me di cuenta de que mi hermano tiene una dificultad significativa para retener información, sobre todo, la crediticia {EB 1} Y claro, ella bajo esa excusa le decía que necesitaba manejar las cuentas, porque él no recordaba las claves."
 ocultar("Patricia Motoa")
 
@@ -27,6 +29,8 @@ ocultar(Avatar)
 
 Entra Patricia Motoa [Enojada] "Sí. De acuerdo con los estudios médicos, Elías no tiene la capacidad necesaria para manejar sus finanzas de forma independiente {EC 1} Eso ha provocado algunos inconvenientes al momento de realizar trámites financieros, es que a veces no puede ni siquiera retirar dinero del cajero solo. Vea lo que dice el médico." 
 ocultar("Patricia Motoa")
+
+item "Recomendaciones médicas"
 
 Entra Avatar [Serio] "Señora Motoa ¿usted desea que la asesoría esté enfocada en las figuras legales que permiten apoyar a su hermano en los trámites financieros?"
 ocultar(Avatar)
@@ -49,7 +53,6 @@ pregunta "¿Cuáles son los requisitos que debe cumplir una persona para que sea
 - Ser una persona natural mayor de edad o una persona jurídica; no tener antecedentes judiciales, no contar con más de 70 años; ser una persona de confianza de quien va a servir como apoyo; cuando la designación se haga a través de un juez, sus funciones queden expresamente en la sentencia. [0]
 - Ser una persona natural mayor de edad o una persona jurídica; cuando la designación derive de un acuerdo de apoyos o una directiva anticipada, la simple suscripción y el agotamiento de las formalidades del mismo, cuando sean del caso, implicará que el cargo de persona de apoyo ha sido asumido; cuando la designación derive de un proceso de adjudicación de apoyos, la posesión se hará ante el juez que hace la designación. [1]
 }
-
 pregunta "¿Cuáles son las facultades que podrían otorgarse a la usuaria como apoyo de su hermano Elías?"
 {
 - La usuaria contará con la facultad de apoyar a su hermano en determinados trámites, así como también en la toma de decisiones frente a la administración de su dinero, durante el tiempo que así lo estimen conveniente. [0,5]
