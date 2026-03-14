@@ -1,4 +1,5 @@
-ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
 
 Entra Fausto Tejeiro en 0,5:0 [Fastidiado] "Muy buenas tardes, mi nombre es Fausto Tejeiro"
 ocultar("Fausto Tejeiro")
@@ -66,6 +67,7 @@ pregunta "En el evento de que la cosa común sea vendida ¿qué porcentaje de di
 - Le corresponderá un 25% del fruto de la venta, al tener cuotas sociales fraccionadas en partes iguales para todos los copropietarios del bien. [1]
 }
 
-subirNivelCaso()
+ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+detenerAmbiente(); detenerMusica();
 
-ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
+subirNivelCaso()

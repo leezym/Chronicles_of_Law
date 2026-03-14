@@ -104,9 +104,7 @@ namespace COMMANDS
 
             yield return new WaitForSeconds(1f);
 
-            GameObject obj = UnityEngine.Object.Instantiate(prefab, MinigamesManager.Instance.layoutGroup.transform);
-            obj.transform.SetAsFirstSibling();
-            obj.name = prefab.name;
+            MinigamesManager.Instance.StartGame(prefab);
         }
 
         private static void SetCurrentCaseLevel()
@@ -120,10 +118,5 @@ namespace COMMANDS
             GameManager.Instance.SetCurrentLevel(level);
             TestDialogueFiles.Instance.StartCinematic();
         }
-
-        /*private static void SetCurrentGameLevel()
-        {
-            MinigamesManager.Instance.LevelChanged();
-        }*/
     }
 }

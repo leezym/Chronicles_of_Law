@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using EXERCISE.Model;
 using EXERCISE.UI;
 using EXERCISE.Loaders;
@@ -14,7 +15,12 @@ namespace EXERCISE.Runtime
     {
         [Header("UI")]
         [SerializeField] private Button validateButton;
+        [SerializeField] private TMP_Text selectionCounterText;
         Button closeButton => MinigamesManager.Instance.closeButton;
+
+
+        [Header("Selection Rules")]
+        [SerializeField] private int maxSelections;
 
         [Header("Renderers (solo uno activo)")]
         [SerializeField] private TableRenderer tableRenderer;
@@ -45,9 +51,7 @@ namespace EXERCISE.Runtime
             ExerciseData e = null;
 
             if (tableRenderer != null && documentRenderer != null)
-            {
                 Debug.LogWarning("[ExerciseController] Ambos renderers están asignados. Se priorizará TableRenderer.");
-            }
 
             if (tableRenderer != null)
                 e = ExerciseJsonLoader.LoadTableExercise(exerciseFolderToLoad);
@@ -69,6 +73,7 @@ namespace EXERCISE.Runtime
             {
                 Debug.LogError("[ExerciseController] exercise is null.");
                 if (validateButton != null) validateButton.interactable = false;
+                UpdateSelectionCounter();
                 return;
             }
 
@@ -77,6 +82,7 @@ namespace EXERCISE.Runtime
 
             RenderCurrent();
             UpdateValidateButton();
+            UpdateSelectionCounter();
         }
 
         private void BuildDocumentTokens(DocumentExerciseData docData)
@@ -99,16 +105,57 @@ namespace EXERCISE.Runtime
             }
         }
 
+        private int GetCurrentSelectionCount()
+        {
+            if (IsTable)
+            {
+                var tableData = data as TableExerciseData;
+                if (tableData?.tableTokens != null)
+                    return tableData.tableTokens.Count(t => t.enabled && t.selected);
+            }
+            else if (IsDocument)
+            {
+                return docTokens.Values.Count(t => t.enabled && t.selected);
+            }
+
+            return 0;
+        }
+
+        private bool CanSelectMore()
+        {
+            return GetCurrentSelectionCount() < maxSelections;
+        }
+
+        private void UpdateSelectionCounter()
+        {
+            if (selectionCounterText == null) return;
+
+            int current = GetCurrentSelectionCount();
+            selectionCounterText.text = $"{current}/{maxSelections}";
+        }
+
         private void OnTableTokenClicked(TokenData token)
         {
             if (validated) return;
             if (token == null) return;
             if (!token.enabled) return;
 
-            token.selected = !token.selected;
+            // Si ya estaba seleccionada, permitir deseleccionar
+            if (token.selected)
+            {
+                token.selected = false;
+            }
+            else
+            {
+                if (!CanSelectMore())
+                    return;
+
+                token.selected = true;
+            }
 
             tableRenderer?.RefreshToken(token.id);
             UpdateValidateButton();
+            UpdateSelectionCounter();
         }
 
         // DocumentRenderer entrega regionId (string)
@@ -121,10 +168,22 @@ namespace EXERCISE.Runtime
                 return;
             if (!token.enabled) return;
 
-            token.selected = !token.selected;
+            // Si ya estaba seleccionada, permitir deseleccionar
+            if (token.selected)
+            {
+                token.selected = false;
+            }
+            else
+            {
+                if (!CanSelectMore())
+                    return;
+
+                token.selected = true;
+            }
 
             documentRenderer?.RefreshToken(regionId);
             UpdateValidateButton();
+            UpdateSelectionCounter();
         }
 
         private void UpdateValidateButton()
@@ -137,20 +196,7 @@ namespace EXERCISE.Runtime
                 return;
             }
 
-            bool anySelection = false;
-
-            if (IsTable)
-            {
-                var tableData = data as TableExerciseData;
-                if (tableData?.tableTokens != null)
-                    anySelection = tableData.tableTokens.Any(t => t.enabled && t.selected);
-            }
-            else if (IsDocument)
-            {
-                anySelection = docTokens.Values.Any(t => t.enabled && t.selected);
-            }
-
-            validateButton.interactable = anySelection;
+            validateButton.interactable = GetCurrentSelectionCount() > 0;
         }
 
         private void Validate()

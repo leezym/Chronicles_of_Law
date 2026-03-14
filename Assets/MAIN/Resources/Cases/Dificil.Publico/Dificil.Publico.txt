@@ -1,4 +1,5 @@
-ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
 
 Entra Avatar en 0,5:0 [Serio] "Buen día señora, espero se encuentre bien. ¿Podría indicarme su nombre?"
 ocultar(Avatar) 
@@ -54,6 +55,7 @@ pregunta "¿Ante qué entidad se debe radicar el derecho de petición para darle
 - Secretaria de Turismo. [0]
 }
 
-subirNivelCaso()
+ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+detenerAmbiente(); detenerMusica();
 
-ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
+subirNivelCaso()

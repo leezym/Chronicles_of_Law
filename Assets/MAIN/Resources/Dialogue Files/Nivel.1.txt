@@ -6,19 +6,13 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 social "¿Qué hago?"
 {
 - Decide ayudar
-
 	detenerMusica()
-
     mostrarCinematica(-media "escena 2" -audio true)
 
 - Decide no ayudar
-
 	detenerMusica()
-
     mostrarCinematica(-media "escena 3" -audio true)
 }
-
-
 
 mostrarCinematica(-media "escena 4" -audio true)
 
@@ -27,18 +21,13 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 social "¿Qué hago?"
 {
 - Ir con sus amigos
-
 	detenerMusica()
-
     mostrarCinematica(-media "escena 5" -audio true)
 
 - No ir con sus amigos y va a estudiar solo
-
 	detenerMusica()
-
     mostrarCinematica(-media "escena 6" -audio true)
 }
-
 
 mostrarCinematica(-media "escena 7" -audio true)
 
@@ -48,5 +37,13 @@ mostrarCinematica(-media "escena 8" -audio true)
 mostrarCinematica(-media "escena 9" -audio true)
 
 cargarMinijuego()
+
+mostrarCinematica(-media "escena 10" -audio true)
+
+cargarCaso()
+
 cargarMinijuego()
-cargarMinijuego()
+
+mostrarCinematica(-media "escena 11" -audio true)
+
+subirNivelJuego()

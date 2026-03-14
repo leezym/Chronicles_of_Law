@@ -27,6 +27,7 @@ namespace DIALOGUE
                 return;
             
             cgController = new CanvasGroupController(DialogueSystem.Instance, root.GetComponent<CanvasGroup>());
+            Hide();
         }
 
         public bool isVisible => cgController.isVisible;

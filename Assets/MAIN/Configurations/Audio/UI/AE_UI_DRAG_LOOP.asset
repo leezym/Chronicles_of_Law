@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b2d21aa76aa241a7bbf49937ccd51, type: 3}
   m_Name: AE_UI_DRAG_LOOP
   m_EditorClassIdentifier: Assembly-CSharp::AudioEventSO
-  id: sfx.drag.loop
-  bus: 3
+  id: ui.drag.loop
+  bus: 2
   clips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: aec30d5caf09341c98c9b4506baa7104, type: 3}
   volume: 1
   randomizePitch: 0
   pitchMin: 1

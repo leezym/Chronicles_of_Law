@@ -1,4 +1,5 @@
-ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP"); configCapasMultimedia(-panel fondo -media "cubiculo"); reproducirMusica(-sonido "CAS_MXLOOP_1")
+ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Sabrina Petro en 0,5:1 [Seria] "Buenos días doc, ¿cómo me le va? yo me llamo Sabrina Petro Uribe, tengo 32 años, vine por aquí porque tengo una duda sobre un asunto de una compraventa."
 ocultar("Sabrina Petro")
@@ -51,6 +52,7 @@ pregunta "¿Qué debe adelantarse para resolver la situación de la cláusula pe
 - La mera notificación extrajudicial no constituye pleno requerimiento para el pago de la cláusula penal, además de que al cumplir todas sus obligaciones y haber perfeccionado ya la escritura pública por vía judicial la usuaria no tiene que pagar ningún valor por concepto de clausula penal. [1]
 }
 
-ocultarDialogo(); detenerAmbiente(); detenerMusica(); borrarCapasMultimedia(-panel fondo)
+ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+detenerAmbiente(); detenerMusica();
 
 subirNivelCaso()

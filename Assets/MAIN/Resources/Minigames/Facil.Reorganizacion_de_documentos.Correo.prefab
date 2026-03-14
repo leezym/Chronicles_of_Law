@@ -594,6 +594,7 @@ GameObject:
   - component: {fileID: 1033531115632902486}
   - component: {fileID: 866278719148726438}
   - component: {fileID: 8289060491248746975}
+  - component: {fileID: 4072416785270177420}
   m_Layer: 5
   m_Name: Option (2)
   m_TagString: Untagged
@@ -715,6 +716,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &4072416785270177420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242892762077458122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &1252799309480543424
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +744,6 @@ GameObject:
   - component: {fileID: 7894276992820612380}
   - component: {fileID: 7803381651057029193}
   - component: {fileID: 7189357174621880139}
-  - component: {fileID: 6463234558479432337}
   - component: {fileID: 451916162600074685}
   m_Layer: 5
   m_Name: Facil.Reorganizacion_de_documentos.Correo
@@ -785,7 +802,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bf2c08e7360b14146ab467bc7515435b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de68c7990c4fccf4b96882de19f50a3a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -795,18 +812,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!225 &6463234558479432337
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252799309480543424}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &451916162600074685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,7 +827,6 @@ MonoBehaviour:
   scrollContent: {fileID: 7713857571502345464}
   poolParent: {fileID: 1892317044971908293}
   validateButton: {fileID: 7125954120755511219}
-  closeButton: {fileID: 0}
   correctOrder:
   - para
   - referencia
@@ -1260,6 +1264,7 @@ GameObject:
   - component: {fileID: 1876783110091275101}
   - component: {fileID: 2493483753282594519}
   - component: {fileID: 8120972659867929411}
+  - component: {fileID: 2147202812182415516}
   m_Layer: 5
   m_Name: Option (6)
   m_TagString: Untagged
@@ -1381,6 +1386,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &2147202812182415516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770253575619179827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &3055876022532593959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1648,7 @@ GameObject:
   - component: {fileID: 5278745872443961165}
   - component: {fileID: 8235919920745748396}
   - component: {fileID: 9070334859268012809}
+  - component: {fileID: 6550375289748629456}
   m_Layer: 5
   m_Name: Option (1)
   m_TagString: Untagged
@@ -1747,6 +1770,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &6550375289748629456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3498746311413855926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &3525907792143057203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,6 +1939,7 @@ GameObject:
   - component: {fileID: 5446632051656635032}
   - component: {fileID: 7250444801164843304}
   - component: {fileID: 3241079716261298977}
+  - component: {fileID: 2073413820965066383}
   m_Layer: 5
   m_Name: Option (3)
   m_TagString: Untagged
@@ -2020,6 +2061,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &2073413820965066383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3571680247160775920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &3649116113826992184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2237,7 @@ GameObject:
   - component: {fileID: 5289879412327518864}
   - component: {fileID: 7542912508976175720}
   - component: {fileID: 9178647775406882155}
+  - component: {fileID: 2078985893962957600}
   m_Layer: 5
   m_Name: Option (9)
   m_TagString: Untagged
@@ -2300,6 +2359,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &2078985893962957600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141845837992793617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &4646295463539112944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2391,7 @@ GameObject:
   - component: {fileID: 5374837800694884526}
   - component: {fileID: 3002620856439119951}
   - component: {fileID: 6289405981666386165}
+  - component: {fileID: 3836697178531179538}
   m_Layer: 5
   m_Name: Option (4)
   m_TagString: Untagged
@@ -2436,6 +2513,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &3836697178531179538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4646295463539112944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &4738584153411335326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2545,7 @@ GameObject:
   - component: {fileID: 5532760356450874426}
   - component: {fileID: 7519929424910607471}
   - component: {fileID: 3821914155174979539}
+  - component: {fileID: 1683522731853862212}
   m_Layer: 5
   m_Name: Option (5)
   m_TagString: Untagged
@@ -2572,6 +2667,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &1683522731853862212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738584153411335326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &5441842576709768929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,6 +3929,7 @@ GameObject:
   - component: {fileID: 7445402377343550989}
   - component: {fileID: 6528438346177889139}
   - component: {fileID: 5568696769913787070}
+  - component: {fileID: 1369361056633479622}
   m_Layer: 5
   m_Name: Option (10)
   m_TagString: Untagged
@@ -3938,6 +4051,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &1369361056633479622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7369793290019099812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &7544294710930820351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,6 +4357,7 @@ GameObject:
   - component: {fileID: 2666294475062080543}
   - component: {fileID: 2401581722383485374}
   - component: {fileID: 1457388092271307179}
+  - component: {fileID: 2271716537450293219}
   m_Layer: 5
   m_Name: Option (7)
   m_TagString: Untagged
@@ -4348,6 +4479,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &2271716537450293219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7702183127213134238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &8453395307140537270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,6 +4626,7 @@ GameObject:
   - component: {fileID: 7769383562641376872}
   - component: {fileID: 2539190174711052366}
   - component: {fileID: 4959459235974712274}
+  - component: {fileID: 3929111892330085205}
   m_Layer: 5
   m_Name: Option (8)
   m_TagString: Untagged
@@ -4599,6 +4748,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &3929111892330085205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8738960977329126370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c528b245dc312448ab20318b044bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioHook
+  hoverId: ui.hover
+  clickId: ui.click.button
+  downId: 
+  beginDragLoopId: ui.drag.loop
+  endDragId: ui.drag.drop
 --- !u!1 &8975704175115576863
 GameObject:
   m_ObjectHideFlags: 0

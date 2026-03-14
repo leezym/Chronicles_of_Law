@@ -8,7 +8,7 @@ namespace GAME
     public class MinigamesData
     {
         public string name;
-        public CanvasGroup game;
+        public GameObject game;
         public enum MinigameLevel {facil, intermedio, dificil}
         public MinigameLevel level;
         public enum MinigameType {encontrar_el_error, excel_liquidacion, identificacion_derechos_vulnerados, reorganizacion_de_documentos, seleccion_de_casos}
@@ -16,7 +16,7 @@ namespace GAME
 
         public MinigamesData(){}
 
-        public MinigamesData(string name, CanvasGroup game, MinigameLevel level, MinigameType type)
+        public MinigamesData(string name, GameObject game, MinigameLevel level, MinigameType type)
         {
             this.name = name;
             this.game = game;
@@ -60,14 +60,14 @@ namespace GAME
             }
             else
             {
-                Debug.LogWarning("Toipo desconocida: " + typeString);
+                Debug.LogWarning("Tipo desconocido: " + typeString);
             }
 
             name = prefab.transform.GetChild(0).name;
-            game = prefab.GetComponent<CanvasGroup>();
-            game.alpha = 1;
+            game = prefab;
+            /*game.alpha = 1;
             game.interactable = true;
-            game.blocksRaycasts = true;
+            game.blocksRaycasts = true;*/
         }
     }
 }

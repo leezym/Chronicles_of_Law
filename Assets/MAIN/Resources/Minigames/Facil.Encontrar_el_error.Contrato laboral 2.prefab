@@ -220,7 +220,6 @@ GameObject:
   - component: {fileID: 1550192877888970635}
   - component: {fileID: 6495969975667371338}
   - component: {fileID: 1832350815918948410}
-  - component: {fileID: 3919202364666547634}
   - component: {fileID: 6576071819686216696}
   m_Layer: 5
   m_Name: Facil.Encontrar_el_error.Contrato laboral 2
@@ -279,7 +278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bf2c08e7360b14146ab467bc7515435b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de68c7990c4fccf4b96882de19f50a3a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -289,18 +288,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!225 &3919202364666547634
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4291176669984255510}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!114 &6576071819686216696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EXERCISE.Runtime.ExerciseController
   validateButton: {fileID: 8657262355736575006}
+  selectionCounterText: {fileID: 0}
+  maxSelections: 6
   tableRenderer: {fileID: 0}
   documentRenderer: {fileID: 4467607324581352591}
   exerciseFolderToLoad: 

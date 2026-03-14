@@ -21,6 +21,9 @@ public class MinigamesManager : MonoBehaviour
 
     public void InitializeMinigames()
     {
+        closeButton.GetComponent<CanvasGroup>().alpha = 0;
+        closeButton.GetComponent<CanvasGroup>().blocksRaycasts = false;
+
         SetMinigames();
         SelectRandomMinigames();
         closeButton.onClick.AddListener(() =>
@@ -28,8 +31,21 @@ public class MinigamesManager : MonoBehaviour
             ClearLayoutGroup();
             LevelChanged();
             DialogueSystem.Instance.conversationManager.ResumeConversation();
+
             closeButton.interactable = false;
+            closeButton.GetComponent<CanvasGroup>().alpha = 0;
+            closeButton.GetComponent<CanvasGroup>().blocksRaycasts = false;
         });
+    }
+
+    public void StartGame(GameObject prefab)
+    {
+        GameObject obj = Instantiate(prefab, layoutGroup.transform);
+        obj.transform.SetAsFirstSibling();
+        obj.name = prefab.name;
+
+        closeButton.GetComponent<CanvasGroup>().alpha = 1;
+        closeButton.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
     public void LevelChanged()
@@ -57,8 +73,8 @@ public class MinigamesManager : MonoBehaviour
     private void SelectRandomMinigames()
     {
         minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.facil, 3));
-        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.intermedio, 3));
-        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.dificil, 3));
+        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.intermedio, 2));
+        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.dificil, 2));
     }
 
     private List<MinigamesData> GetRandomMinigamesByLevel(MinigamesData.MinigameLevel level, int count)
@@ -71,9 +87,5 @@ public class MinigamesManager : MonoBehaviour
     {
         GameObject gameObject = layoutGroup.transform.GetChild(0).gameObject;
         Destroy(gameObject);
-        /*CanvasGroup cg = layoutGroup.transform.GetChild(0).GetComponent<CanvasGroup>();
-        cg.alpha = 0;
-        cg.interactable = false;
-        cg.blocksRaycasts = false;*/
     }
 }

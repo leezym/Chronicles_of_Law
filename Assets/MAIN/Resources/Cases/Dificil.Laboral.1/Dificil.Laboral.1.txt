@@ -1,4 +1,5 @@
-ocultar(Avatar); mostrarDialogo(); reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); configCapasMultimedia(-panel fondo -media "cubiculo")
+ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
 
 Entra Avatar en 0,5:0 [Serio] "Buen día señor, ¿cómo se encuentra el día de hoy?"
 ocultar(Avatar)
@@ -54,6 +55,7 @@ pregunta "Respecto a la consulta, y teniendo en cuenta que efectivamente sea pro
 - Puede iniciar una demanda arbitral contra la junta regional o nacional de invalidez. [0]
 }
 
-subirNivelCaso()
+ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+detenerAmbiente(); detenerMusica();
 
-ocultarDialogo(); detenerSonido("acustico"); borrarCapasMultimedia(-panel fondo)
+subirNivelCaso()
