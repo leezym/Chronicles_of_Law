@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
 Entra Fausto Tejeiro en 0,5:0 [Fastidiado] "Muy buenas tardes, mi nombre es Fausto Tejeiro"
 ocultar("Fausto Tejeiro")
@@ -68,6 +68,6 @@ pregunta "En el evento de que la cosa común sea vendida ¿qué porcentaje de di
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

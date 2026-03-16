@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_2")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
 Entra Evelia Moreno en 0,5:0 [Seria] "Muy buenas tardes, mi nombre es Evelia Moreno, la verdad vengo aquí por una consulta importante."
 ocultar("Evelia Moreno")
@@ -62,6 +62,6 @@ pregunta "En el caso hipotético que el causante NO cumpla con los requisitos es
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

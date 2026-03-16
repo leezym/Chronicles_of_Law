@@ -6,22 +6,20 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
 social "Se abre otro dilema"
 {
-    - Busca en físico
+- Busca en físico
+    detenerMusica()
+    mostrarCinematica(-media "escena 38" -audio true)
 
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 38" -audio true)
-
-    - Busca en digital
-
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 39" -audio true)
+- Busca en digital
+    detenerMusica()
+    mostrarCinematica(-media "escena 39" -audio true)
 }
 
 mostrarCinematica(-media "escena 40" -audio true)
 
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
+detenerAmbiente(); detenerMusica()
 
 mostrarCinematica(-media "escena 41" -audio true)
 
@@ -33,20 +31,18 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
 social "Su cuerpo pide descanso, pero su conciencia analiza lo que debía hacer"
 {
-    - Decide ayudar en caso
+- Decide ayudar en caso
+    detenerMusica()
+    mostrarCinematica(-media "escena 43" -audio true)
 
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 43" -audio true)
-
-    - Decide no ayudar en caso
-
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 44" -audio true)
+- Decide no ayudar en caso
+    detenerMusica()
+    mostrarCinematica(-media "escena 44" -audio true)
 }
 
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
+detenerAmbiente(); detenerMusica()
 
 mostrarCinematica(-media "escena 45" -audio true)
 
@@ -54,17 +50,13 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
 social "¿Me esperas para que volvamos juntos a casa?"
 {
-    - Decide esperar a Andrea
+- Decide esperar a Andrea
+    detenerMusica()
+    mostrarCinematica(-media "escena 46" -audio true)
 
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 46" -audio true)
-
-    - Decide no esperar a Andrea
-
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 47" -audio true)
+- Decide no esperar a Andrea
+    detenerMusica()
+    mostrarCinematica(-media "escena 47" -audio true)
 }
 
 mostrarCinematica(-media "escena 48" -audio true)

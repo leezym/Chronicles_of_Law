@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
 Entra Avatar en 0,5:0 [Serio] "Buen día señor, ¿cómo se encuentra el día de hoy?"
 ocultar(Avatar)
@@ -56,6 +56,6 @@ pregunta "Respecto a la consulta, y teniendo en cuenta que efectivamente sea pro
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

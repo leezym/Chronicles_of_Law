@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
 Entra Patricia Motoa en 0,5:0 [Seria] "Buenas tardes, mi nombre es Patricia Motoa y vengo porque necesito una asesoría jurídica. {EC 1} Mi hermano Elías nació con Meningitis y eso afectó su bienestar, sin embargo, eso no ha impedido que lleve una vida normal. {EB 1} Él a veces requiere cierta ayuda, pero siempre ha sido una persona autónoma, trabajadora e independiente en su toma de decisiones."
 ocultar("Patricia Motoa")
@@ -62,6 +62,6 @@ pregunta "¿Cuáles son las facultades que podrían otorgarse a la usuaria como 
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

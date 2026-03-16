@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Alberto Murcia y Marcela Marín en 0,5:0 [1] "Buen día, mi nombre es Alberto Murcia y vengo junto con Marcela Marín, quien es mi esposa."
 
@@ -55,6 +55,6 @@ pregunta "Si en medio del trámite de divorcio ante notaría, el señor Alberto 
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

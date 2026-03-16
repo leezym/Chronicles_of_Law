@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Juanita Alimaña en 0,5:0 [Enojada] "Buenas tardes, yo vengo porque me quiero divorciar de mi esposo."
 ocultar("Juanita Alimaña")
@@ -58,6 +58,6 @@ pregunta "¿Qué formaría parte de la sociedad conyugal?"
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

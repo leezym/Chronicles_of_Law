@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
 Entra José López en 0,5:0 [Serio] "Buen día joven. Mi nombre es José López, vengo porque tengo un problema en mi trabajo. {EC 1} Verá, hace rato me encuentro incapacitado porque tuve un accidente de tránsito y desde ese momento he tenido varios dificultades para moverme, sufro de dolores de espalda y tengo que tomar medicamentos y usar bastón para poder movilizarme."
 ocultar("José López")

@@ -52,6 +52,6 @@ pregunta "¿Ante qué entidad debe dirigirse para que pueda iniciar el proceso? 
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

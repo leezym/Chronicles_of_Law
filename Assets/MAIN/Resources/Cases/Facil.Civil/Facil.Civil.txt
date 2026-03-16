@@ -53,6 +53,6 @@ pregunta "¿Qué debe adelantarse para resolver la situación de la cláusula pe
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

@@ -1,10 +1,8 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
 using VISUALNOVEL;
 using GAME;
-using UnityEditor.VersionControl;
 
 public class TestDialogueFiles : MonoBehaviour
 {
@@ -22,14 +20,8 @@ public class TestDialogueFiles : MonoBehaviour
 
     public void StartLevel()
     {
-        string fullPath = AssetDatabase.GetAssetPath(CasesManager.Instance.casesInGame[GameManager.Instance.GetCurrentCaseLevel()].cases.fileToRead);
-
-        int resourcesIndex = fullPath.IndexOf("Resources/");
-        string relativePath = fullPath.Substring(resourcesIndex + 10); // "Resources/" tiene tamaño 10
-
-        string filePath = Path.ChangeExtension(relativePath, null);
-
-        VNManager.Instance.LoadFile(filePath);
+        TextAsset file = CasesManager.Instance.casesInGame[GameManager.Instance.GetCurrentCaseLevel()].cases.fileToRead;
+        VNManager.Instance.LoadFile(file);
     }
 
     public void StartF()

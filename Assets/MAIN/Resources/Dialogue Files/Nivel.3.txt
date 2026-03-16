@@ -10,20 +10,18 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
 social "Dime el nombre del consultante"
 {
-    - Se acuerda del nombre
+- Se acuerda del nombre
+    detenerMusica()
+    mostrarCinematica(-media "escena 24" -audio true)
 
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 24" -audio true)
-
-    - No se acuerda del nombre
-
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 25" -audio true)
+- No se acuerda del nombre
+    detenerMusica()
+    mostrarCinematica(-media "escena 25" -audio true)
 }
 
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
+detenerAmbiente(); detenerMusica()
 
 mostrarCinematica(-media "escena 26" -audio true)
 
@@ -39,20 +37,18 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
 social "¿Dios... qué hago?"
 {
-    - Decide ayudar
+- Decide ayudar
+    detenerMusica()
+    mostrarCinematica(-media "escena 29" -audio true)
 
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 29" -audio true)
-
-    - Decide no ayudar
-
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 30" -audio true)
+- Decide no ayudar
+    detenerMusica()
+    mostrarCinematica(-media "escena 30" -audio true)
 }
 
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
+detenerAmbiente(); detenerMusica()
 
 mostrarCinematica(-media "escena 31" -audio true)
 
@@ -64,17 +60,13 @@ reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
 social "¿Tú qué dices? ¿Vamos a relajarnos un rato o te vas a quedar en la charla?"
 {
-    - Decide ir con sus compañeros
+- Decide ir con sus compañeros
+    detenerMusica()
+    mostrarCinematica(-media "escena 33" -audio true)
 
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 33" -audio true)
-
-    - Se queda en la charla
-
-	detenerMusica()
-
-        mostrarCinematica(-media "escena 34" -audio true)
+- Se queda en la charla
+    detenerMusica()
+    mostrarCinematica(-media "escena 34" -audio true)
 }
 
 cargarCaso()

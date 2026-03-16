@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
 Entra Edinson Osorio en 0,5:0 [Serio1] "Buen día, mi nombre es Edinson Osorio y necesito que me ayuden a solucionar una situación que involucra a mi hijo y a mi ex pareja."
 ocultar("Edinson Osorio")
@@ -63,6 +63,6 @@ pregunta "¿Qué exige la ley para entender que se ha suspendido la patria potes
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

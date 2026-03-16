@@ -5,14 +5,14 @@
     "T:Liquidacion_1:2016:R20C6-R20C6",
     "T:Liquidacion_1:2016:R28C2-R28C2",
     "T:Liquidacion_1:2016:R32C5-R33C6",
-    "T:Liquidacion_1:2016:R37C7-R37C7",
-    "T:Liquidacion_1:2016:R39C7-R39C7",
+    "T:Liquidacion_1:2016:R37C7-R37C8",
+    "T:Liquidacion_1:2016:R39C7-R39C8",
     "T:Liquidacion_1:2016:R44C5-R44C6",
     "T:Liquidacion_1:2016:R45C5-R45C6"
   ],
   "correct": [
-    "T:Liquidacion_1:2016:R37C7-R37C7",
-    "T:Liquidacion_1:2016:R39C7-R39C7",
+    "T:Liquidacion_1:2016:R37C7-R37C8",
+    "T:Liquidacion_1:2016:R39C7-R39C8",
     "T:Liquidacion_1:2016:R44C5-R44C6",
     "T:Liquidacion_1:2016:R45C5-R45C6"
   ]

@@ -5,15 +5,15 @@
     "T:Liquidacion_2:2022:R19C4-R19C5",
     "T:Liquidacion_2:2022:R20C2-R20C3",
     "T:Liquidacion_2:2022:R32C5-R33C6",
-    "T:Liquidacion_2:2022:R37C7-R37C7",
-    "T:Liquidacion_2:2022:R38C7-R38C7",
-    "T:Liquidacion_2:2022:R42C7-R42C7",
+    "T:Liquidacion_2:2022:R37C7-R37C8",
+    "T:Liquidacion_2:2022:R38C7-R38C8",
+    "T:Liquidacion_2:2022:R42C7-R42C8",
     "T:Liquidacion_2:2022:R46C5-R46C6"
   ],
   "correct": [
     "T:Liquidacion_2:2022:R20C2-R20C3",
-    "T:Liquidacion_2:2022:R37C7-R37C7",
-    "T:Liquidacion_2:2022:R38C7-R38C7",
-    "T:Liquidacion_2:2022:R42C7-R42C7"
+    "T:Liquidacion_2:2022:R37C7-R37C8",
+    "T:Liquidacion_2:2022:R38C7-R38C8",
+    "T:Liquidacion_2:2022:R42C7-R42C8"
   ]
 }

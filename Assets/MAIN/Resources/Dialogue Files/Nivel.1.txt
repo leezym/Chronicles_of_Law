@@ -36,14 +36,18 @@ cargarCaso()
 mostrarCinematica(-media "escena 8" -audio true)
 mostrarCinematica(-media "escena 9" -audio true)
 
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
+detenerAmbiente(); detenerMusica()
 
 mostrarCinematica(-media "escena 10" -audio true)
 
 cargarCaso()
 
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
+detenerAmbiente(); detenerMusica()
 
 mostrarCinematica(-media "escena 11" -audio true)
 
-subirNivelJuego()
+subirNivel()

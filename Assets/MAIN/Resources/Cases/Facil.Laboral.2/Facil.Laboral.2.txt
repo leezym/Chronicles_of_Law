@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_2")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
 Entra Avatar en 0,5:0 [Serio] "Buenos días señor, bienvenido al Consultorio Jurídico, ¿podría darme su nombre?"
 ocultar(Avatar)
@@ -48,6 +48,6 @@ pregunta "¿En caso de respuesta negativa en el pago por parte de la empresa VIG
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

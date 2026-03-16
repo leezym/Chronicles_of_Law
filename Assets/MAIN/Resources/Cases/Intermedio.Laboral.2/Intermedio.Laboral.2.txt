@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Olga Valencia en 0,5:0 [Seria] "Buen día joven. Mi nombre es Olga Valencia, hoy vengo a contarle una historia bien confusa. Así que si estoy enredándole me dice."
 ocultar("Olga Valencia")

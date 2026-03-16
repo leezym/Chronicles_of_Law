@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
 Entra María Flores en 0,5:0 [Seria] "Buenas joven, mire yo vengo acá por un problema y la verdad es que necesito con urgencia su ayuda."
 ocultar("María Flores")

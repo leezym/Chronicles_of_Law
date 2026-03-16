@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
 Entra Julio Ulpiano en 0,5:0 [Serio] "Muy buenas tardes joven, mi nombre es Julio Cesar Ulpiano, tengo 45 años."
 ocultar("Julio Ulpiano")

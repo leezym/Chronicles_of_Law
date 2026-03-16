@@ -113,12 +113,12 @@ TextureImporter:
       name: barra de opcion _0
       rect:
         serializedVersion: 2
-        x: 91
+        x: 552
         y: 128
-        width: 3638
+        width: 3174
         height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,6 +127,28 @@ TextureImporter:
       bones: []
       spriteID: c1c0dae194b24ee4cb1842fc8961b5a6
       internalID: -889033695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra de opcion _1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 128
+        width: 461
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8812f210c9993214385e71c5391cfb02
+      internalID: 1530991144
       vertices: []
       indices: 
       edges: []
@@ -146,6 +168,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       barra de opcion _0: -889033695
+      barra de opcion _1: 1530991144
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

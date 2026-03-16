@@ -16,7 +16,7 @@ MonoBehaviour:
   bus: 2
   clips:
   - {fileID: 8300000, guid: 0b98f21b348f446878f44f0ed83b0845, type: 3}
-  volume: 1
+  volume: 0.8
   randomizePitch: 0
   pitchMin: 1
   pitchMax: 1

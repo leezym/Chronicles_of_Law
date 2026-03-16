@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1)
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Juan Quiñones en 0,5:0 [Concentrado] "Buen día joven. Mi nombre es Juan Quiñones Ruiz. Antes de empezar quisiera informarle que yo tuve un accidente y eso hizo que perdiera un poco de mi capacidad de concentración {EC 1} Entonces puede que algunas veces no me exprese del todo bien, por lo que le pido paciencia. No es intencional y a veces la gente se ofende porque piensan que estoy bromeando con ellos."
 ocultar("Juan Quiñones")
@@ -92,6 +92,6 @@ pregunta "Teniendo en cuenta la condición de salud que presenta el usuario debi
 }
 
 ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
-detenerAmbiente(); detenerMusica();
+detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

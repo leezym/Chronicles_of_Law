@@ -113,21 +113,21 @@ E) Las siguientes acciones son opcionales para la escena y van en un renglon nue
         
         vel -> es opcional. indica la velocidad con la que desaparece, que toma valores decimales >= 0. Sino se especifica la velocidad por defecto será 1.
 
-    - reproducirSonido(-sonido "Musica de fondo" -vol 0,5) -> Reproduce efectos de sonido. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+    - reproducirSonido(-sonido "Efecto" -vol 0,5 -canal 0) -> Reproduce efectos de sonido. Se indica el nombre del archivo, el volumen toma valores decimales entre 0 y 1, y el canal toma valores enteros. Sino se especifica el volumen por defecto será 1 y el canal por defecto será 0.
     
-    - detenerSonido() -> Detiene los efectos de sonido.
+    - detenerSonido("Efecto") -> Detiene el efecto de sonido indicado entre comillas.
 
-    - reproducirMusica(-sonido "Musica de fondo" -vol 0,5) -> Reproduce música de fondo. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+    - reproducirMusica(-sonido "Musica de fondo" -vol 0,5 -canal 0) -> Reproduce música de fondo. Se indica el nombre del archivo, el volumen toma valores decimales entre 0 y 1, y el canal toma valores enteros. Sino se especifica el volumen por defecto será 1 y el canal por defecto será 0.
 
     - detenerMusica() -> Detiene la música de fondo.
 
-    - reproducirAmbiente(-sonido "Musica de fondo" -vol 0,5) -> Reproduce sonidos de ambiente. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+    - reproducirAmbiente(-sonido "Musica de ambiente" -vol 0,5 -canal 0) -> Reproduce sonidos de ambiente. Se indica el nombre del archivo, el volumen toma valores decimales entre 0 y 1, y el canal toma valores enteros. Sino se especifica el volumen por defecto será 1 y el canal por defecto será 0.
     
     - detenerAmbiente() -> Detiene los sonidos de ambiente.
 
-    - reproducirVoz(-sonido "Musica de fondo" -vol 0,5) -> Reproduce voces. Se indica el nombre del archivo y el volumen toma valores decimales entre 0 y 1. Sino se especifica el volumen por defecto será 1.
+    - reproducirVoz(-sonido "Voz" -vol 0,5 -canal 0) -> Reproduce voces. Se indica el nombre del archivo, el volumen toma valores decimales entre 0 y 1, y el canal toma valores enteros. Sino se especifica el volumen por defecto será 1 y el canal por defecto será 0.
 
-    - detenerVoz() -> Detiene las voces.
+    - detenerVoz("Voz") -> Detiene la voz indicada entre comillas.
 
     - mostrarDialogo() -> Muestra el cuadro de dialogo.
       
