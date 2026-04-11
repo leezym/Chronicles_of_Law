@@ -13,7 +13,7 @@ namespace EXERCISE.Model
 
         // Si da puntos
         public bool isCorrect;
-        public float points;
+        public int points;
 
         // Runtime (no persistente)
         [NonSerialized] public bool selected;

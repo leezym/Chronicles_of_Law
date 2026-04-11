@@ -12,9 +12,11 @@ namespace HISTORY
         public List<CharacterData> characters;
         public List<AudioData> audio;
         public List<GraphicData> graphics;
-        public GameData game;
         public List<CasesData> casesData;
         public List<CasesInGame> casesInGame;
+        public List<MinigamesData> minigamesData;
+        public List<MinigamesData> minigamesInGame;
+        public GameData game;
 
         public static HistoryState Capture()
         {
@@ -26,6 +28,8 @@ namespace HISTORY
             state.game = GameData.Capture();
             state.casesData = CasesData.Capture();
             state.casesInGame = CasesInGame.Capture();
+            state.minigamesData = MinigamesData.Capture();
+            state.minigamesInGame = MinigamesData.CaptureInGame();
 
             return state;
         }
@@ -39,6 +43,10 @@ namespace HISTORY
             GameData.Apply(game);
             CasesData.Apply(casesData);
             CasesInGame.Apply(casesInGame);
+            MinigamesData.Apply(minigamesData);
+            MinigamesData.ApplyInGame(minigamesInGame);
+            
+            CasesManager.Instance.AssignCasesToButtons();
         }
     }
 }

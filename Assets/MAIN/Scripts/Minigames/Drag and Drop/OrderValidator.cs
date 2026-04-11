@@ -137,7 +137,7 @@ public class OrderValidator : MonoBehaviour
         }
 
         int totalPoints = matches * pointsPerCorrectMatch;
-        gameManager.SetPoints(totalPoints);
+        gameManager.SetProfessionalPoints(totalPoints);
 
         if (lockDragAfterValidate)
         {

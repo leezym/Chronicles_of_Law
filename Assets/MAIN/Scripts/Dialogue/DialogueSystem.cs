@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CHARACTERS;
+using GAME;
 
 namespace DIALOGUE
 {
@@ -96,7 +97,12 @@ namespace DIALOGUE
         public void ShowSpeakerName(string speakerName = "")
         {
             if(speakerName != "narrador")
-                dialogueContainer.nameContainer.Show(speakerName);
+            {
+                if(speakerName == "Avatar")
+                    dialogueContainer.nameContainer.Show(GameManager.Instance.currentGameGender == GameManager.Gender.F ? "Camila" : "Camilo");
+                else
+                    dialogueContainer.nameContainer.Show(speakerName);                
+            }
             else
             {
                 HideSpeakerName();

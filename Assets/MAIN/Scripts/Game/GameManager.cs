@@ -1,70 +1,112 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using HISTORY;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-
+using VISUALNOVEL;
 namespace GAME
 {
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance { get; private set; }
 
-        public TMP_Text pointsText;
-        float points { get; set; } = 0f;
+        public TMP_Text profressionalPointsText;
+        public TMP_Text socialPointsText;
+        public Slider percentProgress;
+        public Slider levelProgress;
+        int profressionalPoints { get; set; } = 0;
+        int socialPoints { get; set; } = 0;
         int currentCaseLevel { get; set; } = 0;
-        int currentGameLevel { get; set; } = 0;
+        int currentMinigameLevel { get; set; } = 0;
         int currentLevel { get; set; } = 1;
+
+        [SerializeField] public List<Items> items = new List<Items>();
         
         public enum Gender {F, M}
         [field: SerializeField] public Gender currentGameGender { get; private set; }
-
-        public Image caseImage;
-        public TMP_Text caseName;
-        public TMP_Text caseAge;
-        public TMP_Text caseArea;
-        public TMP_Text caseDescription;
-        public TMP_Text caseAbstract;
-        [SerializeField] public List<Items> items = new List<Items>();
 
         private void Awake()
         {
             Instance = this;
         }
 
-        public float GetPoints(){ return points; }
-
-        public void SetPoints(float points)
+        public void InitializeGame()
         {
-            this.points += points;
-            pointsText.text = this.points.ToString();
+            profressionalPointsText.text = "0";
+            socialPointsText.text = "0";
+            profressionalPoints = 0;
+            socialPoints = 0;
+            currentCaseLevel = 0;
+            currentMinigameLevel = 0;
+            currentLevel = 1;
+
+            VariableStore.CreateVariable("socialPoints", socialPoints);
+            SetLevelProgress();
+            SetPercentProgress();
+        }
+
+        public int GetProfessionalPoints(){ return profressionalPoints; }
+
+        public void SetProfessionalPoints(int profressionalPoints)
+        {
+            this.profressionalPoints += profressionalPoints;
+            profressionalPointsText.text = this.profressionalPoints.ToString();
+        }
+
+        public int GetSocialPoints(){ return socialPoints; }
+
+        public void SetSocialPoints(int socialPoints)
+        {
+            this.socialPoints += socialPoints;
+            socialPointsText.text = this.socialPoints.ToString();
         }
 
         public int GetCurrentCaseLevel(){ return currentCaseLevel; }
 
         public void SetCurrentCaseLevel(int currentCaseLevel)
         {
-            currentCaseLevel ++;
             this.currentCaseLevel = currentCaseLevel;
         }
 
-        public int GetCurrentGameLevel(){ return currentGameLevel; }
-
-        public void SetCurrentGameLevel(int currentGameLevel)
+        public void IncreaseCurrentCaseLevel()
         {
-            currentGameLevel ++;
-            this.currentGameLevel = currentGameLevel;
+            currentCaseLevel ++;
+        }
+
+        public int GetCurrentMinigameLevel(){ return currentMinigameLevel; }
+
+        public void SetCurrentMinigameLevel(int currentMinigameLevel)
+        {
+            this.currentMinigameLevel = currentMinigameLevel;
+        }
+
+        public void IncreaseCurrentMinigameLevel()
+        {
+            currentMinigameLevel ++;
         }
 
         public int GetCurrentLevel(){ return currentLevel; }
 
         public void SetCurrentLevel(int currentLevel)
         {
-            currentLevel ++;
             this.currentLevel = currentLevel;
+        }
+
+        public void IncreaseCurrentLevel()
+        {
+            currentLevel ++;
+        }
+
+        public void SetPercentProgress()
+        {
+            float caseLevelPercent = (currentCaseLevel + 1) / (float)CasesManager.Instance.casesInGame.Count;
+            float minigameLevelPercent = (currentMinigameLevel + 1) / (float)MinigamesManager.Instance.minigamesInGame.Count;
+            percentProgress.value = (caseLevelPercent + minigameLevelPercent) / 2f;
+        }
+
+        public void SetLevelProgress()
+        {
+            float percent = currentLevel / 4f;
+            levelProgress.value = percent;
         }
 
         public Gender GetCurrentGender(){ return currentGameGender; }
@@ -72,23 +114,11 @@ namespace GAME
         public void SetGenderF() => currentGameGender = Gender.F;
         public void SetGenderM() => currentGameGender = Gender.M;
 
-        public void OpenCasePage(int index)
-        {
-            CasesData data = CasesManager.Instance.casesInGame[index].cases;
-
-            caseImage.sprite = data.photo;
-            caseName.text = "<b>Nombre completo:</b> " + data.character.FirstCharacterToUpper();
-            caseAge.text = "<b>Edad del consultante:</b> " + data.age.ToString();
-            caseArea.text = "<b>Área:</b> " + data.area.ToString().FirstCharacterToUpper();
-            caseDescription.text = "<b>Descripción:</b> " + data.description.FirstCharacterToUpper();
-            caseAbstract.text = data.abstracts.FirstCharacterToUpper();
-            foreach(Items item in HistoryManager.Instance.history.game.items)
-            {
-                if(item.nameFolder == caseName.text)
-                {
-                    FolderPanel.Instance.CreateItemPrefab(item.sprite, item.nameItem);
-                }
-            }
+        public void LevelChanged()
+        {            
+            IncreaseCurrentLevel();
+            SetLevelProgress();
+            VNManager.Instance.StartLevel();
         }
     }
 }

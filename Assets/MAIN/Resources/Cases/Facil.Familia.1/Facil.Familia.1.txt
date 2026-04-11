@@ -1,10 +1,10 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
-Entra Avatar en 0,5:0 [Serio] "Buen día caballero, {C} ¿podría decirme su nombre?"
+Entra Avatar en 0,3:0 [Serio] "Buen día caballero, {C} ¿podría decirme su nombre?"
 ocultar(Avatar)
 
-Entra Lionel Messi en 0,5:0 [Resignado] "Buenas tardes, mi nombre es Lionel Messi. Sí, así como oye, L-I-O-N-E-L M-E-S-S-I."
+Entra Lionel Messi en 0,3:0 [Resignado] "Buenas tardes, mi nombre es Lionel Messi. Sí, así como oye, L-I-O-N-E-L M-E-S-S-I."
 
 Lionel Messi [Serio] "Vengo porque tengo un problema, verá saqué un crédito de libre consumo para comprar una vivienda y vivir con mi pareja de ese momento, {C} pero terminamos antes de comprar la vivienda y yo ya había sacado el crédito a mi nombre."
 ocultar("Lionel Messi")
@@ -27,31 +27,34 @@ ocultar("Lionel Messi")
 
 Entra Avatar [Tranquilo] "Comprendo la situación, en el Consultorio podemos ayudarle con sus dudas legales."
 ocultar(Avatar)
+mostrar("Lionel Messi")
 
-anuncio "A continuación las preguntas"
+ocultarDialogo()
+
+anuncio "A continuación, las preguntas"
 
 pregunta "¿Cuáles son los requisitos para presumir una UMH?"
 {
     -Cuando exista una unión marital de hecho por un lapso no inferior a dos años e impedimento legal para contraer matrimonio por parte de uno o de ambos compañeros permanentes, siempre y cuando la sociedad o sociedades conyugales anteriores hayan sido disueltas y liquidadas por lo menos un año antes de la fecha en que se inició la unión marital de hecho. [0]
-    -Cuando exista unión marital de hecho durante un lapso no inferior a dos años, entre un hombre y una mujer sin impedimento legal para contraer matrimonio. [0,5]
-    -Cuando exista unión marital de hecho durante un lapso no inferior a dos años, entre un hombre y una mujer sin impedimento legal para contraer matrimonio o; Cuando exista una unión marital de hecho por un lapso no inferior a dos años e impedimento legal para contraer matrimonio por parte de uno o de ambos compañeros permanentes, siempre y cuando la sociedad o sociedades conyugales anteriores hayan sido disueltas antes de la fecha en que se inició la unión marital de hecho. [1]
+    -Cuando exista unión marital de hecho durante un lapso no inferior a dos años, entre un hombre y una mujer sin impedimento legal para contraer matrimonio. [50]
+    -Cuando exista unión marital de hecho durante un lapso no inferior a dos años, entre un hombre y una mujer sin impedimento legal para contraer matrimonio o; Cuando exista una unión marital de hecho por un lapso no inferior a dos años e impedimento legal para contraer matrimonio por parte de uno o de ambos compañeros permanentes, siempre y cuando la sociedad o sociedades conyugales anteriores hayan sido disueltas antes de la fecha en que se inició la unión marital de hecho. [100]
 }
 
 pregunta "¿Ante qué institución se puede adelantar el trámite?"
 {
-    -La declaración de la UMH se puede realizar a través de sentencia judicial, por común acuerdo ante notaría a través de escritura pública y ante un centro de conciliación a través de una audiencia de conciliación. [1]
+    -La declaración de la UMH se puede realizar a través de sentencia judicial, por común acuerdo ante notaría a través de escritura pública y ante un centro de conciliación a través de una audiencia de conciliación. [100]
     -Solamente se requiere el transcurso del tiempo, ya que solo basta la convivencia durante dos años para que se presuma la UMH sin necesidad de ser declarada ante ninguna institución. [0]
-    -La declaración de la UMH se puede realizar a través de sentencia judicial y por común acuerdo ante notaría a través de escritura pública. [0,5]
+    -La declaración de la UMH se puede realizar a través de sentencia judicial y por común acuerdo ante notaría a través de escritura pública. [50]
 }
 
 pregunta "¿Qué figura jurídica se puede aplicar en el presente caso?"
 {
-    -Se puede declarar una sociedad patrimonial de hecho y posteriormente liquidarla, en donde cada compañero permanente tendría que pagar un millón y medio de pesos colombianos ($1.500.000) por el crédito. [0,5]
-    -Se puede declarar una Unión Marital de Hecho, para posteriormente disolver y liquidar la sociedad patrimonial, en donde cada compañero permanente tendría que pagar un millón y medio de pesos colombianos ($1.500.000) por el crédito. [1]
+    -Se puede declarar una sociedad patrimonial de hecho y posteriormente liquidarla, en donde cada compañero permanente tendría que pagar un millón y medio de pesos colombianos ($1.500.000) por el crédito. [50]
+    -Se puede declarar una Unión Marital de Hecho, para posteriormente disolver y liquidar la sociedad patrimonial, en donde cada compañero permanente tendría que pagar un millón y medio de pesos colombianos ($1.500.000) por el crédito. [100]
     -El crédito fue solicitado por el señor Lionel, por lo que sería una deuda personal de él y no habría lugar a declarar una sociedad patrimonial de hecho. [0]
 }
 
-ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+ocultar("Lionel Messi"); borrarCapasMultimedia(-panel fondo)
 detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

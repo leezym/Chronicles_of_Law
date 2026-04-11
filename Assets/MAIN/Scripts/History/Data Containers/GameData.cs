@@ -11,8 +11,11 @@ namespace HISTORY
     [System.Serializable]
     public class GameData
     {
-        public float points = 0f;
+        public int professionalPoints = 0;
+        public int socialPoints = 0;
         public int currentCaseLevel = 0;
+        public int currentMinigameLevel = 0;
+        public int currentLevel = 0;
 
         [SerializeField]
         public List<Items> items = new List<Items>();
@@ -22,8 +25,11 @@ namespace HISTORY
             GameData data = new GameData();
             var gm = GameManager.Instance;
 
-            data.points = gm.GetPoints();
+            data.professionalPoints = gm.GetProfessionalPoints();
+            data.socialPoints = gm.GetSocialPoints();
             data.currentCaseLevel = gm.GetCurrentCaseLevel();
+            data.currentMinigameLevel = gm.GetCurrentMinigameLevel();
+            data.currentLevel = gm.GetCurrentLevel();
             data.items = new List<Items>(gm.items);
 
             return data;
@@ -34,14 +40,19 @@ namespace HISTORY
             var gm = GameManager.Instance;
             var fp = FolderPanel.Instance;
 
-            gm.SetPoints(data.points);
+            gm.SetProfessionalPoints(data.professionalPoints);
+            gm.SetSocialPoints(data.socialPoints);
             gm.SetCurrentCaseLevel(data.currentCaseLevel);
+            gm.SetCurrentMinigameLevel(data.currentMinigameLevel);
+            gm.SetCurrentLevel(data.currentLevel);
             gm.items = new List<Items>(data.items);
 
             fp.ResetFolder();
 
             foreach(var item in gm.items)
                 fp.CreateItemPrefab(item.sprite, item.nameItem);
+
+            VariableStore.TrySetValue("socialPoints", data.socialPoints);
         }
     }
 }

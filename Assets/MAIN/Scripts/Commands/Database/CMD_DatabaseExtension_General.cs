@@ -2,11 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-using System.IO;
 using DIALOGUE;
 using GAME;
-using VISUALNOVEL;
 
 namespace COMMANDS
 {
@@ -27,8 +24,8 @@ namespace COMMANDS
             database.AddCommand("cargarcaso", new Action<string[]>(LoadNewCaseFile));
             database.AddCommand("cargarminijuego", new Func<IEnumerator>(LoadNewGame));
 
-            database.AddCommand("subirnivelcaso", new Action(SetCurrentCaseLevel));
-            database.AddCommand("subirnivel", new Action(SetCurrentLevel));
+            database.AddCommand("subirnivelcaso", new Action(IncreaseCurrentCaseLevel));
+            database.AddCommand("subirnivel", new Action(IncreaseCurrentLevel));
         }
 
         private static IEnumerator ShowDialogueBox()
@@ -82,7 +79,7 @@ namespace COMMANDS
         {
             DialogueSystem.Instance.conversationManager.PauseConversation();
 
-            GameObject prefab = MinigamesManager.Instance.minigamesInGame[GameManager.Instance.GetCurrentGameLevel()].game;
+            GameObject prefab = MinigamesManager.Instance.minigamesInGame[GameManager.Instance.GetCurrentMinigameLevel()].game;
 
             if(prefab == null)
             {
@@ -95,15 +92,14 @@ namespace COMMANDS
             MinigamesManager.Instance.StartGame(prefab);
         }
 
-        private static void SetCurrentCaseLevel()
+        private static void IncreaseCurrentCaseLevel()
         {
-            CasesManager.Instance.LevelChanged();          
+            CasesManager.Instance.LevelChanged();     
         }
 
-        private static void SetCurrentLevel()
+        private static void IncreaseCurrentLevel()
         {
-            GameManager.Instance.SetCurrentLevel(GameManager.Instance.GetCurrentLevel());
-            VNManager.Instance.StartCinematic();
+            GameManager.Instance.LevelChanged();
         }
     }
 }

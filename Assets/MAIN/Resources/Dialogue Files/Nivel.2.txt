@@ -3,45 +3,48 @@ mostrarCinematica(-media "escena 12" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Qué debo mejorar? ¿Mi interacción social o mi desempeño profesional?"
 {
-- Decide mejorar su interacción
+- Decide mejorar su interacción. [500|0]
     detenerMusica()
     mostrarCinematica(-media "escena 13" -audio true)
 
-- Solo le importa lo profesional
+- Solo le importa lo profesional. [10|0]
     detenerMusica()
     mostrarCinematica(-media "escena 14" -audio true)
 }
+ocultar(Avatar)
 
+anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
 
 mostrarCinematica(-media "escena 15" -audio true)
 
-reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
-
-social "¿Cómo me recibirán hoy?"
+if(socialPoints >= 500)
 {
-- Sala grupal amigable
-    detenerMusica()
     mostrarCinematica(-media "escena 16" -audio true)
-
-- Sala grupal agresiva
-    detenerMusica()
+}
+else
+{
     mostrarCinematica(-media "escena 17" -audio true)
 
+    reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
+
+    crear(Avatar); mover(Avatar -x 0,3 -y 0)
     social "En ese momento, dos caminos se abren en su mente"
     {
-    - Lo deja pasar
+    - Lo deja pasar. [500|0]
         detenerMusica()
         mostrarCinematica(-media "escena 18" -audio true)
 
-    - Responde la agresión
+    - Responde la agresión. [10|0]
         detenerMusica()
         mostrarCinematica(-media "escena 19" -audio true)
     }
+    ocultar(Avatar)
 }
 
 mostrarCinematica(-media "escena 20" -audio true)

@@ -15,26 +15,24 @@ MonoBehaviour:
   characters:
   - name: "Alberto Murcia y Marcela Mar\xEDn"
     characterType: 1
-    nameColor: {r: 0.23529413, g: 0.27058825, b: 0.3647059, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
-    nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
-    nameFontSize: 40
-    dialogueFontSize: 35
+    prefab: {fileID: 1528083289414182126, guid: 0c3b6bc4787a7324da3d97b65283505f,
+      type: 3}
     sprites:
       _serializedList:
       - Key: 1
         Value: {fileID: 21300000, guid: d09ad21a9f9ee4b4b9e11267f294dddd, type: 3}
       - Key: 2
         Value: {fileID: 21300000, guid: 6dae9918c7b24014ebf389c4301c9968, type: 3}
-  - name: Alexandra Motato
-    characterType: 1
-    nameColor: {r: 0.34901962, g: 0.3529412, b: 0.5254902, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.23529413, g: 0.27058825, b: 0.3647059, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Alexandra Motato
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 27c25a2d248fefa46a3d42176cd3db84,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Irritada
@@ -45,14 +43,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: c1f3ab645ca984a4592ba87c7170a70e, type: 3}
       - Key: Triste
         Value: {fileID: 21300000, guid: 79482e01108b8ae4f8bc96a5d6689acd, type: 3}
-  - name: "Alfonso Garc\xEDa"
-    characterType: 1
-    nameColor: {r: 0.6039216, g: 0.5764706, b: 0.54901963, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.34901962, g: 0.3529412, b: 0.5254902, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: "Alfonso Garc\xEDa"
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 2e884cba17941ff4abc2a5406d6292f0,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Confundido
@@ -61,14 +61,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 16f17840bd903a242bf748b31c416623, type: 3}
       - Key: Serio
         Value: {fileID: 21300000, guid: 84bc1d8ef81b7004d83532e6f6985999, type: 3}
-  - name: "Andr\xE9s Fern\xE1ndez"
-    characterType: 1
-    nameColor: {r: 0.23137257, g: 0.33333334, b: 0.23137257, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.6039216, g: 0.5764706, b: 0.54901963, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: "Andr\xE9s Fern\xE1ndez"
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 8eb00d9e94271b3469a9e96b2f8169ad,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Desconcertado
@@ -79,36 +81,38 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 7f6ad107f0eecea449fd25d16c91d9b8, type: 3}
       - Key: Serio
         Value: {fileID: 21300000, guid: c0ae224b635a27740b33f6f6179e4f03, type: 3}
-  - name: Avatar
-    characterType: 2
-    nameColor: {r: 0.7832923, g: 0.3537736, b: 1, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.23137257, g: 0.33333334, b: 0.23137257, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Avatar
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: cecbbde59abb0034e8a8bdfb841c4a8a,
+      type: 3}
     sprites:
       _serializedList:
-      - Key: Sonrojado
-        Value: {fileID: 701462834, guid: 4ff8dac0639563345a9f55b469f158df, type: 3}
-      - Key: Tranquilo
-        Value: {fileID: 1542614295, guid: 4ff8dac0639563345a9f55b469f158df, type: 3}
       - Key: Contento
-        Value: {fileID: 1891028144, guid: 4ff8dac0639563345a9f55b469f158df, type: 3}
-      - Key: Nervioso
-        Value: {fileID: -1090860507, guid: 4ff8dac0639563345a9f55b469f158df, type: 3}
-      - Key: Normal
-        Value: {fileID: -2121712326, guid: 4ff8dac0639563345a9f55b469f158df, type: 3}
+        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
       - Key: Serio
-        Value: {fileID: -244041059, guid: 4ff8dac0639563345a9f55b469f158df, type: 3}
-  - name: Edinson Osorio
-    characterType: 1
-    nameColor: {r: 0.63529414, g: 0.6, b: 0.56078434, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+      - Key: Pensativo
+        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+      - Key: Tranquilo
+        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+      - Key: Triste
+        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.7832923, g: 0.3537736, b: 1, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Edinson Osorio
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 3e430b9e4e93a7748adc03e529fa00c3,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Enojado
@@ -119,14 +123,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 5f027743464a5054787b694062fdf014, type: 3}
       - Key: Triste
         Value: {fileID: 21300000, guid: 6f59e0975db3d0544836ce696f7b767c, type: 3}
-  - name: Enser Marin
-    characterType: 1
-    nameColor: {r: 0.2627451, g: 0.2509804, b: 0.24313727, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.63529414, g: 0.6, b: 0.56078434, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Enser Marin
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: a72f14ae3504b3047802e9e86d1a7ac5,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Cansado
@@ -135,14 +141,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 92bb9dc6d68666649bc8250d3bc066a8, type: 3}
       - Key: Serio
         Value: {fileID: 21300000, guid: d47217410a2f18848af81059dbd0ae59, type: 3}
-  - name: Evelia Moreno
-    characterType: 1
-    nameColor: {r: 0.72156864, g: 0.63529414, b: 0.654902, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.2627451, g: 0.2509804, b: 0.24313727, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Evelia Moreno
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: d139bf1e8dca8ad46af5cdd3a984b2fa,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Indignada
@@ -151,14 +159,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: d70f0d50aa77cd84baad19b633794648, type: 3}
       - Key: Seria
         Value: {fileID: 21300000, guid: 587730c2c46fa224686a91481a94fea1, type: 3}
-  - name: Fausto Tejeiro
-    characterType: 1
-    nameColor: {r: 0.3647059, g: 0.454902, b: 0.48235297, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.72156864, g: 0.63529414, b: 0.654902, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Fausto Tejeiro
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: c9f984688f3e0fc4aa539ab92ef5a5a7,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Decepcionado
@@ -171,14 +181,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 1f4edc6dfe77dea48a5db1579376ace1, type: 3}
       - Key: Serio
         Value: {fileID: 21300000, guid: 5bee60a7eba3a90408a11b78f794c6c5, type: 3}
-  - name: "Jos\xE9 L\xF3pez"
-    characterType: 1
-    nameColor: {r: 0.5058824, g: 0.28235295, b: 0.25490198, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.3647059, g: 0.454902, b: 0.48235297, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: "Jos\xE9 L\xF3pez"
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: cf1b1385c3dd89243926c8502465ac81,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Adolorido
@@ -187,14 +199,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 4262bdc1689927f49928f9eeb11d5a7b, type: 3}
       - Key: Serio
         Value: {fileID: 21300000, guid: 8072b7f71d854814886a517d88fc808e, type: 3}
-  - name: "Juan Qui\xF1ones"
-    characterType: 1
-    nameColor: {r: 0.62352943, g: 0.5294118, b: 0.47450984, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.5058824, g: 0.28235295, b: 0.25490198, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: "Juan Qui\xF1ones"
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 50749b3ecea4e00458e476feadb9511f,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Concentrado
@@ -205,14 +219,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 840401b80925e2c4d8edae972024a3f0, type: 3}
       - Key: Trsite
         Value: {fileID: 21300000, guid: 20681eb7023be2147b15041f26c0c956, type: 3}
-  - name: "Juanita Alima\xF1a"
-    characterType: 1
-    nameColor: {r: 0.37647063, g: 0.27450982, b: 0.39607847, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.62352943, g: 0.5294118, b: 0.47450984, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: "Juanita Alima\xF1a"
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 309f5c9bf8db97a43b1749fca5d84b93,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Decepcionada
@@ -223,14 +239,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: a4bdfc82fc01142459a4b53345969e05, type: 3}
       - Key: Seria
         Value: {fileID: 21300000, guid: 25e09f6b31a7daa4e902df0a60203bd3, type: 3}
-  - name: Julio Ulpiano
-    characterType: 1
-    nameColor: {r: 0.16078432, g: 0.18039216, b: 0.24705884, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.37647063, g: 0.27450982, b: 0.39607847, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Julio Ulpiano
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: b91afd7e57979724aab527273cd372af,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Dubitativo
@@ -241,14 +259,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 39954478f830ced4dabf14e65d76842f, type: 3}
       - Key: Serio
         Value: {fileID: 21300000, guid: a0395cc3f6508e2418b2a97e4e7e6f7c, type: 3}
-  - name: Lionel Messi
-    characterType: 1
-    nameColor: {r: 0.25882354, g: 0.34901962, b: 0.654902, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.16078432, g: 0.18039216, b: 0.24705884, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Lionel Messi
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 5fa277cede2f4444a8c0c594b8b26e23,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Enojado
@@ -259,14 +279,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: a8cda6523062cf849b002ffb411fa313, type: 3}
       - Key: Serio
         Value: {fileID: 21300000, guid: 072b6d9af32a1e14bb2f12b44e15eab6, type: 3}
-  - name: Martha Enolia Correa
-    characterType: 1
-    nameColor: {r: 0.45098042, g: 0.5372549, b: 0.43921572, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.25882354, g: 0.34901962, b: 0.654902, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Martha Enolia Correa
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 5e88c791d7f56c94fb42f10aae7a6467,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Dubitativa
@@ -277,14 +299,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: af85177acc5333b498e5da7a96c8f405, type: 3}
       - Key: Seria
         Value: {fileID: 21300000, guid: 46f5c0d38fb7aa949aca5e83e4b76fd7, type: 3}
-  - name: "Mar\xEDa Flores"
-    characterType: 1
-    nameColor: {r: 0.32156864, g: 0.3019608, b: 0.2901961, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.45098042, g: 0.5372549, b: 0.43921572, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: "Mar\xEDa Flores"
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 8ce0096fcd85f5b4787774d072fa8cfe,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Molesta
@@ -293,14 +317,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 1a6ef4c3f3e14c6429c375b74269ffda, type: 3}
       - Key: Seria
         Value: {fileID: 21300000, guid: f391643f9e6f4f942b1489bdb88c4cce, type: 3}
-  - name: Michael Jovany Aranjuez
-    characterType: 1
-    nameColor: {r: 0.23529413, g: 0.27058825, b: 0.21568629, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.32156864, g: 0.3019608, b: 0.2901961, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Michael Jovany Aranjuez
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 4927edf98fe6dba4095daa558dc44042,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Contento
@@ -311,14 +337,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 1aea874585a4ca9488471ff57723d1ae, type: 3}
       - Key: Triste
         Value: {fileID: 21300000, guid: b96e4a26b9c08234db170840e8284104, type: 3}
-  - name: Olga Valencia
-    characterType: 1
-    nameColor: {r: 0.69803923, g: 0.49803925, b: 0.26666668, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.23529413, g: 0.27058825, b: 0.21568629, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Olga Valencia
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 8f5696752a4922d4583444d97ff6aaeb,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Preocupada
@@ -327,14 +355,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 50d2aed02f1781347b541dffd5d361bc, type: 3}
       - Key: Triste
         Value: {fileID: 21300000, guid: 1d1b0f9b7bf19ad4481571c92f04f14e, type: 3}
-  - name: Patricia Motoa
-    characterType: 1
-    nameColor: {r: 0.6039216, g: 0.6901961, b: 0.62352943, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.69803923, g: 0.49803925, b: 0.26666668, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
+  - name: Patricia Motoa
+    characterType: 1
+    prefab: {fileID: 1528083289414182126, guid: 7aa694bedc3d1b94388498eafe494a5a,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Enojada
@@ -345,40 +375,16 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: 649522248695ffd458ffff67301e220f, type: 3}
       - Key: Triste
         Value: {fileID: 21300000, guid: f7b9780fd9da3c74c9174f1ad2904e63, type: 3}
-  - name: Personaje
-    characterType: 2
-    nameColor: {r: 0.17515129, g: 0.28003305, b: 0.9056604, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.6039216, g: 0.6901961, b: 0.62352943, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
     nameFontSize: 40
     dialogueFontSize: 35
-    sprites:
-      _serializedList:
-      - Key: cuerpo
-        Value: {fileID: -1143345523, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
-      - Key: serio
-        Value: {fileID: -2009307320, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
-      - Key: enojado
-        Value: {fileID: 443419484, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
-      - Key: feliz
-        Value: {fileID: -1005220912, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
-      - Key: normal
-        Value: {fileID: 1754228493, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
-      - Key: preocupado
-        Value: {fileID: -222796243, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
-      - Key: sonrojado
-        Value: {fileID: -799832430, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
-      - Key: tranquilo
-        Value: {fileID: 1373178626, guid: 0e6f8fac9445fe6488cfaa4753133b38, type: 3}
   - name: Sabrina Petro
     characterType: 1
-    nameColor: {r: 0.37647063, g: 0.28627452, b: 0.32156864, a: 1}
-    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
-    nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
-    dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
-    nameFontSize: 40
-    dialogueFontSize: 35
+    prefab: {fileID: 1528083289414182126, guid: 6b0b9b8d044df7d4498b0fc20be034d4,
+      type: 3}
     sprites:
       _serializedList:
       - Key: Enojada
@@ -389,3 +395,9 @@ MonoBehaviour:
         Value: {fileID: 21300000, guid: cef51088f1bc5274787553e696dc9116, type: 3}
       - Key: Seria
         Value: {fileID: 21300000, guid: f86d3b2fea18f834b9290a5b8f73cbc7, type: 3}
+    nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
+    nameColor: {r: 0.37647063, g: 0.28627452, b: 0.32156864, a: 1}
+    dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+    nameFontSize: 40
+    dialogueFontSize: 35

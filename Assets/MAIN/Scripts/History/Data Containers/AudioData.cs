@@ -12,12 +12,12 @@ namespace HISTORY
         public string trackName;
         public string trackPath;
         public float trackVolume;
-        public AudioBus bus; // nuevo
+        public AudioBus bus;
         
         public AudioData(AudioChannel channel)
         {
             this.channel = channel.channelIndex;
-            this.bus = channel.bus; //nuevo
+            this.bus = channel.bus;
 
             if(channel.activeTrack == null)
                 return;

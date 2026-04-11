@@ -1,10 +1,10 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
-Entra Fausto Tejeiro en 0,5:0 [Fastidiado] "Muy buenas tardes, mi nombre es Fausto Tejeiro"
+Entra Fausto Tejeiro en 0,3:0 [Fastidiado] "Muy buenas tardes, mi nombre es Fausto Tejeiro"
 ocultar("Fausto Tejeiro")
 
-Entra Avatar en 0,5:0 [Serio] "Buen día señor Fausto, en el Consultorio Jurídico tenemos la disposición para ayudarlo, {C} cuénteme sobre su situación"
+Entra Avatar en 0,3:0 [Serio] "Buen día señor Fausto, en el Consultorio Jurídico tenemos la disposición para ayudarlo, {C} cuénteme sobre su situación"
 ocultar(Avatar)
 
 Entra Fausto Tejeiro [Fastidiado] "Es que necesito que me ayude o me asesore porque yo no sé qué hacer en este momento, estoy bastante jodido."
@@ -43,31 +43,31 @@ ocultar("Fausto Tejeiro")
 item "Recibos y facturas de obras"
 
 Entra Fausto Tejeiro [Decepcionado] "Usted me dirá joven, cómo se puede resolver esa situación. Yo entiendo que sólo una parte es mía, pero quiero poder recuperar algo de lo que invertí con sudor y esfuerzo. {C} Quiero reclamar lo mío para iniciar mi vida en otra parte, ayúdeme con eso, le agradezco."
-ocultar("Fausto Tejeiro")
 
-anuncio "A continuación las preguntas"
+ocultarDialogo();
+anuncio "A continuación, las preguntas"
 
 pregunta "¿Qué procedimiento legal se debe surtir para que el usuario pueda vender el bien inmueble?"
 {
 - Celebrar un contrato de compraventa con algún interesado ya que él, al igual que sus amigos, es pleno propietario del bien inmueble. [0]
-- Iniciar un proceso divisorio ante la jurisdicción ordinaria, específicamente un juez competente de Cali, en el que solicite con la demanda la venta de la cosa común. [0,5]
-- Iniciar un proceso divisorio ante la jurisdicción ordinaria en el que solicite con la demanda la venta de la cosa común y el reconocimiento de las mejoras realizadas por el usuario en el inmueble. [1]
+- Iniciar un proceso divisorio ante la jurisdicción ordinaria, específicamente un juez competente de Cali, en el que solicite con la demanda la venta de la cosa común. [50]
+- Iniciar un proceso divisorio ante la jurisdicción ordinaria en el que solicite con la demanda la venta de la cosa común y el reconocimiento de las mejoras realizadas por el usuario en el inmueble. [100]
 }
 pregunta "¿Frente al reconocimiento de mejoras, bastará con anexar los recibos de pago para probar así el valor de estas?"
 {
-- No, además de anexar esas pruebas documentales deberá realizar un juramento estimatorio en la demanda sobre el valor representativo de las mejoras. [0,5]
+- No, además de anexar esas pruebas documentales deberá realizar un juramento estimatorio en la demanda sobre el valor representativo de las mejoras. [50]
 - Sí, ya que estas constituyen plena prueba representativa del dinero invertido por el usuario en el bien, sin embargo, dichos documentos deberán ser reconocidos por los demás copropietarios. [0]
-- No, debe también realizar un juramento estimatorio en la demanda sobre el valor de las mejoras y acompañarlo con un dictamen pericial que refuerce su solicitud. [1]
+- No, debe también realizar un juramento estimatorio en la demanda sobre el valor de las mejoras y acompañarlo con un dictamen pericial que refuerce su solicitud. [100]
 }
 
 pregunta "En el evento de que la cosa común sea vendida ¿qué porcentaje de dicha venta se le concederá al usuario?"
 {
-- A cada copropietario le corresponde lo mismo en partes iguales. [0,5]
+- A cada copropietario le corresponde lo mismo en partes iguales. [50]
 - Se entenderá divido el valor de acuerdo con lo que cada copropietario haya invertido en el inmueble, por lo que le corresponderá una fracción mayor al usuario. [0]
-- Le corresponderá un 25% del fruto de la venta, al tener cuotas sociales fraccionadas en partes iguales para todos los copropietarios del bien. [1]
+- Le corresponderá un 25% del fruto de la venta, al tener cuotas sociales fraccionadas en partes iguales para todos los copropietarios del bien. [100]
 }
 
-ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+ocultar("Fausto Tejeiro"); borrarCapasMultimedia(-panel fondo)
 detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

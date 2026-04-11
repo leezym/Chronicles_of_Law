@@ -4,19 +4,22 @@ mostrarCinematica(-media "escena 37" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
 social "Se abre otro dilema"
 {
-- Busca en físico
+- Busca en físico. [100|0]
     detenerMusica()
     mostrarCinematica(-media "escena 38" -audio true)
 
-- Busca en digital
+- Busca en digital. [100|0]
     detenerMusica()
     mostrarCinematica(-media "escena 39" -audio true)
 }
+ocultar(Avatar)
 
 mostrarCinematica(-media "escena 40" -audio true)
 
+anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
@@ -29,17 +32,20 @@ mostrarCinematica(-media "escena 42" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
 social "Su cuerpo pide descanso, pero su conciencia analiza lo que debía hacer"
 {
-- Decide ayudar en caso
+- Decide ayudar en caso. [500|10]
     detenerMusica()
     mostrarCinematica(-media "escena 43" -audio true)
 
-- Decide no ayudar en caso
+- Decide no ayudar en caso. [10|-100]
     detenerMusica()
     mostrarCinematica(-media "escena 44" -audio true)
 }
+ocultar(Avatar)
 
+anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
@@ -48,15 +54,17 @@ mostrarCinematica(-media "escena 45" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Me esperas para que volvamos juntos a casa?"
 {
-- Decide esperar a Andrea
+- Decide esperar a Andrea. [500|0]
     detenerMusica()
     mostrarCinematica(-media "escena 46" -audio true)
 
-- Decide no esperar a Andrea
+- Decide no esperar a Andrea. [10|0]
     detenerMusica()
     mostrarCinematica(-media "escena 47" -audio true)
 }
+ocultar(Avatar)
 
 mostrarCinematica(-media "escena 48" -audio true)

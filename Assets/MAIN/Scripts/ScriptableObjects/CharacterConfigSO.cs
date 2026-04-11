@@ -1,11 +1,11 @@
 using UnityEngine;
-
+using AYellowpaper.SerializedCollections;
 namespace CHARACTERS
 {
     [CreateAssetMenu(fileName = "Character Configuration Asset", menuName = "Dialogue System/Character Configuration Asset")]
     public class CharacterConfigSO : ScriptableObject
     {
-        public CharacterConfigData[] characters;        
+        public CharacterConfigData[] characters;
         
         public CharacterConfigData GetConfig(string characterName, bool safe = true)
         {
@@ -20,6 +20,21 @@ namespace CHARACTERS
             }
 
             return CharacterConfigData.Default;
+        }
+
+        public void SetConfig(string characterName, GameObject prefab, SerializedDictionary<string, Sprite> sprites)
+        {
+            characterName = characterName.ToLower();
+
+            for(int i = 0; i < characters.Length; i++)
+            {
+                if(string.Equals(characterName, characters[i].name.ToLower()))
+                {
+                    characters[i].prefab = prefab;
+                    characters[i].sprites = sprites;
+                    break;
+                }                    
+            }
         }
     }
 }

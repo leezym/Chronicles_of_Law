@@ -10,7 +10,8 @@ namespace DIALOGUE
     public class DialogueSystemConfigSO : ScriptableObject
     {
         public CharacterConfigSO characterConfigAsset;
-        public Color defaultTextColor;
+        public Color defaultNameColor;
+        public Color defaultDialogueColor;
         public TMP_FontAsset defaultFont;
         public float defaultNameFontSize;
         public float defaultDialogueFontSize;

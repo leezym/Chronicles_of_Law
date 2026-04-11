@@ -15,7 +15,7 @@ MonoBehaviour:
   id: ui.click.skip
   bus: 2
   clips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 5b4bda5f1c356434ab28f45e8353fc4e, type: 3}
   volume: 1
   randomizePitch: 0
   pitchMin: 1

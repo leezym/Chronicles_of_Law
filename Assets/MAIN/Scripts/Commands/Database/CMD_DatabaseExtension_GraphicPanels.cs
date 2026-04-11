@@ -170,7 +170,7 @@ namespace COMMANDS
 
             if(graphic == null)
             {
-                Debug.LogError($"Could not find media file called '{mediaName}' in the Resources directories. Please specify the field path within resources and make sure it exists!");
+                Debug.LogError($"Could not find media file called '{mediaName}' in the Resources directories '{pathToGraphic}'. Please specify the field path within resources and make sure it exists!");
                 yield break;                
             }
 

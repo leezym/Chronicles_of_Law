@@ -19,6 +19,8 @@ public class ChoicePanel : MonoBehaviour
     [SerializeField] private GameObject choiceButtonPrefab;
     [SerializeField] private VerticalLayoutGroup buttonLayoutGroup;
 
+    string[] letters = {"A", "B", "C", "D"};
+
     private CanvasGroupController cg = null;
     private List<ChoiceButton> buttons = new List<ChoiceButton>();
     public ChoicePanelDecision lastDecision { get; private set; } = null;
@@ -28,15 +30,11 @@ public class ChoicePanel : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-    
-    void Start()
-    {
         cg = new CanvasGroupController(this, canvasGroup);
         cg.alpha = 0;
         cg.SetInteractableState(false);
     }
-
+    
     public void Show(string question, string[] choices)
     {
         lastDecision = new ChoicePanelDecision(question, choices);
@@ -66,9 +64,10 @@ public class ChoicePanel : MonoBehaviour
                 GameObject newButtonObject = Instantiate(choiceButtonPrefab, buttonLayoutGroup.transform);
                 newButtonObject.SetActive(true);
 
-                Button newButton = newButtonObject.GetComponent<Button>();
-                TextMeshProUGUI newTitle = newButton.GetComponentInChildren<TextMeshProUGUI>();
-                LayoutElement newLayout = newButton.GetComponent<LayoutElement>();
+                Button newButton = newButtonObject.GetComponentInChildren<Button>();
+                TextMeshProUGUI newTitle = newButtonObject.GetComponentInChildren<TextMeshProUGUI>();
+                LayoutElement newLayout = newButtonObject.GetComponent<LayoutElement>();
+                newButton.GetComponentInChildren<TextMeshProUGUI>().text = letters[i];
 
                 choiceButton = new ChoiceButton { button = newButton, layout = newLayout, title = newTitle };
 
@@ -92,7 +91,7 @@ public class ChoicePanel : MonoBehaviour
         for(int i = 0; i < buttons.Count; i++)
         {
             bool show = i < choices.Length;
-            buttons[i].button.gameObject.SetActive(show);
+            buttons[i].layout.gameObject.SetActive(show);
         }
 
         yield return new WaitForEndOfFrame();
@@ -107,6 +106,8 @@ public class ChoicePanel : MonoBehaviour
 
     public void Hide()
     {
+        isWaitingOnUserChoice = false;
+        
         cg.Hide();
         cg.SetInteractableState(active: false);
     }

@@ -91,7 +91,7 @@ namespace EXERCISE.Runtime
 
             foreach (var r in docData.regions.regions)
             {
-                float pts = (r.points > 0f) ? r.points : docData.regions.pointsPerCorrect;
+                int pts = (r.points > 0f) ? r.points : docData.regions.pointsPerCorrect;
 
                 docTokens[r.id] = new TokenData
                 {
@@ -205,7 +205,7 @@ namespace EXERCISE.Runtime
             if (data == null) return;
 
             validated = true;
-            float pointsToAdd = 0f;
+            int pointsToAdd = 0;
 
             if (IsTable)
             {
@@ -236,7 +236,7 @@ namespace EXERCISE.Runtime
             }
 
             if (GameManager.Instance != null)
-                GameManager.Instance.SetPoints(pointsToAdd);
+                GameManager.Instance.SetProfessionalPoints(pointsToAdd);
 
             if (validateButton != null)
                 validateButton.interactable = false;

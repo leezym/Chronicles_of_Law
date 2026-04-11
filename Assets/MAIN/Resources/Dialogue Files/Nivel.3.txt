@@ -8,17 +8,20 @@ mostrarCinematica(-media "escena 23" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
 social "Dime el nombre del consultante"
 {
-- Se acuerda del nombre
+- Se acuerda del nombre. [500|10]
     detenerMusica()
     mostrarCinematica(-media "escena 24" -audio true)
 
-- No se acuerda del nombre
+- No se acuerda del nombre. [10|-100]
     detenerMusica()
     mostrarCinematica(-media "escena 25" -audio true)
 }
+ocultar(Avatar)
 
+anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
@@ -35,17 +38,20 @@ mostrarCinematica(-media "escena 28" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Dios... qué hago?"
 {
-- Decide ayudar
+- Decide ayudar. [500|0]
     detenerMusica()
     mostrarCinematica(-media "escena 29" -audio true)
 
-- Decide no ayudar
+- Decide no ayudar. [10|0]
     detenerMusica()
     mostrarCinematica(-media "escena 30" -audio true)
 }
+ocultar(Avatar)
 
+anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
@@ -58,16 +64,18 @@ mostrarCinematica(-media "escena 32" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Tú qué dices? ¿Vamos a relajarnos un rato o te vas a quedar en la charla?"
 {
-- Decide ir con sus compañeros
+- Decide ir con sus compañeros. [500|-400]
     detenerMusica()
     mostrarCinematica(-media "escena 33" -audio true)
 
-- Se queda en la charla
+- Se queda en la charla. [10|100]
     detenerMusica()
     mostrarCinematica(-media "escena 34" -audio true)
 }
+ocultar(Avatar)
 
 cargarCaso()
 

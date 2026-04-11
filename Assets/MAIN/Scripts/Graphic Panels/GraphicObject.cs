@@ -11,12 +11,14 @@ public class GraphicObject
     private const string MATERIAL_FIELD_MAINTEX = "_MainTex";
     private const string MATERIAL_FIELD_BLEND = "_Blend";
     private const string MATERIAL_FIELD_ALPHA = "_Alpha";
+    
+    GraphicPanelManager panelManager => GraphicPanelManager.Instance;
+    
     public RawImage renderer;
-
     private GraphicLayer layer;
 
     public bool isVideo => video != null;
-    public bool hasEnded { get; private set; }
+    public bool hasEnded { get; set; }
     public bool useAudio => (audio != null ? !audio.mute : false);
     public System.Action Finished;
     public VideoPlayer video = null;
@@ -91,6 +93,16 @@ public class GraphicObject
         video.enabled = true;
     }
 
+    public void Restart()
+    {
+        if (!isVideo || video == null) return;
+
+        hasEnded = false;
+        video.frame = 0;
+        video.Play();
+        audio?.Play();
+    }
+
     private void OnVideoEnded(VideoPlayer vp)
     {
         if (vp.isLooping) return;
@@ -128,8 +140,6 @@ public class GraphicObject
     {
         return Resources.Load<Material>(MATERIAL_PATH);
     }
-
-    GraphicPanelManager panelManager => GraphicPanelManager.Instance;
 
     public Coroutine FadeIn(float speed = 1f)
     {

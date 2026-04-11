@@ -81,7 +81,7 @@ namespace HISTORY
                             if(tex != null)
                                 layer.SetTexture(tex, filePath: layerData.graphicPath);
                             else
-                            Debug.LogWarning($"History State: Could not load image from path '{layerData.graphicPath}'");
+                                Debug.LogWarning($"History State: Could not load image from path '{layerData.graphicPath}'");
                         }
                         else
                         {
@@ -91,6 +91,10 @@ namespace HISTORY
                             else
                                 Debug.LogWarning($"History State: Could not load video from path '{layerData.graphicPath}'");
                         }
+                    }
+                    else if (layerData.isVideo && layer.currentGraphic.isVideo)
+                    {
+                        layer.currentGraphic.Restart();
                     }
                 }
 

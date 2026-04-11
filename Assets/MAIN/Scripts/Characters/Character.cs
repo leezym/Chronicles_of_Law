@@ -28,14 +28,14 @@ namespace CHARACTERS
 
         public virtual int layersCount { get; set; }
 
-        public Character(string name, CharacterConfigData config, GameObject prefab)
+        public Character(string name, CharacterConfigData config)
         {
             this.name = name;
             this.config = config;
 
-            if(prefab != null)
+            if(config.prefab != null)
             {
-                GameObject ob = Object.Instantiate(prefab, characterManager.characterPanel);
+                GameObject ob = Object.Instantiate(config.prefab, characterManager.characterPanel);
                 ob.name = characterManager.FormatCharacterPath(characterManager.characterPrefabNameFormat, name);
                 ob.SetActive(true);
                 root = ob.GetComponent<RectTransform>();
@@ -82,6 +82,29 @@ namespace CHARACTERS
             co_hiding = characterManager.StartCoroutine(ShowingOrHiding(false));
 
             return co_hiding;
+        }
+
+        public virtual void Destroy()
+        {
+            if (co_revealing != null) characterManager.StopCoroutine(co_revealing);
+            if (co_hiding != null)    characterManager.StopCoroutine(co_hiding);
+            if (co_moving != null)    characterManager.StopCoroutine(co_moving);
+
+            characterManager.allCharacters.Remove(this);
+
+            if (root != null)
+                Object.Destroy(root.gameObject);
+        }
+
+        public Coroutine HideAndDestroy(float speed = 1f)
+        {
+            return characterManager.StartCoroutine(HideAndDestroyRoutine(speed));
+        }
+
+        private IEnumerator HideAndDestroyRoutine(float speed)
+        {
+            yield return Hide();
+            Destroy();
         }
 
         public virtual IEnumerator ShowingOrHiding(bool show)

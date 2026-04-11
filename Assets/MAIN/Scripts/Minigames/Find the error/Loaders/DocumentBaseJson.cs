@@ -33,7 +33,7 @@ namespace EXERCISE.Loaders
     [Serializable]
     public class RegionsJson
     {
-        public float pointsPerCorrect = 1f;
+        public int pointsPerCorrect = 1;
         public List<RegionJson> regions;
     }
 
@@ -43,7 +43,7 @@ namespace EXERCISE.Loaders
         public string id;
         public bool enabled;
         public bool correct;
-        public float points;
+        public int points;
         public List<SpanJson> spans;
     }
 

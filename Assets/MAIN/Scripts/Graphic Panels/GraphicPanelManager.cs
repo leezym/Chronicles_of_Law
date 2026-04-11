@@ -25,4 +25,48 @@ public class GraphicPanelManager : MonoBehaviour
         }
         return null;
     }
+
+    public void StopVideos()
+    {
+        GraphicPanel panel = GetPanel(PanelType.cinematica);
+        if(panel == null) return;
+
+        foreach (var layer in panel.layers)
+        {
+            var graphic = layer.currentGraphic;
+            if (graphic == null || !graphic.isVideo) continue;
+ 
+            layer.Clear();
+        }
+    }
+
+    public void PauseVideos()
+    {
+        GraphicPanel panel = GetPanel(PanelType.cinematica);
+        if (panel == null) return;
+ 
+        foreach (var layer in panel.layers)
+        {
+            var graphic = layer.currentGraphic;
+            if (graphic == null || !graphic.isVideo) continue;
+ 
+            graphic.video?.Pause();
+            graphic.audio?.Pause();
+        }
+    }
+ 
+    public void ResumeVideos()
+    {
+        GraphicPanel panel = GetPanel(PanelType.cinematica);
+        if (panel == null) return;
+ 
+        foreach (var layer in panel.layers)
+        {
+            var graphic = layer.currentGraphic;
+            if (graphic == null || !graphic.isVideo || graphic.hasEnded) continue;
+ 
+            graphic.video?.Play();
+            graphic.audio?.Play();
+        }
+    }
 }

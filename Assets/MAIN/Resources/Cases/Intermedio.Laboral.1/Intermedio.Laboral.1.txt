@@ -1,10 +1,10 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
-Entra José López en 0,5:0 [Serio] "Buen día joven. Mi nombre es José López, vengo porque tengo un problema en mi trabajo. {EC 1} Verá, hace rato me encuentro incapacitado porque tuve un accidente de tránsito y desde ese momento he tenido varios dificultades para moverme, sufro de dolores de espalda y tengo que tomar medicamentos y usar bastón para poder movilizarme."
+Entra José López en 0,3:0 [Serio] "Buen día joven. Mi nombre es José López, vengo porque tengo un problema en mi trabajo. {EC 1} Verá, hace rato me encuentro incapacitado porque tuve un accidente de tránsito y desde ese momento he tenido varios dificultades para moverme, sufro de dolores de espalda y tengo que tomar medicamentos y usar bastón para poder movilizarme."
 ocultar("José López")
 
-Entra Avatar en 0,5:0 [Serio] "Buen día señor López, ¿podría comentarme sobre su contexto laboral?."
+Entra Avatar en 0,3:0 [Serio] "Buen día señor López, ¿podría comentarme sobre su contexto laboral?."
 ocultar(Avatar)
 
 Entra José López [Preocupado] "Sí, claro. Yo he trabajado por más de 10 años en la misma empresa ellos me han pagado adecuadamente las prestaciones, mi salario, que es el mínimo y todo. {EC 1} Pero, el asunto viene con la EPS, a mí el año pasado me pasaron este documento, para ese momento el doctor me seguía dando incapacidades."
@@ -29,32 +29,33 @@ Entra Avatar [Serio] "Lamento escuchar su situación señor López, tenga la cer
 ocultar(Avatar)
 
 José López [Serio] "Gracias joven, entonces pues yo quisiera saber qué hacer. Llevo más de dos años en esta pelea."
-ocultar("José López")
 
-anuncio "A continuación las preguntas"
+ocultarDialogo()
+
+anuncio "A continuación, las preguntas"
 
 pregunta "¿Quién es la entidad responsable de reconocer el pago de las incapacidades médicas por accidente de origen común posterior a 180 días de incapacidad médica continua?" 
 {
 - La Aseguradora de Riesgos Laborales (ARL). [0]
-- La Entidad Prestadora de Salud (EPS). [0,5]
-- El fondo de pensiones correspondiente. [1]
+- La Entidad Prestadora de Salud (EPS). [50]
+- El fondo de pensiones correspondiente. [100]
 }
 
 pregunta "¿En caso de que al usuario José López le emitiera la EPS un nuevo concepto de rehabilitación desfavorable, qué pasos debería seguir?"
 {
-- Debe continuar cobrando las incapacidades sin que se realice una calificación por pérdida de la capacidad laboral. [0,5]
+- Debe continuar cobrando las incapacidades sin que se realice una calificación por pérdida de la capacidad laboral. [50]
 - Debe reintegrarse a laborar normalmente sin ninguna observación médica. [0]
-- Debe proceder con solicitar la calificación por pérdida de la capacidad laboral ante la entidad correspondiente de acuerdo con el artículo 41 de la ley 100 de 1993. [1]
+- Debe proceder con solicitar la calificación por pérdida de la capacidad laboral ante la entidad correspondiente de acuerdo con el artículo 41 de la ley 100 de 1993. [100]
 }
 
 pregunta "En este caso, ¿Cuál sería la mejor opción para el señor López teniendo en cuenta su situación actual?"
 {
-- c. Iniciar un proceso ordinario laboral con el fin de solicitar las incapacidades adeudadas por el fondo de pensiones. [0,5]
-- Presentar una Acción de Tutela con el fin de prevenir un perjuicio irremediable. [1]
+- c. Iniciar un proceso ordinario laboral con el fin de solicitar las incapacidades adeudadas por el fondo de pensiones. [50]
+- Presentar una Acción de Tutela con el fin de prevenir un perjuicio irremediable. [100]
 - Acudir al Ministerio del Trabajo con el fin de solicitar una audiencia de conciliación con el fondo de pensiones. [0]
 }
 
-ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+ocultar("José López"); borrarCapasMultimedia(-panel fondo)
 detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

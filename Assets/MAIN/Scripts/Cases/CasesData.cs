@@ -31,9 +31,8 @@ public class CasesData : ScriptableObject
 
     public static List<CasesData> Capture()
     {
-        List<CasesData> list = new List<CasesData>();
         var cm = CasesManager.Instance;
-        list = cm.casesData;
+        List<CasesData> list = cm.casesData;
         
         return list;
     }

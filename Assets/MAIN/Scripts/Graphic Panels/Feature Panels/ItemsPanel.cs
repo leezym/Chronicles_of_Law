@@ -18,15 +18,10 @@ public class ItemsPanel : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-    
-    void Start()
-    {
         cg = new CanvasGroupController(this, canvasGroup);
         cg.alpha = 0;
         cg.SetInteractableState(active: false);
     }
-
     public void Show(Sprite item)
     {
         isWaitingOnUserChoice = true;

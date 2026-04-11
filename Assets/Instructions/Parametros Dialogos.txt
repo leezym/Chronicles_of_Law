@@ -90,7 +90,7 @@ D) Las siguientes acciones son opcionales para los personajes y van en un renglo
             entra Personaje en 1:1 "Dialogo del personaje de ejemplo"
             
         2)
-            crear("Personaje"), [esperar]mover("Personaje" -x 1 -y 1)
+            crear("Personaje"); [esperar]mover("Personaje" -x 1 -y 1)
             Personaje "Dialogo del personaje de ejemplo"
 
 
@@ -138,19 +138,30 @@ E) Las siguientes acciones son opcionales para la escena y van en un renglon nue
     - ocultarInterfaz() -> Oculta la interfaz.
 
 
-F) La siguiente estructura es para CUADROS DE TEXTO (ANUNCIOS), CUADROS DE PREGUNTAS Y MOSTRAR ITEMS
+F) La siguiente estructura es para CUADROS DE TEXTO (ANUNCIOS), CUADROS DE PREGUNTAS E ITEMS DE LOS CASOS
 
     1) Entre comillas va el texto del anuncio.
-        anuncio "A continuación las preguntas"
+        anuncio "A continuación, las preguntas"
 
     2) Entre comillas va el nombre del documento. Ese nombre aparecerá en el folder.
         item "Certificado de Tradicion"
     
-    3) Entre comillas va la pregunta. Todas las opciones van entre corchetes. Además, cada opción va con un guión antes y al final entre corchetes va la puntuación de esa opción.
+    3) Entre comillas va la pregunta o decisión social. Todas las opciones van entre corchetes. Además, cada opción va con un guión antes y al final entre corchetes va la puntuación de esa opción (0, 50, 100).
 
     pregunta "¿Ante qué institución se puede adelantar el trámite?"
     {
-        -La declaración de la UMH se puede realizar a través de sentencia judicial, por común acuerdo ante notaría a través de escritura pública y ante un centro de conciliación a través de una audiencia de conciliación. [1]
+        -La declaración de la UMH se puede realizar a través de sentencia judicial, por común acuerdo ante notaría a través de escritura pública y ante un centro de conciliación a través de una audiencia de conciliación. [100]
         -Solamente se requiere el transcurso del tiempo, ya que solo basta la convivencia durante dos años para que se presuma la UMH sin necesidad de ser declarada ante ninguna institución. [0]
-        -La declaración de la UMH se puede realizar a través de sentencia judicial y por común acuerdo ante notaría a través de escritura pública. [0,5]
+        -La declaración de la UMH se puede realizar a través de sentencia judicial y por común acuerdo ante notaría a través de escritura pública. [50]
+    }
+
+    Para las decisiones sociales, la puntuación se separa con |, siendo el primer número el puntaje social y el segundo número el profesional. Además, se pueden desplegar opciones de acuedo a la elección, estas opciones van debajo de cada opción.
+
+    social "¿Qué hago?"
+    {
+        -Decide ayudar. [500|-400]
+            mostrarCinematica(-media "escena 2" -audio true)
+
+        -Decide no ayudar. [10|100]
+            mostrarCinematica(-media "escena 3" -audio true)
     }

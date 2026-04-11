@@ -27,6 +27,7 @@ public class AudioManager : MonoBehaviour
     //private readonly Dictionary<AudioBus, Dictionary<int, AudioChannel>> channelsByBus = new Dictionary<AudioBus, Dictionary<int, AudioChannel>>();
 
     [Header("Mixer Groups")]
+    public AudioMixer masterMixer;
     public AudioMixerGroup musicMixer;
     public AudioMixerGroup ambienceMixer;
     public AudioMixerGroup uiMixer;
@@ -78,6 +79,13 @@ public class AudioManager : MonoBehaviour
         sfxPool = new AudioSourcePool(sfxRoot, sfxMixer, sfxPoolSize);
 
         if (audioLibrary != null) audioLibrary.Build();
+    }
+
+    public void SetVolume(float sliderValue)
+    {
+        sliderValue = Mathf.Clamp(sliderValue, 0.0001f, 1f);
+        float dB = Mathf.Log10(sliderValue) * 20f;
+        masterMixer.SetFloat("Master_Volume", dB);
     }
 
     public AudioMixerGroup GetMixerGroup(AudioBus bus)
@@ -458,5 +466,65 @@ public class AudioManager : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void Stop()
+    {
+        // Canales de música y ambience
+        foreach (var channel in channels.Values)
+            channel.activeTrack?.source?.Stop();
+
+        foreach (var channel in ambienceChannels.Values)
+            channel.activeTrack?.source?.Stop();
+
+        // Loops activos (SFX/UI)
+        foreach (var handle in activeLoopsById.Values)
+            handle?.source?.Stop();
+
+        // Pools: pausar todos los AudioSources activos
+        foreach (var src in uiRoot.GetComponentsInChildren<AudioSource>())
+            src.Stop();
+
+        foreach (var src in sfxRoot.GetComponentsInChildren<AudioSource>())
+            src.Stop();
+    }
+
+    public void Pause()
+    {
+        // Canales de música y ambience
+        foreach (var channel in channels.Values)
+            channel.activeTrack?.source?.Pause();
+
+        foreach (var channel in ambienceChannels.Values)
+            channel.activeTrack?.source?.Pause();
+
+        // Loops activos (SFX/UI)
+        foreach (var handle in activeLoopsById.Values)
+            handle?.source?.Pause();
+
+        // Pools: pausar todos los AudioSources activos
+        foreach (var src in uiRoot.GetComponentsInChildren<AudioSource>())
+            src.Pause();
+
+        foreach (var src in sfxRoot.GetComponentsInChildren<AudioSource>())
+            src.Pause();
+    }
+
+    public void Resume()
+    {
+        foreach (var channel in channels.Values)
+            channel.activeTrack?.source?.UnPause();
+
+        foreach (var channel in ambienceChannels.Values)
+            channel.activeTrack?.source?.UnPause();
+
+        foreach (var handle in activeLoopsById.Values)
+            handle?.source?.UnPause();
+
+        foreach (var src in uiRoot.GetComponentsInChildren<AudioSource>())
+            src.UnPause();
+
+        foreach (var src in sfxRoot.GetComponentsInChildren<AudioSource>())
+            src.UnPause();
     }
 }

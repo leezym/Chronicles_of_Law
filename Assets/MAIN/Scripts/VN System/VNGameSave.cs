@@ -12,7 +12,7 @@ public class VNGameSave
     public static VNGameSave activeFile = null;
 
     public const string FILE_TYPE = ".vns";
-    public const bool ENCRYPT = false; //Change if you want encrypt or not your files
+    public const bool ENCRYPT = true; //Change if you want encrypt or not your files
     public const string TEMP_NAME = "DATA";
 
     public string filePath = $"{FilePaths.gameSaves}{TEMP_NAME}{FILE_TYPE}";
@@ -33,6 +33,7 @@ public class VNGameSave
         
         return save;
     }
+
     public void Save()
     {
         activeState = HistoryState.Capture();

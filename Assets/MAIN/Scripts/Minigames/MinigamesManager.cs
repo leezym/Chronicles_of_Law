@@ -14,13 +14,16 @@ public class MinigamesManager : MonoBehaviour
     [SerializeField] public List<MinigamesData> minigamesData = new List<MinigamesData>();
     [SerializeField] public List<MinigamesData> minigamesInGame = new List<MinigamesData>();
 
+    public bool IsMinigameActive { get; private set; } = false;
+
     private void Awake()
     {
         Instance = this;
     }
 
     public void InitializeMinigames()
-    {
+    {        
+        closeButton.interactable = false;
         closeButton.GetComponent<CanvasGroup>().alpha = 0;
         closeButton.GetComponent<CanvasGroup>().blocksRaycasts = false;
 
@@ -28,6 +31,7 @@ public class MinigamesManager : MonoBehaviour
         SelectRandomMinigames();
         closeButton.onClick.AddListener(() =>
         {
+            IsMinigameActive = false;
             ClearLayoutGroup();
             LevelChanged();
             DialogueSystem.Instance.conversationManager.ResumeConversation();
@@ -40,18 +44,21 @@ public class MinigamesManager : MonoBehaviour
 
     public void StartGame(GameObject prefab)
     {
+        IsMinigameActive = true;
+        
         GameObject obj = Instantiate(prefab, layoutGroup.transform);
         obj.transform.SetAsFirstSibling();
         obj.name = prefab.name;
 
         closeButton.GetComponent<CanvasGroup>().alpha = 1;
+        closeButton.GetComponent<CanvasGroup>().interactable = true;
         closeButton.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
     public void LevelChanged()
     {
-        GameManager gm = GameManager.Instance;
-        gm.SetCurrentGameLevel(gm.GetCurrentGameLevel());
+        GameManager.Instance.IncreaseCurrentMinigameLevel();
+        GameManager.Instance.SetPercentProgress();
     }
 
     void SetMinigames()

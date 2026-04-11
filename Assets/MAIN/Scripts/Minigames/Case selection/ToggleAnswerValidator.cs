@@ -14,8 +14,8 @@ public class ToggleAnswerValidator : MonoBehaviour
 
     [Header("Configuración")]
     public bool correctAnswerIsOn = true;
-    public float pointsForCorrectAnswer;
-    public float pointsForIncorrectAnswer;
+    public int pointsForCorrectAnswer;
+    public int pointsForIncorrectAnswer;
 
     private bool alreadyAnswered = false;
 
@@ -38,13 +38,13 @@ public class ToggleAnswerValidator : MonoBehaviour
         {
             feedbackText.text = "Correcto";
             feedbackText.color = Color.green;            
-            gameManager.SetPoints(pointsForCorrectAnswer);
+            gameManager.SetProfessionalPoints(pointsForCorrectAnswer);
         }
         else
         {
             feedbackText.text = "Incorrecto";
             feedbackText.color = Color.red;
-            gameManager.SetPoints(pointsForIncorrectAnswer);
+            gameManager.SetProfessionalPoints(pointsForIncorrectAnswer);
         }
 
         answerToggle.interactable = false;

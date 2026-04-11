@@ -18,10 +18,7 @@ public class AnnouncePanel : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-    
-    void Start()
-    {
+
         cg = new CanvasGroupController(this, canvasGroup);
         cg.alpha = 0;
         cg.SetInteractableState(false);

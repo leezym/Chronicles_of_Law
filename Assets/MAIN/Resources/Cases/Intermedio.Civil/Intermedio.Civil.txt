@@ -1,10 +1,10 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
-Entra Julio Ulpiano en 0,5:0 [Serio] "Muy buenas tardes joven, mi nombre es Julio Cesar Ulpiano, tengo 45 años."
+Entra Julio Ulpiano en 0,3:0 [Serio] "Muy buenas tardes joven, mi nombre es Julio Cesar Ulpiano, tengo 45 años."
 ocultar("Julio Ulpiano")
 
-Entra Avatar en 0,5:0 [Serio] "Buen día señor Julio, en el Consultorio Jurídico tenemos la disposición para ayudarlo, {C} cuénteme sobre su situación."
+Entra Avatar en 0,3:0 [Serio] "Buen día señor Julio, en el Consultorio Jurídico tenemos la disposición para ayudarlo, {C} cuénteme sobre su situación."
 ocultar(Avatar)
 
 Entra Julio Ulpiano [Serio] "Gracias. En este momento, me encuentro viviendo en una casa ahí por la 53 con primera. Esa casa era de mi mamá, pero ella falleció por allá en el 2002, {EC 1} y pues mis otros dos hermanos y yo nunca nos repartimos nada porque ya no hablamos y ellos viven por allá en España incluso desde antes de que mi mamá se muriera."
@@ -39,31 +39,33 @@ ocultar(Avatar)
 Entra Julio Ulpiano [Contento] "Hay varias personas que pueden atestiguar que yo he vivido ahí todo este tiempo, {EC 1} mi vecina la Señora Gricelda Blanca y el celador del barrio el Señor Víctor Carranza."
 
 Julio Ulpiano [Dubitativo] "Le consulto joven, entonces ¿qué puedo hacer para quedarme con esa casa?"
-ocultar("Julio Ulpiano")
 
-anuncio "A continuación las preguntas"
+ocultarDialogo()
+
+anuncio "A continuación, las preguntas"
 
 pregunta "¿Qué procedimiento legal se debe surtir para que el usuario pueda adquirir el bien inmueble?"
 {
 - Debe adelantarse el respectivo proceso sucesoral, a través de la petición de herencia contemplada en el art. 1321 del Código civil, ya que existen otros herederos con derechos herenciales sobre el bien inmueble. [0]
-- Adelantar un proceso declarativo de pertenencia según el art. 375 del Código General del Proceso ante la jurisdicción ordinaria, para que se declare la Prescripción Adquisitiva de Dominio a favor del usuario. [0,5]
-- Debe iniciarse un proceso declarativo de pertenencia según el art. 375 del Código General del Proceso ante la jurisdicción ordinaria, para que se declare la Prescripción Adquisitiva de Dominio a favor del usuario, inscribiendo la sentencia en el registro de instrumentos públicos y asegurando su dominio pleno sobre el bien. [1]
+- Adelantar un proceso declarativo de pertenencia según el art. 375 del Código General del Proceso ante la jurisdicción ordinaria, para que se declare la Prescripción Adquisitiva de Dominio a favor del usuario. [50]
+- Debe iniciarse un proceso declarativo de pertenencia según el art. 375 del Código General del Proceso ante la jurisdicción ordinaria, para que se declare la Prescripción Adquisitiva de Dominio a favor del usuario, inscribiendo la sentencia en el registro de instrumentos públicos y asegurando su dominio pleno sobre el bien. [100]
 }
+
 pregunta "¿Cuál será la prueba fundamental en el proceso y sin la que no podría iniciarse el trámite correspondiente?"
 {
-- Los recibos de pago de servicios públicos, el de los impuestos prediales sobre el bien inmueble y la evidencia de las mejoras realizadas en el bien por el usuario. [0,5]
+- Los recibos de pago de servicios públicos, el de los impuestos prediales sobre el bien inmueble y la evidencia de las mejoras realizadas en el bien por el usuario. [50]
 - El registro civil de nacimiento para probar el parentesco entre el usuario y su madre, la actual propietaria del bien inmueble. [0]
-- El certificado de tradición del bien inmueble, así como todas las pruebas que permitan acreditar el dominio absoluto, exclusivo, continuo e ininterrumpido del usuario. [1]
+- El certificado de tradición del bien inmueble, así como todas las pruebas que permitan acreditar el dominio absoluto, exclusivo, continuo e ininterrumpido del usuario. [100]
 }
 
 pregunta "¿Si los hermanos del usuario comparecen en el proceso y alegan que ellos también tienen derecho sobre el bien inmueble cuál sería la defensa ideal que podría proponer el usuario?"
 {
-- Alegar la prescripción del derecho de petición de herencia de acuerdo al artículo 1326 del Código Civil, al haber pasado más de 10 años desde el fallecimiento del causante. [0,5]
+- Alegar la prescripción del derecho de petición de herencia de acuerdo al artículo 1326 del Código Civil, al haber pasado más de 10 años desde el fallecimiento del causante. [50]
 - Demostrar que ellos no cumplieron con los deberes de auxilio contemplados en el art. 251 del Código Civil y se enmarcan dentro de las causales de Desheredamiento del art. 1266, por lo que no tienen derecho alguno sobre el bien. [0]
-- Alegar la prescripción del derecho de petición de herencia de acuerdo al artículo 1326 del Código Civil, al haber pasado más de 10 años desde el fallecimiento del causante, y demostrar que la posesión del bien ha sido exclusiva por parte del usuario, desconociendo completamente cualquier derecho en cabeza de sus hermanos. [1]
+- Alegar la prescripción del derecho de petición de herencia de acuerdo al artículo 1326 del Código Civil, al haber pasado más de 10 años desde el fallecimiento del causante, y demostrar que la posesión del bien ha sido exclusiva por parte del usuario, desconociendo completamente cualquier derecho en cabeza de sus hermanos. [100]
 }
 
-ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+ocultar("Julio Ulpiano"); borrarCapasMultimedia(-panel fondo)
 detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()

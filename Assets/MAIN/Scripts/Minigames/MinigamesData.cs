@@ -3,10 +3,9 @@ using UnityEngine;
 
 namespace GAME
 {
-    [System.Serializable]
-    public class MinigamesData
+    [CreateAssetMenu(menuName = "Game/Minigame Definition")]
+    public class MinigamesData: ScriptableObject
     {
-        public string name;
         public GameObject game;
         public enum MinigameLevel {facil, intermedio, dificil}
         public MinigameLevel level;
@@ -15,9 +14,8 @@ namespace GAME
 
         public MinigamesData(){}
 
-        public MinigamesData(string name, GameObject game, MinigameLevel level, MinigameType type)
+        public MinigamesData(GameObject game, MinigameLevel level, MinigameType type)
         {
-            this.name = name;
             this.game = game;
             this.level = level;
             this.type = type;
@@ -25,9 +23,8 @@ namespace GAME
 
         public static List<MinigamesData> Capture()
         {
-            List<MinigamesData> list = new List<MinigamesData>();
             var mm = MinigamesManager.Instance;
-            list = mm.minigamesData;
+            List<MinigamesData> list = mm.minigamesData;
             
             return list;
         }
@@ -37,6 +34,21 @@ namespace GAME
             var mm = MinigamesManager.Instance;
             mm.minigamesData = data;
         }
+
+        public static List<MinigamesData> CaptureInGame()
+        {
+            var mm = MinigamesManager.Instance;
+            List<MinigamesData> list = mm.minigamesInGame;
+            
+            return list;
+        }
+
+        public static void ApplyInGame(List<MinigamesData> data)
+        {
+            var mm = MinigamesManager.Instance;
+            mm.minigamesInGame = data;
+        }
+
 
         public void FillFromResources(GameObject prefab)
         {
@@ -62,11 +74,8 @@ namespace GAME
                 Debug.LogWarning("Tipo desconocido: " + typeString);
             }
 
-            name = prefab.transform.GetChild(0).name;
+            name = folderParts[2];
             game = prefab;
-            /*game.alpha = 1;
-            game.interactable = true;
-            game.blocksRaycasts = true;*/
         }
     }
 }

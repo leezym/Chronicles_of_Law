@@ -20,6 +20,6 @@ public class CasesButton : MonoBehaviour
 
     public void OnClick()
     {
-        GameManager.Instance.OpenCasePage(indexCaseInGame);
+        CasesManager.Instance.OpenCasePage(indexCaseInGame);
     }
 }

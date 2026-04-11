@@ -1,12 +1,12 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
-Entra Andrés Fernández en 0,5:0 [Serio] "Buen día, espero esté bien. Yo soy Andrés Fernández, vine aquí porque tengo una inquietud. Yo llevo quince años trabajando como taxista independiente, pero, en junio de 2023, decidí unirme a una empresa llamada Taxis Libres."
+Entra Andrés Fernández en 0,3:0 [Serio] "Buen día, espero esté bien. Yo soy Andrés Fernández, vine aquí porque tengo una inquietud. Yo llevo quince años trabajando como taxista independiente, pero, en junio de 2023, decidí unirme a una empresa llamada Taxis Libres."
 
 Andrés Fernández [Preocupado] "Y en ese momento yo aproveché para renovar mi vehículo, tomé los descuentos y la financiación proporcionada por la ley, y adquirí un carro nuevo de placas XXL 662."
 ocultar("Andrés Fernández")
 
-Entra Avatar en 0,5:0 [Serio] "Comprendo señor Fernández, ¿ha tenido usted alguna dificultad con su vehículo?"
+Entra Avatar en 0,3:0 [Serio] "Comprendo señor Fernández, ¿ha tenido usted alguna dificultad con su vehículo?"
 ocultar(Avatar) 
 
 Entra Andrés Fernández [Desconcertado] "No, no con el vehículo directamente. {EC 1} Lo que sucedió es que se me demoraron bastante con el desembolso del crédito y el trámite del cupo, y finalmente pude recoger el vehículo el viernes 25 de junio de 2023, y pues nada, yo lo recogí en el concesionario y me fui a trabajar, ese día trabajé hasta tarde, como hasta las 9:00 pm."
@@ -25,33 +25,34 @@ item "Mensaje de texto fotomulta"
 Entra Andrés Fernández [Preocupado] "Yo, Andrés Fernández, quiero expresar que en ningún momento he recibido notificación de ningún tipo por parte de la secretaria de tránsito en mi residencia. Me parece muy injusto que se me esté imponiendo una multa sin la posibilidad de defenderme.  {EB 1} Lamentablemente, por ciertas dificultades económicas del momento no pude abonar a la multa ni realizar alguna indagación en la secretaria de tránsito."
 
 Andrés Fernández [Serio] "Y ahora me llegan mensajes de texto constantemente, he tenido que bloquear diferentes números debido a la cantidad de llamadas y comunicaciones de cobro, ya no sé qué hacer."
-ocultar("Andrés Fernández")
 
-anuncio "A continuación las preguntas"
+ocultarDialogo()
+
+anuncio "A continuación, las preguntas"
 
 pregunta "¿Qué acciones legales se deberían adelantar en este momento?" 
 {
 - Recomendar la realización de una audiencia pública para aceptar los hechos y pagar la foto multa realización un acuerdo de pago. [0]
-- Recomendar la radicación de un derecho de petición para presentar descargos y pruebas que le permitan ser exonerado de la multa. [0,5]
-- Solicitar mediante un derecho de petición la prescripción del comparendo, ya que nunca se le notifico en su residencia la orden. [1]
+- Recomendar la radicación de un derecho de petición para presentar descargos y pruebas que le permitan ser exonerado de la multa. [50]
+- Solicitar mediante un derecho de petición la prescripción del comparendo, ya que nunca se le notifico en su residencia la orden. [100]
 - Recomendar al usuario hacer caso omiso a dichos comunicados ya que con el pasar del tiempo esa deuda prescribe.[0] 
 }
 
 pregunta "¿Cuál será la prueba fundamental en el proceso y sin la que no podría iniciarse el trámite correspondiente?"
 {
-- Fotos de su celular mostrando que ese día no estaba manejando. [0,5]
+- Fotos de su celular mostrando que ese día no estaba manejando. [50]
 - El documento de identidad ya sea nacional o extranjero. [0]
-- Aportar todas las pruebas que consideres pertinentes, conducentes y útiles para que la autoridad de tránsito falle a su favor. [1]
+- Aportar todas las pruebas que consideres pertinentes, conducentes y útiles para que la autoridad de tránsito falle a su favor. [100]
 }
 
 pregunta "¿Ante qué entidad debe dirigirse para que pueda iniciar el proceso? "
 {
 - Ministerio de Transporte. [0]
-- Secretaria de Tránsito. [0,5]
-- Secretaría de Movilidad. [1]
+- Secretaria de Tránsito. [50]
+- Secretaría de Movilidad. [100]
 }
 
-ocultarDialogo(); borrarCapasMultimedia(-panel fondo)
+ocultar("Andrés Fernández"); borrarCapasMultimedia(-panel fondo)
 detenerAmbiente(); detenerMusica()
 
 subirNivelCaso()
