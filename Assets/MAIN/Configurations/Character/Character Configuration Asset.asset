@@ -89,20 +89,20 @@ MonoBehaviour:
     dialogueFontSize: 35
   - name: Avatar
     characterType: 1
-    prefab: {fileID: 1528083289414182126, guid: cecbbde59abb0034e8a8bdfb841c4a8a,
+    prefab: {fileID: 1528083289414182126, guid: 4e3fb74b96c4ba84e80fa10aca7bf18f,
       type: 3}
     sprites:
       _serializedList:
       - Key: Contento
-        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+        Value: {fileID: 21300000, guid: e13b20a64217e7147a8c9899808548a3, type: 3}
       - Key: Serio
-        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+        Value: {fileID: 21300000, guid: 3be9cc25d8f3ac846aa361e0a926e019, type: 3}
       - Key: Pensativo
-        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+        Value: {fileID: 21300000, guid: 13b3726d71be1924c9d824d0f59be813, type: 3}
       - Key: Tranquilo
-        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+        Value: {fileID: 21300000, guid: 23ba30aeb8e1ef94dacbf11228fafd70, type: 3}
       - Key: Triste
-        Value: {fileID: 21300000, guid: e6003219f110b1c46a1732af9cc79821, type: 3}
+        Value: {fileID: 21300000, guid: b1d1139d60a55a040a415d92c176bfef, type: 3}
     nameFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     dialogueFont: {fileID: 11400000, guid: 464f09b34ea127447ac4984025d1dfca, type: 2}
     nameColor: {r: 0.7832923, g: 0.3537736, b: 1, a: 1}

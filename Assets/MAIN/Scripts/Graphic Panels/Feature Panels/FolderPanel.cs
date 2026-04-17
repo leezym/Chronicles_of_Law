@@ -102,7 +102,7 @@ public class FolderPanel : MonoBehaviour
         Transform parent = documentsLayoutGroup.transform;
         foreach (Transform child in parent)
         {
-            if (child.name == "Button(Clone)")
+            if (child.name == itemButtonPrefab.name+"(Clone)")
             {
                 Destroy(child.gameObject);
             }

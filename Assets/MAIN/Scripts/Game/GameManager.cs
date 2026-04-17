@@ -9,11 +9,11 @@ namespace GAME
     {
         public static GameManager Instance { get; private set; }
 
-        public TMP_Text profressionalPointsText;
+        public TMP_Text professionalPointsText;
         public TMP_Text socialPointsText;
         public Slider percentProgress;
         public Slider levelProgress;
-        int profressionalPoints { get; set; } = 0;
+        int professionalPoints { get; set; } = 0;
         int socialPoints { get; set; } = 0;
         int currentCaseLevel { get; set; } = 0;
         int currentMinigameLevel { get; set; } = 0;
@@ -31,25 +31,26 @@ namespace GAME
 
         public void InitializeGame()
         {
-            profressionalPointsText.text = "0";
+            professionalPointsText.text = "0";
             socialPointsText.text = "0";
-            profressionalPoints = 0;
+            professionalPoints = 0;
             socialPoints = 0;
             currentCaseLevel = 0;
             currentMinigameLevel = 0;
             currentLevel = 1;
 
             VariableStore.CreateVariable("socialPoints", socialPoints);
+            VariableStore.CreateVariable("professionalPoints", professionalPoints);
             SetLevelProgress();
             SetPercentProgress();
         }
 
-        public int GetProfessionalPoints(){ return profressionalPoints; }
+        public int GetProfessionalPoints(){ return professionalPoints; }
 
-        public void SetProfessionalPoints(int profressionalPoints)
+        public void SetProfessionalPoints(int professionalPoints)
         {
-            this.profressionalPoints += profressionalPoints;
-            profressionalPointsText.text = this.profressionalPoints.ToString();
+            this.professionalPoints += professionalPoints;
+            professionalPointsText.text = this.professionalPoints.ToString();
         }
 
         public int GetSocialPoints(){ return socialPoints; }

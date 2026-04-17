@@ -3,6 +3,7 @@ using UnityEngine;
 
 using static DIALOGUE.LogicalLines.LogicalLineUtils.Encapsulation;
 using static DIALOGUE.LogicalLines.LogicalLineUtils.Conditions;
+using System.Collections.Generic;
 
 namespace DIALOGUE.LogicalLines
 {
@@ -21,7 +22,7 @@ namespace DIALOGUE.LogicalLines
             int currentProgress = DialogueSystem.Instance.conversationManager.conversationProgress;
 
             EncapsulatedData ifData = RipEncapsulationData(currentConversation, currentProgress, false);
-            EncapsulatedData elseData = new EncapsulatedData();
+            EncapsulatedData elseData = new EncapsulatedData() { lines = new List<string>() };
 
             if(ifData.endingIndex + 41 < currentConversation.Count)
             {

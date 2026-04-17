@@ -53,6 +53,7 @@ namespace HISTORY
                 fp.CreateItemPrefab(item.sprite, item.nameItem);
 
             VariableStore.TrySetValue("socialPoints", data.socialPoints);
+            VariableStore.TrySetValue("professionalPoints", data.professionalPoints);
         }
     }
 }

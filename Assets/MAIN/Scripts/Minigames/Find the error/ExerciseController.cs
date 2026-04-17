@@ -26,11 +26,11 @@ namespace EXERCISE.Runtime
         [SerializeField] private TableRenderer tableRenderer;
         [SerializeField] private DocumentRenderer documentRenderer;
 
-        [Header("Load (Folder path is: StreamingAssets/Encontrar_el_error/)")]
-        [SerializeField] private string exerciseFolderToLoad;
+        private string exerciseFolderToLoad;
 
         private ExerciseData data;
         private bool validated = false;
+        private MinigamesTimer timer;
 
         // Documento: regionId -> token runtime
         private readonly Dictionary<string, TokenData> docTokens = new();
@@ -61,6 +61,10 @@ namespace EXERCISE.Runtime
                 Debug.LogError("[ExerciseController] TableRenderer y DocumentRenderer son null. Asigna uno de los dos.");
 
             LoadExercise(e);
+
+            // Cronómetro arranca al inicio del juego
+            timer = gameObject.AddComponent<MinigamesTimer>();
+            timer.StartTimer();
         }
 
         public void LoadExercise(ExerciseData exercise)
@@ -205,7 +209,9 @@ namespace EXERCISE.Runtime
             if (data == null) return;
 
             validated = true;
-            int pointsToAdd = 0;
+            timer.StopTimer();
+
+            int correctHits = 0;
 
             if (IsTable)
             {
@@ -216,8 +222,7 @@ namespace EXERCISE.Runtime
                     foreach (var t in tableData.tableTokens.Where(t => t.enabled))
                     {
                         t.locked = true;
-                        if (t.selected && t.isCorrect)
-                            pointsToAdd += t.points;
+                        if (t.selected && t.isCorrect) correctHits++;
                     }
                 }
 
@@ -228,15 +233,19 @@ namespace EXERCISE.Runtime
                 foreach (var t in docTokens.Values.Where(t => t.enabled))
                 {
                     t.locked = true;
-                    if (t.selected && t.isCorrect)
-                        pointsToAdd += t.points;
+                    if (t.selected && t.isCorrect) correctHits++;
                 }
 
                 documentRenderer?.RefreshAll();
             }
 
+            // Puntuación con tabla Type2 (tabla) o Type1 (documento)
+            int points = IsTable
+                ? MinigamesScoring.Type2(correctHits, timer.ElapsedSeconds)
+                : MinigamesScoring.Type1(correctHits, timer.ElapsedSeconds);
+
             if (GameManager.Instance != null)
-                GameManager.Instance.SetProfessionalPoints(pointsToAdd);
+                GameManager.Instance.SetProfessionalPoints(points);
 
             if (validateButton != null)
                 validateButton.interactable = false;
@@ -244,6 +253,8 @@ namespace EXERCISE.Runtime
             if (HighlighterToolController.Instance != null)
                 HighlighterToolController.Instance.ReturnToHome();
 
+            var cg = closeButton.GetComponent<CanvasGroup>();
+            if (cg != null) { cg.alpha = 1; cg.interactable = true; cg.blocksRaycasts = true; }
             closeButton.interactable = true;
         }
 

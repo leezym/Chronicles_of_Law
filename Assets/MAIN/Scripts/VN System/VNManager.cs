@@ -12,10 +12,11 @@ namespace VISUALNOVEL
     public class VNManager : MonoBehaviour
     {
         public static VNManager Instance { get; private set; }
-        static string HOME_MUSIC = "HOME_Shadow_of_the_Verdict";
         VNGameSave save;
+        public VNMenuManager vmm;
 
         public Button continueButton;
+        public Button saveButton;
 
         void Awake()
         {
@@ -25,30 +26,38 @@ namespace VISUALNOVEL
         void Start()
         {
             VNGameSave.activeFile = new VNGameSave();
-            AudioClip audio = Resources.Load<AudioClip>(FilePaths.resources_music + HOME_MUSIC);
-            AudioManager.Instance.PlayTrack(audio, AudioBus.Music);
-            continueButton.interactable = File.Exists($"{FilePaths.gameSaves}{VNGameSave.TEMP_NAME}{VNGameSave.FILE_TYPE}");
         }
 
         public void StartGame()
         {
+            if (continueButton.interactable)
+                NotificationsManager.Instance.QuestionNotification(
+                    "¿Está seguro de iniciar nueva partida? Perderá el progreso de la partida anterior.",
+                    () => {
+                        File.Delete($"{FilePaths.gameSaves}{VNGameSave.TEMP_NAME}{VNGameSave.FILE_TYPE}");
+                        InitializeAndStart();
+                    });
+            else
+                InitializeAndStart();
+        }
+
+        private void InitializeAndStart()
+        {
             CasesManager.Instance.InitializeCases();
             MinigamesManager.Instance.InitializeMinigames();
             GameManager.Instance.InitializeGame();
+            vmm.OpenCharacterMenu();
         }
 
         public void ContinueGame()
         {
             Load();
-            AudioManager.Instance.StopTrack(HOME_MUSIC);
         }
 
         public void GenderSelection(string gender)
         {
             StartGender(gender == "M" ? Gender.Male : Gender.Female);
-            StartLevel();
-            AudioManager.Instance.StopTrack(HOME_MUSIC);
-            
+            StartLevel();   
         }
 
         void StartGender(Gender gender)
@@ -65,7 +74,7 @@ namespace VISUALNOVEL
             }
             else
             {
-                Debug.LogWarning("There are not a selected option ( F or M).");
+                Debug.LogWarning("There are not a selected option (F or M).");
             }
         }
         public void StartLevel()
@@ -73,13 +82,7 @@ namespace VISUALNOVEL
             string filePath = FilePaths.GetPathToResource(FilePaths.resources_dialogueFiles, $"Nivel.{GameManager.Instance.GetCurrentLevel()}");
             LoadFile(filePath);
         }
-
-        public void MainMenu()
-        {
-            AudioClip audio = Resources.Load<AudioClip>(FilePaths.resources_music + HOME_MUSIC);
-            AudioManager.Instance.PlayTrack(audio, AudioBus.Music);
-        }
-
+        
         public void Save()
         {
             VNGameSave.activeFile.Save();
@@ -130,6 +133,11 @@ namespace VISUALNOVEL
             }
 
             DialogueSystem.Instance.Say(lines);
+        }
+
+        public void OpenMainmMenuFromPause()
+        {
+            NotificationsManager.Instance.QuestionNotification("¿Está seguro de salir del juego? ¡Recuerda guardar tu progreso!", vmm.OpenMainMenu);
         }
     }
 }

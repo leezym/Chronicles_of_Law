@@ -62,44 +62,92 @@ namespace DIALOGUE.LogicalLines
 
         public static class Conditions
         {
-            public static readonly string REGEX_CONDITION_OPERATORS = @"(>=|<)"; // Desarrollo para la única condición del juego
+            // Soporta >=, <=, >, <, ==, !=
+            private static readonly string REGEX_CONDITION_OPERATORS = @"(>=|<=|>|<|==|!=)";
+            private static readonly string[] AND_SEPARATOR = new string[] { "&&" };
+
             public static bool EvaluateCondition(string condition)
             {
-                string[] parts = Regex.Split(condition, REGEX_CONDITION_OPERATORS).Select(p => p.Trim()).ToArray();
-                VariableStore.TryGetValue(parts[0], out object value);
+                string[] subConditions = condition.Split(AND_SEPARATOR, StringSplitOptions.RemoveEmptyEntries);
 
-                if(parts.Length == 3) //Detecta 3 partes en la condición (dos valores + un operador)
-                    return EvaluateExpression(value.ToString(), parts[1], parts[2]);
-                else
+                foreach (string sub in subConditions)
                 {
-                    Debug.LogError($"Unsupported condition format: {condition}");
+                    if (!EvaluateSingleCondition(sub.Trim()))
+                        return false;
+                }
+
+                return true;
+            }
+
+            private static bool EvaluateSingleCondition(string condition)
+            {
+                string[] parts = Regex.Split(condition, REGEX_CONDITION_OPERATORS)
+                                      .Select(p => p.Trim())
+                                      .Where(p => !string.IsNullOrEmpty(p))
+                                      .ToArray();
+
+                if (parts.Length != 3)
+                {
+                    Debug.LogError($"Unsupported condition format: '{condition}'");
                     return false;
                 }
+
+                string variableName = parts[0];
+                string op           = parts[1];
+                string rawRight     = parts[2];
+
+                if (!VariableStore.TryGetValue(variableName, out object value))
+                {
+                    Debug.LogError($"Variable not found in VariableStore: '{variableName}'");
+                    return false;
+                }
+
+                return EvaluateExpression(value.ToString(), op, rawRight);
             }
 
             private delegate bool OperatorFunc<T>(T left, T right);
-            
-            private static Dictionary<string, OperatorFunc<float>> floatOperators = new Dictionary<string, OperatorFunc<float>>()
+
+            private static readonly Dictionary<string, OperatorFunc<float>> floatOperators = new Dictionary<string, OperatorFunc<float>>()
             {
-                {">=", (left, right) => left >= right},
-                {"<", (left, right) => left < right}
+                {">=", (l, r) => l >= r},
+                {"<=", (l, r) => l <= r},
+                {">",  (l, r) => l >  r},
+                {"<",  (l, r) => l <  r},
+                {"==", (l, r) => l == r},
+                {"!=", (l, r) => l != r},
             };
 
-            private static Dictionary<string, OperatorFunc<int>> intOperators = new Dictionary<string, OperatorFunc<int>>()
+            private static readonly Dictionary<string, OperatorFunc<int>> intOperators = new Dictionary<string, OperatorFunc<int>>()
             {
-                {">=", (left, right) => left >= right},
-                {"<", (left, right) => left < right}
+                {">=", (l, r) => l >= r},
+                {"<=", (l, r) => l <= r},
+                {">",  (l, r) => l >  r},
+                {"<",  (l, r) => l <  r},
+                {"==", (l, r) => l == r},
+                {"!=", (l, r) => l != r},
+            };
+
+            private static readonly Dictionary<string, OperatorFunc<bool>> boolOperators = new Dictionary<string, OperatorFunc<bool>>()
+            {
+                {"==", (l, r) => l == r},
+                {"!=", (l, r) => l != r},
             };
 
             private static bool EvaluateExpression(string left, string op, string right)
             {
-                if(float.TryParse(left, out float leftFloat) && float.TryParse(right, out float rightFloat))
+                if (int.TryParse(left, out int leftInt) && int.TryParse(right, out int rightInt))
+                    return intOperators[op](leftInt, rightInt);
+
+                if (float.TryParse(left, System.Globalization.NumberStyles.Float,
+                        System.Globalization.CultureInfo.InvariantCulture, out float leftFloat) &&
+                    float.TryParse(right, System.Globalization.NumberStyles.Float,
+                        System.Globalization.CultureInfo.InvariantCulture, out float rightFloat))
                     return floatOperators[op](leftFloat, rightFloat);
 
-                if(int.TryParse(left, out int leftInt) && int.TryParse(right, out int rightInt))
-                    return intOperators[op](leftInt, rightInt);
-                
-                throw new InvalidOperationException($"Unsupported Operation: {op}");
+                if (bool.TryParse(left, out bool leftBool) && bool.TryParse(right, out bool rightBool))
+                    return boolOperators[op](leftBool, rightBool);
+
+                throw new InvalidOperationException($"Cannot evaluate expression: '{left}' {op} '{right}'");
             }
         }
     }

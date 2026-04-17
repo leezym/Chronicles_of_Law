@@ -14,8 +14,8 @@ public class ToggleAnswerValidator : MonoBehaviour
 
     [Header("Configuración")]
     public bool correctAnswerIsOn = true;
-    public int pointsForCorrectAnswer;
-    public int pointsForIncorrectAnswer;
+    static int pointsForCorrectAnswer = 150;
+    static int pointsForIncorrectAnswer = 10;
 
     private bool alreadyAnswered = false;
 

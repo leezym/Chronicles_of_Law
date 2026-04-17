@@ -37,6 +37,8 @@ public class ChoicePanel : MonoBehaviour
     
     public void Show(string question, string[] choices)
     {
+        CasesManager.Instance.IsCaseActive = true;
+
         lastDecision = new ChoicePanelDecision(question, choices);
 
         isWaitingOnUserChoice = true;
@@ -106,6 +108,8 @@ public class ChoicePanel : MonoBehaviour
 
     public void Hide()
     {
+        CasesManager.Instance.IsCaseActive = false;
+
         isWaitingOnUserChoice = false;
         
         cg.Hide();

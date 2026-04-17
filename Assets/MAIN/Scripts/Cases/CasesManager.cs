@@ -25,6 +25,8 @@ public class CasesManager : MonoBehaviour
     public Sprite disabledCase;
     public Sprite enbaledCase;
 
+    public bool IsCaseActive { get; set; } = false;
+
     private void Awake()
     {
         Instance = this;
@@ -124,9 +126,10 @@ public class CasesManager : MonoBehaviour
         caseArea.text = "<b>Área:</b> " + data.area.ToString().FirstCharacterToUpper();
         caseDescription.text = "<b>Descripción:</b> " + data.description.FirstCharacterToUpper();
         caseAbstract.text = data.abstracts.FirstCharacterToUpper();
-        foreach(Items item in HistoryManager.Instance.history.game.items)
+
+        foreach(Items item in GameManager.Instance.items)
         {
-            if(item.nameFolder == caseName.text)
+            if(item.nameFolder == data.character.FirstCharacterToUpper())
             {
                 FolderPanel.Instance.CreateItemPrefab(item.sprite, item.nameItem);
             }

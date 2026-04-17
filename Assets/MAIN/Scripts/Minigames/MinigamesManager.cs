@@ -77,8 +77,8 @@ public class MinigamesManager : MonoBehaviour
 
     private void SelectRandomMinigames()
     {
-        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.facil, 3));
-        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.intermedio, 2));
+        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.facil, 2));
+        minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.intermedio, 3));
         minigamesInGame.AddRange(GetRandomMinigamesByLevel(MinigamesData.MinigameLevel.dificil, 2));
     }
 

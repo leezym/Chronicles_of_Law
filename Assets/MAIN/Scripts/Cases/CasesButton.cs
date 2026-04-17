@@ -13,13 +13,14 @@ public class CasesButton : MonoBehaviour
         indexCaseInGame = index;
         CasesData data = CasesManager.Instance.casesInGame[index].cases;
 
-        this.gameObject.name = data.level.ToString().FirstCharacterToUpper() + 
+        gameObject.name = data.level.ToString().FirstCharacterToUpper() + 
             " - " + data.area.ToString().FirstCharacterToUpper() + 
             " - " + data.name.FirstCharacterToUpper();
     }
 
     public void OnClick()
     {
+        FolderPanel.Instance.ResetFolder();
         CasesManager.Instance.OpenCasePage(indexCaseInGame);
     }
 }

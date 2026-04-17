@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class CharacterSelectorMenu : MenuPage
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    static string HOME_MUSIC = "HOME_Shadow_of_the_Verdict";
+
+    public override void Open()
     {
-        
+        base.Open();
+
+        AudioClip audio = Resources.Load<AudioClip>(FilePaths.resources_music + HOME_MUSIC);
+        AudioManager.Instance.PlayTrack(audio, AudioBus.Music);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Close()
     {
-        
+        base.Close();
+
+        AudioManager.Instance.StopTrack(HOME_MUSIC);
     }
 }

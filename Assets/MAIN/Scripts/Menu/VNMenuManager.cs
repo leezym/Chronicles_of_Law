@@ -3,7 +3,9 @@ using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
+using VISUALNOVEL;
 
 public class VNMenuManager : MonoBehaviour
 {
@@ -42,16 +44,17 @@ public class VNMenuManager : MonoBehaviour
     {
         var page = GetPage(MenuPage.MenuType.Final);
         OpenPage(page);
-;
     }
 
     public void TogglePauseMenu()
     {
         if (MinigamesManager.Instance.IsMinigameActive)
         {
-            Debug.LogWarning("[VNMenuManager] You cannot pause while a minigame is active.");
+            NotificationsManager.Instance.WarningNotification("No puedes pausar el juego mientras estás en un Minijuego.");
             return;
         }
+
+        VNManager.Instance.saveButton.interactable = !CasesManager.Instance.IsCaseActive;
  
         var page = GetPage(MenuPage.MenuType.Pause);
         var navPage = GetPage(MenuPage.MenuType.Navigation);
@@ -67,7 +70,6 @@ public class VNMenuManager : MonoBehaviour
         var page = GetPage(MenuPage.MenuType.Navigation);
         OpenPage(page);
     }
-
 
     private void OpenPage(MenuPage page)
     {
