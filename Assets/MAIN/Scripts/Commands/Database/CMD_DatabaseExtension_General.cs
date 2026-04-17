@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DIALOGUE;
 using GAME;
+using VISUALNOVEL;
 
 namespace COMMANDS
 {
@@ -15,6 +16,8 @@ namespace COMMANDS
 
         new public static void Extend(CommandDatabase database)
         {
+            database.AddCommand("mostrarmenufinal", new Action(ShowFinalMenu)); 
+
             database.AddCommand("mostrardialogo", new Func<IEnumerator>(ShowDialogueBox));
             database.AddCommand("ocultardialogo", new Func<IEnumerator>(HideDialogueBox));
 
@@ -26,6 +29,11 @@ namespace COMMANDS
 
             database.AddCommand("subirnivelcaso", new Action(IncreaseCurrentCaseLevel));
             database.AddCommand("subirnivel", new Action(IncreaseCurrentLevel));
+        }
+
+        private static void ShowFinalMenu()
+        {
+            VNManager.Instance.vmm.OpenFinalMenu();
         }
 
         private static IEnumerator ShowDialogueBox()
@@ -65,7 +73,7 @@ namespace COMMANDS
             }
 
             List<string> lines = FileManager.ReadTextAsset(file, includeBlankLines: true);
-            Conversation newConversation = new Conversation(lines);       
+            Conversation newConversation = new Conversation(lines);
 
             if(enqueue)
                 DialogueSystem.Instance.conversationManager.Enqueue(newConversation);

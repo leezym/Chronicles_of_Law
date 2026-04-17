@@ -13,11 +13,9 @@ namespace DIALOGUE
     public class PlayerInputManager : MonoBehaviour
     {
         static float MINIMUN_VOL = 0.0001f;
-        static float MAXIMUN_VOL = 1f;
         float currentVol;
-        public VNMenuManager vmm;
         public Slider sliderVolume;
-        public TMP_Text muteText;
+        public GameObject muteImage;
         private PlayerInput input;
         private List<(InputAction action, Action<InputAction.CallbackContext> command)> actions = new List<(InputAction action, Action<InputAction.CallbackContext> command)>(); 
 
@@ -30,6 +28,7 @@ namespace DIALOGUE
         void Start()
         {
             currentVol = sliderVolume.value;
+            muteImage.SetActive(false);
         }
 
         void InitializeActions()
@@ -54,7 +53,7 @@ namespace DIALOGUE
         public void Mute()
         {
             sliderVolume.value = sliderVolume.value == MINIMUN_VOL ? currentVol : MINIMUN_VOL;
-            muteText.text = sliderVolume.value == MINIMUN_VOL ? "X" : "";
+            muteImage.SetActive(sliderVolume.value == MINIMUN_VOL ? true : false);
         }
 
         private void Mute(InputAction.CallbackContext c)
@@ -65,7 +64,7 @@ namespace DIALOGUE
         public void SetVolume()
         {
             currentVol = sliderVolume.value > MINIMUN_VOL ? sliderVolume.value : currentVol;
-            muteText.text = sliderVolume.value == MINIMUN_VOL ? "X" : "";
+            muteImage.SetActive(sliderVolume.value == MINIMUN_VOL ? true : false);
 
             AudioManager.Instance.SetVolume(sliderVolume.value);
         }
@@ -78,7 +77,7 @@ namespace DIALOGUE
 
         private void Pause(InputAction.CallbackContext c)
         {
-            vmm.TogglePauseMenu();
+            VNManager.Instance.vmm.TogglePauseMenu();
         }
     }
 }
