@@ -6,26 +6,26 @@ ocultar(Avatar)
 
 Entra Lionel Messi en 0,3:0 [Resignado] "Buenas tardes, mi nombre es Lionel Messi. Sí, así como oye, L-I-O-N-E-L M-E-S-S-I."
 
-Lionel Messi [Serio] "Vengo porque tengo un problema, verá saqué un crédito de libre consumo para comprar una vivienda y vivir con mi pareja de ese momento, {C} pero terminamos antes de comprar la vivienda y yo ya había sacado el crédito a mi nombre."
+Lionel Messi en 0,3:0 [Serio] "Vengo porque tengo un problema, verá saqué un crédito de libre consumo para comprar una vivienda y vivir con mi pareja de ese momento, {C} pero terminamos antes de comprar la vivienda y yo ya había sacado el crédito a mi nombre."
 ocultar("Lionel Messi")
 
-Entra Avatar [Serio] "Comprendo señor Messi."
+Entra Avatar en 0,3:0 [Serio] "Comprendo señor Messi."
 ocultar(Avatar)
 
-Entra Lionel Messi [Ilusionado] "Ella y yo vivíamos juntos desde hace 4 años en una casa que teníamos arrendada, {EC 1} pero ya queríamos tener nuestra propia casita y por eso decidimos sacar el crédito. {C} Sacamos un crédito por 40 millones de pesos. {EB 1} Sin embargo, como yo quería tener hijos y ella no quería tener decidimos terminar la relación."
+Entra Lionel Messi en 0,3:0 [Ilusionado] "Ella y yo vivíamos juntos desde hace 4 años en una casa que teníamos arrendada, {EC 2} pero ya queríamos tener nuestra propia casita y por eso decidimos sacar el crédito. {C} Sacamos un crédito por 40 millones de pesos. {EB 3} Sin embargo, como yo quería tener hijos y ella no quería tener decidimos terminar la relación."
 
-Lionel Messi [Resignado] "El problema es que yo saqué el crédito a mi nombre y no me parece justo que yo pagué eso solo sabiendo que era para el bienestar de ambos."
+Lionel Messi en 0,3:0 [Resignado] "El problema es que yo saqué el crédito a mi nombre y no me parece justo que yo pagué eso solo sabiendo que era para el bienestar de ambos."
 
-Lionel Messi [Serio] "Como ya no voy a utilizar esos 40 millones, yo aboné toda esa plata de una vez para pagar la deuda, {C} ahora solo queda pagar los intereses que suman 3 millones."
+Lionel Messi en 0,3:0 [Serio] "Como ya no voy a utilizar esos 40 millones, yo aboné toda esa plata de una vez para pagar la deuda, {C} ahora solo queda pagar los intereses que suman 3 millones."
 ocultar("Lionel Messi")
 
-Entra Avatar [Serio] "Entiendo que su consulta es sobre este crédito, ¿ustedes acordaron algo con su ex pareja al respecto?"
+Entra Avatar en 0,3:0 [Serio] "Entiendo que su consulta es sobre este crédito, ¿ustedes acordaron algo con su ex pareja al respecto?"
 ocultar(Avatar)
 
-Entra Lionel Messi [Enojado] "Nosotros no terminamos en malos términos, sin embargo, ella me dice que la deuda es sólo mía y que ella no me tiene que pagar nada, {C} por eso yo quería venir al consultorio a ver qué podía hacer para no pagar eso solo. {EB 1} Además, una vecina me dijo que mi caso aplicaba para una unión matrimonial o algo así fue que ella me dijo y que con eso mi ex mujer también tenía que responder por la deuda."
+Entra Lionel Messi en 0,3:0 [Enojado] "Nosotros no terminamos en malos términos, sin embargo, ella me dice que la deuda es sólo mía y que ella no me tiene que pagar nada, {C} por eso yo quería venir al consultorio a ver qué podía hacer para no pagar eso solo. {EB 3} Además, una vecina me dijo que mi caso aplicaba para una unión matrimonial o algo así fue que ella me dijo y que con eso mi ex mujer también tenía que responder por la deuda."
 ocultar("Lionel Messi")
 
-Entra Avatar [Tranquilo] "Comprendo la situación, en el Consultorio podemos ayudarle con sus dudas legales."
+Entra Avatar en 0,3:0 [Tranquilo] "Comprendo la situación, en el Consultorio podemos ayudarle con sus dudas legales."
 ocultar(Avatar)
 mostrar("Lionel Messi")
 

@@ -3,33 +3,33 @@ reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "C
 
 Entra Alberto Murcia y Marcela Marín en 0,3:0 [1] "Buen día, mi nombre es Alberto Murcia y vengo junto con Marcela Marín, quien es mi esposa."
 
-Alberto Murcia y Marcela Marín [2] "Nosotros vinimos el día de hoy para que nos asesoren, puesto que hemos tomado la decisión de terminar nuestro matrimonio."
+Alberto Murcia y Marcela Marín en 0,3:0 [2] "Nosotros vinimos el día de hoy para que nos asesoren, puesto que hemos tomado la decisión de terminar nuestro matrimonio."
 ocultar("Alberto Murcia y Marcela Marín")
 
 Entra Avatar en 0,3:0 [Serio] "Buenos días, espero poder ayudarlos con su consulta ¿me pueden comentar más sobre la situación?"
 ocultar(Avatar)
 
-Entra Alberto Murcia y Marcela Marín [1] "Nosotros el día 15 de diciembre de 1999 nos casamos, eso fue en la notaría 19."
+Entra Alberto Murcia y Marcela Marín en 0,3:0 [1] "Nosotros el día 15 de diciembre de 1999 nos casamos, eso fue en la notaría 19."
 ocultar("Alberto Murcia y Marcela Marín")
 
-Entra Avatar [Serio] "¿En la ciudad de Cali?"
+Entra Avatar en 0,3:0 [Serio] "¿En la ciudad de Cali?"
 ocultar(Avatar)
 
-Entra Alberto Murcia y Marcela Marín [2] "Así es. {EB 1} De esa relación nacieron nuestros hijos Esteban y Valentina, quienes ya son mayores de edad y se encuentran estudiando por fuera del país, hace unos dos años ya. {EC 1} Y desde esa fecha, Marcela y yo nos separamos, ya no compartimos la misma casa porque consideramos que no había motivos para seguir viviendo juntos"
+Entra Alberto Murcia y Marcela Marín en 0,3:0 [2] "Así es. {EB 3} De esa relación nacieron nuestros hijos Esteban y Valentina, quienes ya son mayores de edad y se encuentran estudiando por fuera del país, hace unos dos años ya. {EC 2} Y desde esa fecha, Marcela y yo nos separamos, ya no compartimos la misma casa porque consideramos que no había motivos para seguir viviendo juntos"
 ocultar("Alberto Murcia y Marcela Marín")
 
-Entra Avatar [Serio] "¿Existe algún acuerdo o condición que haya modificado su vínculo matrimonial?"
+Entra Avatar en 0,3:0 [Serio] "¿Existe algún acuerdo o condición que haya modificado su vínculo matrimonial?"
 ocultar(Avatar)
 
-Entra Alberto Murcia y Marcela Marín [1] "Pues, cuando nos casamos registramos unas capitulaciones de los bienes adquiridos por cada uno {EC 1} nos habían dicho que eso dividía nuestro patrimonio, y pues a hoy nosotros no tenemos nada que sea de los dos, no tenemos bienes en común... En algún momento nos dijeron que eso significaba que no teníamos patrimonio conjunto."
+Entra Alberto Murcia y Marcela Marín en 0,3:0 [1] "Pues, cuando nos casamos registramos unas capitulaciones de los bienes adquiridos por cada uno {EC 2} nos habían dicho que eso dividía nuestro patrimonio, y pues a hoy nosotros no tenemos nada que sea de los dos, no tenemos bienes en común... En algún momento nos dijeron que eso significaba que no teníamos patrimonio conjunto."
 
-Alberto Murcia y Marcela Marín [2] "Durante nuestra vida de casados convivimos con nuestros hijos en una casa arrendada en el barrio El Guabal, y el dinero que ganaba Alberto y el que ganaba yo era para nuestras necesidades individuales, y siempre dividimos equitativamente los gastos de nuestros hijos."
+Alberto Murcia y Marcela Marín en 0,3:0 [2] "Durante nuestra vida de casados convivimos con nuestros hijos en una casa arrendada en el barrio El Guabal, y el dinero que ganaba Alberto y el que ganaba yo era para nuestras necesidades individuales, y siempre dividimos equitativamente los gastos de nuestros hijos."
 ocultar("Alberto Murcia y Marcela Marín")
 
-Entra Avatar [Serio] "En esa medida, ustedes podrían confirmar que no existe ningún tipo de bien que pueda considerarse común, ¿cierto?"
+Entra Avatar en 0,3:0 [Serio] "En esa medida, ustedes podrían confirmar que no existe ningún tipo de bien que pueda considerarse común, ¿cierto?"
 ocultar(Avatar)
 
-Entra Alberto Murcia y Marcela Marín [1] "Sí, nada. Y estamos de acuerdo en terminar nuestro vínculo matrimonial. Es por ello que necesitamos una opción que nos permita realizar el trámite de manera ágil y sin mayor complicación."
+Entra Alberto Murcia y Marcela Marín en 0,3:0 [1] "Sí, nada. Y estamos de acuerdo en terminar nuestro vínculo matrimonial. Es por ello que necesitamos una opción que nos permita realizar el trámite de manera ágil y sin mayor complicación."
 
 ocultarDialogo()
 

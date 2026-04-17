@@ -4,32 +4,32 @@ reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "C
 Entra Avatar en 0,3:0 [Serio] "Buen día señor, ¿cómo se encuentra el día de hoy?"
 ocultar(Avatar)
 
-Entra Alfonso García en 0,3:0 [Serio] "Buen día joven, muy bien, ¿y usted? {EC 1} Me presento, mi nombre es Alfonso García, y vine el día de hoy porque tengo una consulta de orden laboral."
+Entra Alfonso García en 0,3:0 [Serio] "Buen día joven, muy bien, ¿y usted? {EC 2} Me presento, mi nombre es Alfonso García, y vine el día de hoy porque tengo una consulta de orden laboral."
 ocultar("Alfonso García")
 
-Entra Avatar [Serio] "Muy bien, gracias. Claro, cuénteme su situación."
+Entra Avatar en 0,3:0 [Serio] "Muy bien, gracias. Claro, cuénteme su situación."
 ocultar(Avatar)
 
-Entra Alfonso García [Serio] "Bueno, lo que sucede es que yo en junio del 2003 tuve un accidente de origen común. En ese momento recibí una pensión de invalidez debido a que tuve una afectación grave en mi pierna izquierda que me incapacitó para trabajar. {EC 1} Mi primera calificación por parte de la junta regional fue en mayo de 2004 donde me dieron un PCL de 50.8% y como consecuencia me concedieron la pensión por invalidez."
+Entra Alfonso García en 0,3:0 [Serio] "Bueno, lo que sucede es que yo en junio del 2003 tuve un accidente de origen común. En ese momento recibí una pensión de invalidez debido a que tuve una afectación grave en mi pierna izquierda que me incapacitó para trabajar. {EC 2} Mi primera calificación por parte de la junta regional fue en mayo de 2004 donde me dieron un PCL de 50.8% y como consecuencia me concedieron la pensión por invalidez."
 ocultar("Alfonso García")
 
 item "Resolución 4343 del 22 de abril"
 
-Entra Alfonso García [Confundido] "Así fue muchos años, y para mí esa pensión es esencial porque yo soy el sustento de mi madre. {EC 1} Sin embargo, en 2022 recibí una notificación del fondo de pensiones, que para que me calificaran nuevamente y conocer mi evolución durante estos años."
+Entra Alfonso García en 0,3:0 [Confundido] "Así fue muchos años, y para mí esa pensión es esencial porque yo soy el sustento de mi madre. {EC 2} Sin embargo, en 2022 recibí una notificación del fondo de pensiones, que para que me calificaran nuevamente y conocer mi evolución durante estos años."
 
-Alfonso García [Estresado] "Yo fui en Julio de ese año al fondo, llevé mi historia clínica y todos los documentos que me pidieron {EC 1} Pero, luego, me llamaron por teléfono y me dijeron que me habían calificado con un PCL del 27.8%."
+Alfonso García en 0,3:0 [Estresado] "Yo fui en Julio de ese año al fondo, llevé mi historia clínica y todos los documentos que me pidieron {EC 2} Pero, luego, me llamaron por teléfono y me dijeron que me habían calificado con un PCL del 27.8%."
 ocultar(Alfonso García)
 
-Entra Avatar [Serio] "Comprendo, ¿esa evaluación fue por teléfono o fue una evaluación médica?"
+Entra Avatar en 0,3:0 [Serio] "Comprendo, ¿esa evaluación fue por teléfono o fue una evaluación médica?"
 ocultar(Avatar)
 
-Entra Alfonso García [Confundido] "Eso es lo más raro, es que fue por teléfono. Yo interpuse dos solicitudes para que me volvieran a calificar, ahí la junta regional en el mismo año ratificó su decisión inicial del 50.8% {EC 1} Pero, el fondo apeló y la junta para noviembre de ese año me redujo la calificación al 29.8%."
+Entra Alfonso García en 0,3:0 [Confundido] "Eso es lo más raro, es que fue por teléfono. Yo interpuse dos solicitudes para que me volvieran a calificar, ahí la junta regional en el mismo año ratificó su decisión inicial del 50.8% {EC 2} Pero, el fondo apeló y la junta para noviembre de ese año me redujo la calificación al 29.8%."
 ocultar("Alfonso García")
 
-Entra Avatar [Serio] "Comprendo, ¿usted ha seguido recibiendo la pensión?"
+Entra Avatar en 0,3:0 [Serio] "Comprendo, ¿usted ha seguido recibiendo la pensión?"
 ocultar(Avatar)
 
-Entra Alfonso García [Estresado] "Sí, a mí me han seguido pagando, pero estoy preocupado de que en cualquier momento la suspendan. Quisiera saber qué puedo hacer ante esta injusticia."
+Entra Alfonso García en 0,3:0 [Estresado] "Sí, a mí me han seguido pagando, pero estoy preocupado de que en cualquier momento la suspendan. Quisiera saber qué puedo hacer ante esta injusticia."
 
 ocultarDialogo()
 

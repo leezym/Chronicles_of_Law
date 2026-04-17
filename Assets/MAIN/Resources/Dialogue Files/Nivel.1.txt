@@ -1,12 +1,10 @@
-ocultarDialogo()
-social "¿Qué hago?"
-{
-- Decide ayudar. [500|-400]
-	detenerMusica()
-    mostrarCinematica(-media "escena 2" -audio true)
+cargarCaso()
 
-- Decide no ayudar
-	detenerMusica(). [10|100]
-    mostrarCinematica(-media "escena 3" -audio true)
-}
-ocultar(Avatar)
+mostrarCinematica(-media "escena 8" -audio true)
+
+anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+cargarMinijuego()
+detenerAmbiente(); detenerMusica()
+
+subirNivel()

@@ -7,38 +7,38 @@ ocultar("Julio Ulpiano")
 Entra Avatar en 0,3:0 [Serio] "Buen día señor Julio, en el Consultorio Jurídico tenemos la disposición para ayudarlo, {C} cuénteme sobre su situación."
 ocultar(Avatar)
 
-Entra Julio Ulpiano [Serio] "Gracias. En este momento, me encuentro viviendo en una casa ahí por la 53 con primera. Esa casa era de mi mamá, pero ella falleció por allá en el 2002, {EC 1} y pues mis otros dos hermanos y yo nunca nos repartimos nada porque ya no hablamos y ellos viven por allá en España incluso desde antes de que mi mamá se muriera."
+Entra Julio Ulpiano en 0,3:0 [Serio] "Gracias. En este momento, me encuentro viviendo en una casa ahí por la 53 con primera. Esa casa era de mi mamá, pero ella falleció por allá en el 2002, {EC 2} y pues mis otros dos hermanos y yo nunca nos repartimos nada porque ya no hablamos y ellos viven por allá en España incluso desde antes de que mi mamá se muriera."
 ocultar("Julio Ulpiano").
 
 item "Certificado de Defuncion de su madre"
 
-Julio Ulpiano [Serio] "El caso es que yo siempre viví en esa casa con mi señora madre, y cuando murió seguí viviendo allí {EC 1} y yo siempre pagaba pues el agua, la luz y esas cosas, hasta le mandé a ampliar el antejardin para que mi esposa pudiera salir a ver los pajaritos y regar las matas."
+Julio Ulpiano en 0,3:0 [Serio] "El caso es que yo siempre viví en esa casa con mi señora madre, y cuando murió seguí viviendo allí {EC 2} y yo siempre pagaba pues el agua, la luz y esas cosas, hasta le mandé a ampliar el antejardin para que mi esposa pudiera salir a ver los pajaritos y regar las matas."
 
-Julio Ulpiano [Contento] "Eso me costó una plata, pero quedó bien bonito, venga y verá le muestro."
+Julio Ulpiano en 0,3:0 [Contento] "Eso me costó una plata, pero quedó bien bonito, venga y verá le muestro."
 ocultar("Julio Ulpiano")
 
 item "Recibos de pago de servicios publicos del bien del ultimo año"
 
 item "Foto de la casa"
 
-Entra Avatar [Contento] "Quedó muy bien, gracias por mostrarme. {EB 1} ¿Podría seguirme contando sobre los gastos del inmueble?"
+Entra Avatar en 0,3:0 [Contento] "Quedó muy bien, gracias por mostrarme. {EB 3} ¿Podría seguirme contando sobre los gastos del inmueble?"
 ocultar(Avatar)
 
-Entra Julio Ulpiano [Intrigado] "Yo también he pagado los impuestos en regla porque usted sabe que lo único seguro en la vida son los impuestos y la muerte, {EC 1} para que tampoco lo molesten a uno de la DIAN y esas cosas si me entiende."
+Entra Julio Ulpiano en 0,3:0 [Intrigado] "Yo también he pagado los impuestos en regla porque usted sabe que lo único seguro en la vida son los impuestos y la muerte, {EC 2} para que tampoco lo molesten a uno de la DIAN y esas cosas si me entiende."
 
-Julio Ulpiano [Dubitativo] "Le cuento todo esto porque hace unos días el tío de un amigo mío que es abogado me dijo que porque yo no me quedaba con esa casa que había una cosa que se llama Prescripción y que el caso mío aplicaba para eso."
+Julio Ulpiano en 0,3:0 [Dubitativo] "Le cuento todo esto porque hace unos días el tío de un amigo mío que es abogado me dijo que porque yo no me quedaba con esa casa que había una cosa que se llama Prescripción y que el caso mío aplicaba para eso."
 
-Julio Ulpiano [Intrigado] "Entonces yo quería saber como hacía para prescribir y quedarme definitivamente con la casa {C} porque mire que yo fui a sacar las escrituras y sigue saliendo el nombre de mi mamá, en paz descanse, y ya es hora de que salga es el mío:"
+Julio Ulpiano en 0,3:0 [Intrigado] "Entonces yo quería saber como hacía para prescribir y quedarme definitivamente con la casa {C} porque mire que yo fui a sacar las escrituras y sigue saliendo el nombre de mi mamá, en paz descanse, y ya es hora de que salga es el mío:"
 ocultar("Julio Ulpiano")
 
 item "Certificado de Tradicion"
 
-Entra Avatar [Serio] "Entiendo. Usted me había mencionado que vive en este domicilio desde hace varios años, ¿existen vecinos o personas que lo reconozcan como residente?"
+Entra Avatar en 0,3:0 [Serio] "Entiendo. Usted me había mencionado que vive en este domicilio desde hace varios años, ¿existen vecinos o personas que lo reconozcan como residente?"
 ocultar(Avatar)
 
-Entra Julio Ulpiano [Contento] "Hay varias personas que pueden atestiguar que yo he vivido ahí todo este tiempo, {EC 1} mi vecina la Señora Gricelda Blanca y el celador del barrio el Señor Víctor Carranza."
+Entra Julio Ulpiano en 0,3:0 [Contento] "Hay varias personas que pueden atestiguar que yo he vivido ahí todo este tiempo, {EC 2} mi vecina la Señora Gricelda Blanca y el celador del barrio el Señor Víctor Carranza."
 
-Julio Ulpiano [Dubitativo] "Le consulto joven, entonces ¿qué puedo hacer para quedarme con esa casa?"
+Julio Ulpiano en 0,3:0 [Dubitativo] "Le consulto joven, entonces ¿qué puedo hacer para quedarme con esa casa?"
 
 ocultarDialogo()
 

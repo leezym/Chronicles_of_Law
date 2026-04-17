@@ -7,27 +7,27 @@ ocultar(Avatar)
 Entra Michael Jovany Aranjuez en 0,3:0 [Serio] "Buenos días, joven, mi nombre es Michael Aranjuez, vine porque andaba en el centro y se me ocurrió que ustedes me podrían ayudar."
 ocultar("Michael Jovany Aranjuez")
 
-Entra Avatar [Serio] "Claro que sí, ¿Cuál es su situación?."
+Entra Avatar en 0,3:0 [Serio] "Claro que sí, ¿Cuál es su situación?."
 ocultar(Avatar)
 
-Entra Michael Jovany Aranjuez [Triste] "Bueno, todo comenzó cuando me desplazaron, las FARC me sacó de mi vereda Chipiripan en el lindo departamento de Antioquia. {EC 1} Para mí fue muy triste dejar esa tierra, pero ya las amenazas eran muy seguidas y la inseguridad había aumentado mucho. En ese momento decidí venir para Cali."
+Entra Michael Jovany Aranjuez en 0,3:0 [Triste] "Bueno, todo comenzó cuando me desplazaron, las FARC me sacó de mi vereda Chipiripan en el lindo departamento de Antioquia. {EC 2} Para mí fue muy triste dejar esa tierra, pero ya las amenazas eran muy seguidas y la inseguridad había aumentado mucho. En ese momento decidí venir para Cali."
 
-Michael Jovany Aranjuez [Preocupado]"Exactamente el 10 de febrero de 2005 llegamos a la ciudad y nos ubicamos en el barrio Alfonso López, ¿usted lo conoce, no? Ése que queda por allá al fondo. {EC 1} Mi esposa y yo nos esforzamos mucho para comprar una casa allá y desde ese año hemos ido adecuando poco a poco la residencia, pensando en mis hijos, Hilary, Oscar y David. Todo lo hemos hecho para ellos."
+Michael Jovany Aranjuez en 0,3:0 [Preocupado]"Exactamente el 10 de febrero de 2005 llegamos a la ciudad y nos ubicamos en el barrio Alfonso López, ¿usted lo conoce, no? Ése que queda por allá al fondo. {EC 2} Mi esposa y yo nos esforzamos mucho para comprar una casa allá y desde ese año hemos ido adecuando poco a poco la residencia, pensando en mis hijos, Hilary, Oscar y David. Todo lo hemos hecho para ellos."
 ocultar("Michael Jovany Aranjuez")
 
 item "Escritura pública de la compraventa"
 
-Entra Michael Jovany Aranjuez [Contento] "Cada año con mi mujer, le metemos cositas a la casa, que los pisos, que las esquineras, usted sabe, ponerla linda para que los muchachos quieran vivir ahí. {EC 1} En el 2022 decidimos realizar el segundo piso, llevábamos un tiempo ahorrando para hacerlo, nosotros hicimos eso porque todas las casas de la cuadra estaban igual."
+Entra Michael Jovany Aranjuez en 0,3:0 [Contento] "Cada año con mi mujer, le metemos cositas a la casa, que los pisos, que las esquineras, usted sabe, ponerla linda para que los muchachos quieran vivir ahí. {EC 2} En el 2022 decidimos realizar el segundo piso, llevábamos un tiempo ahorrando para hacerlo, nosotros hicimos eso porque todas las casas de la cuadra estaban igual."
 ocultar("Michael Jovany Aranjuez")
 
 item "Foto de la casa"
 
-Entra Avatar [Serio] "Le felicito por su esfuerzo señor Michael, ¿usted tuvo algún problema relacionado con la construcción o modificación de la vivienda?"
+Entra Avatar en 0,3:0 [Serio] "Le felicito por su esfuerzo señor Michael, ¿usted tuvo algún problema relacionado con la construcción o modificación de la vivienda?"
 ocultar(Avatar)
 
-Entra Michael Jovany Aranjuez [Preocupado] "No como tal, sino que en el mes de julio de este año, recibimos una notificación proveniente de la Alcaldía de Cali, dónde nos decía que estábamos utilizando espacio público y que de no modificar la vivienda nos colocarían una multa."
+Entra Michael Jovany Aranjuez en 0,3:0 [Preocupado] "No como tal, sino que en el mes de julio de este año, recibimos una notificación proveniente de la Alcaldía de Cali, dónde nos decía que estábamos utilizando espacio público y que de no modificar la vivienda nos colocarían una multa."
 
-Michael Jovany Aranjuez [Triste] "Incluso mencionaron la posible destrucción de la residencia. Joven, usted no entiende lo devastador que para nosotros fue escuchar eso. Realmente estamos desesperados."
+Michael Jovany Aranjuez en 0,3:0 [Triste] "Incluso mencionaron la posible destrucción de la residencia. Joven, usted no entiende lo devastador que para nosotros fue escuchar eso. Realmente estamos desesperados."
 
 ocultarDialogo()
 

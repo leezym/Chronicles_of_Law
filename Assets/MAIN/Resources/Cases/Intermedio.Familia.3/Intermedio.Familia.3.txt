@@ -7,28 +7,28 @@ ocultar("María Flores")
 Entra Avatar en 0,3:0 [Serio] "Buen día señora, ¿puede decirme su nombre? {C} Tengo plena disposición para ayudarla, le pido que por favor me comparta más información sobre su caso."
 ocultar(Avatar)
 
-Entra María Flores [Molesta] "Ay, qué pena con usted, como uno anda así todo estresado hasta se le olvida presentarse. Mi nombre es Maria Flores {EB 1} Y vengo porque el papá de mi hijo no quiere responder por el niño, no le envía nada de plata y realmente he intentado, pero a mí no me da para cubrir los gastos sola."
+Entra María Flores en 0,3:0 [Molesta] "Ay, qué pena con usted, como uno anda así todo estresado hasta se le olvida presentarse. Mi nombre es Maria Flores {EB 3} Y vengo porque el papá de mi hijo no quiere responder por el niño, no le envía nada de plata y realmente he intentado, pero a mí no me da para cubrir los gastos sola."
 
-María Flores [Seria] "Yo vivía con Juan Pérez, el padre de mis hijos, pero nosotros nunca nos casamos. Siempre fue una convivencia como informal. {EB 1} Pero, de esa relación nació Juli, mi hijo que ahora tiene 4 años."
+María Flores en 0,3:0 [Seria] "Yo vivía con Juan Pérez, el padre de mis hijos, pero nosotros nunca nos casamos. Siempre fue una convivencia como informal. {EB 3} Pero, de esa relación nació Juli, mi hijo que ahora tiene 4 años."
 ocultar("María Flores")
 
-Entra Avatar [Serio] "¿El señor Pérez ya no convive con ustedes?"
+Entra Avatar en 0,3:0 [Serio] "¿El señor Pérez ya no convive con ustedes?"
 ocultar(Avatar)
 
-Entra María Flores [Preocupada] "No, ya no. Yo me aburrí de vivir con Juan y me fui de la casa con el niño {EC 1} Juan se puso furioso, no me quería hablar, me amenazó con que iba a dejar de ayudarme con nuestro hijo, y así fue."
+Entra María Flores en 0,3:0 [Preocupada] "No, ya no. Yo me aburrí de vivir con Juan y me fui de la casa con el niño {EC 2} Juan se puso furioso, no me quería hablar, me amenazó con que iba a dejar de ayudarme con nuestro hijo, y así fue."
 
-María Flores [Molesta] "Y el muy descarado, dizque "ayudarme", el niño es de los dos y ambos somos responsables."
+María Flores en 0,3:0 [Molesta] "Y el muy descarado, dizque "ayudarme", el niño es de los dos y ambos somos responsables."
 ocultar("María Flores")
 
-Entra Avatar [Serio] "Lamento escuchar eso señora Flores, ¿usted se ha comunicado con Juan desde esa vez?"
+Entra Avatar en 0,3:0 [Serio] "Lamento escuchar eso señora Flores, ¿usted se ha comunicado con Juan desde esa vez?"
 ocultar(Avatar)
 
-Entra María Flores [Seria] "Como tal no hemos hablado, pero yo lo denuncié en la Fiscalía por el incumplimiento de los pagos. {EC 1} Pero, en la Fiscalía me dijeron que como no había una cuota fijada legalmente debíamos conciliar, yo fui y todo, pero él nunca se apareció. Lo único que me dieron fue esto:"
+Entra María Flores en 0,3:0 [Seria] "Como tal no hemos hablado, pero yo lo denuncié en la Fiscalía por el incumplimiento de los pagos. {EC 2} Pero, en la Fiscalía me dijeron que como no había una cuota fijada legalmente debíamos conciliar, yo fui y todo, pero él nunca se apareció. Lo único que me dieron fue esto:"
 ocultar("María Flores")
 
 item "Constancia de inasistencia a la audiencia de conciliación"
 
-Entra María Flores [Preocupada] "A mí en la Fiscalía no me pudieron resolver, y es por eso que vengo aquí. De verdad que ya no puedo sostener económicamente al niño sin el aporte de Juan."
+Entra María Flores en 0,3:0 [Preocupada] "A mí en la Fiscalía no me pudieron resolver, y es por eso que vengo aquí. De verdad que ya no puedo sostener económicamente al niño sin el aporte de Juan."
 
 ocultarDialogo()
 

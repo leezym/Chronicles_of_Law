@@ -1,15 +1,15 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
-Entra Sabrina Petro en 0,3:1 [Seria] "Buenos días doc, ¿cómo me le va? yo me llamo Sabrina Petro Uribe, tengo 32 años, vine por aquí porque tengo una duda sobre un asunto de una compraventa."
+Entra Sabrina Petro en 0,3:0 [Seria] "Buenos días doc, ¿cómo me le va? yo me llamo Sabrina Petro Uribe, tengo 32 años, vine por aquí porque tengo una duda sobre un asunto de una compraventa."
 
 item "Promesa de compraventa"
 
-Sabrina Petro [Ilusionada] "Entonces, nosotros firmamos eso y le consignamos $15.000.000 COP {EC 1} de ahí entonces nos pusimos a organizar lo de la herencia de mi esposo para tener el resto de la plata lista para dársela a Don Jimmy el 7 de marzo en la notaría. {EC 1} Hasta que por fin llegó el día, nosotros nos presentamos contentos allá en la notaría para firmar las escrituras y que nos entregarán la casa, incluso le consignamos el resto del dinero de la emoción que sentíamos, mire:"
+Sabrina Petro en 0,3:0 [Ilusionada] "Entonces, nosotros firmamos eso y le consignamos $15.000.000 COP {EC 2} de ahí entonces nos pusimos a organizar lo de la herencia de mi esposo para tener el resto de la plata lista para dársela a Don Jimmy el 7 de marzo en la notaría. {EC 2} Hasta que por fin llegó el día, nosotros nos presentamos contentos allá en la notaría para firmar las escrituras y que nos entregarán la casa, incluso le consignamos el resto del dinero de la emoción que sentíamos, mire:"
 
 item "Comprobante de transacción bancaria al señor Jimmy Gutierrez"
 
-Sabrina Petro [Preocupada] "Pero él nunca llegó, lo llamamos y lo llamamos, pero el señor nada que aparecía. {C} Pasaron días insistiéndole, hasta fuimos a su casa y nadie nos contestaba, yo le tomé fotos y todo, vea:"
+Sabrina Petro en 0,3:0 [Preocupada] "Pero él nunca llegó, lo llamamos y lo llamamos, pero el señor nada que aparecía. {C} Pasaron días insistiéndole, hasta fuimos a su casa y nadie nos contestaba, yo le tomé fotos y todo, vea:"
 ocultar("Sabrina Petro")
 
 item "Registro telefónico de llamadas al señor Jimmy"
@@ -19,13 +19,13 @@ item "Fotografías de la casa del señor Jimmy"
 Entra Avatar en 0,3:0 [Pensativo] "¿Desde ese momento no han tenido ninguna noticia del señor Gutierrez o tienen algún tipo de información?"
 ocultar(Avatar)
 
-Entra Sabrina Petro [Preocupada] "Pues imagínese que a nosotros nos llegó la semana pasada una carta que venía del abogado de él, aquí la tengo:" 
+Entra Sabrina Petro en 0,3:0 [Preocupada] "Pues imagínese que a nosotros nos llegó la semana pasada una carta que venía del abogado de él, aquí la tengo:" 
 
 item "Copia de la carta enviada por correo electrónico a la usuaria"
 
-Sabrina Petro [Preocupada] "A mí eso me parece muy descarado por parte del señor, nos anda cobrando y amenazando viendo que nosotros sí pagamos. Yo no sé qué va a pasar ahora con la casa y con la plata. {EB 1} Entonces, yo quería preguntarle qué podemos hacer en este caso para resolver esta situación, la verdad estoy muy preocupada."
+Sabrina Petro en 0,3:0 [Preocupada] "A mí eso me parece muy descarado por parte del señor, nos anda cobrando y amenazando viendo que nosotros sí pagamos. Yo no sé qué va a pasar ahora con la casa y con la plata. {EB 3} Entonces, yo quería preguntarle qué podemos hacer en este caso para resolver esta situación, la verdad estoy muy preocupada."
 
-Sabrina Petro [Seria] "Yo sólo quiero tener mi casita para formar una familia, pero pues ya no tenemos más dinero y no nos alcanza para pagar esa plata que el señor Jimmy nos está cobrando de más.{C} Entonces pues yo quería pedirle que me ayude si es tan amable."
+Sabrina Petro en 0,3:0 [Seria] "Yo sólo quiero tener mi casita para formar una familia, pero pues ya no tenemos más dinero y no nos alcanza para pagar esa plata que el señor Jimmy nos está cobrando de más.{C} Entonces pues yo quería pedirle que me ayude si es tan amable."
 
 ocultarDialogo()
 

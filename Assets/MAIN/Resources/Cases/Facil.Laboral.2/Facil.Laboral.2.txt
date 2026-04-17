@@ -4,22 +4,22 @@ reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP
 Entra Avatar en 0,3:0 [Serio] "Buenos días señor, bienvenido al Consultorio Jurídico, ¿podría darme su nombre?"
 ocultar(Avatar)
 
-Entra Enser Marin en 0,3:0 [Serio] "Buen día joven. Mi nombre es Enser Marin, vengo aquí porque tengo una duda laboral. {EC 1} Yo trabajé en la empresa VIGILANTES EXPERTOS 1A SAS desde el 2017 y tenía un contrato a termino indefinido."
+Entra Enser Marin en 0,3:0 [Serio] "Buen día joven. Mi nombre es Enser Marin, vengo aquí porque tengo una duda laboral. {EC 2} Yo trabajé en la empresa VIGILANTES EXPERTOS 1A SAS desde el 2017 y tenía un contrato a termino indefinido."
 
-Enser Marin [Cansado] "Pero, a finales de julio de este año renuncié porque me cansé de los cambios de horario, siempre eran sin consultar y nunca me daban permisos para hacer mis trámites personales."
+Enser Marin en 0,3:0 [Cansado] "Pero, a finales de julio de este año renuncié porque me cansé de los cambios de horario, siempre eran sin consultar y nunca me daban permisos para hacer mis trámites personales."
 ocultar("Enser Marin")
 
 item "Carta cambio de horario"
 
-Entra Avatar [Serio] "Comprendo señor, ¿su consulta está relacionada con el proceso de liquidación?"
+Entra Avatar en 0,3:0 [Serio] "Comprendo señor, ¿su consulta está relacionada con el proceso de liquidación?"
 ocultar(Avatar)
 
-Entra Enser Marin [Preocupado] "Sí, exacto. Yo trabajé la primera quincena de julio y después de ahí renuncié; sin embargo aún no me ha llegado nada de dinero por parte de la empresa."
+Entra Enser Marin en 0,3:0 [Preocupado] "Sí, exacto. Yo trabajé la primera quincena de julio y después de ahí renuncié; sin embargo aún no me ha llegado nada de dinero por parte de la empresa."
 ocultar("Enser Marin")
 
 item "Carta cambio de renuncia"
 
-Entra Enser Marin [Serio] "Yo he ido a la empresa pero no me dicen nada. Yo creo que se están haciendo los locos {EC 1} Entonces, mi duda es ¿Qué se supone que deberían pagarme? y ¿Qué debo hacer para que me paguen?"
+Entra Enser Marin en 0,3:0 [Serio] "Yo he ido a la empresa pero no me dicen nada. Yo creo que se están haciendo los locos {EC 2} Entonces, mi duda es ¿Qué se supone que deberían pagarme? y ¿Qué debo hacer para que me paguen?"
 
 ocultarDialogo()
 

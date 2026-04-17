@@ -204,7 +204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cabe41f6b1a8308428178213ed536936, type: 3}
+  m_Sprite: {fileID: 1543935484, guid: cabe41f6b1a8308428178213ed536936, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -545,8 +545,6 @@ MonoBehaviour:
   validateButton: {fileID: 8657262355736575006}
   feedbackText: {fileID: 6297060895255519602}
   correctAnswerIsOn: 1
-  pointsForCorrectAnswer: 150
-  pointsForIncorrectAnswer: 10
 --- !u!1 &4292996648255834325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d1cffbfa42881794da7fc295372c4651, type: 3}
+  m_Sprite: {fileID: -476680917, guid: d1cffbfa42881794da7fc295372c4651, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

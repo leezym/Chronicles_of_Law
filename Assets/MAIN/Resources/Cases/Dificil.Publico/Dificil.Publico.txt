@@ -6,27 +6,27 @@ ocultar(Avatar)
 
 Entra Martha Enolia Correa en 0,3:0 [Seria] "Buenos días, claro. Mi nombre es Martha Enolia Correa Lasso. Actualmente resido en una casa, está registrada a nombre de mi madre: María de Jesús Lasso de Correa."
 
-Martha Enolia Correa [Estresada] "Lamentablemente, mi madre murió el 22 de diciembre de 2009, desde esa fecha yo me he encargado de la casa. Es completamente mi responsabilidad y estoy bien con eso. {EC 1} Mis ingresos mensuales ascienden a ($700.000), los cuales provienen de una pensión compartida de sobrevivientes, me la dieron por el fallecimiento de mi esposo."
+Martha Enolia Correa en 0,3:0 [Estresada] "Lamentablemente, mi madre murió el 22 de diciembre de 2009, desde esa fecha yo me he encargado de la casa. Es completamente mi responsabilidad y estoy bien con eso. {EC 2} Mis ingresos mensuales ascienden a ($700.000), los cuales provienen de una pensión compartida de sobrevivientes, me la dieron por el fallecimiento de mi esposo."
 ocultar("Martha Enolia Correa")
 
-Entra Avatar [Serio] "Comprendo, ¿usted se ha encargado de los pagos provenientes del hogar?"
+Entra Avatar en 0,3:0 [Serio] "Comprendo, ¿usted se ha encargado de los pagos provenientes del hogar?"
 ocultar(Avatar)
 
-Entra Martha Enolia Correa [Preocupada] "Pues, desde el 2007 sólo he realizado el pago del predial correspondiente a las vigencias de 2009 y 2014. {EC 1} Actualmente mi deuda acumulada es de ONCE MILLONES OCHOCIENTOS CINCUENTA Y DOS MIL PESOS MCT  ($11.852.000), según el  documento del impuesto predial unificado para el año 2024."
+Entra Martha Enolia Correa en 0,3:0 [Preocupada] "Pues, desde el 2007 sólo he realizado el pago del predial correspondiente a las vigencias de 2009 y 2014. {EC 2} Actualmente mi deuda acumulada es de ONCE MILLONES OCHOCIENTOS CINCUENTA Y DOS MIL PESOS MCT  ($11.852.000), según el  documento del impuesto predial unificado para el año 2024."
 
-Martha Enolia Correa [Dubitativa]"En ese mismo documento, se establece que el avalúo de la casa es de OCHENTA Y CUATRO MILLONES QUINIENTOS SETENTA Y OCHO MIL PESOS MCTE ($84.568.000)."
+Martha Enolia Correa en 0,3:0 [Dubitativa]"En ese mismo documento, se establece que el avalúo de la casa es de OCHENTA Y CUATRO MILLONES QUINIENTOS SETENTA Y OCHO MIL PESOS MCTE ($84.568.000)."
 
-Martha Enolia Correa [Estresada]"A pesar de mis esfuerzos por mantener al día los pagos y responsabilidades fiscales, la situación económica actual me ha generado esta deuda, la cual estoy gestionando con la esperanza de encontrar una solución viable."
+Martha Enolia Correa en 0,3:0 [Estresada]"A pesar de mis esfuerzos por mantener al día los pagos y responsabilidades fiscales, la situación económica actual me ha generado esta deuda, la cual estoy gestionando con la esperanza de encontrar una solución viable."
 ocultar("Martha Enolia Correa")
 
 item "Documento impuesto predial"
 
-Entra Avatar [Serio] "¿Hasta el momento ha recibido alguna notificación por esta deuda?"
+Entra Avatar en 0,3:0 [Serio] "¿Hasta el momento ha recibido alguna notificación por esta deuda?"
 ocultar(Avatar)
 
-Entra Martha Enolia Correa [Seria] "Sí, el 13 de junio de 2023 fui citada para una notificación personal en el Centro de Atención al Contribuyente, decía que era la oficina técnica de operación de cobro coactivo. {EC 1} En esa cita se me notificó personalmente y salió la resolución 4131.1.21, de la cual se derivaba un mandamiento de pago por las vigencias fiscales comprendidas entre el año 2009 y 2023."
+Entra Martha Enolia Correa en 0,3:0 [Seria] "Sí, el 13 de junio de 2023 fui citada para una notificación personal en el Centro de Atención al Contribuyente, decía que era la oficina técnica de operación de cobro coactivo. {EC 2} En esa cita se me notificó personalmente y salió la resolución 4131.1.21, de la cual se derivaba un mandamiento de pago por las vigencias fiscales comprendidas entre el año 2009 y 2023."
 
-Martha Enolia Correa [Dubitativa] "Y pues, esa es la razón por la que vine aquí el día de hoy."
+Martha Enolia Correa en 0,3:0 [Dubitativa] "Y pues, esa es la razón por la que vine aquí el día de hoy."
 
 ocultarDialogo()
 

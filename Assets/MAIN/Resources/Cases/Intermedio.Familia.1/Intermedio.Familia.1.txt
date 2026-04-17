@@ -7,37 +7,37 @@ ocultar("Edinson Osorio")
 Entra Avatar en 0,3:0 [Serio] "Buenos días señor Edinson, espero se encuentre bien ¿podría comentarme más sobre la situación?"
 ocultar(Avatar)
 
-Entra Edinson Osorio [Serio2] "La relación que sostuve con la madre de mi hijo -Paola- no resultó duradera, porque usted sabe... a veces uno tiene sus incompatibilidades. Eso sí, ambos decidimos mantener un trato amigable por el bienestar del niño, {EB 1} Nosotros definimos que él debía vivir con ella, pero yo tendría derecho a visitarlo cuando quisiera, {EC 1} también dijimos que cada 15 días yo podría llevarlo a un lugar de recreación. Y claramente, acordamos que íbamos a cumplir con nuestras obligaciones de padres y a participar en la crianza de Felipe."
+Entra Edinson Osorio en 0,3:0 [Serio2] "La relación que sostuve con la madre de mi hijo -Paola- no resultó duradera, porque usted sabe... a veces uno tiene sus incompatibilidades. Eso sí, ambos decidimos mantener un trato amigable por el bienestar del niño, {EB 3} Nosotros definimos que él debía vivir con ella, pero yo tendría derecho a visitarlo cuando quisiera, {EC 2} también dijimos que cada 15 días yo podría llevarlo a un lugar de recreación. Y claramente, acordamos que íbamos a cumplir con nuestras obligaciones de padres y a participar en la crianza de Felipe."
 ocultar("Edinson Osorio")
 
-Entra Avatar [Serio] "¿Se han incumplido algunos de los acuerdos que ustedes pactaron?"
+Entra Avatar en 0,3:0 [Serio] "¿Se han incumplido algunos de los acuerdos que ustedes pactaron?"
 ocultar(Avatar)
 
-Entra Edinson Osorio [Serio1] "Pues... Es que ella en abril del 2022 se fue a Brasil, en búsqueda de oportunidades económicas. Ella quedó desempleada y quería iniciar una nueva vida, y como ella sabe tanto de estética, se fue y por allá le ha ido bien. {EB 1} Sino que ella desde el principio me dijo que no se iba a llevar a Felipe, que para no perturbarlo, {C} entonces nosotros decidimos que él se quedara aquí por sus amigos y familia. Lo que yo le dije es que tenía que continuar aportando su parte del sostenimiento del niño y que tenía que estarse contactando con él."
+Entra Edinson Osorio en 0,3:0 [Serio1] "Pues... Es que ella en abril del 2022 se fue a Brasil, en búsqueda de oportunidades económicas. Ella quedó desempleada y quería iniciar una nueva vida, y como ella sabe tanto de estética, se fue y por allá le ha ido bien. {EB 3} Sino que ella desde el principio me dijo que no se iba a llevar a Felipe, que para no perturbarlo, {C} entonces nosotros decidimos que él se quedara aquí por sus amigos y familia. Lo que yo le dije es que tenía que continuar aportando su parte del sostenimiento del niño y que tenía que estarse contactando con él."
 
-Edinson Osorio [Enojado] "El primer mes que ella estuvo allá, estaba muy atenta del niño, lo llamaba, enviaba dinero y todo."
+Edinson Osorio en 0,3:0 [Enojado] "El primer mes que ella estuvo allá, estaba muy atenta del niño, lo llamaba, enviaba dinero y todo."
 
-Edinson Osorio [Triste] "Sin embargo, como a los 3 meses empezó a distanciarse del niño, ya no lo llamaba de forma recurrente, y pues el dinero que enviaba era insuficiente para las necesidades de Felipe {EB 1} Siendo honesto, yo lo del dinero se lo puedo pasar. Pero es que mi hijo desde que la mamá no le responde ha empezado a tener ataques de ansiedad y siempre me pregunta por ella."
+Edinson Osorio en 0,3:0 [Triste] "Sin embargo, como a los 3 meses empezó a distanciarse del niño, ya no lo llamaba de forma recurrente, y pues el dinero que enviaba era insuficiente para las necesidades de Felipe {EB 3} Siendo honesto, yo lo del dinero se lo puedo pasar. Pero es que mi hijo desde que la mamá no le responde ha empezado a tener ataques de ansiedad y siempre me pregunta por ella."
 ocultar("Edinson Osorio")
 
-Entra Avatar [Serio] "¿Ha tenido algún tipo de acompañamiento por parte de psicólogos o algún otro tipo de manejo?"
+Entra Avatar en 0,3:0 [Serio] "¿Ha tenido algún tipo de acompañamiento por parte de psicólogos o algún otro tipo de manejo?"
 ocultar(Avatar)
 
-Entra Edinson Osorio [Triste] "Sí. Yo llevé a Felipe con un psicólogo, a hoy sigue en terapia. Lo que él me dice es que todo eso es derivado de un sentimiento de abandono... {EB 1} Y pues también ha incidido en su desempeño escolar, él antes le gustaba mucho el colegio y ahora no quiere ni asistir a los entrenos de baloncesto que eran su actividad favorita."
+Entra Edinson Osorio en 0,3:0 [Triste] "Sí. Yo llevé a Felipe con un psicólogo, a hoy sigue en terapia. Lo que él me dice es que todo eso es derivado de un sentimiento de abandono... {EB 3} Y pues también ha incidido en su desempeño escolar, él antes le gustaba mucho el colegio y ahora no quiere ni asistir a los entrenos de baloncesto que eran su actividad favorita."
 ocultar("Edinson Osorio")
 
-Entra Avatar [Serio] "Lamento mucho esa situación, quiero preguntarle un poco sobre la postura de Paola ¿usted ha logrado contactarse con ella por algún medio?, ¿Qué respuestas ha obtenido?"
+Entra Avatar en 0,3:0 [Serio] "Lamento mucho esa situación, quiero preguntarle un poco sobre la postura de Paola ¿usted ha logrado contactarse con ella por algún medio?, ¿Qué respuestas ha obtenido?"
 ocultar(Avatar)
 
-Entra Edinson Osorio [Enojado] "Ha sido imposible, al parecer ella cambió de número de celular y el que tenía ya no funciona. Y tampoco se ha intentado comunicar con nosotros, ella tiene todos los contactos de mis familiares, fácilmente podría hacerlo."
+Entra Edinson Osorio en 0,3:0 [Enojado] "Ha sido imposible, al parecer ella cambió de número de celular y el que tenía ya no funciona. Y tampoco se ha intentado comunicar con nosotros, ella tiene todos los contactos de mis familiares, fácilmente podría hacerlo."
 
-Edinson Osorio [Triste] "El punto es que a la fecha desconozco el paradero de la madre de mi hijo. Y yo vengo aquí a preguntar cómo suspender lo de la patria potestad, teniendo en cuenta que ella ya no cumple con ninguna de sus obligaciones parentales, y le ha ocasionado daños emocionales a Felipe."
+Edinson Osorio en 0,3:0 [Triste] "El punto es que a la fecha desconozco el paradero de la madre de mi hijo. Y yo vengo aquí a preguntar cómo suspender lo de la patria potestad, teniendo en cuenta que ella ya no cumple con ninguna de sus obligaciones parentales, y le ha ocasionado daños emocionales a Felipe."
 ocultar("Edinson Osorio")
 
-Entra Avatar [Serio] "Comprendo señor Edinson. ¿Existe algún motivo por el cual esté intentando realizar ese proceso en este momento particular?"
+Entra Avatar en 0,3:0 [Serio] "Comprendo señor Edinson. ¿Existe algún motivo por el cual esté intentando realizar ese proceso en este momento particular?"
 ocultar(Avatar)
 
-Entra Edinson Osorio [Serio2] "Sí. Es que con toda esta situación, yo quiero alegrar a Felipe y estoy planeando un viaje sorpresa por fuera del país. Y he visto que tengo que tramitar un permiso de salida con Paola, pero es imposible, por todo lo que le he comentado. Así que pensé en esta opción."
+Entra Edinson Osorio en 0,3:0 [Serio2] "Sí. Es que con toda esta situación, yo quiero alegrar a Felipe y estoy planeando un viaje sorpresa por fuera del país. Y he visto que tengo que tramitar un permiso de salida con Paola, pero es imposible, por todo lo que le he comentado. Así que pensé en esta opción."
 
 ocultarDialogo()
 

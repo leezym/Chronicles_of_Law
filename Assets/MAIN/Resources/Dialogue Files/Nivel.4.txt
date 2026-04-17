@@ -68,3 +68,37 @@ social "¿Me esperas para que volvamos juntos a casa?"
 ocultar(Avatar)
 
 mostrarCinematica(-media "escena 48" -audio true)
+
+if(professionalPoints >= 4500 && professionalPoints <= 5950 && socialPoints >= 1600 && socialPoints <= 3099)
+{
+    mostrarCinematica(-media "escena 49" -audio true)
+}
+
+if(professionalPoints >= 4500 && professionalPoints <= 5950 && socialPoints >= 3100 && socialPoints <= 4600)
+{
+    mostrarCinematica(-media "escena 50" -audio true)
+}
+
+if(professionalPoints >= 4500 && professionalPoints <= 5950 && socialPoints >= 0 && socialPoints <= 1599)
+{
+    mostrarCinematica(-media "escena 51" -audio true)
+}
+
+if(professionalPoints >= 2900 && professionalPoints <= 4499 && socialPoints >= 1600 && socialPoints <= 3099)
+{
+    mostrarCinematica(-media "escena 52" -audio true)
+}
+
+if(professionalPoints >= 2900 && professionalPoints <= 4499 && socialPoints >= 3100 && socialPoints <= 4600)
+{
+    mostrarCinematica(-media "escena 53" -audio true)
+}
+
+if(professionalPoints >= 0 && professionalPoints <= 2900 && socialPoints >= 1600 && socialPoints <= 3099)
+{
+    mostrarCinematica(-media "escena 54" -audio true)
+}
+
+mostrarCinematica(-media "escena 55" -audio true)
+
+borrarCapasMultimedia(-panel cinematica); mostrarMenuFinal()

@@ -1,42 +1,42 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
-Entra Patricia Motoa en 0,3:0 [Seria] "Buenas tardes, mi nombre es Patricia Motoa y vengo porque necesito una asesoría jurídica. {EC 1} Mi hermano Elías nació con Meningitis y eso afectó su bienestar, sin embargo, eso no ha impedido que lleve una vida normal. {EB 1} Él a veces requiere cierta ayuda, pero siempre ha sido una persona autónoma, trabajadora e independiente en su toma de decisiones."
+Entra Patricia Motoa en 0,3:0 [Seria] "Buenas tardes, mi nombre es Patricia Motoa y vengo porque necesito una asesoría jurídica. {EC 2} Mi hermano Elías nació con Meningitis y eso afectó su bienestar, sin embargo, eso no ha impedido que lleve una vida normal. {EB 3} Él a veces requiere cierta ayuda, pero siempre ha sido una persona autónoma, trabajadora e independiente en su toma de decisiones."
 ocultar("Patricia Motoa")
 
 Entra Avatar en 0,3:0 [Serio] "Buen día, entiendo el contexto. ¿Ha habido alguna problemática con su hermano?"
 ocultar(Avatar)
 
-Entra Patricia Motoa [Triste] "Ay... Es que mi hermano se casó. La esposa se llama María González, ella siempre fue muy abusiva con él, lo maltrataba física, psicológica y económicamente. {EB 1} Nuestra familia estaba feliz de que hubiese encontrado el amor, pero parece que encontró una pesadilla."
+Entra Patricia Motoa en 0,3:0 [Triste] "Ay... Es que mi hermano se casó. La esposa se llama María González, ella siempre fue muy abusiva con él, lo maltrataba física, psicológica y económicamente. {EB 3} Nuestra familia estaba feliz de que hubiese encontrado el amor, pero parece que encontró una pesadilla."
 
-Patricia Motoa [Enojada] "Ella le pedía las tarjetas para comprar cosas, le sacaba dinero de su salario sin pedirle permiso e incluso lo golpeaba cuando no aceptaba que se gastara el dinero de esa forma."
+Patricia Motoa en 0,3:0 [Enojada] "Ella le pedía las tarjetas para comprar cosas, le sacaba dinero de su salario sin pedirle permiso e incluso lo golpeaba cuando no aceptaba que se gastara el dinero de esa forma."
 ocultar("Patricia Motoa")
 
-Entra Avatar [Serio] "Lamento mucho que haya tenido que pasar por eso, ¿se realizó alguna denuncia de este abuso?"
+Entra Avatar en 0,3:0 [Serio] "Lamento mucho que haya tenido que pasar por eso, ¿se realizó alguna denuncia de este abuso?"
 ocultar(Avatar)
 
-Entra Patricia Motoa [Enojada] "Sí, yo misma la denuncié por violencia intrafamiliar, y se demostró que ella abusaba de la mala memoria y de las dificultades que tenía mi hermano para expresarse."
+Entra Patricia Motoa en 0,3:0 [Enojada] "Sí, yo misma la denuncié por violencia intrafamiliar, y se demostró que ella abusaba de la mala memoria y de las dificultades que tenía mi hermano para expresarse."
 
-Patricia Motoa [Seria] "Yo incluso le dije que se fuera de la vida de mi hermano, pero no se pudo, yo le advertí."
+Patricia Motoa en 0,3:0 [Seria] "Yo incluso le dije que se fuera de la vida de mi hermano, pero no se pudo, yo le advertí."
 ocultar("Patricia Motoa")
 
 item "Chats de Whatsapp"
 
-Entra Patricia Motoa [Preocupada] "Yo no entendía cómo es que lo hacía, pero con el tiempo me di cuenta de que mi hermano tiene una dificultad significativa para retener información, sobre todo, la crediticia {EB 1} Y claro, ella bajo esa excusa le decía que necesitaba manejar las cuentas, porque él no recordaba las claves."
+Entra Patricia Motoa en 0,3:0 [Preocupada] "Yo no entendía cómo es que lo hacía, pero con el tiempo me di cuenta de que mi hermano tiene una dificultad significativa para retener información, sobre todo, la crediticia {EB 3} Y claro, ella bajo esa excusa le decía que necesitaba manejar las cuentas, porque él no recordaba las claves."
 ocultar("Patricia Motoa")
 
-Entra Avatar [Serio] "¿El señor Elías ha sido examinado por un médico debido a este problema?"
+Entra Avatar en 0,3:0 [Serio] "¿El señor Elías ha sido examinado por un médico debido a este problema?"
 ocultar(Avatar)
 
-Entra Patricia Motoa [Enojada] "Sí. De acuerdo con los estudios médicos, Elías no tiene la capacidad necesaria para manejar sus finanzas de forma independiente {EC 1} Eso ha provocado algunos inconvenientes al momento de realizar trámites financieros, es que a veces no puede ni siquiera retirar dinero del cajero solo. Vea lo que dice el médico." 
+Entra Patricia Motoa en 0,3:0 [Enojada] "Sí. De acuerdo con los estudios médicos, Elías no tiene la capacidad necesaria para manejar sus finanzas de forma independiente {EC 2} Eso ha provocado algunos inconvenientes al momento de realizar trámites financieros, es que a veces no puede ni siquiera retirar dinero del cajero solo. Vea lo que dice el médico." 
 ocultar("Patricia Motoa")
 
 item "Recomendaciones médicas"
 
-Entra Avatar [Serio] "Señora Motoa ¿usted desea que la asesoría esté enfocada en las figuras legales que permiten apoyar a su hermano en los trámites financieros?"
+Entra Avatar en 0,3:0 [Serio] "Señora Motoa ¿usted desea que la asesoría esté enfocada en las figuras legales que permiten apoyar a su hermano en los trámites financieros?"
 ocultar(Avatar)
 
-Entra Patricia Motoa [Seria] "Exactamente."
+Entra Patricia Motoa en 0,3:0 [Seria] "Exactamente."
 
 ocultarDialogo()
 

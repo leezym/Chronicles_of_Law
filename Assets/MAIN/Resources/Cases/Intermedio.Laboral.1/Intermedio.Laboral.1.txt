@@ -1,34 +1,34 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 
-Entra José López en 0,3:0 [Serio] "Buen día joven. Mi nombre es José López, vengo porque tengo un problema en mi trabajo. {EC 1} Verá, hace rato me encuentro incapacitado porque tuve un accidente de tránsito y desde ese momento he tenido varios dificultades para moverme, sufro de dolores de espalda y tengo que tomar medicamentos y usar bastón para poder movilizarme."
+Entra José López en 0,3:0 [Serio] "Buen día joven. Mi nombre es José López, vengo porque tengo un problema en mi trabajo. {EC 2} Verá, hace rato me encuentro incapacitado porque tuve un accidente de tránsito y desde ese momento he tenido varios dificultades para moverme, sufro de dolores de espalda y tengo que tomar medicamentos y usar bastón para poder movilizarme."
 ocultar("José López")
 
 Entra Avatar en 0,3:0 [Serio] "Buen día señor López, ¿podría comentarme sobre su contexto laboral?."
 ocultar(Avatar)
 
-Entra José López [Preocupado] "Sí, claro. Yo he trabajado por más de 10 años en la misma empresa ellos me han pagado adecuadamente las prestaciones, mi salario, que es el mínimo y todo. {EC 1} Pero, el asunto viene con la EPS, a mí el año pasado me pasaron este documento, para ese momento el doctor me seguía dando incapacidades."
+Entra José López en 0,3:0 [Preocupado] "Sí, claro. Yo he trabajado por más de 10 años en la misma empresa ellos me han pagado adecuadamente las prestaciones, mi salario, que es el mínimo y todo. {EC 2} Pero, el asunto viene con la EPS, a mí el año pasado me pasaron este documento, para ese momento el doctor me seguía dando incapacidades."
 ocultar("José López")
 
 item "Formato de rehabilitación EPS"
 
-Entra José López [Adolorido] "Pero, ahora no sé qué está pasando con los pagos de las incapacidades. Joven, yo sigo muy mal de salud, estoy en una situación compleja."
+Entra José López en 0,3:0 [Adolorido] "Pero, ahora no sé qué está pasando con los pagos de las incapacidades. Joven, yo sigo muy mal de salud, estoy en una situación compleja."
 ocultar("José López")
 
-Entra Avatar [Serio] "¿Le han dejado de pagar las incapacidades?"
+Entra Avatar en 0,3:0 [Serio] "¿Le han dejado de pagar las incapacidades?"
 ocultar(Avatar)
 
-José López [Preocupado] "Pues, desde que cumplí el día 180 de incapacidad, yo he ido al fondo de pensiones para radicarlas, eso fue como a inicios de abril de 2022, y nada que me pagan. {EC 1} El fondo de pensiones me ha dicho algunas cosas, yo las anoté, me dijeron: 'no cumplen con los requisitos mínimos establecidos en la normatividad vigente', eso me pareció muy raro porque nunca me habían dicho algo así."
+José López en 0,3:0 [Preocupado] "Pues, desde que cumplí el día 180 de incapacidad, yo he ido al fondo de pensiones para radicarlas, eso fue como a inicios de abril de 2022, y nada que me pagan. {EC 2} El fondo de pensiones me ha dicho algunas cosas, yo las anoté, me dijeron: 'no cumplen con los requisitos mínimos establecidos en la normatividad vigente', eso me pareció muy raro porque nunca me habían dicho algo así."
 
-José López [Serio] "Entonces, yo fui directamente a consultarle a mi EPS y ellos me respondieron esto."
+José López en 0,3:0 [Serio] "Entonces, yo fui directamente a consultarle a mi EPS y ellos me respondieron esto."
 ocultar("José López")
 
 item "Correo electrónico"
 
-Entra Avatar [Serio] "Lamento escuchar su situación señor López, tenga la certeza de que estamos aquí para ayudarle."
+Entra Avatar en 0,3:0 [Serio] "Lamento escuchar su situación señor López, tenga la certeza de que estamos aquí para ayudarle."
 ocultar(Avatar)
 
-José López [Serio] "Gracias joven, entonces pues yo quisiera saber qué hacer. Llevo más de dos años en esta pelea."
+José López en 0,3:0 [Serio] "Gracias joven, entonces pues yo quisiera saber qué hacer. Llevo más de dos años en esta pelea."
 
 ocultarDialogo()
 

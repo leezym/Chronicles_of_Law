@@ -7,25 +7,25 @@ ocultar("Evelia Moreno")
 Entra Avatar en 0,3:0 [Serio] "Buenos días señora Evelia, cuénteme cómo puedo ayudarle."
 ocultar(Avatar)
 
-Entra Evelia Moreno [Seria] "Ay, es que yo vengo con una situación compleja. Vea, yo tengo un hijo, él tiene 10 años, pero él se enfermó mucho porque le dio Influenza y ha estado mal, {EC 1} y pue eso ha sido muy pesado porque mi esposo falleció el pasado agosto por un paro cardio respiratorio, él tenía 50 años y en ese momento estaba trabajando para CLÍNICA DE ROPA SUCIEDAD S.A.S. {EC 1} Él trabajó ahí durante 20 años y le pagaban todo normal, la pensión, la salud, los riesgos laborales y así. En ese tiempo el pago lo realizaban directamente al seguro social. {EC 1} Y eso ha sido un drama muy complejo, no es que... Ni decirle. Aquí traje algunos documentos, no sé si sirvan."
+Entra Evelia Moreno en 0,3:0 [Seria] "Ay, es que yo vengo con una situación compleja. Vea, yo tengo un hijo, él tiene 10 años, pero él se enfermó mucho porque le dio Influenza y ha estado mal, {EC 2} y pue eso ha sido muy pesado porque mi esposo falleció el pasado agosto por un paro cardio respiratorio, él tenía 50 años y en ese momento estaba trabajando para CLÍNICA DE ROPA SUCIEDAD S.A.S. {B} Él trabajó ahí durante 20 años y le pagaban todo normal, la pensión, la salud, los riesgos laborales y así. En ese tiempo el pago lo realizaban directamente al seguro social. {EC 2} Y eso ha sido un drama muy complejo, no es que... Ni decirle. Aquí traje algunos documentos, no sé si sirvan."
 ocultar("Evelia Moreno")
 
 item "Certificado de Defuncion de su esposo"
 
 item "Certificado laboral por parte de CLINICA DE ROPA SUCIEDAD S.A.S"
 
-Entra Avatar [Triste] "Lamento su perdida señora Moreno {EC 1} ¿usted podría contarme cuánto tiempo estuvieron casados?"
+Entra Avatar en 0,3:0 [Triste] "Lamento su perdida señora Moreno {EC 2} ¿usted podría contarme cuánto tiempo estuvieron casados?"
 ocultar(Avatar) 
 
-Entra Evelia Moreno [Molesta] "Pues, es que mire, casados casados no estábamos. Pero estábamos juntos desde hace más de 10 años, convivimos, nos cuidamos, nos quisimos, a pesar de todo por más de una década {EC 1} Yo le planchaba la ropa, él me acompañaba los fines de semana, preparábamos la comida... Hasta me tocó perdonarle unos desencuentros con unas vecinas {EC 1} Pero el punto es que nos quisimos mucho y así estuvimos mucho tiempo."
+Entra Evelia Moreno en 0,3:0 [Molesta] "Pues, es que mire, casados casados no estábamos. Pero estábamos juntos desde hace más de 10 años, convivimos, nos cuidamos, nos quisimos, a pesar de todo por más de una década {EC 2} Yo le planchaba la ropa, él me acompañaba los fines de semana, preparábamos la comida... Hasta me tocó perdonarle unos desencuentros con unas vecinas {EC 2} Pero el punto es que nos quisimos mucho y así estuvimos mucho tiempo."
 ocultar("Evelia Moreno")
 
-Entra Avatar [Serio] "Comprendo señora Elvira, sin embargo, tengo una pregunta importante ¿ustedes vivieron juntos hasta el momento del fallecimiento?"
+Entra Avatar en 0,3:0 [Serio] "Comprendo señora Elvira, sin embargo, tengo una pregunta importante ¿ustedes vivieron juntos hasta el momento del fallecimiento?"
 ocultar(Avatar)
 
-Entra Evelia Moreno [Indignada] "No... Él tres años antes de su muerte se había ido a vivir con una muchacha llamada Laura, nosotros nos separamos y él tuvo un bebé con ella, el nombre del niño es Luis Mosquera."
+Entra Evelia Moreno en 0,3:0 [Indignada] "No... Él tres años antes de su muerte se había ido a vivir con una muchacha llamada Laura, nosotros nos separamos y él tuvo un bebé con ella, el nombre del niño es Luis Mosquera."
 
-Evelia Moreno [Seria] "Realmente, mi pregunta es si él tenía derecho a la pensión y en caso de que sí, quiénes pueden reclamarla."
+Evelia Moreno en 0,3:0 [Seria] "Realmente, mi pregunta es si él tenía derecho a la pensión y en caso de que sí, quiénes pueden reclamarla."
 
 ocultarDialogo()
 

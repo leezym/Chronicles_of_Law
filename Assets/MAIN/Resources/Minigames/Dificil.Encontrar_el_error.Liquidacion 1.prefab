@@ -364,7 +364,6 @@ MonoBehaviour:
   maxSelections: 4
   tableRenderer: {fileID: 4393425976528740663}
   documentRenderer: {fileID: 0}
-  exerciseFolderToLoad: 
 --- !u!1 &2747234472919394073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,7 +1529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 320}
+  m_AnchoredPosition: {x: 153, y: 320}
   m_SizeDelta: {x: 271.0935, y: 327.2308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8827369333088572054
@@ -1846,7 +1845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 205, y: 0}
+  m_AnchoredPosition: {x: 155, y: 0}
   m_SizeDelta: {x: 285, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7020483827102532115
