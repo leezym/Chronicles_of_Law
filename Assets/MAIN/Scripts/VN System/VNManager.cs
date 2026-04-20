@@ -12,7 +12,8 @@ namespace VISUALNOVEL
     public class VNManager : MonoBehaviour
     {
         public static VNManager Instance { get; private set; }
-        VNGameSave save;
+        [SerializeField]
+        private VNGameSave save;
         public VNMenuManager vmm;
 
         public Button continueButton;
@@ -86,6 +87,7 @@ namespace VISUALNOVEL
         public void Save()
         {
             VNGameSave.activeFile.Save();
+            NotificationsManager.Instance.WarningNotification("¡Partida guardada!");
         }
 
         public void Load()

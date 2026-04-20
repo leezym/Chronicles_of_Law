@@ -14,14 +14,14 @@ namespace HISTORY
         public List<GraphicData> graphics;
         public List<CasesData> casesData;
         public List<CasesInGame> casesInGame;
-        public List<MinigamesData> minigamesData;
-        public List<MinigamesData> minigamesInGame;
+        public List<MinigamesSaveEntry> minigamesData;
+        public List<MinigamesSaveEntry> minigamesInGame;
         public GameData game;
 
         public static HistoryState Capture()
         {
             HistoryState state = new HistoryState();
-            state.dialogue = DialogueData.Capture(); // solo si se necesita arrancar desde el ultimo punto (checkpoint) o se necesita un historial
+            state.dialogue = DialogueData.Capture();
             state.characters = CharacterData.Capture();
             state.audio = AudioData.Capture();
             state.graphics = GraphicData.Capture();
@@ -30,7 +30,7 @@ namespace HISTORY
             state.casesInGame = CasesInGame.Capture();
             state.minigamesData = MinigamesData.Capture();
             state.minigamesInGame = MinigamesData.CaptureInGame();
-
+            
             return state;
         }
 

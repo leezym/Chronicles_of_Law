@@ -1,9 +1,7 @@
 using System.Collections;
-using UnityEngine;
-
+using System.Collections.Generic;
 using static DIALOGUE.LogicalLines.LogicalLineUtils.Encapsulation;
 using static DIALOGUE.LogicalLines.LogicalLineUtils.Conditions;
-using System.Collections.Generic;
 
 namespace DIALOGUE.LogicalLines
 {

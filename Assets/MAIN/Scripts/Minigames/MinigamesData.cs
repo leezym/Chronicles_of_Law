@@ -3,6 +3,12 @@ using UnityEngine;
 
 namespace GAME
 {
+    [System.Serializable]                                                                                                                                                                
+    public class MinigamesSaveEntry                                                                                                                                                      
+    {                                                                                                                                                                                    
+        public string prefabName;                                                                                                                                                        
+    }
+
     [CreateAssetMenu(menuName = "Game/Minigame Definition")]
     public class MinigamesData: ScriptableObject
     {
@@ -21,34 +27,67 @@ namespace GAME
             this.type = type;
         }
 
-        public static List<MinigamesData> Capture()
+        public static List<MinigamesSaveEntry> Capture()
         {
             var mm = MinigamesManager.Instance;
-            List<MinigamesData> list = mm.minigamesData;
+            var entries = new List<MinigamesSaveEntry>();                                                                                                                                
+            foreach (var md in mm.minigamesData)                                                                                                                                         
+                if (md.game != null)                                                                                                                                                     
+                    entries.Add(new MinigamesSaveEntry { prefabName = md.game.name });                                                                                                   
             
-            return list;
+            return entries;
         }
 
-        public static void Apply(List<MinigamesData> data)
+        public static void Apply(List<MinigamesSaveEntry> data)
+        {
+            if (data == null) return;
+
+            var mm = MinigamesManager.Instance;
+            mm.minigamesData = new List<MinigamesData>();
+
+            foreach (var entry in data)                                                                                                                                                  
+            {                                                                                                                                                                                          GameObject prefab = Resources.Load<GameObject>($"{FilePaths.resources_minigamesFiles}{entry.prefabName}");                                                               
+                if (prefab != null)                                                                                                                                                      
+                {                                                                                                                                                                        
+                    MinigamesData md = new MinigamesData();                                                                                                                              
+                    md.FillFromResources(prefab);                                                                                                                                        
+                mm.minigamesData.Add(md);                                                                                                                                            
+                }                                                                                                                                                                        
+                else                                                                                                                                                                     
+                Debug.LogWarning($"Minigame prefab not found: {entry.prefabName}");                                                                                                  
+            } 
+        }
+
+        public static List<MinigamesSaveEntry> CaptureInGame()  
         {
             var mm = MinigamesManager.Instance;
-            mm.minigamesData = data;
+            var entries = new List<MinigamesSaveEntry>();
+
+            foreach (var md in mm.minigamesInGame)                                                                                                                                       
+                if (md.game != null)                                                                                                                                                     
+                  entries.Add(new MinigamesSaveEntry { prefabName = md.game.name });
+                                                                                                        
+            return entries;
         }
 
-        public static List<MinigamesData> CaptureInGame()
+        public static void ApplyInGame(List<MinigamesSaveEntry> data)
         {
             var mm = MinigamesManager.Instance;
-            List<MinigamesData> list = mm.minigamesInGame;
-            
-            return list;
-        }
+            mm.minigamesInGame = new List<MinigamesData>();
 
-        public static void ApplyInGame(List<MinigamesData> data)
-        {
-            var mm = MinigamesManager.Instance;
-            mm.minigamesInGame = data;
+            foreach (var entry in data)                                                                                                                                                  
+            {                                                                                                                                                                            
+                GameObject prefab = Resources.Load<GameObject>($"{FilePaths.resources_minigamesFiles}{entry.prefabName}");                                                               
+                if (prefab != null)                                                                                                                                                      
+                {                                                                                                                                                                        
+                    MinigamesData md = new MinigamesData();                                                                                                                              
+                    md.FillFromResources(prefab);                                                                                                                                        
+                    mm.minigamesInGame.Add(md);                                                                                                                                          
+                }                                                                                                                                                                        
+                else                                                                                                                                                                     
+                    Debug.LogWarning($"Minigame prefab not found: {entry.prefabName}");                                                                                                  
+            }
         }
-
 
         public void FillFromResources(GameObject prefab)
         {

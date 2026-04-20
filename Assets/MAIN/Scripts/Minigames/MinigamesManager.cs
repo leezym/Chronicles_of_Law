@@ -4,6 +4,7 @@ using UnityEngine;
 using GAME;
 using UnityEngine.UI;
 using DIALOGUE;
+using VISUALNOVEL;
 
 public class MinigamesManager : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class MinigamesManager : MonoBehaviour
             closeButton.interactable = false;
             closeButton.GetComponent<CanvasGroup>().alpha = 0;
             closeButton.GetComponent<CanvasGroup>().blocksRaycasts = false;
+
+            VNManager.Instance.Save();
         });
     }
 

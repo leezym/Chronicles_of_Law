@@ -12,7 +12,7 @@ namespace HISTORY
 
         void Awake()
         {
-            Instance = this;  
+            Instance = this;
         }
 
         void Start()

@@ -1,10 +1,60 @@
+
+crear(Avatar); ocultarDialogo();
+mostrarCinematica(-media "escena 1" -audio true)
+
+reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
+
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
+social "¿Qué hago?"
+{
+- Decide ayudar. [500|-400]
+	detenerMusica()
+    mostrarCinematica(-media "escena 2" -audio true)
+
+- Decide no ayudar
+	detenerMusica(). [10|100]
+    mostrarCinematica(-media "escena 3" -audio true)
+}
+ocultar(Avatar)
+
+mostrarCinematica(-media "escena 4" -audio true)
+
+reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
+
+crear(Avatar); mover(Avatar -x 0,3 -y 0)
+social "¿Qué hago?"
+{
+- Ir con sus amigos. [500|-400]
+	detenerMusica()
+    mostrarCinematica(-media "escena 5" -audio true)
+
+- No ir con sus amigos y va a estudiar solo. [10|100]
+	detenerMusica()
+    mostrarCinematica(-media "escena 6" -audio true)
+}
+ocultar(Avatar)
+
+mostrarCinematica(-media "escena 7" -audio true)
+
 cargarCaso()
 
 mostrarCinematica(-media "escena 8" -audio true)
+mostrarCinematica(-media "escena 9" -audio true)
 
 anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
 reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
+
+mostrarCinematica(-media "escena 10" -audio true)
+
+cargarCaso()
+
+anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
+reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+cargarMinijuego()
+detenerAmbiente(); detenerMusica()
+
+mostrarCinematica(-media "escena 11" -audio true)
 
 subirNivel()

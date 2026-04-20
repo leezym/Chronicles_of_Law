@@ -68,8 +68,6 @@ public class VNGameSave
             {
                 var compressedData = new VN_ConversationDataCompressed();
 
-                //filePath = PathReplace(conversation.file); // Se comenta porque solo se necesita el ultimo nivel guardado, por ahora
-
                 compressedData.fileName = conversation.file;
                 compressedData.progress = conversation.GetProgress();
                 compressedData.startIndex = conversation.fileStartIndex;
