@@ -1,4 +1,3 @@
-
 crear(Avatar); ocultarDialogo();
 mostrarCinematica(-media "escena 1" -audio true)
 
@@ -42,7 +41,7 @@ mostrarCinematica(-media "escena 8" -audio true)
 mostrarCinematica(-media "escena 9" -audio true)
 
 anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
 
@@ -51,7 +50,7 @@ mostrarCinematica(-media "escena 10" -audio true)
 cargarCaso()
 
 anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
 

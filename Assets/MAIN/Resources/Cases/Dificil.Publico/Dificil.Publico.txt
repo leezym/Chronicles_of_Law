@@ -1,5 +1,5 @@
-ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_3")
+mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
 Entra Avatar en 0,3:0 [Serio] "Buen día señora, espero se encuentre bien. ¿Podría indicarme su nombre?"
 ocultar(Avatar) 
@@ -34,7 +34,7 @@ anuncio "A continuación, las preguntas"
 
 pregunta "¿Qué acciones legales se deberían adelantar en este momento?" 
 {
-- Recomendar la realización de un derecho de petición solicitando la prescripción de la acción de cobro de lo adeudado por concepto del impuesto predial unificado de las vigencias 2009 a 2018. [0.5]
+- Recomendar la realización de un derecho de petición solicitando la prescripción de la acción de cobro de lo adeudado por concepto del impuesto predial unificado de las vigencias 2009 a 2018. [50]
 - Recomendar la radicación de un documento para declararse en insolvencia de persona natural no comerciante. [0]
 - Solicitar mediante un derecho de petición la prescripción de la acción de cobro de lo adeudado por concepto del impuesto predial unificado de las vigencias 2009 a 2018 y llegar a un acuerdo de pago de la vigencia 2008 por lo que ya entro a cobro coactivo. [100]
 - Recomendar a la usuaria hacer caso omiso a dichos comunicados ya que esas deudas eran de su madre y ella es su hija, por lo cual no tiene que pagar. [0]

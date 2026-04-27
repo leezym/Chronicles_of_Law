@@ -15,6 +15,8 @@ public class AudioChannel
     public AudioTrack activeTrack { get ; private set; } = null;
     private List<AudioTrack> tracks = new List<AudioTrack>();
 
+    public float duckMultiplier = 1f;
+
     Coroutine co_volumeLeveling = null;
     bool isLevelingVolume => co_volumeLeveling != null;
 
@@ -81,26 +83,25 @@ public class AudioChannel
         TryStartVolumeLeveling();
     }
 
-    private void TryStartVolumeLeveling()
+    public void TryStartVolumeLeveling()
     {
         if(!isLevelingVolume)
             co_volumeLeveling = AudioManager.Instance.StartCoroutine(VolumeLeveling());
-
     }
 
     private IEnumerator VolumeLeveling()
     {
-        while((activeTrack != null && (tracks.Count > 1 || activeTrack.volume != activeTrack.volumeCap)) || (activeTrack == null && tracks.Count> 0))
+        while (NeedsLeveling())
         {
             for(int i = tracks.Count - 1; i >= 0; i--)
             {
                 AudioTrack track = tracks[i];
 
-                float targetVol = activeTrack == track ? track.volumeCap : 0;
+                float targetVol = activeTrack == track ? track.volumeCap * duckMultiplier : 0;
 
-                if(track == activeTrack && track.volume == targetVol)
+                if(track == activeTrack && Mathf.Approximately(track.volume, targetVol))
                     continue;
-                
+
                 track.volume = Mathf.MoveTowards(track.volume, targetVol, AudioManager.TRACK_TRANSITION_SPEED * Time.deltaTime);
 
                 if(track != activeTrack && track.volume == 0)
@@ -111,6 +112,13 @@ public class AudioChannel
             yield return null;
         }
         co_volumeLeveling = null;
+    }
+
+    private bool NeedsLeveling()
+    {
+        if (activeTrack == null) return tracks.Count > 0;
+        if (tracks.Count > 1) return true;
+        return !Mathf.Approximately(activeTrack.volume, activeTrack.volumeCap * duckMultiplier);
     }
 
     private void DestroyTrack(AudioTrack track)

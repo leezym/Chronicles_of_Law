@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_3")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_3")
 
 Entra María Flores en 0,3:0 [Seria] "Buenas joven, mire yo vengo acá por un problema y la verdad es que necesito con urgencia su ayuda."
 ocultar("María Flores")
@@ -49,7 +49,7 @@ pregunta "¿Qué acciones legales se pueden adelantar en este caso?"
 
 pregunta "¿Qué efectos tiene la conciliación en materia de alimentos?"
 {
-- El acuerdo total presta mérito ejecutivo y su incumplimiento permitiría adelantar un proceso ejecutivo de alimentos. El acuerdo parcial habilitaría a las partes a acudir a la jurisdicción respecto de los puntos que no conciliaron. Por último, la constancia de no acuerdo o la constancia de inasistencia permitiría acceder a la jurisdicción [0,5]
+- El acuerdo total presta mérito ejecutivo y su incumplimiento permitiría adelantar un proceso ejecutivo de alimentos. El acuerdo parcial habilitaría a las partes a acudir a la jurisdicción respecto de los puntos que no conciliaron. Por último, la constancia de no acuerdo o la constancia de inasistencia permitiría acceder a la jurisdicción. [50]
 - El acuerdo total presta mérito ejecutivo y hace tránsito a cosa juzgada material ya que la cuota puede ser modificada en el futuro, además de permitir adelantar un proceso ejecutivo de alimentos en un eventual caso de incumplimiento. El acuerdo parcial habilitaría a las partes a acudir a la jurisdicción respecto de los puntos que no conciliaron. Por último, la constancia de no acuerdo o la constancia de inasistencia permitiría acceder a la jurisdicción. [0]
 - El acuerdo total presta mérito ejecutivo y hace tránsito a cosa juzgada formal ya que la cuota puede ser modificada en el futuro, además de permitir adelantar un proceso ejecutivo de alimentos en un eventual caso de incumplimiento. El acuerdo parcial habilitaría a las partes a acudir a la jurisdicción respecto de los puntos que no conciliaron. Por último, la constancia de no acuerdo o la constancia de inasistencia permitiría acceder a la jurisdicción. [100]
 }

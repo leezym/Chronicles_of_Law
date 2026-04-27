@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_2")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Alberto Murcia y Marcela Marín en 0,3:0 [1] "Buen día, mi nombre es Alberto Murcia y vengo junto con Marcela Marín, quien es mi esposa."
 

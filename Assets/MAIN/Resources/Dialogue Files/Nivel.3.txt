@@ -1,4 +1,4 @@
-ocultarDialogo()
+crear(Avatar); ocultarDialogo();
 mostrarCinematica(-media "escena 21" -audio true)
 mostrarCinematica(-media "escena 22" -audio true)
 
@@ -22,7 +22,7 @@ social "Dime el nombre del consultante"
 ocultar(Avatar)
 
 anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
 
@@ -52,7 +52,7 @@ social "¿Dios... qué hago?"
 ocultar(Avatar)
 
 anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
 

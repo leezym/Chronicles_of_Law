@@ -1,5 +1,5 @@
 ocultar(Avatar); mostrarDialogo(); configCapasMultimedia(-panel fondo -media "cubiculo")
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_2")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_2")
 
 Entra Juanita Alimaña en 0,3:0 [Enojada] "Buenas tardes, yo vengo porque me quiero divorciar de mi esposo."
 ocultar("Juanita Alimaña")

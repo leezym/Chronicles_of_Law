@@ -1,4 +1,4 @@
-ocultarDialogo()
+crear(Avatar); ocultarDialogo();
 mostrarCinematica(-media "escena 36" -audio true)
 mostrarCinematica(-media "escena 37" -audio true)
 
@@ -20,7 +20,7 @@ ocultar(Avatar)
 mostrarCinematica(-media "escena 40" -audio true)
 
 anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
 
@@ -46,7 +46,7 @@ social "Su cuerpo pide descanso, pero su conciencia analiza lo que debía hacer"
 ocultar(Avatar)
 
 anuncio "A continuación, el minijuego. Recuerda que durante este, no puedes pausar el juego"
-reproducirAmbiente(-sonido "CAS_AMB_LOOP" -vol 0,1); reproducirMusica(-sonido "CAS_MXLOOP_1")
+reproducirAmbiente(-sonido "CAS_AMB_LOOP"); reproducirMusica(-sonido "CAS_MXLOOP_1")
 cargarMinijuego()
 detenerAmbiente(); detenerMusica()
 

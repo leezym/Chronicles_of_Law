@@ -112,7 +112,7 @@ public class MultitoggleAnswerValidator : MonoBehaviour
         validated = true;
         timer.StopTimer();
 
-        activeVoiceSource.Stop();
+        if (activeVoiceSource != null) activeVoiceSource.Stop();
         playButton.interactable = false;
 
         foreach (var item in toggleItems)

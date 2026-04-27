@@ -22,7 +22,7 @@ namespace DIALOGUE.LogicalLines
             EncapsulatedData ifData = RipEncapsulationData(currentConversation, currentProgress, false);
             EncapsulatedData elseData = new EncapsulatedData() { lines = new List<string>() };
 
-            if(ifData.endingIndex + 41 < currentConversation.Count)
+            if(ifData.endingIndex + 1 < currentConversation.Count)
             {
                 string nextLine = currentConversation.GetLines()[ifData.endingIndex + 1].Trim();
                 if(nextLine == ELSE)
@@ -39,7 +39,7 @@ namespace DIALOGUE.LogicalLines
                 Conversation newConversation = new Conversation(selData.lines);
                 DialogueSystem.Instance.conversationManager.EnqueuePriority(newConversation);
             }
-
+            
             yield return null;
         }
 

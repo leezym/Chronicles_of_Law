@@ -40,6 +40,13 @@ public class AudioManager : MonoBehaviour
 
     private readonly Dictionary<string, float> _lastPlayById = new(System.StringComparer.OrdinalIgnoreCase);
     private readonly Dictionary<string, int> _playingCountById = new(System.StringComparer.OrdinalIgnoreCase);
+
+    // Duck music when Voices are playing
+    private const float DUCK_MULTIPLIER = 0.5f;
+    private const float DUCK_SPEED = 1.5f; // multiplier units per second
+    private int _voiceActiveCount = 0;
+    private float _musicDuckMultiplier = 1f;
+    private Coroutine _musicDuckCoroutine;
     
     [Header("Pooling")]
     [SerializeField] private int uiPoolSize = 12;
@@ -158,12 +165,57 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource PlayVoice(string filePath, float volume = 1, bool loop = false)
     {
-        return PlaySoundEffect(filePath, voiceMixer, volume, loop);
+        var src = PlaySoundEffect(filePath, voiceMixer, volume, loop);
+        if (src != null) StartCoroutine(TrackVoice(src));
+        return src;
     }
 
     public AudioSource PlayVoice(AudioClip clip, float volume = 1, bool loop = false)
     {
-        return PlaySoundEffect(clip, voiceMixer, volume, loop);
+        var src = PlaySoundEffect(clip, voiceMixer, volume, loop);
+        if (src != null) StartCoroutine(TrackVoice(src));
+        return src;
+    }
+
+    private System.Collections.IEnumerator TrackVoice(AudioSource src)
+    {
+        _voiceActiveCount++;
+        if (_voiceActiveCount == 1) TriggerMusicDuck(true);
+
+        yield return null;
+        yield return new WaitUntil(() => src == null || !src.isPlaying);
+
+        _voiceActiveCount = Mathf.Max(0, _voiceActiveCount - 1);
+        if (_voiceActiveCount == 0) TriggerMusicDuck(false);
+    }
+
+    private void TriggerMusicDuck(bool duck)
+    {
+        if (_musicDuckCoroutine != null) StopCoroutine(_musicDuckCoroutine);
+        _musicDuckCoroutine = StartCoroutine(LerpMusicDuck(duck ? DUCK_MULTIPLIER : 1f));
+    }
+
+    private System.Collections.IEnumerator LerpMusicDuck(float target)
+    {
+        while (!Mathf.Approximately(_musicDuckMultiplier, target))
+        {
+            _musicDuckMultiplier = Mathf.MoveTowards(_musicDuckMultiplier, target, DUCK_SPEED * Time.deltaTime);
+            ApplyMusicDuck();
+            yield return null;
+        }
+
+        _musicDuckMultiplier = target;
+        ApplyMusicDuck();
+        _musicDuckCoroutine = null;
+    }
+
+    private void ApplyMusicDuck()
+    {
+        foreach (var ch in channels.Values)
+        {
+            ch.duckMultiplier = _musicDuckMultiplier;
+            ch.TryStartVolumeLeveling();
+        }
     }
 
     public AudioTrack PlayTrack(string filePath, AudioBus bus, int channel = 0, bool loop = true, float volumeCap = 1f)

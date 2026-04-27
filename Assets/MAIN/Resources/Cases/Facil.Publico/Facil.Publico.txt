@@ -35,7 +35,7 @@ pregunta "¿Qué acciones legales se deberían adelantar en este momento?"
 - Recomendar la realización de una audiencia pública para aceptar los hechos y pagar la foto multa realización un acuerdo de pago. [0]
 - Recomendar la radicación de un derecho de petición para presentar descargos y pruebas que le permitan ser exonerado de la multa. [50]
 - Solicitar mediante un derecho de petición la prescripción del comparendo, ya que nunca se le notifico en su residencia la orden. [100]
-- Recomendar al usuario hacer caso omiso a dichos comunicados ya que con el pasar del tiempo esa deuda prescribe.[0] 
+- Recomendar al usuario hacer caso omiso a dichos comunicados ya que con el pasar del tiempo esa deuda prescribe. [0] 
 }
 
 pregunta "¿Cuál será la prueba fundamental en el proceso y sin la que no podría iniciarse el trámite correspondiente?"
