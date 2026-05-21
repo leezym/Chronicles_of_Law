@@ -52,6 +52,9 @@ namespace HISTORY
             foreach(var item in gm.items)
                 fp.CreateItemPrefab(item.sprite, item.nameItem);
 
+            gm.SetPercentProgress();
+            gm.SetLevelProgress();
+
             VariableStore.TrySetValue("socialPoints", data.socialPoints);
             VariableStore.TrySetValue("professionalPoints", data.professionalPoints);
         }

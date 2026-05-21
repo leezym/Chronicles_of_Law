@@ -37,28 +37,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "8133aa34-1822-4603-90ab-69800c7dd564",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Next",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "33e4a94c-1f89-4dd1-806d-0efeaa530a2a",
-                    "path": "<Keyboard>/enter",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Next",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "39e52495-f037-4f9c-8539-f28f6a05712a",
                     "path": "<Keyboard>/m",
                     "interactions": "",
@@ -76,6 +54,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f7c4e3b-9c5b-4652-8f4b-ca40d7b82ec7",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

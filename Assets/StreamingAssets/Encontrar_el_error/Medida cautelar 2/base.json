@@ -94,21 +94,21 @@
           "bold": true,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         },
         {
           "text": "Solicitud de medidas cautelares en el ",
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         },
         {
           "text": "proceso declarativo de servidumbre",
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " ",
@@ -122,7 +122,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         }
       ],
       "plain": "REF: Solicitud de medidas cautelares en el proceso declarativo de servidumbre con radicado No. 119304576823"
@@ -156,7 +156,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         },
         {
           "text": ", solicitó mediante este escrito, que se decreten las ",
@@ -184,7 +184,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         },
         {
           "text": ", para que sea efectiva la presente acción,",
@@ -198,7 +198,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         }
       ],
       "plain": "MARIA DEL MAR MEDINA OSORIO, mayor de edad, identificada con cédula de ciudadanía No. 1.193.040.058, expedida en Neiva, Huila con domicilio en Cali, Valle, solicitó mediante este escrito, que se decreten las siguientes medidas cautelares con carácter de previas dentro del proceso declarativo de servidumbre con radicado No. 119304576823, para que sea efectiva la presente acción, así:"
@@ -218,7 +218,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " de eslabones engastados de 1.9 centímetros, los cuales se encuentran en la caja fuerte de la residencia del demandado ",
@@ -273,7 +273,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " automotor propiedad del demandado ",

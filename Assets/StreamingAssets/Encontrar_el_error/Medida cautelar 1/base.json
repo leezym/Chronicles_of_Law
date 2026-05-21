@@ -148,7 +148,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         },
         {
           "text": ", solicitó mediante este escrito, que se decreten las siguientes medidas cautelares con carácter de previas dentro del ",
@@ -162,7 +162,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " con radicado No.",
@@ -176,7 +176,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         },
         {
           "text": ", para que sea efectiva la presente acción, ",
@@ -190,7 +190,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "white"
+          "highlight": null
         }
       ],
       "plain": "GABRIELA ROMERO VESGA, mayor de edad, identificada con cédula de ciudadanía No. 1.193.458.058, expedida en Manizales, Caldas con domicilio en Cali, Valle, solicitó mediante este escrito, que se decreten las siguientes medidas cautelares con carácter de previas dentro del proceso declarativo con radicado No.3366768654, para que sea efectiva la presente acción, así:"
@@ -210,7 +210,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " ",
@@ -245,7 +245,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": "a su nombre para garantizar el pago de la deuda.",

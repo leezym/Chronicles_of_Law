@@ -1,4 +1,5 @@
-crear(Avatar); ocultarDialogo();
+ocultarDialogo();
+
 mostrarCinematica(-media "escena 21" -audio true)
 mostrarCinematica(-media "escena 22" -audio true)
 
@@ -8,7 +9,7 @@ mostrarCinematica(-media "escena 23" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "Dime el nombre del consultante"
 {
 - Se acuerda del nombre. [500|10]
@@ -38,7 +39,7 @@ mostrarCinematica(-media "escena 28" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Dios... qué hago?"
 {
 - Decide ayudar. [500|0]

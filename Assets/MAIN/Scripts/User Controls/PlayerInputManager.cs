@@ -71,7 +71,13 @@ namespace DIALOGUE
 
         private void PromptAdvance(InputAction.CallbackContext c)
         {
-            if (!FolderPanel.Instance.isWaitingOnUserChoice)
+            if (AnnouncePanel.Instance.isWaitingOnUserChoice)
+            {
+                AnnouncePanel.Instance.Hide();
+                return;
+            }
+
+            if (!FolderPanel.Instance.isWaitingOnUserChoice || !ItemsPanel.Instance.isWaitingOnUserChoice)
                 DialogueSystem.Instance.OnUserPrompt_Next();
         }
 

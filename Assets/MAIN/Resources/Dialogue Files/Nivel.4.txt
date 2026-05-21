@@ -1,10 +1,11 @@
-crear(Avatar); ocultarDialogo();
+ocultarDialogo();
+
 mostrarCinematica(-media "escena 36" -audio true)
 mostrarCinematica(-media "escena 37" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "Se abre otro dilema"
 {
 - Busca en físico. [100|0]
@@ -32,7 +33,7 @@ mostrarCinematica(-media "escena 42" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "Su cuerpo pide descanso, pero su conciencia analiza lo que debía hacer"
 {
 - Decide ayudar en caso. [500|10]
@@ -54,7 +55,7 @@ mostrarCinematica(-media "escena 45" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Me esperas para que volvamos juntos a casa?"
 {
 - Decide esperar a Andrea. [500|0]

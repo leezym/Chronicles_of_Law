@@ -226,7 +226,7 @@ namespace EXERCISE.UI
                 if (token.selected)
                     return ($"<link={regionId}><mark=#FFFF0060>", "</mark></link>");
 
-                return ($"<link={regionId}>", "</link>");
+                return ($"<link={regionId}><mark=#00FFFF40>", "</mark></link>");
             }
 
             // Después de validar

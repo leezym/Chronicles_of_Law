@@ -81,7 +81,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": "que ",
@@ -130,28 +130,28 @@
           "bold": true,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " transferir a ",
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": "EL VENDEDOR",
           "bold": true,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " la propiedad de la motocicleta que a continuación se identifica:",
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         }
       ],
       "plain": "PRIMERA OBJETO: EL COMPRADOR transferir a EL VENDEDOR la propiedad de la motocicleta que a continuación se identifica:"
@@ -326,7 +326,7 @@
           "bold": true,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": ":",
@@ -368,14 +368,14 @@
           "bold": true,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " paga la remuneración",
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": " a que se refiere la cláusula anterior en la siguiente forma: ________ (",
@@ -459,7 +459,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         }
       ],
       "plain": "CUARTA. OBLIGACIONES EL VENDEDOR: EL VENDEDOR se obliga a hacer entrega del (carro o moto) en el estado en que se encuentre, con los respectivos gravámenes, embargos, multas, impuestos, pactos de reserva de dominio y cualquiera otra circunstancia que afecte el libre comercio del bien objeto del presente contrato."
@@ -473,14 +473,14 @@
           "bold": true,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": "Toda controversia o diferencia relativa a este contrato, su ejecución y liquidación se resolverá ante los jueces civiles municipales de la Justicia Ordinaria.",
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         }
       ],
       "plain": "QUINTA. CLÁUSULA COMPROMISORIA: Toda controversia o diferencia relativa a este contrato, su ejecución y liquidación se resolverá ante los jueces civiles municipales de la Justicia Ordinaria."

@@ -9,6 +9,7 @@ namespace GAME
     {
         public static GameManager Instance { get; private set; }
 
+        public static float CANT_LEVELS = 4f;
         public TMP_Text professionalPointsText;
         public TMP_Text socialPointsText;
         public Slider percentProgress;
@@ -51,6 +52,7 @@ namespace GAME
         {
             this.professionalPoints += professionalPoints;
             professionalPointsText.text = this.professionalPoints.ToString();
+            VariableStore.TrySetValue("professionalPoints", this.professionalPoints);
         }
 
         public int GetSocialPoints(){ return socialPoints; }
@@ -59,6 +61,7 @@ namespace GAME
         {
             this.socialPoints += socialPoints;
             socialPointsText.text = this.socialPoints.ToString();
+            VariableStore.TrySetValue("socialPoints", this.socialPoints);
         }
 
         public int GetCurrentCaseLevel(){ return currentCaseLevel; }
@@ -99,6 +102,8 @@ namespace GAME
 
         public void SetPercentProgress()
         {
+            Debug.Log(currentCaseLevel + 1 + "/"+(float)CasesManager.Instance.casesInGame.Count);
+            Debug.Log(currentMinigameLevel + 1 + "/"+(float)MinigamesManager.Instance.minigamesInGame.Count);
             float caseLevelPercent = (currentCaseLevel + 1) / (float)CasesManager.Instance.casesInGame.Count;
             float minigameLevelPercent = (currentMinigameLevel + 1) / (float)MinigamesManager.Instance.minigamesInGame.Count;
             percentProgress.value = (caseLevelPercent + minigameLevelPercent) / 2f;
@@ -106,7 +111,8 @@ namespace GAME
 
         public void SetLevelProgress()
         {
-            float percent = currentLevel / 4f;
+            Debug.Log(currentLevel / CANT_LEVELS);
+            float percent = currentLevel / CANT_LEVELS;
             levelProgress.value = percent;
         }
 

@@ -107,8 +107,9 @@ MonoBehaviour:
     act\xFAa como demandante Juan Carlos Romero Ortiz contra <b>COLPENSIONES ADMINISTRADORA
     COLOMBIANA DE PENSIONES</b>, de conformidad con el art\xEDculo 174 del CGP."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -132,7 +133,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.55
+  m_fontSize: 16.35
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -425,8 +426,8 @@ MonoBehaviour:
   m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_DecelerationRate: 0.03
+  m_ScrollSensitivity: 100
   m_Viewport: {fileID: 662434347103908950}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 5334067106674681979}
@@ -509,8 +510,9 @@ MonoBehaviour:
     bien organizado, presione \u201CEnviar\u201D para comprobar el resultado. Puede
     intentarlo varias veces hasta lograr el orden correcto."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -534,7 +536,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.35
+  m_fontSize: 22.25
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -910,8 +912,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Creaci\xF3n de un correo formal"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -935,7 +938,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 24.55
   m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1047,8 +1050,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: '<b>Demandante:</b> Juan Carlos Romero Ortiz '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1072,7 +1076,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.9
+  m_fontSize: 14
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1581,8 +1585,9 @@ MonoBehaviour:
   m_text: "Quedo atento a la espera de su pronta respuesta. Agradezco de antemano
     su atenci\xF3n."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1872,8 +1877,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cordial Saludo,
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1897,7 +1903,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.9
+  m_fontSize: 14
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2787,8 +2793,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: <b>Demandado:</b> COLPENSIONES
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2812,7 +2819,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.9
+  m_fontSize: 14
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3090,8 +3097,9 @@ MonoBehaviour:
     despacho judicial, radicado 2019-777 en la que funge como demandante Juan Carlos
     Romero Ortiz contra <b>COLPENSIONES ADMINISTRADORA COLOMBIANA DE PENSIONES.</b>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3115,7 +3123,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 17.55
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3323,9 +3331,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6417655913062080130}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 0
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!1 &6841191782476713507
 GameObject:
@@ -3394,8 +3402,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<b>Radicaci\xF3n:</b> 2019-777"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3419,7 +3428,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.9
+  m_fontSize: 14
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3660,8 +3669,9 @@ MonoBehaviour:
   m_text: "Me permito informar que mediante auto interlocutorio No. 520, de la fecha
     20 de enero de 2024, mediante radicado n\xFAmero 2019-777; se orden\xF3:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3685,7 +3695,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 15.2
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3797,8 +3807,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Intentos
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4326,8 +4337,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: <b>Para:</b> Juzgado veinte administrativo del circuito de Cali
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4463,8 +4475,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<b>Referencia:</b> Remisi\xF3n Proceso Ordinario Laboral de Primera Instancia"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

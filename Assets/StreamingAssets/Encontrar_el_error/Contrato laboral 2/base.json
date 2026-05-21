@@ -54,7 +54,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         },
         {
           "text": "  quien en adelante y para los efectos del presente contrato se denomina como EL TRABAJADOR, identificados como aparece al pie de las firmas, hemos acordado suscribir este contrato de trabajo, el cual se regirá por las siguientes cláusulas:",
@@ -138,7 +138,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         }
       ],
       "plain": "Tercero. Al TRABAJADOR se le pagarán únicamente honorarios por cada servicio que preste."
@@ -159,7 +159,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         }
       ],
       "plain": "Cuarto. Obligaciones del trabajador. El TRABAJADOR se obliga a obedecer y a serle fiel a la compañía. Por ende, no podrá conformar ni hacer parte de ninguna asociación, mucho menos si se busca afectar los intereses de la empresa."
@@ -173,7 +173,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         }
       ],
       "plain": "Sexto. Terminación del contrato. El EMPLEADOR podrá terminar unilateralmente el contrato por cualquier razón que considere suficiente para hacerlo."
@@ -201,7 +201,7 @@
           "bold": false,
           "italic": false,
           "underline": false,
-          "highlight": "yellow"
+          "highlight": "cyan"
         }
       ],
       "plain": "Séptimo. Responsabilidad del empleador. En caso de responsabilidad del EMPLEADOR, la compañía se obliga únicamente al pago de la indemnización de daño emergente."

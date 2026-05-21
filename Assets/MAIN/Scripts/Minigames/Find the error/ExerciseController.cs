@@ -95,14 +95,11 @@ namespace EXERCISE.Runtime
 
             foreach (var r in docData.regions.regions)
             {
-                int pts = (r.points > 0f) ? r.points : docData.regions.pointsPerCorrect;
-
                 docTokens[r.id] = new TokenData
                 {
                     id = r.id,
                     enabled = r.enabled,
                     isCorrect = r.correct,
-                    points = pts,
                     selected = false,
                     locked = false
                 };

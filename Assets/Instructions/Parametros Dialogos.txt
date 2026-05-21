@@ -47,7 +47,7 @@ C) Las siguientes acciones son opcionales para los personajes y se colocan antes
 
 D) Las siguientes acciones son opcionales para los personajes y van en un renglon nuevo (antes o despues del dialogo) o despues del dialogo en el mismo renglon. Depende de lo que se quiera mostrar en la escena (Ver item A):
 
-    - [esperar] -> se usa con las acciones mostrar(), ocultar() o mover(). Indica que la accion que lo acompaña debe finalizar antes de comenzar con otra.
+    - [esperar] -> se usa con las acciones mostrar(), ocultar() o mover(). Indica que la accion que lo acompaña debe finalizar completamente antes de comenzar con otra.
         * En este ejemplo, la chica se mueve y cuando llega a la posición indicada, se oculta
             entra Chica en 0:1 [Feliz] "Dialogo del personaje de ejemplo" [esperar]mover("Chica" -x 0 -y 0); ocultar("Chica")
             

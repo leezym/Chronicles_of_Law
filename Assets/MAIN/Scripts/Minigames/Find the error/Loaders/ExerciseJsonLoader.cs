@@ -33,8 +33,7 @@ namespace EXERCISE.Loaders
                     r0 = t.r0, c0 = t.c0,
                     r1 = t.r1, c1 = t.c1,
                     enabled = enabled,
-                    isCorrect = enabled && correct,
-                    points = (enabled && correct) ? keyJson.pointsPerCorrect : 0
+                    isCorrect = enabled && correct
                 };
             }).ToList();
 

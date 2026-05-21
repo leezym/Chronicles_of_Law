@@ -66,12 +66,11 @@ public class ChoicePanel : MonoBehaviour
                 GameObject newButtonObject = Instantiate(choiceButtonPrefab, buttonLayoutGroup.transform);
                 newButtonObject.SetActive(true);
 
-                Button newButton = newButtonObject.GetComponentInChildren<Button>();
-                TextMeshProUGUI newTitle = newButtonObject.GetComponentInChildren<TextMeshProUGUI>();
+                TextMeshProUGUI newTitle = newButtonObject.transform.Find("Background/Text").GetComponent<TextMeshProUGUI>();
                 LayoutElement newLayout = newButtonObject.GetComponent<LayoutElement>();
-                newButton.GetComponentInChildren<TextMeshProUGUI>().text = letters[i];
+                newButtonObject.transform.Find("Option/Letter").GetComponent<TextMeshProUGUI>().text = letters[i];
 
-                choiceButton = new ChoiceButton { button = newButton, layout = newLayout, title = newTitle };
+                choiceButton = new ChoiceButton { button = newButtonObject.GetComponent<Button>(), layout = newLayout, title = newTitle };
 
                 buttons.Add(choiceButton);
             }

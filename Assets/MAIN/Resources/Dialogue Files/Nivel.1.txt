@@ -1,9 +1,10 @@
 crear(Avatar); ocultarDialogo();
+cargarCaso()
 mostrarCinematica(-media "escena 1" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Qué hago?"
 {
 - Decide ayudar. [500|-400]
@@ -20,14 +21,14 @@ mostrarCinematica(-media "escena 4" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Qué hago?"
 {
 - Ir con sus amigos. [500|-400]
 	detenerMusica()
     mostrarCinematica(-media "escena 5" -audio true)
 
-- No ir con sus amigos y va a estudiar solo. [10|100]
+- No ir con sus amigos y va a estudiar sin compañía. [10|100]
 	detenerMusica()
     mostrarCinematica(-media "escena 6" -audio true)
 }

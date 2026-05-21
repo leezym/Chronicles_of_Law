@@ -23,11 +23,11 @@ namespace HISTORY
             state.characters = CharacterData.Capture();
             state.audio = AudioData.Capture();
             state.graphics = GraphicData.Capture();
-            state.game = GameData.Capture();
             state.casesData = CasesData.Capture();
             state.casesInGame = CasesInGame.Capture();
             state.minigamesData = MinigamesData.Capture();
             state.minigamesInGame = MinigamesData.CaptureInGame();
+            state.game = GameData.Capture();
             
             return state;
         }
@@ -38,11 +38,11 @@ namespace HISTORY
             CharacterData.Apply(characters);
             AudioData.Apply(audio);
             GraphicData.Apply(graphics);
-            GameData.Apply(game);
             CasesData.Apply(casesData);
             CasesInGame.Apply(casesInGame);
             MinigamesData.Apply(minigamesData);
             MinigamesData.ApplyInGame(minigamesInGame);
+            GameData.Apply(game);
             
             CasesManager.Instance.AssignCasesToButtons();
         }

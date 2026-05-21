@@ -32,9 +32,7 @@ namespace EXERCISE.Loaders
 
     [Serializable]
     public class RegionsJson
-    {
-        public int pointsPerCorrect = 1;
-        public List<RegionJson> regions;
+    {        public List<RegionJson> regions;
     }
 
     [Serializable]

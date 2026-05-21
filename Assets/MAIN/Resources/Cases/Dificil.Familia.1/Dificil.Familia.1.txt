@@ -7,7 +7,7 @@ ocultar("Juanita Alimaña")
 Entra Avatar en 0,3:0 [Serio] "Buen día señora, ¿puede decirme su nombre? {C} También quisiera saber hace cuánto se casaron."
 ocultar(Avatar)
 
-Entra Juanita Alimaña en 0,3:0 [Seria] "Mi nombre es Juanita Alimaña {EC 2} Me casé con él hace un par de años, específicamente el 20 de agosto de 2018 en la notaría 8 de Cali." 
+Entra Juanita Alimaña en 0,3:0 [Seria] "Mi nombre es Juanita Alimaña.{EC 2} Me casé con él hace un par de años, específicamente el 20 de agosto de 2018 en la notaría 8 de Cali." 
 
 Juanita Alimaña en 0,3:0 [Decepcionada] "Pero nosotros dejamos de vivir juntos hace varios años, en agosto de 2020... {EC 2} Lo que sucede es que ese tipo no hacía sino golpearme cuando quería, yo tengo incluso una copia de una incapacidad que me dio medicina legal de lo mal que me dejó en una de esas ocasiones."
 ocultar("Juanita Alimaña")

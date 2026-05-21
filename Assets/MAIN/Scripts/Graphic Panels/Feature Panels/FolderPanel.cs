@@ -90,11 +90,8 @@ public class FolderPanel : MonoBehaviour
 
     public void ZoomItem(Image item)
     {
-        caseDocumentImageZoomButton.onClick.RemoveAllListeners();
-        caseDocumentImageZoomButton.onClick.AddListener(() => {
-            ItemsPanel.Instance.Show(item.sprite);
-            isWaitingOnUserChoice = true;
-        });
+        ItemsPanel.Instance.Show(item.sprite);
+        isWaitingOnUserChoice = true;
     }
 
     public void ResetFolder()

@@ -750,8 +750,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Derecho a la Seguridad Social y Protecci\xF3n Social"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1037,8 +1038,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Derecho a la Negociaci\xF3n Colectiva"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1358,8 +1360,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Selecci\xF3n de casos"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1641,8 +1644,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Derecho a la No Discriminaci\xF3n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1940,8 +1944,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Derecho a la Tutela Judicial Efectiva
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2258,9 +2263,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5184514495595353051}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 0
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!1 &5347431248836826616
 GameObject:
@@ -2813,8 +2818,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Libertad de Asociaci\xF3n y Sindicaci\xF3n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3233,8 +3239,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Derecho al Trabajo y a Condiciones Laborales Justas
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3371,11 +3378,12 @@ MonoBehaviour:
   m_text: "Escuche atentamente el audio del caso y analice la situaci\xF3n descrita.
     Con base en ello, seleccione los derechos que considere vulnerados, haciendo
     clic sobre las opciones disponibles. Debe identificar exactamente 3 opciones.
-    Cuando est\xE9 seguro de su elecci\xF3n, presione \u201CRevisar\u201D para confirmarla:
+    Cuando est\xE9 seguro de su elecci\xF3n, presione \u201CREVISAR\u201D para confirmarla:
     dispone de un \xFAnico intento y, al enviar, se validar\xE1 su respuesta."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c86c168ed99562d42829886c28460fd6, type: 2}
+  m_sharedMaterial: {fileID: -6911847998026751738, guid: c86c168ed99562d42829886c28460fd6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3399,7 +3407,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 23.8
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1

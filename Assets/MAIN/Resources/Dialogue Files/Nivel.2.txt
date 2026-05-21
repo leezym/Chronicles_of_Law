@@ -1,9 +1,10 @@
-crear(Avatar); ocultarDialogo();
+ocultarDialogo();
+
 mostrarCinematica(-media "escena 12" -audio true)
 
 reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-crear(Avatar); mover(Avatar -x 0,3 -y 0)
+mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
 social "¿Qué debo mejorar? ¿Mi interacción social o mi desempeño profesional?"
 {
 - Decide mejorar su interacción. [500|0]
@@ -33,7 +34,7 @@ else
 
     reproducirMusica(-sonido "LOOP_DECISION" -vol 0,8)
 
-    crear(Avatar); mover(Avatar -x 0,3 -y 0)
+    mostrar(Avatar); mover(Avatar -x 0,3 -y 0)
     social "En ese momento, dos caminos se abren en su mente"
     {
     - Lo deja pasar. [500|0]

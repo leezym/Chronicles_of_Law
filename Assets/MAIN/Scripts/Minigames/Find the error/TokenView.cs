@@ -12,6 +12,7 @@ namespace EXERCISE.UI
         [SerializeField] private Color correctMissedColor = new Color();
         [SerializeField] private Color incorrectSelectedColor = new Color();
         [SerializeField] private Color selectedColor = new Color();
+        [SerializeField] private Color enabledColor = new Color(0f, 1f, 1f, 0.25f);
         [SerializeField] private Color transparent = new Color();
 
         [Header("UI")]
@@ -74,6 +75,8 @@ namespace EXERCISE.UI
                     // === ANTES DE VALIDAR ===
                     if (token.selected)
                         highlightBackground.color = selectedColor;
+                    else if (token.enabled)
+                        highlightBackground.color = enabledColor;
                     else
                         highlightBackground.color = transparent;
                 }
